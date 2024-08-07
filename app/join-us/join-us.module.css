@@ -1,0 +1,18 @@
+.join_us {
+    animation: fade 1200ms ease-in-out;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 100%;
+        filter: blur(0px);
+        transform: translateX(0px);
+    }
+}
