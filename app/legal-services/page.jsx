@@ -15,9 +15,9 @@ function LegalServices() {
           </p>
         </div>
       </section>
-      <OurOfferings/>
+      {/* <OurOfferings/>
       <SuccessFactors/>
-      <Guidelines/>
+      <Guidelines/> */}
     </div>
   );
 }
