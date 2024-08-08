@@ -95,7 +95,7 @@
 }
 .succeesfactors .card{
     width: 20rem;
-    height: 440px;
+    height: 430px;
     background: linear-gradient(#1B2340,#1B2340);
     text-align: center;
     position: relative;
@@ -111,11 +111,11 @@
     padding: 40px;
 
 }
-.succeesfactors .card .content{
-    padding: 10px;
-}
+
 .succeesfactors p{
-    font-size: 16px;
+     text-align: center;
+     padding: 20px;
+     font-size: 16px;
 }
 .succeesfactors .overlay {
     background-color: #fff;
@@ -146,19 +146,19 @@
     transform: scaleY(1); 
 }
 /*------------------------------------------------------------------------------*/
-.bestPractice h2{
+.bestPractice h2 , .category h2{
     text-align: center;
 }
-.bestPractice{
+.bestPractice , .category{
     min-height: 100vh;
 }
-.practiceContainer{
+.practiceContainer , .categoryContainer{
     padding: 20px 0;
     display: flex;
     flex-direction: column;
     gap: 40px;
   }
-  .practiceCard {
+  .practiceCard , .categoryCard {
     position: relative;
     background: linear-gradient(#353e5c, #353e5c);
     padding: 20px;
@@ -177,55 +177,10 @@
     top: -30px;
     z-index: 10;
   }
-  .content {
+  .bestPractice .content , .category .content {
     width: 85%;
   }
   .contentleft {
-    width: 88%;
-    padding-right: 200px;
-  }
-
-
-
-
-  
-  .bestPractices {
-    min-height: 100vh;
-  }
-  
-  .contentContainer {
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  
-  .practiceCard {
-    position: relative;
-    background: linear-gradient(#353e5c, #353e5c);
-    padding: 20px;
-    border-radius: 25px;
-    height: 250px;
-  }
-  
-  .imgleft {
-    position: absolute;
-    left: -80px;
-    top: -25px;
-    z-index: 10;
-  }
-   .imgright {
-    position: absolute;
-    right: -80px;
-    top: -30px;
-    z-index: 10;
-  }
-  
-  .content {
-    width: 85%;
-  }
-  
-  .contentLeft {
     width: 88%;
     padding-right: 200px;
   }
@@ -256,15 +211,21 @@
     border-radius: 30px;
     color: #000;
   }
+
+
+
+  
+
+ 
   @media (max-width: 1191px) {
-    .practiceCard .imgleft {
+    .practiceCard .imgleft , .categoryCard .imgleft {
       width: 200px;
       height: 200px;
       top: -30%;
       left: 50%;
       transform: translateX(-50%);
     }
-    .practiceCard .imgright {
+    .practiceCard .imgright , .categoryCard .imgright {
       width: 200px;
       height: 200px;
       right: 50%;
@@ -276,40 +237,40 @@
       padding-right: 0;
       padding: 60px 0;
     }
-    .content {
+    .bestPractice .content , .category .content {
       width: 100%;
       padding: 70px 0;
     }
-    .practiceContainer {
+    .practiceContainer , .categoryContainer {
       padding: 120px 0;
     }
-    .practiceCard {
+    .practiceCard , .categoryCard {
       height: 300px;
     }
-    .practiceCard:not(:last-child) {
+    .practiceCard:not(:last-child) , .categoryCard:not(:last-child) {
       margin-bottom: 100px;
     }
   }
   @media (max-width : 767px) {
-    .practiceCard {
+    .practiceCard , .categoryCard {
       height: 500px;
     }
-    .content , .contentleft{
+    .bestPractice .content , .contentleft , .category .content{
       padding: 70px 0;
     }
-    .practiceCard .imgleft {
+    .practiceCard .imgleft , .category .imgleft {
       top: -20%;
       left: 50%;
       transform: translateX(-50%);
     }
-    .practiceCard .imgright {
+    .practiceCard .imgright , .category .imgright {
       right: 50%;
       top: -20%;
       transform: translate(50%);
     }
   }
   @media (max-width : 450px) {
-    .practiceCard {
+    .practiceCard , .categoryCard {
       height: 650px;
     }
     .linkContainer > a:first-child , .linkContainer > a:last-child {
@@ -319,3 +280,5 @@
       
   
   }
+
+  /*-----------------------------------------------------------------*/
