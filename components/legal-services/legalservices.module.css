@@ -29,9 +29,7 @@
         width: 100%;
         align-items: center;
         text-align: center;
-        padding: 0;
     }
-   
 }
 .ourofferings{
     min-height: 100vh;
@@ -76,9 +74,7 @@
     top: -15px;
     right: 50%;
     transform: translateX(50%);
-
 }
-
 /*-----------------------------------------------------------------*/
 .succeesfactors{
     min-height: 100vh;
@@ -109,9 +105,7 @@
     justify-content: center;
     align-items: center;
     padding: 40px;
-
 }
-
 .succeesfactors p{
      text-align: center;
      padding: 20px;
@@ -128,7 +122,6 @@
     transform-origin: bottom; 
     transition: transform 0.4s ease-in-out; 
     border-radius: 25px;
-
 }
 .succeesfactors .topOverlay{
     display: flex;
@@ -148,6 +141,7 @@
 /*------------------------------------------------------------------------------*/
 .bestPractice h2 , .category h2{
     text-align: center;
+    padding-bottom: 20px;
 }
 .bestPractice , .category{
     min-height: 100vh;
@@ -197,7 +191,6 @@
     gap: 10px;
     transition: 0.6s;
   }
-  
   .linkItem:first-child:hover {
     transform: scale(1.1);
   }
@@ -211,12 +204,6 @@
     border-radius: 30px;
     color: #000;
   }
-
-
-
-  
-
- 
   @media (max-width: 1191px) {
     .practiceCard .imgleft , .categoryCard .imgleft {
       width: 200px;
@@ -271,14 +258,48 @@
   }
   @media (max-width : 450px) {
     .practiceCard , .categoryCard {
-      height: 650px;
+      height: 700px;
     }
     .linkContainer > a:first-child , .linkContainer > a:last-child {
         font-size: 16px;
       }
-
-      
-  
   }
-
-  /*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+.accordionItem{
+  padding: 40px 0;
+}
+  .accordionItemHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+   padding-bottom: 20px;
+  }
+ .accordionItemHeader img{
+  cursor: pointer;
+ }
+ .accordionContent{
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
+ }
+ .accordionItemTwo{
+  margin-top: 10px;
+ }
+ .accordionContent {
+  overflow: hidden; 
+  max-height: 0;     
+  font-size: 16px;
+  transition: max-height .6s  
+}
+.accordionContent p{
+  padding: 20px 10px;
+}
+.accordionContent.open {
+  max-height: 1000px; 
+}
+@media (max-width : 768px) {
+  .accordion h2 , .succeesfactors h2 , .bestPractice h2 , .category h2 , .ourofferings h2 , .hero h1{
+    font-size: 35px;
+    text-align: center;
+  }
+}
