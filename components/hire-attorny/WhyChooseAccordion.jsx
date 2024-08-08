@@ -1,0 +1,62 @@
+"use client";
+import styles from "@/components/hire-attorny/hireattorny.module.css";
+import Image from "next/image";
+import { useState } from "react";
+
+
+
+const WhyChooseAccordion = ({title , path , desc}) => {
+    
+  const [isOpenOne, setIsOpenOne] = useState(false);
+
+  const handleIsOpenOne = () => {
+    setIsOpenOne(!isOpenOne);
+  };
+
+
+
+  return (
+    <div>
+      <div className={styles.accordionItem}>
+        <div className={styles.accordionItemHeader}>
+          <div>
+            <Image
+              src={path}
+              width={64}
+              height={46}
+              alt={title}
+              className={styles.accordionItemIcon}
+            />
+            <h4>{title}</h4>
+          </div>
+          <Image
+            src="/assets/icons/hireattorny/doublalarroweleft.png"
+            alt="doublalarroweleft"
+            width={24}
+            height={24}
+            className={`${styles.accordionArrowIcon} ${isOpenOne ? styles.hide : ""}`}
+            onClick={handleIsOpenOne}
+          />
+        </div>
+        <div
+          className={`${styles.accordionContent} ${
+            isOpenOne ? styles.open : ""
+          }`}
+        >
+          <p>{desc}</p>
+          <Image
+            src="/assets/icons/hireattorny/arrowtop.png"
+            width={10}
+            height={14}
+            onClick={handleIsOpenOne}
+            alt="bottomIcon"
+            className={styles.bottomIcon}
+          />
+        </div>
+      </div>
+
+    </div>
+  );
+};
+
+export default WhyChooseAccordion;
