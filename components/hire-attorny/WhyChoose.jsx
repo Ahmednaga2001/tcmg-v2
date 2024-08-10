@@ -6,25 +6,21 @@ import WhyChooseAccordion from "./WhyChooseAccordion";
 const data = [
   {
     title: "تحقيق الأهداف القانونية",
-    desc:
-      "يمكننا ضمان لك بعد انتهائك من إجراءات توكيل محامي, تحقيق جميع أهدافك القانونية باحترافية عالية وفي أسرع وقت ممكن.",
+    desc: "يمكننا ضمان لك بعد انتهائك من إجراءات توكيل محامي, تحقيق جميع أهدافك القانونية باحترافية عالية وفي أسرع وقت ممكن.",
     path: "/assets/icons/hireattorny/icon1.png",
   },
   {
     title: "الترافع أمام المحاكم",
-    desc:
-      "ينوب عنك المحامي الذي وكّلته في قضاياك القانونية بالمثول أمام المحاكم بقوة؛ دفاعًا عن حقوقك, واستشهادًا بنصرة قضيتك.",
+    desc: "ينوب عنك المحامي الذي وكّلته في قضاياك القانونية بالمثول أمام المحاكم بقوة؛ دفاعًا عن حقوقك, واستشهادًا بنصرة قضيتك.",
     path: "/assets/icons/hireattorny/icon2.png",
   },
   {
-    title : "بناء علاقات استراتيجية",
-    desc : "يسعى محامونا في المجموعة التجارية والبحرية لبناء علاقات استراتيجة مع عملائنا تقويةً للعلاقات الناشئة بين المحامي والموكِّل.",
+    title: "بناء علاقات استراتيجية",
+    desc: "يسعى محامونا في المجموعة التجارية والبحرية لبناء علاقات استراتيجة مع عملائنا تقويةً للعلاقات الناشئة بين المحامي والموكِّل.",
     path: "/assets/icons/hireattorny/icon3.png",
-
-  }
+  },
 ];
 const WhyChoose = () => {
-
   return (
     <section className={styles.whyChoose}>
       <div className={styles.whyChooseContent}>
@@ -39,10 +35,24 @@ const WhyChoose = () => {
         </p>
       </div>
       <div className={styles.accordionParent}>
-      <WhyChooseAccordion title = {data[0].title} desc={data[0].desc} path={data[0].path}/>
-      <WhyChooseAccordion title = {data[1].title} desc={data[1].desc} path={data[1].path}/>
-      <WhyChooseAccordion title = {data[2].title} desc={data[2].desc} path={data[2].path}/>
+        <WhyChooseAccordion
+          title={data[0].title}
+          desc={data[0].desc}
+          path={data[0].path}
+        />
+        <WhyChooseAccordion
+          title={data[1].title}
+          desc={data[1].desc}
+          path={data[1].path}
+        />
+        <WhyChooseAccordion
+          title={data[2].title}
+          desc={data[2].desc}
+          path={data[2].path}
+        />
       </div>
+
+   
     </section>
   );
 };

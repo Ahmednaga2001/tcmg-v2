@@ -1,102 +1,158 @@
 .page {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .page section {
-    padding: 80px;
+  padding: 80px;
 }
 .hero {
-    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(/assets/images/hireattorny/Pattern.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/assets/images/hireattorny/Pattern.png);
 
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 .page h1,
 .page h2 {
-    font-size: 50px;
-    line-height: 1.4;
+  font-size: 50px;
+  line-height: 1.4;
 }
 .hero .content {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 40px;
-    padding:70px 0px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 70px 0px;
 }
-@media (max-width : 1191px) {
-    .hero .content{
-        width: 100%;
-        align-items: center;
-    }
-    .hero h1 , .whyChooseContent h2{
-        text-align: center;
-        font-size: 35px;
-    }
-    .hero p , .whyChooseContent p{
-        font-size: 16px;
-        text-align: center;
-    }
+@media (max-width: 1191px) {
+  .hero .content {
+    width: 100%;
+    align-items: center;
+  }
+  .hero h1,
+  .whyChooseContent h2,
+  .attorneyrepresentation h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+  .hero p,
+  .whyChooseContent p,
+  .attorneyrepresentation p {
+    font-size: 16px;
+    text-align: center;
+  }
 }
 /*---------------------------------------------------------------------------------*/
 .whyChoose {
-    min-height: 100vh;
-  }
-  .whyChooseContent p{
-    padding-top: 60px;
-  }
-  .accordionParent {
-    padding-top: 60px;
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-  }
-  .accordionItemHeader > div:first-child {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  }
-  .accordionItemHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 10px;
-  }
-  .accordionItem {
-    background-color: #fff;
-    border-radius: 25px;
-    color: #000;
-    width: 22rem;
-  }
-  .accordionContent {
-    max-height: 0;
-    font-size: 16px;
-    transition: max-height 0.5s ease-out; 
-    border-radius: 25px;
-    overflow: hidden; 
-  }
-  .accordionContent.open {
-    max-height: 300px; 
-  }
-  .accordionContent p {
-    padding: 10px;
-    text-align: center;
-  }
-  .bottomIcon {
-    cursor: pointer;
-    display: block;
-    margin: auto;
-    margin-bottom: 10px;
-  }
-  .accordionArrowIcon {
-    transition: opacity 0.4s;
-    cursor: pointer;
-  }
-  .accordionArrowIcon.hide {
-    opacity: 0;
-  }
-  
+  min-height: 100vh;
+}
+.whyChooseContent p {
+  padding-top: 60px;
+}
+.accordionParent {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.accordionItemHeader > div:first-child {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.accordionItemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+.accordionItem {
+  background-color: #fff;
+  border-radius: 25px;
+  color: #000;
+  width: 22rem;
+}
+.accordionContent {
+  max-height: 0;
+  font-size: 16px;
+  transition: max-height 0.5s ease-out;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.accordionContent.open {
+  max-height: 300px;
+}
+.accordionContent p {
+  padding: 10px;
+  text-align: center;
+}
+.bottomIcon {
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.accordionArrowIcon {
+  transition: opacity 0.4s;
+  cursor: pointer;
+}
+.accordionArrowIcon.hide {
+  opacity: 0;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+.attorneyrepresentation {
+  min-height: 100vh;
+}
+.attorneyrepresentation p {
+  padding: 30px 0;
+}
+.attorneyrepresentation .cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.attorneyrepresentation .card {
+  width: 300px;
+  height: 500px;
+  background: linear-gradient(#1b2340, #1b2340);
+  position: relative;
+  z-index: 50;
+}
+
+.attorneyrepresentation .topCard {
+  position: relative;
+}
+.attorneyrepresentation .topCard span {
+  position: absolute;
+  z-index: 10;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.attorneyrepresentation .card p {
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+.attorneyrepresentation .more {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.cards {
+  padding: 20px 0;
+}
