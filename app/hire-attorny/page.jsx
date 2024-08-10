@@ -1,4 +1,5 @@
 "use client";
+import CorporateService from "@/components/hire-attorny/CorporateService";
 import styles from "@/components/hire-attorny/hireattorny.module.css";
 import HireCard from "@/components/hire-attorny/HireCard";
 import WhyChoose from "@/components/hire-attorny/WhyChoose";
@@ -120,6 +121,7 @@ function HireAttorny() {
           />
         </span>
       </section>
+      <CorporateService/>
     </div>
   );
 }
