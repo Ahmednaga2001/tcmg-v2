@@ -90,6 +90,7 @@ const CorporateService= () => {
         src="/assets/icons/hireattorny/arrow-left.svg"
         width={30}
         height={30}
+        alt="arrow-left icon"
       />
     </span>
   </section>

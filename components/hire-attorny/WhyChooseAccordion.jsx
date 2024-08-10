@@ -3,17 +3,12 @@ import styles from "@/components/hire-attorny/hireattorny.module.css";
 import Image from "next/image";
 import { useState } from "react";
 
-
-
-const WhyChooseAccordion = ({title , path , desc}) => {
-    
+const WhyChooseAccordion = ({ title, path, desc }) => {
   const [isOpenOne, setIsOpenOne] = useState(false);
 
   const handleIsOpenOne = () => {
     setIsOpenOne(!isOpenOne);
   };
-
-
 
   return (
     <div>
@@ -34,7 +29,9 @@ const WhyChooseAccordion = ({title , path , desc}) => {
             alt="doublalarroweleft"
             width={24}
             height={24}
-            className={`${styles.accordionArrowIcon} ${isOpenOne ? styles.hide : ""}`}
+            className={`${styles.accordionArrowIcon} ${
+              isOpenOne ? styles.hide : ""
+            }`}
             onClick={handleIsOpenOne}
           />
         </div>
@@ -54,7 +51,6 @@ const WhyChooseAccordion = ({title , path , desc}) => {
           />
         </div>
       </div>
-
     </div>
   );
 };

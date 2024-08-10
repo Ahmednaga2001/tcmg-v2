@@ -4,7 +4,7 @@ const HireCard = ({title , desc , path}) => {
   return (
     <div className={styles.card}>
     <div className={styles.topCard}>
-      <Image src={path} width={300} height={310}/>
+      <Image src={path} width={300} height={310} alt={title}/>
       <span>{title}</span>
     </div>
     <p>
