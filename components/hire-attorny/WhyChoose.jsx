@@ -51,8 +51,6 @@ const WhyChoose = () => {
           path={data[2].path}
         />
       </div>
-
-   
     </section>
   );
 };

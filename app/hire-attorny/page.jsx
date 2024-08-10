@@ -4,9 +4,7 @@ import IndividualServices from "@/components/hire-attorny/IndividualServices";
 import WhyChoose from "@/components/hire-attorny/WhyChoose";
 import Image from "next/image";
 
-
 function HireAttorny() {
-
   return (
     <div className={styles.page}>
       <section className={styles.hero}>
@@ -27,9 +25,9 @@ function HireAttorny() {
         </div>
       </section>
       <WhyChoose />
-      <IndividualServices/>
-   
-      <CorporateService/>
+      <IndividualServices />
+
+      <CorporateService />
     </div>
   );
 }
