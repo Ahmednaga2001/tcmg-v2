@@ -1,6 +1,8 @@
 import CorporateService from "@/components/hire-attorny/CorporateService";
 import styles from "@/components/hire-attorny/hireattorny.module.css";
 import IndividualServices from "@/components/hire-attorny/IndividualServices";
+import LegalInstructions from "@/components/hire-attorny/LegalInstructions";
+import RequestLawyer from "@/components/hire-attorny/RequestLawyer";
 import WhyChoose from "@/components/hire-attorny/WhyChoose";
 import Image from "next/image";
 
@@ -28,6 +30,8 @@ function HireAttorny() {
       <IndividualServices />
 
       <CorporateService />
+      <LegalInstructions/>
+      <RequestLawyer/>
     </div>
   );
 }

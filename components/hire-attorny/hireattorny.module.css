@@ -168,3 +168,106 @@
 .cards {
   padding: 20px 0;
 }
+
+/*---------------------------------------------------------------------------------*/
+
+.legalinstructions {
+  min-height: 100vh;
+}
+.legalinstructions .boxs {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.legalinstructions .box {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+.legalinstructions .boxRight {
+  width: 30rem;
+  background: linear-gradient(#111931, #1a223f);
+  padding: 20px 40px;
+  text-align: center;
+}
+.legalinstructions .boxM {
+  display: flex;
+  justify-content: flex-end;
+}
+.legalinstructions .boxRightM {
+  width: 30rem;
+  background: linear-gradient(#111931, #1a223f);
+  padding: 20px 40px;
+  text-align: center;
+}
+.legalinstructions .boxLeft {
+  position: relative;
+}
+.legalinstructions .cirecleImg1 {
+  position: absolute;
+  right: 0;
+  top: -10px;
+}
+.legalinstructions .cirecleImg2 {
+  position: absolute;
+  bottom: 0;
+  left: -10px;
+}
+
+.RequestLawyer {
+  min-height: 100vh;
+}
+.RequestLawyer h2 {
+  text-align: center;
+}
+.RequestLawyer .formPage {
+  border-radius: 10px;
+
+  width: 80%;
+  margin: auto;
+  /* background-color: #D9D9D9; */
+  background: linear-gradient(#111931, #1a223f);
+  padding: 80px;
+}
+.RequestLawyer form {
+}
+.RequestLawyer .names {
+  display: flex;
+  gap: 20px;
+}
+.RequestLawyer .inp {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.RequestLawyer select {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  color: #000;
+  margin-top: 30px;
+  border: none;
+}
+
+
+.RequestLawyer .formPage input {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.RequestLawyer .formPage textarea {
+  width: 100%;
+  resize: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+}
