@@ -257,7 +257,7 @@
 }
 
 
-.RequestLawyer .formPage input {
+.RequestLawyer .formPage input[type = "text"] {
   background-color: transparent;
   width: 100%;
   outline: none;
@@ -270,4 +270,64 @@
   width: 100%;
   outline: none;
   border: none;
+}
+.checkBox {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 30px 0;
+gap: 10px;
+}
+
+.formPage span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-property: opacity;
+  transition-property: gap;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+  color: grey;
+}
+
+.formPage span:hover {
+  gap: 20px;
+  opacity: 80%;
+}
+
+
+.accordionQuestions {
+  padding: 40px 0;
+  min-height: 100vh;
+}
+ .accordionQuesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+ .accordionQuesHeader img {
+  cursor: pointer;
+}
+ .accordionQuesContent {
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
+}
+.accordionQues:not(:first-of-type){
+  margin-top: 10px;
+}
+ .accordionQuesContent{
+  overflow: hidden;
+  max-height: 0;
+  font-size: 16px;
+  transition: max-height 0.6s;
+}
+.accordionQuesContent p {
+  padding: 20px 10px;
+}
+ .accordionQuesContent.open {
+  max-height: 1000px;
 }

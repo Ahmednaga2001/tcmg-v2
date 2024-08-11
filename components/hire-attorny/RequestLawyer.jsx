@@ -11,8 +11,8 @@ const RequestLawyer = () => {
               <input type="text" placeholder="الاسم الاول" />
               <Image
                 src="/assets/icons/hireattorny/person.png"
-                width={16}
-                height={10}
+                width={24}
+                height={20}
                 alt="person icon"
               />
             </div>
@@ -20,8 +20,8 @@ const RequestLawyer = () => {
               <input type="text" placeholder="اسم العائلة" />
               <Image
                 src="/assets/icons/hireattorny/person.png"
-                width={16}
-                height={10}
+                width={24}
+                height={20}
                 alt="email icon"
               />
             </div>
@@ -30,8 +30,8 @@ const RequestLawyer = () => {
             <input type="text" placeholder="البريد الالكتروني" />
             <Image
               src="/assets/icons/hireattorny/email.png"
-              width={16}
-              height={10}
+              width={24}
+              height={20}
               alt="person icon"
             />
           </div>
@@ -40,7 +40,7 @@ const RequestLawyer = () => {
             <Image
               src="/assets/icons/hireattorny/phone.png"
               width={24}
-              height={28}
+              height={20}
               alt="phone icon"
             />
           </div>
@@ -67,13 +67,21 @@ const RequestLawyer = () => {
               id=""
               placeholder="ما هي قضيتك المراد توكيل محامي لها؟"
             ></textarea>
-            <Image
-              src="/assets/icons/hireattorny/question.png"
-              width={24}
-              height={28}
-              alt="phone icon"
-            />
+           <span>?</span>
           </div>
+          <div className={styles.checkBox}>
+          أوافق على سياسة الخصوصية
+            <input type="checkbox" />
+          </div>
+          <span>
+          إرسال           
+           <Image
+              src="/assets/icons/hireattorny/arrow-left.png"
+              alt="Arrow Left Small"
+              width={26}
+              height={26}
+            />
+          </span>
         </form>
       </div>
     </section>

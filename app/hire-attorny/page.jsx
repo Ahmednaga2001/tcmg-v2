@@ -1,3 +1,4 @@
+import Accordion from "@/components/hire-attorny/Accordion";
 import CorporateService from "@/components/hire-attorny/CorporateService";
 import styles from "@/components/hire-attorny/hireattorny.module.css";
 import IndividualServices from "@/components/hire-attorny/IndividualServices";
@@ -32,6 +33,7 @@ function HireAttorny() {
       <CorporateService />
       <LegalInstructions/>
       <RequestLawyer/>
+      <Accordion/>
     </div>
   );
 }
