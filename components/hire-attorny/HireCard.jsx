@@ -6,7 +6,7 @@ const HireCard = ({ title, desc, path }) => {
       <div className={styles.topCard}>
         <div className={styles.overlay}></div>
         <div className={styles.topCardImg}>
-          <Image src={path} width={300} height={310} alt={title} />
+          <Image src={path} width={303} height={319} alt={title} />
           <span>{title}</span>
         </div>
       </div>

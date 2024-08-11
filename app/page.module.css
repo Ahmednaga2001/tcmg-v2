@@ -29,7 +29,7 @@
     margin: 70px 0px;
 }
 
-.carousel {
+/* .carousel {
     height: 70vh;
 }
 
@@ -45,7 +45,7 @@
 
 .carousel .caroChild:last-child {
     display: none;
-}
+} */
 
 .page span {
     display: flex;
@@ -64,7 +64,7 @@
     opacity: 80%;
 }
 
-.carousel .caroChild div {
+/* .carousel .caroChild div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,7 +74,7 @@
 
 .carousel .caroChild div p {
     width: 75%;
-}
+} */
 
 .whyUs {
     display: flex;
@@ -129,3 +129,22 @@
         opacity: 100%;
     }
 }
+
+ .swiperSlide{
+    background-color: var(--main);   
+    min-height: 70vh;
+ }
+ .swiperContent{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 80%;
+    height: 100%;
+ }
+ .swiperContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+  
+  

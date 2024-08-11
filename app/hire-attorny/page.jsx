@@ -29,11 +29,10 @@ function HireAttorny() {
       </section>
       <WhyChoose />
       <IndividualServices />
-
       <CorporateService />
-      <LegalInstructions/>
+<LegalInstructions/>
       <RequestLawyer/>
-      <Accordion/>
+       <Accordion/>
     </div>
   );
 }

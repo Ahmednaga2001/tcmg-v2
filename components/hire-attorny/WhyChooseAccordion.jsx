@@ -17,8 +17,8 @@ const WhyChooseAccordion = ({ title, path, desc }) => {
           <div>
             <Image
               src={path}
-              width={64}
-              height={46}
+              width={52}
+              height={52}
               alt={title}
               className={styles.accordionItemIcon}
             />

@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import styles from "@/components/legal-services/legalservices.module.css";
+import styles from "@/components/hire-attorny/hireattorny.module.css";
 import { useState } from "react";
 import AccordionCard from "./AccordionCard";
 
@@ -74,8 +74,8 @@ const Accordion = () => {
   return (
     <section className={styles.accordionQuestions}>
       <h2>الأسئلة الشائعة حول الخدمات القانونية</h2>
-      {data.map((el) => (
-        <AccordionCard title={el.title} desc={el.desc} />
+      {data.map((el,index) => (
+        <AccordionCard title={el.title} desc={el.desc} key={index} />
       ))}
     </section>
   );

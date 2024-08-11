@@ -19,12 +19,7 @@ const LegalInstructions = () => {
               width={30}
               height={30}
             />
-            <Image
-              src="/assets/icons/hireattorny/line.png"
-              width={266}
-              height={110}
-              alt="line image"
-            />
+            <div className={styles.line}></div>
             <Image
               src="/assets/icons/hireattorny/circle.png"
               className={styles.cirecleImg2}
@@ -38,20 +33,15 @@ const LegalInstructions = () => {
           <div className={styles.boxLeft}>
             <Image
               src="/assets/icons/hireattorny/circle.png"
-              className={styles.cirecleImg1}
+              className={styles.cirecleImg1M}
               alt="circle image"
               width={30}
               height={30}
             />
-            <Image
-              src="/assets/icons/hireattorny/line.png"
-              width={266}
-              height={110}
-              alt="line image"
-            />
+           <div className={styles.lineM}></div>
             <Image
               src="/assets/icons/hireattorny/circle.png"
-              className={styles.cirecleImg2}
+              className={styles.cirecleImg2M}
               alt="circle image"
               width={30}
               height={30}
@@ -78,12 +68,8 @@ const LegalInstructions = () => {
               width={30}
               height={30}
             />
-            <Image
-              src="/assets/icons/hireattorny/line.png"
-              width={266}
-              height={110}
-              alt="line image"
-            />
+            <div className={styles.line}></div>
+
             <Image
               src="/assets/icons/hireattorny/circle.png"
               className={styles.cirecleImg2}

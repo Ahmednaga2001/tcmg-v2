@@ -4,7 +4,6 @@ import { useState } from "react";
 
 const AccordionCard = ({title , desc}) => {
     const [isOpen, setIsOpen] = useState(false);
-  
     const handleIsOpen = () => {
       setIsOpen(!isOpen);
     };
