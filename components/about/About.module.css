@@ -41,7 +41,6 @@
 }
 .aboutcontent {
   width: 60%;
-  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -74,9 +73,9 @@
 
 .rightcontent,
 .leftcontent {
-  width: 28rem;
-  padding: 10px;
+  width: 28rem;  
 }
+
 .rightcontent {
   display: flex;
   flex-direction: column;
@@ -122,33 +121,45 @@
   padding: 20px 0;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 60px;
 }
 .vision {
   position: relative;
-  background: linear-gradient(#353e5c, #353e5c);
-  padding: 20px;
-  border-radius: 25px;
-  height: 250px;
+  width: 100%;
 }
 .vision .imgleft {
   position: absolute;
-  left: -80px;
-  top: -25px;
+  left: -20px;
+  top: -40px;
   z-index: 10;
 }
 .vision .imgright {
   position: absolute;
-  right: -80px;
-  top: -30px;
+  right: -20px;
+  top: -40px;
   z-index: 10;
 }
 .visioncontent {
-  width: 85%;
+  height: 200px;
+    padding: 20px;
+    background: linear-gradient(#353e5c, #353e5c);
+    padding: 20px;
+    border-radius: 25px;
+   width: 95%;
+
 }
 .visioncontentleft {
-  width: 88%;
-  padding-right: 200px;
+  width: 95%;
+  height: 200px;
+    padding: 20px;
+    background: linear-gradient(#353e5c, #353e5c);
+    padding: 20px;
+    border-radius: 25px;
+    padding-right: 200px;
+margin-right: 5%;
+}
+.visioncontent p{
+  width: 85%;
 }
 @media (max-width: 1191px) {
   .vision .imgleft {
@@ -238,7 +249,7 @@
 /*-------------------------------------------------------------------------*/
 .teamParent {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 100px 0;
 }
 .teamCard {
@@ -292,7 +303,7 @@
   justify-content: space-between;
   gap: 40px;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .ownerImg {
   background-color: var(--main);
@@ -361,7 +372,10 @@
 .numbers span{
   display: block;
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media (max-width : 768px) {
   .numbers{

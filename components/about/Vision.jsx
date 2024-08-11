@@ -107,17 +107,17 @@ const Vision = () => {
             <VisionImg imgStyle="imgleft" path={visionData[5].path} />
           </div>
           <div className={styles.vision}>
+            <VisionImg imgStyle="imgright" path={visionData[6].path} />
             <VisonCard
-              visionContentstyle="visioncontent"
+              visionContentstyle="visioncontentleft"
               title={visionData[6].title}
               desc={visionData[6].desc}
             />
-            <VisionImg imgStyle="imgleft" path={visionData[6].path} />
           </div>
           <div className={styles.vision}>
-            <VisionImg imgStyle="imgright" path={visionData[7].path} />
+            <VisionImg imgStyle="imgleft" path={visionData[7].path} />
             <VisonCard
-              visionContentstyle="visioncontentleft"
+              visionContentstyle="visioncontent"
               title={visionData[7].title}
               desc={visionData[7].desc}
             />
