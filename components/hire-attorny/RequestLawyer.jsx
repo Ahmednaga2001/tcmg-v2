@@ -1,3 +1,4 @@
+"use client"
 import styles from "@/components/hire-attorny/hireattorny.module.css";
 import Image from "next/image";
 const RequestLawyer = () => {
