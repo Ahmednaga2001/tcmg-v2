@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "@/components/branches/branches.module.css";
 import CardImg from "@/components/branches/CardImg";
 import ContactInformation from "@/components/branches/ContactInformation";
-import ContactNumbers from "@/components/branches/contactNumbers";
+import ContactNumbers from "@/components/branches/ContactNumbers";
 
 function Branches() {
   return (
