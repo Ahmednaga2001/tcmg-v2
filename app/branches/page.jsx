@@ -3,6 +3,7 @@ import styles from "@/components/branches/branches.module.css";
 import CardImg from "@/components/branches/CardImg";
 import ContactInformation from "@/components/branches/ContactInformation";
 import ContactNumbers from "@/components/branches/ContactNumbers";
+import ContactForm from "@/components/branches/ContactForm";
 
 function Branches() {
   return (
@@ -140,6 +141,7 @@ function Branches() {
         </div>
 <ContactInformation/>
 <ContactNumbers/>
+<ContactForm/>
       </section>
     </div>
   );
