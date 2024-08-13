@@ -139,10 +139,11 @@ function Branches() {
             </div>
           </div>
         </div>
-<ContactInformation/>
+
+      </section>
+      <ContactInformation/>
 <ContactNumbers/>
 <ContactForm/>
-      </section>
     </div>
   );
 }
