@@ -56,8 +56,8 @@ function Branches() {
               <div className={styles.overlay}></div>
               <CardImg
                 classStyle="egyImg"
-                w={436}
-                h={500}
+                w={536.32}
+                h={647}
                 path="/assets/images/branches/Egypt.png"
                 alt="Egypt Locations"
               />

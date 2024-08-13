@@ -3,18 +3,23 @@
   padding: 80px;
   min-height: 100vh;
 }
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
 .swiperContainer {
   width: 100%;
   height: 100%;
 }
 .swiperSlide {
+  background-color: #0e152c;
   background-image: url(/assets/images/about/Pattern1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #0E152C;
-  min-height: 100vh;
+  height: 100%;
 }
-.swiperContent{
+.swiperContent {
   padding: 80px;
 }
 .about h1,
@@ -45,24 +50,8 @@
   flex-direction: column;
   gap: 40px;
 }
-.centerHeading{
+.centerHeading {
   text-align: center;
-} 
-@media (max-width: 1191px) {
-  .aboutcontent h2 , .centerHeading , .headingTeam , .swiperContent h2{
-    font-size: 35px !important;
-    text-align: center;
-  }
-  .aboutcontent {
-    width: 100%;
-  }
-  .boximg {
-    display: none;
-  }
-  .aboutcontent p , .vision p , .teamSection p , .owner p , .swiperContent p , .teamCard p , .team .abLink , .rightcontent p {
-    font-size: 16px;
-    text-align: center;
-  }
 }
 /*------------------------------------------------------------------------------------*/
 .parent {
@@ -73,9 +62,8 @@
 
 .rightcontent,
 .leftcontent {
-  width: 28rem;  
+  width: 28rem;
 }
-
 .rightcontent {
   display: flex;
   flex-direction: column;
@@ -93,35 +81,14 @@
 }
 
 @media (max-width: 1191px) {
-  .betweencontent {
-    display: none;
-  }
-  .parent {
-    flex-wrap: wrap;
-    text-align: center;
-  }
-  .rightcontent,
-  .leftcontent {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-  }
-  .leftcontent{
-    display: flex;
-    justify-content: center;
-  }
-
-  .heading{
-    display: flex;
-    justify-content: center;
-  }
+ 
 }
 /*------------------------------------------------------------------------------------*/
 .parentvision {
   padding: 20px 0;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 40px;
 }
 .vision {
   position: relative;
@@ -141,83 +108,29 @@
 }
 .visioncontent {
   height: 200px;
-    padding: 20px;
-    background: linear-gradient(#353e5c, #353e5c);
-    padding: 20px;
-    border-radius: 25px;
-   width: 95%;
-
+  background: linear-gradient(#353e5c, #353e5c);
+  padding: 20px;
+  border-radius: 25px;
+  width: 95%;
 }
 .visioncontentleft {
   width: 95%;
   height: 200px;
-    padding: 20px;
-    background: linear-gradient(#353e5c, #353e5c);
-    padding: 20px;
-    border-radius: 25px;
-    padding-right: 200px;
-margin-right: 5%;
+  padding: 20px;
+  background: linear-gradient(#353e5c, #353e5c);
+  border-radius: 25px;
+  padding-right: 200px;
+  margin-right: 5%;
 }
-.visioncontent p{
+.visioncontent p {
   width: 85%;
 }
-@media (max-width: 1191px) {
-  .vision .imgleft {
-    width: 200px;
-    height: 200px;
-    top: -30%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .vision .imgright {
-    width: 200px;
-    height: 200px;
-    right: 50%;
-    top: -30%;
-    transform: translate(50%);
-  }
-  .visioncontentleft {
-    width: 100%;
-    padding-right: 0;
-    padding: 60px 0;
-  }
-  .visioncontent {
-    width: 100%;
-    padding: 70px 0;
-  }
-  .parentvision {
-    padding: 120px 0;
-  }
-  .vision {
-    height: 300px;
-  }
-  .vision:not(:last-child) {
-    margin-bottom: 100px;
-  }
-}
-@media (max-width : 767px) {
-  .vision {
-    height: 500px;
-  }
-  .visioncontent , .visioncontentleft{
-    padding: 70px 0;
-  }
-  .vision .imgleft {
-    top: -20%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .vision .imgright {
-    right: 50%;
-    top: -20%;
-    transform: translate(50%);
-  }
-}
-@media (max-width : 450px) {
-  .vision {
-    height: 650px;
-  }
 
+@media (max-width: 1191px) {
+ 
+}
+@media (max-width: 767px) {
+  
 }
 /*-------------------------------------------------------------------------*/
 .teamSection {
@@ -228,7 +141,7 @@ margin-right: 5%;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.headingTeam{
+.headingTeam {
   border-bottom: 1px solid #fff;
   width: fit-content;
   padding-bottom: 30px;
@@ -286,15 +199,7 @@ margin-right: 5%;
   color: #fff;
 }
 @media (max-width: 1191px) {
-  .teamParent {
-    flex-wrap: wrap;
-    flex-direction: column; 
-    align-items: center;
-  }
-  .teamCard {
-    width: 30rem;
-    margin-bottom: 20px; 
-  }
+
 }
 /*-------------------------------------------------------------------------*/
 .owner {
@@ -326,7 +231,128 @@ margin-right: 5%;
   align-items: flex-end;
   padding-top: 20px;
 }
+/*-------------------------------------------------------------------------*/
+.numbers {
+  margin-top: 80px;
+  padding: 80px;
+  min-height: 300px;
+  background-image: url(/assets/images/about/Pattern3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.numbers span {
+  display: block;
+  font-size: 50px;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*-------------------------------------------------------------------------*/
 @media (max-width: 1191px) {
+  .aboutcontent h2,
+  .centerHeading,
+  .headingTeam,
+  .swiperContent h2 {
+    font-size: 35px !important;
+    text-align: center;
+  }
+  .aboutcontent {
+    width: 100%;
+  }
+  .boximg {
+    display: none;
+  }
+  .aboutcontent p,
+  .vision p,
+  .teamSection p,
+  .owner p,
+  .swiperContent p,
+  .teamCard p,
+  .team .abLink,
+  .rightcontent p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .betweencontent {
+    display: none;
+  }
+  .parent {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .rightcontent,
+  .leftcontent {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .leftcontent {
+    display: flex;
+    justify-content: center;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: center;
+  }
+  .absection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .vision .imgleft {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+  }
+  .vision .imgright {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .visioncontentleft {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .visioncontent {
+    text-align: center;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    order: 2;
+  }
+  .vision {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(#353e5c, #353e5c);
+    border-radius: 25px;
+  }
+  .visioncontentleft p {
+    width: 85%;
+  }
   .owner {
     flex-direction: column;
     align-items: center;
@@ -340,7 +366,7 @@ margin-right: 5%;
     display: flex;
     justify-content: center;
   }
-  .ownerImg .img{
+  .ownerImg .img {
     width: 100%;
     height: 100%;
   }
@@ -355,30 +381,30 @@ margin-right: 5%;
   .ownerInfoHeading {
     align-items: center;
   }
+  .teamParent {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .teamCard {
+    width: 30rem;
+    margin-bottom: 20px;
+  }
 }
-/*-------------------------------------------------------------------------*/
-.numbers {
-  margin-top: 80px;
-  padding: 80px;
-  min-height: 300px;
-  background-image: url(/assets/images/about/Pattern3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.numbers span{
-  display: block;
-  font-size: 50px;
-  font-weight: 900;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media (max-width : 768px) {
-  .numbers{
+@media (max-width: 768px) {
+ 
+  .hero {
+    min-height: 100vh;
+  }
+  .section,
+  .swiperContent,
+  .absection,
+  .teamSection,
+  .ownerInfo {
+    padding: 20px;
+  }
+
+  .numbers {
     flex-direction: column;
     text-align: center;
     gap: 20px;
@@ -387,11 +413,17 @@ margin-right: 5%;
     width: 100%;
   }
 
-  .teamCard{
+  .teamCard {
     width: 100%;
     height: 550px;
   }
-  .leftcontent .img{
+  .visioncontentleft p , .visioncontent p{
+    width: 100%;
+  }
+  .vision{
+    width: 100%;
+  }
+  .leftcontent .img {
     width: 100%;
     height: 100%;
   }

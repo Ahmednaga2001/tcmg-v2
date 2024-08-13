@@ -22,7 +22,7 @@ const WhyChooseAccordion = ({ title, path, desc }) => {
               alt={title}
               className={styles.accordionItemIcon}
             />
-            <h4>{title}</h4>
+            <span>{title}</span>
           </div>
           <Image
             src="/assets/icons/hireattorny/doublalarroweleft.png"

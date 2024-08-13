@@ -9,7 +9,9 @@
   background-image: url(/assets/images/Pattern.png);
   background-size: cover;
   background-position: center center;
-  min-height: 100vh;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
 }
 .page h1,
 .page h2 {
@@ -24,13 +26,7 @@
   gap: 40px;
   padding: 70px 0px;
 }
-@media (max-width: 1191px) {
-  .hero .content {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
-}
+/*-----------------------------------------------------------------*/
 .ourofferings {
   min-height: 100vh;
 }
@@ -149,7 +145,7 @@
   padding: 20px 0;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 40px;
 }
 .practiceCard,
 .categoryCard {
@@ -217,79 +213,6 @@
   border-radius: 30px;
   color: #000;
 }
-@media (max-width: 1191px) {
-  .practiceCard .imgleft,
-  .categoryCard .imgleft {
-    width: 200px;
-    height: 200px;
-    top: -30%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .practiceCard .imgright,
-  .categoryCard .imgright {
-    width: 200px;
-    height: 200px;
-    right: 50%;
-    top: -30%;
-    transform: translate(50%);
-  }
-  .contentleft {
-    width: 100%;
-    padding-right: 0;
-    padding: 60px 0;
-  }
-  .bestPractice .content,
-  .category .content {
-    width: 100%;
-    padding: 70px 0;
-  }
-  .practiceContainer,
-  .categoryContainer {
-    padding: 120px 0;
-  }
-  .practiceCard,
-  .categoryCard {
-    height: 300px;
-  }
-  .practiceCard:not(:last-child),
-  .categoryCard:not(:last-child) {
-    margin-bottom: 100px;
-  }
-}
-@media (max-width: 767px) {
-  .practiceCard,
-  .categoryCard {
-    height: 500px;
-  }
-  .bestPractice .content,
-  .contentleft,
-  .category .content {
-    padding: 70px 0;
-  }
-  .practiceCard .imgleft,
-  .category .imgleft {
-    top: -20%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .practiceCard .imgright,
-  .category .imgright {
-    right: 50%;
-    top: -20%;
-    transform: translate(50%);
-  }
-}
-@media (max-width: 450px) {
-  .practiceCard,
-  .categoryCard {
-    height: 700px;
-  }
-  .linkContainer > a:first-child,
-  .linkContainer > a:last-child {
-    font-size: 16px;
-  }
-}
 /*-----------------------------------------------------------------*/
 .accordionItem {
   padding: 40px 0;
@@ -323,6 +246,7 @@
 .accordionContent.open {
   max-height: 1000px;
 }
+/*-----------------------------------------------------------------*/
 @media (max-width: 768px) {
   .accordion h2,
   .succeesfactors h2,
@@ -332,5 +256,83 @@
   .hero h1 {
     font-size: 35px;
     text-align: center;
+  }
+}
+@media (max-width : 1191px) {
+  .hero .content {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .practiceCard .imgleft , .categoryCard .imgleft {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+  }
+  .practiceCard .imgright , .categoryCard .imgright {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .bestPractice .contentleft , .category .contentleft {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bestPractice .content , .category .content {
+    text-align: center;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    order: 2;
+  }
+  .practiceCard , .categoryCard {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(#353e5c, #353e5c);
+    border-radius: 25px;
+  }
+  .bestPractice .contentleft p , .category .contentleft p {
+    width: 85%;
+  }
+}
+@media (max-width : 768px) {
+  .page section{
+    padding: 20px;
+  }
+  .hero p , .bestPractice p , .category p {
+    font-size: 18px;
+  }
+  .bestPractice .contentleft p , .category .contentleft p , .bestPractice .content , .category .content{
+    width: 100%;
+  }
+  .categoryCard , .practiceCard{
+    width: 100%;
+  }
+  .leftcontent .img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width : 400px) {
+  .succeesfactors .card {
+    height: 500px;
   }
 }

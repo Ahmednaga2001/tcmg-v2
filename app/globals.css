@@ -58,3 +58,13 @@ a {
 }
 
 
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* Adjust the space between slides and pagination */
+}
+
+.swiper-pagination-bullet {
+    border: 2px solid var(--font);
+}
