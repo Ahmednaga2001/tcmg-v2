@@ -125,13 +125,6 @@
 .visioncontent p {
   width: 85%;
 }
-
-@media (max-width: 1191px) {
- 
-}
-@media (max-width: 767px) {
-  
-}
 /*-------------------------------------------------------------------------*/
 .teamSection {
   width: 100%;

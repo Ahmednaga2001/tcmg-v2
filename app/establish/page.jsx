@@ -1,5 +1,9 @@
+import Countries from "@/components/establish/Countries";
+import DreamCompany from "@/components/establish/DreamCompany";
 import styles from "@/components/establish/establish.module.css";
+import LegalServices from "@/components/establish/LegalServices";
 import StartCompany from "@/components/establish/StartCompany";
+import TypesofCompanies from "@/components/establish/TypesofCompanies";
 function Establish() {
   return (
     <div className={styles.establish}>
@@ -21,6 +25,10 @@ function Establish() {
         </div>
       </section>
       <StartCompany/>
+      <LegalServices/>
+      <Countries/>
+      <TypesofCompanies/>
+      <DreamCompany/>
     </div>
   );
 }

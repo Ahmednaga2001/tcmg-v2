@@ -24,7 +24,7 @@
 .startcompany{
     padding: 80px;
 }
-.startcompany h2{
+.startcompany h2 , .countries h2{
     text-align: center;
     padding-bottom: 50px;
 }
@@ -69,3 +69,185 @@
     border-left: 4px dotted rgba(128, 128, 128, 0.6) ;
  
   }
+
+
+  .legalServices{
+    min-height: 100vh;
+    padding: 80px;
+  }
+  .legalServices .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+
+  .accordionParent {
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+  .accordionItemHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+  }
+  .accordionItem {
+    background: linear-gradient(#1B2340,#0E152C);
+    border-radius: 25px;
+    color: #fff;
+    width: 38rem;
+    padding: 10px 0;
+    margin-bottom: 40px;
+  }
+  .accordionContent {
+    max-height: 0;
+    font-size: 16px;
+    transition: max-height 1s;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  .accordionContent.open {
+    max-height: 1000px;
+  }
+  .accordionContent p {
+    padding: 10px;
+    text-align: center;
+  }
+  
+
+
+
+  .countries{
+    min-height: 100vh;
+    padding: 80px;
+  }
+  /*------------------------------------------------------------------------------------*/
+.countries .parentvision {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.countries .vision {
+  position: relative;
+  width: 100%;
+
+}
+.countries .vision .imgleft {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  z-index: 10;
+  padding: 10px;
+  background-color: #d8d8d836;
+  border-radius: 25px;
+}
+.countries .vision .imgright {
+  position: absolute;
+  right: 0;
+  top: -40px;
+  z-index: 10;
+  padding: 10px;
+  background-color: #d8d8d836;
+  border-radius: 25px;
+}
+.countries .visioncontent {
+  height: 200px;
+  background-color: #d8d8d836;
+  /* background: linear-gradient(#353e5c, #353e5c); */
+  padding: 20px;
+  border-radius: 25px;
+  width: 95%;
+}
+.countries .visioncontentleft {
+  height: 200px;
+  padding: 20px;
+  background-color: #d8d8d836;
+  /* background: linear-gradient(#353e5c, #353e5c); */
+  border-radius: 25px;
+  padding-right: 220px;
+  margin-right: 5%;
+}
+.visioncontent p {
+  width: 85%;
+}
+.companiesTypes{
+  min-height: 100vh;
+  padding: 80px;
+}
+.companiesTypes h2{
+  text-align: center;
+}
+.companiesTypes .swiperContainer{
+
+width: 50%;
+margin: auto;
+height: 100%;
+display: flex;
+background: linear-gradient(#0D152C,#0D152C);
+padding: 100px 0;
+}
+.companiesTypes .swiperSlide{
+  /* background-color:red; */
+  background-color: #2d2425e7;
+  padding: 30px;
+  text-align: center;
+  border-radius: 50px;
+}
+.companiesTypes .swiperSlide p{
+  padding-top: 20px;
+}
+/* .companiesTypes .swiperContent{
+  position: relative;
+}
+.companiesTypes .swiperContent::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: red;
+  width: 1000px;
+  height: 100%;
+  background-color: aqua;
+  border-radius: 50px;
+  z-index: -1;
+} */
+
+
+
+
+.dreamCompany h2{
+text-align: center;
+padding-bottom: 50px;
+}
+.dreamCompany img{
+  width: 100%;
+}
+.dreamCompany .swiperSlide{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dreamCompany .content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.swiperSlide::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #0000004b;
+}
