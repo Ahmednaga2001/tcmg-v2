@@ -59,7 +59,6 @@ const TypesofCompanies = () => {
     >
       {info.map((el) => (
         <SwiperSlide key={el.id} className={styles.swiperSlide}>
-            <div className={styles.backgroundOverlay}></div>
 
           <div className={styles.content}>
             <h3>{el.title}</h3>

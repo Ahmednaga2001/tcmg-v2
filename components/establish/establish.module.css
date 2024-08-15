@@ -21,6 +21,78 @@
     padding: 70px 0px;
   }
   
+
+
+
+.uniqueServiceFeatures{
+  min-height: 100vh;
+  padding: 80px;
+}
+.uniqueServiceFeatures h2{
+  padding-bottom: 50px;
+}
+.uniqueServiceFeatures .Content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+gap: 20px;
+
+
+}
+
+
+ /* .swiper-wrapper{
+  border: 1px solid red !important;
+} */
+
+/* .uniqueServiceFeatures .swiper-slide {
+  border: 5px solid red !important;
+  background-color: red;
+} */
+
+.uniqueServiceFeatures .swiperSlide{
+  width: 30rem;
+  height: 480px !important;
+  /* background: linear-gradient(#1B2340,#0E152C); */
+  background-color: #1b234085 ;
+  padding:40px 20px;
+  text-align: center;
+}
+@media (max-width : 900px) {
+  .uniqueServiceFeatures{
+    padding: 10px;
+  }
+  /* .uniqueServiceFeatures .swiperSlide{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+
+  } */
+  
+}
+
+.mySwiper {
+    --swiper-navigation-color: #fff;
+      padding:0 50px;
+      overflow: hidden;
+  }
+
+
+/* .uniqueServiceFeatures .swiper-slide .swiper-slide-active {
+  border: 3px solid #15ff00 !important; 
+  opacity: 1; 
+} */
+
+/* .uniqueServiceFeatures .swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.9; 
+} */
+
+
+
 .startcompany{
     padding: 80px;
 }
@@ -191,34 +263,31 @@ width: 50%;
 margin: auto;
 height: 100%;
 display: flex;
-background: linear-gradient(#0D152C,#0D152C);
 padding: 100px 0;
 }
 .companiesTypes .swiperSlide{
-  /* background-color:red; */
   background-color: #2d2425e7;
-  padding: 30px;
+  padding: 50px;
   text-align: center;
   border-radius: 50px;
+  position: relative;
+  z-index: 10;
 }
 .companiesTypes .swiperSlide p{
   padding-top: 20px;
 }
-/* .companiesTypes .swiperContent{
-  position: relative;
-}
-.companiesTypes .swiperContent::before{
+/* .companiesTypes .swiperSlide::before {
   content: "";
+  display: block;
   position: absolute;
-  top: 0;
-  left: 0;
-  color: red;
-  width: 1000px;
+  top: 10px;
+  left: 10px;
+  width: 1200px;
   height: 100%;
-  background-color: aqua;
-  border-radius: 50px;
+  background-color: red;
   z-index: -1;
 } */
+
 
 
 
@@ -241,8 +310,9 @@ padding-bottom: 50px;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  text-align: center;
 }
-.swiperSlide::before {
+.dreamCompany .swiperSlide::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -250,4 +320,9 @@ padding-bottom: 50px;
   left: 0;
   position: absolute;
   background-color: #0000004b;
+  z-index: -1;
 }
+
+
+
+

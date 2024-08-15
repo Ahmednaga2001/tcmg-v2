@@ -4,6 +4,7 @@ import styles from "@/components/establish/establish.module.css";
 import LegalServices from "@/components/establish/LegalServices";
 import StartCompany from "@/components/establish/StartCompany";
 import TypesofCompanies from "@/components/establish/TypesofCompanies";
+import UniqueServiceFeatures from "@/components/establish/UniqueServiceFeatures";
 function Establish() {
   return (
     <div className={styles.establish}>
@@ -24,6 +25,7 @@ function Establish() {
           </p>
         </div>
       </section>
+      <UniqueServiceFeatures/>
       <StartCompany/>
       <LegalServices/>
       <Countries/>
