@@ -63,7 +63,8 @@ const handleSlideChange = (swiper) => {
       <div className={styles.swiperContainer}>
       <Swiper
         spaceBetween={10}
-        navigation={true}
+        // navigation={true}
+     
         centeredSlides={true} // Center the active slide
   slidesPerView={1}
         breakpoints={{

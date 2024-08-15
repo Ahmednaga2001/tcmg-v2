@@ -1,7 +1,9 @@
+import Accordion from "@/components/establish/Accordion";
 import Countries from "@/components/establish/Countries";
 import DreamCompany from "@/components/establish/DreamCompany";
 import styles from "@/components/establish/establish.module.css";
 import LegalServices from "@/components/establish/LegalServices";
+import RequestLawyer from "@/components/establish/RequestLawyer";
 import StartCompany from "@/components/establish/StartCompany";
 import TypesofCompanies from "@/components/establish/TypesofCompanies";
 import UniqueServiceFeatures from "@/components/establish/UniqueServiceFeatures";
@@ -10,27 +12,20 @@ function Establish() {
     <div className={styles.establish}>
       <section className={styles.hero}>
         <div className={styles.content}>
-          <h1>
-            توكيل محامي ذو خبرة متراكمة ونجاح مُثبَت في جميع تخصصات القانون
-          </h1>
+          <h1>تأسيس الشركات وريادة الأعمال في مصر بأعلى الامتيازات  </h1>
           <p>
-            هل تواجه مشكلة في حل بعض المسائل القانونية سواء الأسرية أو التجارية
-            أو المالية وغيرها؟ إذًا لابد أنك تبحث عن خدمة توكيل محامي, وهنا تكون
-            قد خطوة أولى خطواتك في حل جميع مشكلاتك القانونية وهي توكيل محامي
-            متمرس من المجموعة التجارية والبحرية للمحاماة لخدمة . جميع الكيانات
-            من الأفراد والشركات والمؤسسات, يمكنك الاستناد عليه باطمئنان لتولّي
-            حل شؤونك القانونية عنك, أو الإجابة عن كافة تساؤلاتك لتحصل على فهم
-            أعمق وموثوقية أكبر؛ لإيجاد أكثر الحلول فعالية وتماشيًا مع معطيات
-            قضيتك؛ للفوز بها، واسترجاع حقوقك المسلوبة.
+          مع المجموعة التجارية والبحرية للمحاماة،<br/>أصبح حلم ريادة الأعمال وتأسيس شركة راسخة واقعاً.
           </p>
         </div>
       </section>
-      <UniqueServiceFeatures/>
-      <StartCompany/>
-      <LegalServices/>
-      <Countries/>
-      <TypesofCompanies/>
-      <DreamCompany/>
+      <UniqueServiceFeatures />
+      <StartCompany />
+      <LegalServices />
+      {/* <Countries />
+      <TypesofCompanies />
+      <DreamCompany />
+      <RequestLawyer />
+      <Accordion /> */}
     </div>
   );
 }

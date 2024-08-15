@@ -1,206 +1,155 @@
-
-  .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(/assets/images/establish/Pattern.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    padding: 80px;
-  }
-  .establish h1,
-  .establish h2 {
-    font-size: 50px;
-    line-height: 1.4;
-  }
-  .hero .content {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 40px;
-    padding: 70px 0px;
-  }
-  
-
-
-
-.uniqueServiceFeatures{
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/assets/images/establish/Pattern.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   min-height: 100vh;
   padding: 80px;
 }
-.uniqueServiceFeatures h2{
-  padding-bottom: 50px;
+.establish h1,
+.establish h2 {
+  font-size: 50px;
+  line-height: 1.4;
 }
-.uniqueServiceFeatures .Content{
+.hero .content {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 70px 0px;
+}
+
+.hero .content p {
+  font-size: 24px;
+}
+
+/*------------------------------------------------------------------------------------*/
+.uniqueServiceFeatures,
+.startcompany,
+.legalServices,
+.countries,
+.companiesTypes,
+.accordionQuestions,
+.RequestLawyer {
+  padding: 100px;
+  min-height: 100vh;
+}
+.uniqueServiceFeatures h2,
+.companiesTypes h2,
+.accordionQuestions h2,
+.startcompany h2,
+.countries h2 {
+  padding-bottom: 80px;
+  text-align: center;
+}
+.uniqueServiceFeatures .Content {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-gap: 20px;
-
-
+  gap: 20px;
 }
-
-
- /* .swiper-wrapper{
-  border: 1px solid red !important;
-} */
-
-/* .uniqueServiceFeatures .swiper-slide {
-  border: 5px solid red !important;
-  background-color: red;
-} */
-
-.uniqueServiceFeatures .swiperSlide{
-  width: 30rem;
+.uniqueServiceFeatures .swiperSlide {
+  width: 40rem;
   height: 480px !important;
-  /* background: linear-gradient(#1B2340,#0E152C); */
-  background-color: #1b234085 ;
-  padding:40px 20px;
+  background-color: #1b234085;
+  padding: 40px 20px;
   text-align: center;
-}
-@media (max-width : 900px) {
-  .uniqueServiceFeatures{
-    padding: 10px;
-  }
-  /* .uniqueServiceFeatures .swiperSlide{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- 
-
-  } */
-  
+  cursor: pointer;
 }
 
 .mySwiper {
-    --swiper-navigation-color: #fff;
-      padding:0 50px;
-      overflow: hidden;
-  }
-
-
-/* .uniqueServiceFeatures .swiper-slide .swiper-slide-active {
-  border: 3px solid #15ff00 !important; 
-  opacity: 1; 
-} */
-
-/* .uniqueServiceFeatures .swiper-slide:not(.swiper-slide-active) {
-  opacity: 0.9; 
-} */
-
-
-
-.startcompany{
-    padding: 80px;
-}
-.startcompany h2 , .countries h2{
-    text-align: center;
-    padding-bottom: 50px;
-}
-.startcompany .parent{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
- 
-}  
-.startcompany .content p , .content h3{
-    width: 80%;
-    margin: auto;
- 
-}
-.startcompany .content , .startcompany .Img{
-    width: 40rem;
- 
-}
-.startcompany .Img{
-    padding-top: 50px;
-}
-.startcompany .content{
-    padding-top: 100px;
-}
-.Img{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  --swiper-navigation-color: #fff;
+  /* padding:0 50px !important; */
 }
 
-.startcompany .line{
-    position: relative;
- 
-    
+/*------------------------------------------------------------------------------------*/
+.startcompany .parent {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
-.line::after{
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-left: 4px dotted rgba(128, 128, 128, 0.6) ;
- 
-  }
 
+.startcompany .content p,
+.content h3 {
+  width: 80%;
+  margin: auto;
+}
+.startcompany .content,
+.startcompany .Img {
+  width: 40rem;
+}
+.startcompany .Img {
+  padding-top: 50px;
+}
+.startcompany .content {
+  padding-top: 100px;
+}
+.Img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.startcompany .line {
+  position: relative;
+}
+.line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-left: 4px dotted rgba(128, 128, 128, 0.6);
+}
 
-  .legalServices{
-    min-height: 100vh;
-    padding: 80px;
-  }
-  .legalServices .header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-  }
+/*------------------------------------------------------------------------------------*/
+.legalServices .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.accordionParent {
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+.accordionItemHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.accordionItem {
+  background: linear-gradient(#1b2340, #0e152c);
+  border-radius: 25px;
+  color: #fff;
+  width: 38rem;
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+.accordionContent {
+  max-height: 0;
+  font-size: 16px;
+  transition: max-height 1s;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.accordionContent.open {
+  max-height: 1000px;
+}
+.accordionContent p {
+  padding: 10px;
+  text-align: center;
+}
 
-
-  .accordionParent {
-    padding-top: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-  }
-  .accordionItemHeader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    cursor: pointer;
-  }
-  .accordionItem {
-    background: linear-gradient(#1B2340,#0E152C);
-    border-radius: 25px;
-    color: #fff;
-    width: 38rem;
-    padding: 10px 0;
-    margin-bottom: 40px;
-  }
-  .accordionContent {
-    max-height: 0;
-    font-size: 16px;
-    transition: max-height 1s;
-    border-radius: 25px;
-    overflow: hidden;
-  }
-  .accordionContent.open {
-    max-height: 1000px;
-  }
-  .accordionContent p {
-    padding: 10px;
-    text-align: center;
-  }
-  
-
-
-
-  .countries{
-    min-height: 100vh;
-    padding: 80px;
-  }
-  /*------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
 .countries .parentvision {
   padding: 20px 0;
   display: flex;
@@ -210,7 +159,6 @@ gap: 20px;
 .countries .vision {
   position: relative;
   width: 100%;
-
 }
 .countries .vision .imgleft {
   position: absolute;
@@ -250,22 +198,15 @@ gap: 20px;
 .visioncontent p {
   width: 85%;
 }
-.companiesTypes{
-  min-height: 100vh;
-  padding: 80px;
-}
-.companiesTypes h2{
-  text-align: center;
-}
-.companiesTypes .swiperContainer{
 
-width: 50%;
-margin: auto;
-height: 100%;
-display: flex;
-padding: 100px 0;
+/*------------------------------------------------------------------------------------*/
+.companiesTypes .swiperContainer {
+  width: 50%;
+  margin: auto;
+  height: 100%;
+  display: flex;
 }
-.companiesTypes .swiperSlide{
+.companiesTypes .swiperSlide {
   background-color: #2d2425e7;
   padding: 50px;
   text-align: center;
@@ -273,43 +214,29 @@ padding: 100px 0;
   position: relative;
   z-index: 10;
 }
-.companiesTypes .swiperSlide p{
+.companiesTypes .swiperSlide p {
   padding-top: 20px;
 }
-/* .companiesTypes .swiperSlide::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 1200px;
-  height: 100%;
-  background-color: red;
-  z-index: -1;
-} */
 
-
-
-
-
-.dreamCompany h2{
-text-align: center;
-padding-bottom: 50px;
+/*------------------------------------------------------------------------------------*/
+.dreamCompany h2 {
+  text-align: center;
+  padding-bottom: 50px;
 }
-.dreamCompany img{
+.dreamCompany img {
   width: 100%;
 }
-.dreamCompany .swiperSlide{
+.dreamCompany .swiperSlide {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.dreamCompany .content{
+.dreamCompany .content {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 .dreamCompany .swiperSlide::before {
@@ -323,6 +250,198 @@ padding-bottom: 50px;
   z-index: -1;
 }
 
+/*---------------------------------------------------------------------------------*/
+.RequestLawyer h2 {
+  text-align: center;
+}
+.RequestLawyer .formPage {
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  background: linear-gradient(#111931, #1a223f);
+  padding: 80px;
+}
+.RequestLawyer .names {
+  display: flex;
+  gap: 20px;
+}
+.RequestLawyer .inp {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.RequestLawyer select {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  color: #000;
+  margin-top: 30px;
+  border: none;
+}
+.RequestLawyer .formPage input[type="text"] {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.RequestLawyer .formPage textarea {
+  width: 100%;
+  resize: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.checkBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  gap: 10px;
+}
+.formPage span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-property: opacity;
+  transition-property: gap;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+  color: grey;
+}
+.formPage span:hover {
+  gap: 20px;
+  opacity: 80%;
+}
 
+/*------------------------------------------------------------------------------------*/
+.accordionQuestions h2 {
+  text-align: start !important;
+  padding-bottom: 20px;
+}
+.accordionQuesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+.accordionQuesHeader img {
+  cursor: pointer;
+}
+.accordionQuesContent {
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
+}
+.accordionQues:not(:first-of-type) {
+  margin-top: 10px;
+}
+.accordionQuesContent {
+  overflow: hidden;
+  max-height: 0;
+  font-size: 16px;
+  transition: max-height 0.6s;
+}
+.accordionQuesContent p {
+  padding: 20px 10px;
+}
+.accordionQuesContent.open {
+  max-height: 1000px;
+}
 
+@media (max-width: 1191px) {
+  .hero .content {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .establish h1,
+  .establish h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+  .line {
+    display: none;
+  }
+  /* .accordionParent {
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+ 
+  .accordionItem {
+background-color: red !important;
 
+    width: 30rem;
+
+  } */
+}
+
+@media (max-width: 900px) {
+  .parent {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .startcompany .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .startcompany .Img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .startcompany .Img:not(:first-child) {
+    order: 1;
+    padding-top: 20px !important;
+  }
+  .startcompany .content {
+    order: 2;
+    padding-top: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .hero,
+  .uniqueServiceFeatures,
+  .startcompany,
+  .legalServices,
+  .countries,
+  .companiesTypes,
+  .accordionQuestions,
+  .RequestLawyer {
+    padding: 20px;
+  }
+  .establish p{
+    font-size: 16px;
+  }
+  .hero .content p {
+    font-size: 18px !important;
+  }
+  .startcompany .content p,
+  .content h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .startcompany p {
+    font-size: 16px;
+  }
+  .startcompany .content,
+  .startcompany .Img {
+    width: 100%;
+  }
+  .accordionItem {
+    width: 90vw;
+  }
+}
