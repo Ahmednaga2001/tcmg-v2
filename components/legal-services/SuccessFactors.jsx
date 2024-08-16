@@ -1,5 +1,4 @@
 import styles from "@/components/legal-services/legalservices.module.css";
-import Image from "next/image";
 import SuceessFactorCard from "./SuceessFactorCard";
 const data = [
   {

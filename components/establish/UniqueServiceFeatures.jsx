@@ -70,7 +70,7 @@ const handleSlideChange = (swiper) => {
         breakpoints={{
             768: { slidesPerView: 1, spaceBetween: 100 },
             900: { slidesPerView: 2, spaceBetween: 20 },
-            1024: { slidesPerView: 3, spaceBetween: 50 },
+            1200: { slidesPerView: 3, spaceBetween: 50 },
         }}
         loop={true}
         autoplay={{
@@ -86,7 +86,7 @@ const handleSlideChange = (swiper) => {
             key={index}
             style={{
                 border: activeIndex === index ? '1px solid #ffffff74' : 'none',
-                opacity: activeIndex === index ? 1 : 0.6,
+                opacity: activeIndex === index ? 1 : 0.4,
                 transition: 'border 0.3s ease, opacity 0.3s ease',
 
               }}
@@ -96,6 +96,8 @@ const handleSlideChange = (swiper) => {
               <h3>{item.title}</h3>
               <p>{item.desc}</p>
             </div>
+            <span>{item.id}</span>
+
           </SwiperSlide>
         ))}
       </Swiper>

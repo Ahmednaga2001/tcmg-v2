@@ -21,11 +21,11 @@ function Establish() {
       <UniqueServiceFeatures />
       <StartCompany />
       <LegalServices />
-      {/* <Countries />
+      <Countries />
       <TypesofCompanies />
       <DreamCompany />
       <RequestLawyer />
-      <Accordion /> */}
+      <Accordion />
     </div>
   );
 }

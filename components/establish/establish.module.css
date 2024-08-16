@@ -51,8 +51,17 @@
   align-items: center;
   gap: 20px;
 }
+.uniqueServiceFeatures .swiperContainer {
+  overflow: visible; /* Ensure this or a similar property is set */
+  position: relative; /* If not already set */
+
+}
+.uniqueServiceFeatures {
+  position: relative; /* Ensure this for the span positioning context */
+}
 .uniqueServiceFeatures .swiperSlide {
-  width: 40rem;
+  position: relative;
+  /* width: 40rem; */
   height: 480px !important;
   background-color: #1b234085;
   padding: 40px 20px;
@@ -64,7 +73,21 @@
   --swiper-navigation-color: #fff;
   /* padding:0 50px !important; */
 }
-
+.uniqueServiceFeatures span{
+  display: flex;
+justify-content: center;
+align-items: center;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: red;
+position: absolute;
+top: -20px;
+right: 50%;
+transform: translateX(50%);
+z-index: 10;
+border: 1px solid #fff;
+}
 /*------------------------------------------------------------------------------------*/
 .startcompany .parent {
   display: flex;
@@ -181,7 +204,6 @@
 .countries .visioncontent {
   height: 200px;
   background-color: #d8d8d836;
-  /* background: linear-gradient(#353e5c, #353e5c); */
   padding: 20px;
   border-radius: 25px;
   width: 95%;
@@ -190,29 +212,84 @@
   height: 200px;
   padding: 20px;
   background-color: #d8d8d836;
-  /* background: linear-gradient(#353e5c, #353e5c); */
   border-radius: 25px;
-  padding-right: 220px;
+  padding-right: 230px;
   margin-right: 5%;
 }
 .visioncontent p {
-  width: 85%;
+  width: 80%;
 }
-
+@media (max-width : 1191px) {
+  .countries .vision{
+    background-color: #d8d8d836;
+    width: 60%;
+    margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 25px;
+  }
+  .countries .vision .imgleft{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: none !important;
+    order: 1;
+  }
+  .countries .vision .imgright{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: none !important;
+    order: 1;
+  }
+  .countries .visioncontent{
+    text-align: center;
+    order: 2;
+    height: auto !important;
+    background:none !important;
+    width: 100%;
+  }
+  .countries .visioncontentleft{
+    text-align: center;
+    order: 2;
+    padding-right: 0 !important;
+    height: auto !important;
+    background:none !important;
+    width: 100%;
+  }
+  .visioncontent p , .visioncontentleft p{
+    width: 100%;
+  } 
+}
 /*------------------------------------------------------------------------------------*/
 .companiesTypes .swiperContainer {
-  width: 50%;
+  width: 60%;
   margin: auto;
   height: 100%;
   display: flex;
+  position: relative;
+}
+.companiesTypes .swiperContainer::before{
+  content: "";
+  position: absolute;
+  top : 25%;
+  right: -30px;
+  background-color: #2d2425e7;
+  width: calc(100% + 60px);
+  height: 50%;
+  border-radius:50px ;
+  z-index: -1;
 }
 .companiesTypes .swiperSlide {
   background-color: #2d2425e7;
-  padding: 50px;
+  padding: 80px 50px;
   text-align: center;
   border-radius: 50px;
-  position: relative;
-  z-index: 10;
 }
 .companiesTypes .swiperSlide p {
   padding-top: 20px;
@@ -371,19 +448,9 @@
   .line {
     display: none;
   }
-  /* .accordionParent {
-    padding-top: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
- 
-  .accordionItem {
-background-color: red !important;
-
-    width: 30rem;
-
-  } */
+.companiesTypes .swiperContainer{
+  width: 80%;
+}
 }
 
 @media (max-width: 900px) {
@@ -423,6 +490,15 @@ background-color: red !important;
   .RequestLawyer {
     padding: 20px;
   }
+  .countries .vision{
+    width: 100%;
+  }
+  .countries p{
+    font-size: 16px;
+  }
+  .countries .parentvision{
+    gap: 20px;
+  }
   .establish p{
     font-size: 16px;
   }
@@ -443,5 +519,27 @@ background-color: red !important;
   }
   .accordionItem {
     width: 90vw;
+  }
+  .companiesTypes .swiperContainer{
+    width: 100%;
+  }
+  .companiesTypes .swiperSlide{
+    padding: 30px;
+  }
+  .RequestLawyer .formPage {
+    width: 100%;
+    padding: 20px;
+  }
+  .companiesTypes .swiperContainer::before {
+    content: none;
+  }
+  .accordionItem {
+    width: 100%;
+  }
+  .accordionQuestions h2{
+    text-align: center !important;
+  }
+  .accordionQuestions p{
+    text-align: start !important;
   }
 }

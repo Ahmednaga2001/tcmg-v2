@@ -33,7 +33,7 @@ const data = [
 const Category = () => {
   return (
     <section className={styles.category}>
-        <h2>القطعات</h2>
+      <h2>القطعات</h2>
       <div className={styles.categoryContainer}>
         <div className={styles.categoryCard}>
           <CardContent
@@ -48,7 +48,11 @@ const Category = () => {
           />
         </div>
         <div className={styles.categoryCard}>
-          <CardImg imgStyle="imgright" path={data[1].path} title={data[1].title} />
+          <CardImg
+            imgStyle="imgright"
+            path={data[1].path}
+            title={data[1].title}
+          />
           <CardContent
             visionContentstyle="contentleft"
             title={data[1].title}
@@ -82,7 +86,7 @@ const Category = () => {
       </div>
       <div className={styles.linkContainer}>
         <Link href="#" className={styles.linkItem}>
-        تصفح القطاعات القانونية   
+          تصفح القطاعات القانونية
           <Image
             src="assets/icons/legalservices/arrow-left.svg"
             alt="Navigate to full team page"
@@ -91,8 +95,8 @@ const Category = () => {
           />
         </Link>
         <Link href="#" className={styles.linkItem}>
-        راسلنا عبر البريد الالكتروني       
-        <Image
+          راسلنا عبر البريد الالكتروني
+          <Image
             src="/assets/icons/legalservices/calender.png"
             alt="Calendar icon"
             width={30}
