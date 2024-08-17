@@ -3,9 +3,7 @@ import styles from "@/components/establish/establish.module.css";
 import Image from "next/image";
 import { useState } from "react";
 
-const LegalServiceAccordion = ({ title, path, desc }) => {
-  console.log(path);
-  
+const LegalServiceAccordion = ({ title, path, desc }) => {  
   const [isOpenOne, setIsOpenOne] = useState(false);
 
   const handleIsOpenOne = () => {
@@ -13,7 +11,6 @@ const LegalServiceAccordion = ({ title, path, desc }) => {
   };
 
   return (
-    <div>
       <div className={styles.accordionItem}>
         <div className={styles.accordionItemHeader} onClick={handleIsOpenOne}>
             <Image
@@ -33,7 +30,7 @@ const LegalServiceAccordion = ({ title, path, desc }) => {
           <p>{desc}</p>
         </div>
       </div>
-    </div>
+
   );
 };
 

@@ -69,3 +69,84 @@ a {
     border: 2px solid var(--font);
 }
 
+
+
+  #featureSlide{
+    position: relative;
+  }
+
+  #featureSlide .swiper-button-next {
+    background-repeat: no-repeat !important;
+    background-size: 100% auto !important;
+    background-position: center !important;
+    background-image: url(/assets/icons/establish/next.png) !important; 
+    z-index: 10 !important;  
+    right: -40px !important; 
+  }
+  
+
+  
+  #featureSlide .swiper-button-prev {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    z-index: 10; 
+     left: -40px !important;
+    background-image: url(/assets/icons/establish/prev.png); 
+  }
+
+
+
+  #dreamCompany {
+    position: relative;
+  }
+  #dreamCompany  .swiper-button-next {
+    background-repeat: no-repeat !important;
+    background-size: 100% auto !important;
+    background-position: center !important;
+    background-image: url(/assets/icons/establish/next.png) !important; 
+    z-index: 10 !important;  
+  }
+   
+  #dreamCompany  .swiper-button-prev {
+    background-repeat: no-repeat !important;
+    background-size: 100% auto !important;
+    background-position: center !important;
+    background-image: url(/assets/icons/establish/prev.png) !important; 
+    z-index: 10 !important;  
+  }
+
+
+  #companiesTypes  .swiper-button-prev {
+    background-repeat: no-repeat !important;
+    background-size: 100% auto !important;
+    background-position: center !important;
+    background-image: url(/assets/icons/establish/prev.png) !important; 
+    z-index: 10 !important;
+    left: -30px !important;   
+  }
+  #companiesTypes  .swiper-button-next {
+    background-repeat: no-repeat !important;
+    background-size: 100% auto !important;
+    background-position: center !important;
+    background-image: url(/assets/icons/establish/next.png) !important; 
+    z-index: 10 !important;  
+    right: -30px !important; 
+  }
+   
+
+  #featureSlide .swiper-button-next::after ,  #featureSlide .swiper-button-prev::after , #dreamCompany .swiper-button-next::after , #dreamCompany .swiper-button-prev::after , #companiesTypes .swiper-button-prev::after , #companiesTypes .swiper-button-next::after {
+    display: none !important;
+    content: none !important;
+  }
+
+
+  @media (max-width : 768px) {
+
+      #featureSlide .swiper-button-prev , #companiesTypes .swiper-button-prev{
+        left: -10px !important;
+      }
+      #featureSlide .swiper-button-next , #companiesTypes .swiper-button-next{
+        right: -10px !important;
+      }
+  }

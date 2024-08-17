@@ -37,13 +37,16 @@ const TypesofCompanies = () => {
   return (
     <section className={styles.companiesTypes}>
        <h2>ما هي أنواع الشركات التي نختص بها؟</h2>
-       <div className={styles.swiperContainer}>
+       <div className={styles.swiperContainer} id='companiesTypes'>
 
        <Swiper
       spaceBetween={30}
       effect="fade"
       pagination={{ clickable: true }}
-      navigation={true}
+      navigation={{
+        nextEl: '.swiper-button-prev',
+       prevEl: '.swiper-button-next'
+   }}
       loop={true}
       autoplay={{
         delay: 5000,
@@ -68,6 +71,8 @@ const TypesofCompanies = () => {
       ))}
      
     </Swiper>
+    <div className="swiper-button-prev"/>
+    <div className="swiper-button-next"/>
       </div>
       
     </section>

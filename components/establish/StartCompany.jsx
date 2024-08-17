@@ -21,6 +21,7 @@ const StartCompany = () => {
   return (
     <section className={styles.startcompany}>
       <h2>اتبع الخطوات التالية لبدء تأسيس شركتك بنجاح</h2>
+      <div className={styles.startcompanyparent}>
       <div className={styles.parent}>
         <div className={styles.content}>
           <h3>{data[0].title}</h3>
@@ -67,6 +68,7 @@ const StartCompany = () => {
             alt="Business-World image"
           />
         </div>
+      </div>
       </div>
     </section>
   );

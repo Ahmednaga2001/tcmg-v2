@@ -44,7 +44,7 @@ const LegalServices = () => {
     <section className={styles.legalServices}>
       <div className={styles.header}>
         <h2>خدماتنا القانونية في أعمال تأسيس الشركات </h2>
-        <Image src="/assets/icons/establish/crown.png" width={60} height={25} />
+        <Image src="/assets/icons/establish/crown.png" width={60} height={25} alt="crown icon" />
         <p>
           عملنا بجد لتقديم خدمات ذكية ومرنة ومعقولة التكلفة تعود بالنفع على جميع
           عملائنا الراغبون في تأسيس الشركات في مصر والإمارات. تصفح قائمة خدماتنا

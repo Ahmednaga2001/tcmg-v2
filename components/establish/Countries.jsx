@@ -39,11 +39,11 @@ const Countries = () => {
                   title={item.title}
                   desc={item.desc}
                 />
-                <VisionImg imgStyle="imgleft" path={item.path} />
+                <VisionImg imgStyle="imgleft" path={item.path} title = {item.title} />
               </>
             ) : (
               <>
-                <VisionImg imgStyle="imgright" path={item.path} />
+                <VisionImg imgStyle="imgright" path={item.path} title = {item.title} />
                 <VisonCard
                   visionContentstyle="visioncontentleft"
                   title={item.title}

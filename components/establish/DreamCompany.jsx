@@ -28,14 +28,16 @@ const info = [
 const DreamCompany = () => {
   return (
     <section className={styles.dreamCompany}>
-      <h2>ما هي أنواع الشركات التي نختص بها؟</h2>
-      <div className={styles.swiperContainer}>
+      <div className={styles.swiperContainer} id='dreamCompany'>
 
         <Swiper
           spaceBetween={30}
           effect="fade"
           pagination={{ clickable: true }}
-          navigation={true}
+          navigation={{
+            nextEl: '.swiper-button-prev',
+           prevEl: '.swiper-button-next'
+       }}
           loop={true}
           autoplay={{
             delay: 5000,
@@ -52,17 +54,18 @@ const DreamCompany = () => {
           {info.map((el) => (
             <SwiperSlide key={el.id} >
               <div className={styles.swiperSlide}>
-                <Image src={el.path} width={1440} height={458} />
+                <Image src={el.path} width={1440} height={458} alt='image for country' />
 
                 <div className={styles.content}>
-                  <h3>{el.title}</h3>
-                  <p>{el.desc}</p>
+                  <span>{el.title}</span>
+                  <span>{el.desc}</span>
                 </div>
               </div>
             </SwiperSlide>
           ))}
-
         </Swiper>
+        <div className="swiper-button-prev"/>
+        <div className="swiper-button-next"/>
       </div>
 
     </section>
