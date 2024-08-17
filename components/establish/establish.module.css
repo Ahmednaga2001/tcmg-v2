@@ -261,18 +261,23 @@
   }
 }
 /*------------------------------------------------------------------------------------*/
+.companiesTypes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .companiesTypes .swiperContainer {
   width: 60%;
   margin: auto;
   height: 100%;
   display: flex;
+  align-items: center;
   position: relative;
 }
 .companiesTypes .swiperContainer::before {
   content: "";
   position: absolute;
   top: 30%;
-
   right: -40px;
   background-image: linear-gradient(#0D152C,#000);
   width: calc(100% + 80px);
@@ -518,12 +523,15 @@
   .startcompany .Img {
     width: 100%;
   }
-
+  
   .companiesTypes .swiperContainer {
     width: 100%;
   }
   .companiesTypes .swiperSlide {
     padding: 30px;
+  }
+  .companiesTypes .swiperContainer::before {
+    content: none;
   }
   .dreamCompany span:first-child{
     font-size: 30px;
@@ -535,9 +543,7 @@
     width: 100%;
     padding: 20px;
   }
-  .companiesTypes .swiperContainer::before {
-    content: none;
-  }
+  
   .accordionItem {
     width: 100%;
   }
