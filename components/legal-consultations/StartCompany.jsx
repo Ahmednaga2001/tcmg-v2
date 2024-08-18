@@ -2,25 +2,43 @@ import styles from "@/components/legal-consultations/legalconsultations.module.c
 import Image from "next/image";
 const data = [
   {
-    title: "1- احجز استشارة قانونية",
-    desc: "احصل على استشارة قانونية مع محامي شركات من المحامين الخبراء في المجموعة التجارية والبحرية للمحاماة لتحديد الشكل القانوني المناسب لشركتك.",
-    path: "/assets/images/establish/Calender.png",
+   title : "1- اختر الاستشارة المطلوبة",
+   desc : "اختار استشارتك المطلوبة التي تناسب احتياجاتك، سواء استشارة قانونية فورية عبر الاتصال أو تحديد موعد لزيارتنا بمكتبنا بالقاهرة أو من خلال حجز استشارة قانونية أون لاين عبر تحديد موعد اجتماع مع مستشار قانوني متخصص.",
+    path: "/assets/images/legalconsultations/whatsup.png",
+    w : 115,
+    h : 116
   },
   {
-    title: "2- قم بتوكيل محامي",
-    desc: "الآن انتهى دورنا، وبدء مشوارك في عالم ريادة الأعمال. اطمأن كل المعاينات والإجراءات تنتهي في بضعة ايام بعدها أعلن عن نشاطك التجاري وانطلق.",
-    path: "/assets/images/establish/Hire-lawyer-Female.png",
+    title : "2- احجز موعدك",
+   desc : "حدد موعد استشارتك بكل مرونة باختيار اليوم المطلوب لعقد الاستشارة والتوقيت المناسب خلال ساعات عملنا بما يناسب وقتك الثمين وسيكون المستشار القانوني مستعد للتواصل معك في الوقت المُحدد.",
+    path: "/assets/images/legalconsultations/Calender.png",
+    w : 300,
+    h : 302
   },
   {
-    title: "3- إنطلق في عالم الأعمال",
-    desc: "الآن انتهى دورنا، وبدء مشوارك في عالم ريادة الأعمال. اطمأن كل المعاينات والإجراءات تنتهي في بضعة ايام بعدها أعلن عن نشاطك التجاري وانطلق.",
-    path: "/assets/images/establish/Business-World.png",
+    title : "3- املئ استمارة الاستشارة",
+  desc : "املئ استمارة الاستشارة ببياناتك الصحيحة كالأسم ورقم الموبايل والبريد الإلكتروني واكتب نبذة عن قضيتك المراد عقد الاستشارة من أجله، وأخيراً تحديد تخصص المستشار القانوني المطلوب.",
+  },
+  {
+    title : "4- أتمم مدفوعاتك بآمان",
+    desc : "كن على يقين أن مدفوعاتك ستتم بآمان، فلدينا نظام حماية وآمان صارم على المدفوعات. واطمئن فلن يتم حفظ بيانات البطاقة الإئتمانية خاصتك على الموقع، بمجرد أن يتم الدفع ستحجز استشارتك بأعلى قدر من الآمان والخصوصية.",
+    path: "/assets/images/legalconsultations/card.png",
+    w : 248,
+    h : 178
+  },
+  {
+    title : "5- احصل على الدعم القانوني",
+    desc : "بعد إتمام كل الخطوات أنت الآن مستعد لعقد استشارتك مع مستشارك القانوني المتخصص والمستعد لدعمك في قضيتك وهدفك القانوني المنشود. فلن تنتهي الاستشارة حتى تصل لحلول فعالة قادرة على تحقيق مرادك.",
+    path: "/assets/images/legalconsultations/user.png",
+    w : 197,
+    h : 197
   },
 ];
 const StartCompany = () => {
   return (
     <section className={styles.startcompany}>
-      <h2>اتبع الخطوات التالية لبدء تأسيس شركتك بنجاح</h2>
+      <h2>اطلب استشارتك الآن بكل سهولة</h2>
+      <p>5 خطوات تضع قوة المشورة القانونية بين يديك</p>
       <div className={styles.startcompanyparent}>
       <div className={styles.parent}>
         <div className={styles.content}>
@@ -31,8 +49,8 @@ const StartCompany = () => {
         <div className={styles.Img}>
           <Image
             src={data[0].path}
-            width={300}
-            height={302}
+            width={data[0].w}
+            height={data[0].h}
             alt="calender image"
           />
         </div>
@@ -42,8 +60,8 @@ const StartCompany = () => {
         <div className={styles.Img}>
           <Image
             src={data[1].path}
-            width={300}
-            height={302}
+            width={data[1].w}
+            height={data[1].h}
             alt="Hire-lawyer-Female imaga"
           />
         </div>
@@ -61,14 +79,46 @@ const StartCompany = () => {
         </div>
         <div className={styles.line}></div>
         <div className={styles.Img}>
+          <label htmlFor="">نوع الاستشارة</label>
+          <select name="" id="">
+            <option value="النوع" disabled selected>النوع</option>
+          </select>
+        </div>
+      </div>
+
+      <div className={styles.parent}>
+        <div className={styles.Img}>
           <Image
-            src={data[2].path}
-            width={300}
-            height={302}
+            src={data[3].path}
+            width={data[3].w}
+            height={data[3].h}
+            alt="Business-World image"
+          />
+        </div>
+        <div className={styles.line}></div>
+        <div className={styles.content}>
+          <h3>{data[3].title}</h3>
+          <p>{data[3].desc}</p>
+        </div>
+      </div>
+
+      <div className={styles.parent}>
+        <div className={styles.content}>
+          <h3>{data[4].title}</h3>
+          <p>{data[4].desc}</p>
+        </div>
+          <div className={styles.line}></div>
+        <div className={styles.Img}>
+          <Image
+            src={data[4].path}
+            width={data[4].w}
+            height={data[4].h}
             alt="Business-World image"
           />
         </div>
       </div>
+
+
       </div>
     </section>
   );
