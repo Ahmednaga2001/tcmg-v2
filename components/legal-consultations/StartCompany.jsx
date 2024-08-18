@@ -37,8 +37,10 @@ const data = [
 const StartCompany = () => {
   return (
     <section className={styles.startcompany}>
-      <h2>اطلب استشارتك الآن بكل سهولة</h2>
-      <p>5 خطوات تضع قوة المشورة القانونية بين يديك</p>
+   <div className={styles.heading}>
+   <h2>اطلب استشارتك الآن بكل سهولة</h2>
+   <p>5 خطوات تضع قوة المشورة القانونية بين يديك</p>
+   </div>
       <div className={styles.startcompanyparent}>
       <div className={styles.parent}>
         <div className={styles.content}>
