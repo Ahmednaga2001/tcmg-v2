@@ -1,178 +1,522 @@
 .page {
-    width: 100%;
-    height: 100%;
-  }
-  .page section {
-    padding: 80px;
-  }
-  .hero {
-    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/images/legalconsultations/Pattern1.png);
-    background-size: cover;
-    background-position: center center;
-    min-height: 100vh;
-    
-  }
-  .page h1,
-  .page h2 {
-    font-size: 50px;
-    line-height: 1.4;
-  }
-  .hero .content {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 40px;
-    padding: 70px 0px;
-  }
-  .legalSupport{
-    min-height: 100vh;
-  }
-  .legalSupport h2 , .legalSupport p{
-    text-align: center;
-  } 
-  .legalSupport p{
-    padding-top: 20px;
-  }
-  /*-----------------------------------------------------------------*/
+  width: 100%;
+  height: 100%;
+}
+.page section {
+  padding: 80px;
+}
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/assets/images/legalconsultations/Pattern1.png);
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+}
+.page h1,
+.page h2 {
+  font-size: 50px;
+  line-height: 1.4;
+}
+.hero .content {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 70px 0px;
+}
 .legalSupport {
-    min-height: 100vh;
-  }
-  .legalSupport h2 {
-    text-align: center;
-  }
-  .legalSupport .parent {
-    padding-top: 80px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .legalSupport .card {
-    width: 26rem;
-    height: 400px;
+  min-height: 100vh;
+}
+.legalSupport h2,
+.legalSupport p {
+  text-align: center;
+}
+.legalSupport p {
+  padding-top: 20px;
+}
+/*-----------------------------------------------------------------*/
+.legalSupport {
+  min-height: 100vh;
+}
+.legalSupport h2 {
+  text-align: center;
+}
+.legalSupport .parent {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.legalSupport .card {
+  width: 26rem;
+  height: 400px;
+}
+.legalSupport .topCard {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #1b2340;
+}
 
-  }
-  .legalSupport .topCard {
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    background-color: #1B2340;
+.legalSupport .card span {
+  padding: 30px;
+  font-weight: 900;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
 
-  }
+.ourTeam {
+  min-height: 100vh;
 
-  .legalSupport .card span {
-    padding: 30px;
-    font-weight: 900;
-    font-size: 20px;
-    display: block;
-    text-align: center;
-    width: 80%;
-    margin: auto;
-  }
- 
-
-
-
-  .ourTeam {
-
- min-height: 100vh;
- background-image: url("/assets/images/legalconsultations/Pattern2.png");
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 40px;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
 }
 
 .ourTeam .header,
 .ourCustomers .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .ourTeam .cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background-image: url("/assets/images/legalconsultations/Pattern2.png");
+
+  background-size: cover;
+  flex-wrap: wrap;
 }
 
 .ourTeam .card {
-    padding: 30px;
-    background-image: linear-gradient(to bottom, #dddddd00, #dddddd15);
-    border-radius: 8px;
+  padding: 30px;
+  background-image: linear-gradient(to bottom, #dddddd00, #dddddd15);
+  border-radius: 8px;
 }
 
 .ourTeam .card:nth-child(2) {
-    scale: 1.15;
+  scale: 1.15;
 }
 
 .ourTeam .card p:last-child {
-    font-size: 14px;
-    color: #845F38;
+  font-size: 14px;
+  color: #845f38;
 }
 
 /*------------------------------------------------------------------------------------*/
-.startcompany .heading{
+.startcompany .heading {
   text-align: center;
   padding-bottom: 50px;
 }
 .startcompany .parent {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
 
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-  }
+.startcompany .content p,
+.content h3 {
+  width: 80%;
+  margin: auto;
+}
+.startcompany .content,
+.startcompany .Img {
+  width: 40rem;
+}
+.startcompany .Img {
+  padding-top: 100px;
+}
+.startcompany .content {
+  padding-top: 100px;
+}
+.Img,
+.selectInp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.startcompany select {
+  width: 80%;
+  outline: none;
+  padding: 10px;
+  border-radius: 15px;
+  color: gray;
+}
+.startcompany label {
+  text-align: start !important;
+  align-self: flex-start;
+  padding-right: 70px;
+}
+.startcompany .line {
+  position: relative;
+}
+.line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-left: 4px dotted rgba(128, 128, 128, 0.6);
+}
+/*------------------------------------------------------------------------------------*/
+
+.reserveConsultation {
+  min-height: 100vh;
+}
+.reserveConsultation h2{
+  text-align: center;
+}
+.parentButtons{
+  padding: 20px 0;
+}
+.reserveConsultation .buttons{
+  display: flex;
+  justify-content: center;
+  background-color: #1b234089;
+  gap: 20px;
+  width: fit-content;
+  margin: auto;
+  border-radius: 50px;
+
+padding: 10px;
+}
+.reserveConsultation .buttons button{
+  border: none;
+  background: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.buttons button.active {
+  background-color: #fff; /* Different color for the active button */
+  color: #000;
+  padding: 5px 15px;
+  border-radius: 25px;
+}
+.reserveConsultation .buttons button:first-of-type{
+
+}
+.reserveConsultation .companiesServices , .reserveConsultation .individualServices {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.reserveConsultation .companiesServices .card , .individualServices .card {
+  background : linear-gradient(#1B2340,#0E152C);
+  width: 22rem;
+  padding: 20px;
+  height: 600px;
+}
+.topData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30%;
+}
+.topData .info {
+  text-decoration: none !important;
+  padding-left: 0 !important;
+  padding-top: 20px;
+  font-size: 25px !important;
+}
+.reserveConsultation .companiesServices .topData h3 , .individualServices .topCard h3 {
+  text-align: center;
+}
+.topData span:first-of-type {
+  text-decoration: line-through;
+  font-size: 20px;
+  padding-left: 50%;
+}
+.topData span:last-of-type {
+  font-size: 35px;
+  font-weight: bold;
+}
+.companiesServices .offer , .individualServices .offer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.companiesServices .offer span:not(:nth-child(2)) , .individualServices .offer span:not(:nth-child(2)) {
+  width: 90px;
+  height: 2px;
+  background-color: #fff;
+}
+.companiesServices .offer span , .individualServices .offer span {
+  font-size: 16px;
+}
+.companiesServices .bodyData , .individualServices .bodyData {
+  padding: 20px 0;
+  height: 60%;
+}
+.companiesServices .bodyData span , .individualServices .bodyData span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+}
+.companiesServices .card a , .individualServices .card a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: flex-end;
+}
+/*------------------------------------------------------------------------------------*/
+.whyUs{
+  min-height: 100vh;
+}
+.whyUs h2 , .whyUs p{
+  text-align: center;
+}
+.whyUs .card{
+  background-color: #1b2340;
+  width: 26rem;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+
+}
+.whyUs .card p{
+  font-size: 900;
+  font-size: 26px;
+}
+.whyUs .cards{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
   
-  .startcompany .content p,
-  .content h3 {
-    width: 80%;
-    margin: auto;
-  }
-  .startcompany .content,
-  .startcompany .Img {
-    width: 40rem;
-  }
-  .startcompany .Img {
-    padding-top: 100px;
-  }
-  .startcompany .content {
-    padding-top: 100px;
-  }
-  .Img , .selectInp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-  }
-  .startcompany select{
-    width: 80%;
-    outline: none;
-    padding: 10px;
-    border-radius: 15px;
-    color: gray;
-  }
-  .startcompany label{
-    text-align: start !important;
-    align-self: flex-start;
-   padding-right: 70px;
-  }
-  .startcompany .line {
-    position: relative;
-  }
-  .line::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-left: 4px dotted rgba(128, 128, 128, 0.6);
-  }
+}
+
+
+
+
+.legalAdvice{
+  min-height: 100vh;
+}
+.legalAdvice .heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+
+.legalAdvice .card{
+  background-color: #1b2340;
+  padding: 30px 10px;
+  border-radius: 15px;
+
+  gap: 20px;
+
+  flex-basis: 20rem;
+  transition:.5s;
+
+}
+.legalAdvice .card{
+}
+.legalAdvice .cards{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+padding-top: 50px;
+
+}
+.legalAdvice .card .left{
+
+ display: none;
+ visibility: hidden;
+ padding: 15px;
+ border-right: 1px solid #fff;
+}
+.legalAdvice .card .top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  transition: .5s;
+  padding: 15px;
+  
+
+}
+.legalAdvice p{
+  font-size: 12px;
+}
+/* Hover state for the card */
+.legalAdvice .card:hover {
+  flex-basis: 38rem; /* Expanded width for hovered card */
+  cursor: pointer;
+}
+.legalAdvice .card:hover .top span{
+  display: none;
+}
+
+/* Ensure non-hovered cards shrink */
+.legalAdvice .cards:hover .card:not(:hover) {
+  flex-basis: 15rem; /* Shrink width for non-hovered cards */
+}
+
+.legalAdvice .card:hover .left{
+  display: block;
+  visibility: visible;
+}
+.legalAdvice .left p{
+padding-top: 20px;
+}
+.legalAdvice .card:hover{
+  
+   display: flex;
+  justify-content: space-between; 
+}
+/* .legalAdvice .card:hover .top{
+  flex-direction: row;
+  align-items: start;
+  gap: 20px;
+} */
+.legalAdvice .card .left span {
+  transform: translateY(-100%,100%); /* Start from below the visible area */
+  opacity: 0; /* Hide initially */
+  transition: transform 0.5s, opacity 0.5s; /* Smooth transition */
+  font-weight: 900;
+  font-size: 20px;
+
+  
+  
+}
+.legalAdvice .card:hover .left span {
+  transform: translateY(0,0); /* Move span into view */
+  opacity: 1; /* Make span visible */
+}
+
+/* ============================================================================ */
+
+.ourCustomers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.customers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.customer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+.customer:nth-of-type(odd) {
+  flex-direction: column-reverse;
+}
+
+.customer:nth-of-type(odd) .bottom {
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 0px;
+}
+
+.customers .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.customer .top .left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.customer .top .left span:first-child {
+  font-weight: bold;
+}
+
+.customer .top .left span:last-child {
+  font-size: 14px;
+}
+
+.customer .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  background-color: var(--font);
+  color: #222;
+  padding: 30px;
+  height: 350px;
+  border-top-left-radius: 50px;
+}
+
+.customer .bottom img {
+  align-self: flex-end;
+}
+
+/* .accordionQuestions {
+  min-height: 100vh;
+} */
+.accordionQuestions h2{
+text-align: center;
+ padding-bottom: 20px;
+}
+ .accordionQuesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+ .accordionQuesHeader img {
+  cursor: pointer;
+}
+ .accordionQuesContent {
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
+}
+.accordionQues:not(:first-of-type){
+  margin-top: 10px;
+}
+ .accordionQuesContent{
+  overflow: hidden;
+  max-height: 0;
+  font-size: 16px;
+  transition: max-height 0.6s;
+}
+.accordionQuesContent p {
+  padding: 20px 10px;
+}
+ .accordionQuesContent.open {
+  max-height: 1000px;
+}
