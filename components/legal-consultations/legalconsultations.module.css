@@ -25,6 +25,28 @@
   gap: 40px;
   padding: 70px 0px;
 }
+@media (max-width: 1191px) {
+  .hero .content {
+    width: 100%;
+    align-items: center;
+  }
+  .page h1,
+  .page h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .page section {
+    padding: 20px;
+  }
+  .hero .content p {
+    text-align: center;
+  }
+  .page p {
+    font-size: 16px;
+  }
+}
 .legalSupport {
   min-height: 100vh;
 }
@@ -32,37 +54,33 @@
 .legalSupport p {
   text-align: center;
 }
+/*-----------------------------------------------------------------*/
 .legalSupport p {
   padding-top: 20px;
-}
-/*-----------------------------------------------------------------*/
-.legalSupport {
-  min-height: 100vh;
-}
-.legalSupport h2 {
-  text-align: center;
 }
 .legalSupport .parent {
   padding-top: 80px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .legalSupport .card {
-  width: 26rem;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 22rem; /* The initial size of the card */
+  flex-grow: 1;
   height: 400px;
+  margin: 10px;
 }
 .legalSupport .topCard {
-  height: 80%;
+  min-height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 25px;
   background-color: #1b2340;
 }
-
 .legalSupport .card span {
-  padding: 30px;
+  padding: 20px;
   font-weight: 900;
   font-size: 20px;
   display: block;
@@ -70,53 +88,123 @@
   width: 80%;
   margin: auto;
 }
-
-.ourTeam {
+/* @media (max-width: 1191px) {
+  .legalSupport .parent {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+} */
+@media (max-width: 768px) {
+  .legalSupport .card span {
+    font-size: 18px;
+  }
+  .legalSupport .card{
+    width: 100%;
+  }
+}
+/*------------------------------------------------------------------------------------*/
+.legalAdvice {
   min-height: 100vh;
-
+}
+.legalAdvice .heading {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  gap: 40px;
+  align-items: center;
+  gap: 10px;
   text-align: center;
 }
-
-.ourTeam .header,
-.ourCustomers .header {
+.legalAdvice .card {
+  background-color: #1b2340;
+  padding: 30px 10px;
+  border-radius: 15px;
+  flex-basis: 20rem;
+  max-height: 350px;
+  transition: 0.5s;
+}
+.legalAdvice .cards {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.legalAdvice .card .left {
+  display: none;
+  opacity: 0;
+  padding: 15px;
+  border-right: 1px solid #fff;
+}
+.legalAdvice .card .top {
+  display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-
-.ourTeam .cards {
-  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
-  background-image: url("/assets/images/legalconsultations/Pattern2.png");
-
-  background-size: cover;
-  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  transition: 0.5s;
+  padding: 15px;
 }
-
-.ourTeam .card {
-  padding: 30px;
-  background-image: linear-gradient(to bottom, #dddddd00, #dddddd15);
-  border-radius: 8px;
+.legalAdvice p {
+  font-size: 12px;
 }
-
-.ourTeam .card:nth-child(2) {
-  scale: 1.15;
+.legalAdvice .card:hover {
+  flex-basis: 38rem;
+  cursor: pointer;
 }
-
-.ourTeam .card p:last-child {
-  font-size: 14px;
-  color: #845f38;
+.legalAdvice .card:hover .top span {
+  display: none;
+  opacity: 0;
 }
-
+.legalAdvice .cards:hover .card:not(:hover) {
+  flex-basis: 15rem;
+}
+.legalAdvice .card:hover .left {
+  display: block;
+  opacity: 1;
+}
+.legalAdvice .card .left span{
+  font-weight: 900;
+}
+.legalAdvice .left p {
+  padding-top: 20px;
+}
+.legalAdvice .card:hover {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1191px) {
+  .legalAdvice .cards {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .legalAdvice .card {
+    width: 100%;
+    max-height: 600px;
+  }
+  .legalAdvice .cards:hover .card:not(:hover) {
+    flex-basis: 20rem; 
+  }
+  .legalAdvice .cards:hover{
+    flex-basis: 20rem; 
+  }
+  @media (max-width: 400px) {
+    .legalAdvice .card {
+      width: 100%;
+      display: flex;
+      height: auto;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+    .legalAdvice .card .left {
+      text-align: center;
+      border-right: none;
+      border-top: 1px solid #fff;
+    }
+  }
+}
 /*------------------------------------------------------------------------------------*/
 .startcompany .heading {
   text-align: center;
@@ -149,6 +237,34 @@
   flex-direction: column;
   align-items: center;
 }
+.startcompany .parent .whatupCard{
+  background-color: #1B2340;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.whatupCard span{
+  font-size: 14px;
+  font-weight: bold;
+}
+.startcompany .card{
+ position: relative;
+ background-image: url("/assets/images/legalconsultations/cardpattern.png");
+ z-index: -1;
+ background-size: contain;
+ background-repeat: no-repeat;
+}
+.startcompany .img2{
+  position: absolute;
+  top: 70px;
+  right: 60px;
+  z-index: -1;
+}
 .startcompany select {
   width: 80%;
   outline: none;
@@ -164,26 +280,77 @@
 .startcompany .line {
   position: relative;
 }
+.line{
+  display: flex;
+  justify-content: center;
+}
 .line::after {
   content: "";
   display: block;
   position: absolute;
+  left: 40%;
+  z-index: -1;
   width: 100%;
   height: 100%;
   border-left: 4px dotted rgba(128, 128, 128, 0.6);
 }
-/*------------------------------------------------------------------------------------*/
 
+@media (max-width: 900px) {
+  .parent {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .startcompany .line {
+    display: none;
+  }
+  .startcompany .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 0 !important;
+  }
+  .startcompany .Img {
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+    padding-top: 50px !important;
+  }
+  .startcompany .Img:not(:first-child) {
+    order: 1;
+    padding-top: 20px !important;
+  }
+  .startcompany .content {
+    order: 2;
+    padding-top: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .startcompany .content p,
+  .content h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .startcompany p {
+    font-size: 16px;
+  }
+  .startcompany .content,
+  .startcompany .Img {
+    width: 100%;
+  }
+}
+/*------------------------------------------------------------------------------------*/
 .reserveConsultation {
   min-height: 100vh;
 }
-.reserveConsultation h2{
+.reserveConsultation h2 {
   text-align: center;
 }
-.parentButtons{
+.parentButtons {
   padding: 20px 0;
 }
-.reserveConsultation .buttons{
+.reserveConsultation .buttons {
   display: flex;
   justify-content: center;
   background-color: #1b234089;
@@ -191,10 +358,9 @@
   width: fit-content;
   margin: auto;
   border-radius: 50px;
-
-padding: 10px;
+  padding: 10px;
 }
-.reserveConsultation .buttons button{
+.reserveConsultation .buttons button {
   border: none;
   background: none;
   color: #fff;
@@ -202,22 +368,21 @@ padding: 10px;
   cursor: pointer;
 }
 .buttons button.active {
-  background-color: #fff; /* Different color for the active button */
+  background-color: #fff; 
   color: #000;
   padding: 5px 15px;
   border-radius: 25px;
 }
-.reserveConsultation .buttons button:first-of-type{
-
-}
-.reserveConsultation .companiesServices , .reserveConsultation .individualServices {
+.reserveConsultation .companiesServices,
+.reserveConsultation .individualServices {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
-.reserveConsultation .companiesServices .card , .individualServices .card {
-  background : linear-gradient(#1B2340,#0E152C);
+.reserveConsultation .companiesServices .card,
+.individualServices .card {
+  background: linear-gradient(#1b2340, #0e152c);
   width: 22rem;
   padding: 20px;
   height: 600px;
@@ -234,7 +399,8 @@ padding: 10px;
   padding-top: 20px;
   font-size: 25px !important;
 }
-.reserveConsultation .companiesServices .topData h3 , .individualServices .topCard h3 {
+.reserveConsultation .companiesServices .topData h3,
+.individualServices .topCard h3 {
   text-align: center;
 }
 .topData span:first-of-type {
@@ -246,171 +412,83 @@ padding: 10px;
   font-size: 35px;
   font-weight: bold;
 }
-.companiesServices .offer , .individualServices .offer {
+.companiesServices .offer,
+.individualServices .offer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 20px;
 }
-.companiesServices .offer span:not(:nth-child(2)) , .individualServices .offer span:not(:nth-child(2)) {
-  width: 90px;
+.companiesServices .offer span:not(:nth-child(2)),
+.individualServices .offer span:not(:nth-child(2)) {
+  width: 25%;
   height: 2px;
   background-color: #fff;
 }
-.companiesServices .offer span , .individualServices .offer span {
+.companiesServices .offer span,
+.individualServices .offer span {
   font-size: 16px;
 }
-.companiesServices .bodyData , .individualServices .bodyData {
+.companiesServices .bodyData,
+.individualServices .bodyData {
   padding: 20px 0;
   height: 60%;
 }
-.companiesServices .bodyData span , .individualServices .bodyData span {
+.companiesServices .bodyData span,
+.individualServices .bodyData span {
   display: flex;
   align-items: center;
   gap: 5px;
   font-size: 16px;
 }
-.companiesServices .card a , .individualServices .card a {
+.companiesServices .card a,
+.individualServices .card a {
   display: flex;
   align-items: center;
   gap: 5px;
   justify-content: flex-end;
 }
 /*------------------------------------------------------------------------------------*/
-.whyUs{
+.whyUs {
   min-height: 100vh;
 }
-.whyUs h2 , .whyUs p{
+.whyUs h2,
+.whyUs p {
   text-align: center;
 }
-.whyUs .card{
+.whyUs .card {
   background-color: #1b2340;
-  width: 26rem;
-  height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  flex-basis: 26rem;
+  height: 350px;
+  margin: 10px;
   border-radius: 10px;
-
 }
-.whyUs .card p{
-  font-size: 900;
+.whyUs .card p {
+  font-weight: 900;
+  font-family: janna bol;
   font-size: 26px;
 }
-.whyUs .cards{
+.whyUs .cards {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
-  
 }
-
-
-
-
-.legalAdvice{
-  min-height: 100vh;
+@media (max-width : 1191px) {
+  .whyUs .cards{
+    flex-wrap: wrap;
+    justify-content: center;
+    }
 }
-.legalAdvice .heading{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  text-align: center;
+@media (max-width : 768px) {
+  .whyUs .card{
+    width: 100%;
+  }
 }
-
-
-.legalAdvice .card{
-  background-color: #1b2340;
-  padding: 30px 10px;
-  border-radius: 15px;
-
-  gap: 20px;
-
-  flex-basis: 20rem;
-  transition:.5s;
-
-}
-.legalAdvice .card{
-}
-.legalAdvice .cards{
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-padding-top: 50px;
-
-}
-.legalAdvice .card .left{
-
- display: none;
- visibility: hidden;
- padding: 15px;
- border-right: 1px solid #fff;
-}
-.legalAdvice .card .top{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-  transition: .5s;
-  padding: 15px;
-  
-
-}
-.legalAdvice p{
-  font-size: 12px;
-}
-/* Hover state for the card */
-.legalAdvice .card:hover {
-  flex-basis: 38rem; /* Expanded width for hovered card */
-  cursor: pointer;
-}
-.legalAdvice .card:hover .top span{
-  display: none;
-}
-
-/* Ensure non-hovered cards shrink */
-.legalAdvice .cards:hover .card:not(:hover) {
-  flex-basis: 15rem; /* Shrink width for non-hovered cards */
-}
-
-.legalAdvice .card:hover .left{
-  display: block;
-  visibility: visible;
-}
-.legalAdvice .left p{
-padding-top: 20px;
-}
-.legalAdvice .card:hover{
-  
-   display: flex;
-  justify-content: space-between; 
-}
-/* .legalAdvice .card:hover .top{
-  flex-direction: row;
-  align-items: start;
-  gap: 20px;
-} */
-.legalAdvice .card .left span {
-  transform: translateY(-100%,100%); /* Start from below the visible area */
-  opacity: 0; /* Hide initially */
-  transition: transform 0.5s, opacity 0.5s; /* Smooth transition */
-  font-weight: 900;
-  font-size: 20px;
-
-  
-  
-}
-.legalAdvice .card:hover .left span {
-  transform: translateY(0,0); /* Move span into view */
-  opacity: 1; /* Make span visible */
-}
-
 /* ============================================================================ */
-
 .ourCustomers {
   display: flex;
   align-items: center;
@@ -418,16 +496,19 @@ padding-top: 20px;
   flex-direction: column;
   gap: 80px;
 }
-
+.ourCustomers .header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 .customers {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
   flex-wrap: wrap;
-  width: 100%;
+  gap: 20px;
 }
-
 .customer {
   display: flex;
   align-items: center;
@@ -440,33 +521,27 @@ padding-top: 20px;
 .customer:nth-of-type(odd) {
   flex-direction: column-reverse;
 }
-
 .customer:nth-of-type(odd) .bottom {
   border-bottom-left-radius: 50px;
   border-top-left-radius: 0px;
 }
-
 .customers .top {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-
 .customer .top .left {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-
 .customer .top .left span:first-child {
   font-weight: bold;
 }
-
 .customer .top .left span:last-child {
   font-size: 14px;
 }
-
 .customer .bottom {
   display: flex;
   align-items: center;
@@ -479,36 +554,31 @@ padding-top: 20px;
   height: 350px;
   border-top-left-radius: 50px;
 }
-
 .customer .bottom img {
   align-self: flex-end;
 }
-
-/* .accordionQuestions {
-  min-height: 100vh;
-} */
-.accordionQuestions h2{
-text-align: center;
- padding-bottom: 20px;
+.accordionQuestions h2 {
+  text-align: center;
+  padding-bottom: 20px;
 }
- .accordionQuesHeader {
+.accordionQuesHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #fff;
   padding-bottom: 20px;
 }
- .accordionQuesHeader img {
+.accordionQuesHeader img {
   cursor: pointer;
 }
- .accordionQuesContent {
+.accordionQuesContent {
   border-bottom: 1px solid #fff;
   font-size: 16px;
 }
-.accordionQues:not(:first-of-type){
+.accordionQues:not(:first-of-type) {
   margin-top: 10px;
 }
- .accordionQuesContent{
+.accordionQuesContent {
   overflow: hidden;
   max-height: 0;
   font-size: 16px;
@@ -517,6 +587,6 @@ text-align: center;
 .accordionQuesContent p {
   padding: 20px 10px;
 }
- .accordionQuesContent.open {
+.accordionQuesContent.open {
   max-height: 1000px;
 }

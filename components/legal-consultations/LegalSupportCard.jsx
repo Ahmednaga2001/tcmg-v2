@@ -4,7 +4,7 @@ const LegalSupportCard = ({title , path , w , h}) => {
   return (
     <div className={styles.card}>
     <div className={styles.topCard}>
-        <Image src = {path} width={w} height={h}/>
+        <Image src = {path} width={w} height={h} alt={path}/>
     </div>
     <span>{title}</span>
 

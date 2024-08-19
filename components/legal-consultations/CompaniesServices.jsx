@@ -72,8 +72,6 @@ const dataTwo = [
 const CompaniesServices = () => {
   return (
     <div className={styles.companiesServices}>
-
-
       <div className={styles.card}>
         <div className={styles.topData}>
           <h3>تأسيس شركات</h3>
@@ -83,16 +81,15 @@ const CompaniesServices = () => {
           </span>
         </div>
         <div className={styles.bodyData}>
-        <div className={styles.offer}>
+          <div className={styles.offer}>
             <span></span>
             <span>لفترة محدودة</span>
             <span></span>
-        </div>
+          </div>
           {data.map((el, index) => (
-            <span>
+            <span key={index}>
               <Image
                 src={el.path}
-                key={index}
                 width={24}
                 height={24}
                 alt="check mark icon"
@@ -101,33 +98,28 @@ const CompaniesServices = () => {
             </span>
           ))}
         </div>
-          <Link href="#">
-            تحديد
-            <Image
-              src="/assets/icons/legalconsultations/arrow-left.png"
-              width={24}
-              height={24}
-              alt="arrow left icon"
-            />
-          </Link>
+        <Link href="#">
+          تحديد
+          <Image
+            src="/assets/icons/legalconsultations/arrow-left.png"
+            width={24}
+            height={24}
+            alt="arrow left icon"
+          />
+        </Link>
       </div>
-
 
       <div className={styles.card}>
         <div className={styles.topData}>
           <h3>أعمال شركات</h3>
           <span className={styles.info}>تواصل معنا للحجز</span>
-        
         </div>
         <div className={styles.bodyData}>
-        <div className={styles.offer}>
-           
-        </div>
+          <div className={styles.offer}></div>
           {dataTwo.map((el, index) => (
-            <span>
+            <span key={index}>
               <Image
                 src={el.path}
-                key={index}
                 width={24}
                 height={24}
                 alt="check mark icon"
@@ -136,15 +128,15 @@ const CompaniesServices = () => {
             </span>
           ))}
         </div>
-          <Link href="#">
-            تحديد
-            <Image
-              src="/assets/icons/legalconsultations/arrow-left.png"
-              width={24}
-              height={24}
-              alt="arrow left icon"
-            />
-          </Link>
+        <Link href="#">
+          تحديد
+          <Image
+            src="/assets/icons/legalconsultations/arrow-left.png"
+            width={24}
+            height={24}
+            alt="arrow left icon"
+          />
+        </Link>
       </div>
     </div>
   );

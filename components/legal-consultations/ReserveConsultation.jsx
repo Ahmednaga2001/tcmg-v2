@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import styles from "@/components/legal-consultations/legalconsultations.module.css";
 import CompaniesServices from "./CompaniesServices";
 import IndividualServices from "./IndividualServices";
@@ -14,23 +14,22 @@ const ReserveConsultation = () => {
   return (
     <section className={styles.reserveConsultation}>
       <h2>بادر بحجز استشارتك الآن مع أفضل المتخصصين في مصر!</h2>
-
-     <div className={styles.parentButtons}>
-     <div className={styles.buttons}>
-        <button
-          onClick={() => handleViewChange("individual")}
-          className={view === "individual" ? styles.active : ""}
-        >
-          أفراد
-        </button>
-        <button
-          onClick={() => handleViewChange("companies")}
-          className={view === "companies" ? styles.active : ""}
-        >
-          شركات
-        </button>
+      <div className={styles.parentButtons}>
+        <div className={styles.buttons}>
+          <button
+            onClick={() => handleViewChange("individual")}
+            className={view === "individual" ? styles.active : ""}
+          >
+            أفراد
+          </button>
+          <button
+            onClick={() => handleViewChange("companies")}
+            className={view === "companies" ? styles.active : ""}
+          >
+            شركات
+          </button>
+        </div>
       </div>
-     </div>
 
       {view === "individual" ? <IndividualServices /> : null}
       {view === "companies" ? <CompaniesServices /> : null}
