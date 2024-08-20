@@ -1,14 +1,12 @@
 "use client";
-import Image from "next/image";
 import styles from "@/components/legal-services/legalservices.module.css";
-import { useState } from "react";
+import AccordionCard from "./AccordionCard";
 
 const data = [
   {
     title:
       "ما الخدمات القانونية التي تقدمها المجموعة التجارية والبحرية للشركات؟",
     desc: `
-          ما هي الخدمات القانونية التي تقدمها المجموعة التجارية والبحرية للمحاماة للشركات؟
           تُعد المجموعة التجارية والبحرية للمحاماة شريكًا استراتيجيًا للشركات, حيث نقدم مجموعة شاملة من الخدمات القانونية المصممة لتلبية احتياجات الشركات على اختلاف أنواعها وأحجامها. بفضل خبرتنا الواسعة وفريقنا المتخصص, نقدم دعمًا قانونيًا يساهم في تحقيق أهداف الشركات بكل أمان. إليك الآن 4 خدمات قانونية من بين خدماتنا:
           تأسيس الشركات: نحن في TCMG نقدم خدمات تأسيس الشركات بمستوى عالمي، بدءًا من اختيار نوع الشركة المناسب من بين ( فردية- ذات مسؤولية محدودة- مساهمة), إعداد عقود التأسيس واللوائح الداخلية وأيضًا تقديم الدعم القانوني في جميع مراحل التأسيس. نسعى لضمان تأسيس شركة قوية ومتينة تلبي كافة المتطلبات القانونية وتحقق أهدافك التجارية بكفاءة وفاعلية.
           الاندماج والاستحواذ: نقدم خدمات قانونية متنوعة للشركات ومن بينهم الاندماج والاستحواذ, نحن نمتلك خبرة واسعة في هذا المجال, لذا سنعمل على تقديم المشورة القانونية في كل مرحلة من مراحل العملية: بدءًا من التخطيط الاستراتيجي وإجراء الفحص النافي للجهالة إلى إعداد العقود والتفاوض عليها وحتى إتمام الصفقة بنجاح.
@@ -29,58 +27,17 @@ const data = [
   },
 ];
 
-const Accordion = () => {
-  const [isOpenOne, setIsOpenOne] = useState(false);
-  const [isOpenTwo, setIsOpenTwo] = useState(false);
 
-  const handleIsOpenOne = () => {
-    setIsOpenOne(!isOpenOne);
-  };
-
-  const handleIsOpenTwo = () => {
-    setIsOpenTwo(!isOpenTwo);
-  };
-
+function Accordion(){
   return (
-    <section className={styles.accordion}>
+  
+    <section className={styles.accordionQuestions}>
       <h2>الأسئلة الشائعة حول الخدمات القانونية</h2>
-      <div className={styles.accordionItem}>
-        <div className={styles.accordionItemHeader} onClick={handleIsOpenOne}>
-          <h3>{data[0].title}</h3>
-          <Image
-            src="/assets/icons/legalservices/buttonDropdown.png"
-            width={30}
-            height={30}
-            alt="Toggle"
-          />
-        </div>
-        <div
-          className={`${styles.accordionContent} ${
-            isOpenOne ? styles.open : ""
-          }`}
-        >
-          <p>{data[0].desc}</p>
-        </div>
-      </div>
-      <div className={styles.accordionItemTwo}>
-        <div className={styles.accordionItemHeader} onClick={handleIsOpenTwo}>
-          <h3>{data[1].title}</h3>
-          <Image
-            src="/assets/icons/legalservices/buttonDropdown.png"
-            width={30}
-            height={30}
-            alt="Toggle"
-          />
-        </div>
-        <div
-          className={`${styles.accordionContent} ${
-            isOpenTwo ? styles.open : ""
-          }`}
-        >
-          <p>{data[1].desc}</p>
-        </div>
-      </div>
+      {data.map((el,index) => (
+        <AccordionCard title={el.title} desc={el.desc} key={index} />
+      ))}
     </section>
+  
   );
 };
 

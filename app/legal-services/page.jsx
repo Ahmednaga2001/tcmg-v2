@@ -3,7 +3,7 @@ import OurOfferings from "@/components/legal-services/OurOfferings";
 import SuccessFactors from "@/components/legal-services/SuccessFactors";
 import Guidelines from "../../components/legal-services/BestPractice";
 import Category from "@/components/legal-services/Category";
-import Accordion from "@/components/legal-services/Accordion";
+import Accordion from "@/components/legal-services/client/Accordion";
 function LegalServices() {
   return (
     <div className={styles.page}>

@@ -214,50 +214,43 @@
   color: #000;
 }
 /*-----------------------------------------------------------------*/
-.accordionItem {
-  padding: 40px 0;
+.accordionQuestions h2 {
+  text-align: center;
+  padding-bottom: 20px;
 }
-.accordionItemHeader {
+.accordionQuesHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #fff;
   padding-bottom: 20px;
 }
-.accordionItemHeader img {
+.accordionQuesHeader img {
   cursor: pointer;
 }
-.accordionContent {
+.accordionQuesContent {
   border-bottom: 1px solid #fff;
   font-size: 16px;
 }
-.accordionItemTwo {
+.accordionQues:not(:first-of-type) {
   margin-top: 10px;
 }
-.accordionContent {
+.accordionQuesContent {
   overflow: hidden;
   max-height: 0;
   font-size: 16px;
   transition: max-height 0.6s;
 }
-.accordionContent p {
+.accordionQuesContent p {
   padding: 20px 10px;
 }
-.accordionContent.open {
+.accordionQuesContent.open {
   max-height: 1000px;
 }
-/*-----------------------------------------------------------------*/
-@media (max-width: 768px) {
-  .accordion h2,
-  .succeesfactors h2,
-  .bestPractice h2,
-  .category h2,
-  .ourofferings h2,
-  .hero h1 {
-    font-size: 35px;
-    text-align: center;
-  }
+.accordionQuestions h2{
+  text-align: start;
 }
+/*-----------------------------------------------------------------*/
 @media (max-width : 1191px) {
   .hero .content {
     width: 100%;
@@ -312,13 +305,28 @@
   .bestPractice .contentleft p , .category .contentleft p {
     width: 85%;
   }
+  .ourofferings{
+    text-align: center;
+  }
 }
+
 @media (max-width : 768px) {
+  .accordion h2,
+  .succeesfactors h2,
+  .accordionQuestions h2,
+  .bestPractice h2,
+  .category h2,
+  .ourofferings h2,
+  .hero h1 {
+    font-size: 35px;
+    text-align: center;
+  }
   .page section{
     padding: 20px;
   }
-  .hero p , .bestPractice p , .category p {
-    font-size: 18px;
+ 
+  .hero p , .bestPractice p , .category p , .ourofferings p {
+    font-size: 16px;
   }
   .bestPractice .contentleft p , .category .contentleft p , .bestPractice .content , .category .content{
     width: 100%;
@@ -330,9 +338,12 @@
     width: 100%;
     height: 100%;
   }
+  .succeesfactors .card{
+    height:  auto;
+  }
 }
-@media (max-width : 400px) {
+/* @media (max-width : 400px) {
   .succeesfactors .card {
     height: 500px;
   }
-}
+} */
