@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "@/components/about/About.module.css"
 const VisonCard = ({visionContentstyle , title , desc}) => {  
   return (

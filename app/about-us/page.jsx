@@ -2,7 +2,7 @@ import styles from "@/components/about/About.module.css";
 import Image from "next/image";
 
 import Link from "next/link";
-import AboutSlider from "@/components/about/AboutSlider";
+import AboutSlider from "@/components/about/client/AboutSlider";
 import Vision from "@/components/about/Vision";
 import Team from "@/components/about/Team";
 import Owner from "@/components/about/Owner";
@@ -11,7 +11,7 @@ import BuisnessHistory from "@/components/about/BuisnessHistory";
 function AboutUs() {
   return (
     <div className={styles.about}>
-      <AboutSlider />
+      <AboutSlider/>
       <section className={styles.absection}>
         <div className={styles.aboutparent}>
           <div className={styles.aboutcontent}>

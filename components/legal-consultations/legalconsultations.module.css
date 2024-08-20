@@ -157,7 +157,6 @@
   }
   .legalAdvice .card:hover {
     flex-basis: 38rem;
-
     cursor: pointer;
   }
   .legalAdvice .card:hover .top span {

@@ -32,7 +32,7 @@ const Team = () => {
               height={60}
               alt="Profile picture of Mohamed Abu Deif"
             />
-          </div>
+          </div>      
         </div>
         <div className={styles.teamCard}>
           <div>

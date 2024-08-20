@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "@/components/about/About.module.css";
 import VisionImg from "@/components/about/VisionImg";
 import VisonCard from "@/components/about/VisonCard";
