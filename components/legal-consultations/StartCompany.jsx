@@ -94,8 +94,8 @@ const StartCompany = () => {
           <Image src="/assets/symbols/about/circle.svg" className={styles.circleImg} alt='circle image' width={30} height={30} />     
           </div>
           <div className={styles.Img}>
-            <label htmlFor="">نوع الاستشارة</label>
-            <select name="" id="">
+            <label htmlFor="kind">نوع الاستشارة</label>
+            <select name="" id="kind">
               <option value="النوع" disabled selected>
                 النوع
               </option>

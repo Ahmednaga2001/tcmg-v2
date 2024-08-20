@@ -1,4 +1,6 @@
 import Accordion from "@/components/legal-consultations/Accordion";
+import DividerOne from "@/components/legal-consultations/DividerOne";
+import DividerTwo from "@/components/legal-consultations/DividerTwo";
 import InstantLegalAdviceforAll from "@/components/legal-consultations/InstantLegalAdviceforAll";
 import styles from "@/components/legal-consultations/legalconsultations.module.css"
 import LegalSupport from "@/components/legal-consultations/LegalSupport";
@@ -20,8 +22,10 @@ function LegalConsultation() {
       <InstantLegalAdviceforAll/>
       <StartCompany/>
         <ReserveConsultation/> 
+        <DividerOne/>
        <WhyTrustUs/>
        <OurCustomers/>
+       <DividerTwo/>
       <Accordion/>  
   </div>;
 }

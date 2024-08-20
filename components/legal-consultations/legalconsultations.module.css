@@ -99,7 +99,7 @@
   .legalSupport .card span {
     font-size: 18px;
   }
-  .legalSupport .card{
+  .legalSupport .card {
     width: 100%;
   }
 }
@@ -119,8 +119,9 @@
   padding: 30px 10px;
   border-radius: 15px;
   flex-basis: 20rem;
-  max-height: 350px;
-  transition: 0.5s;
+  height: 300px;
+  margin: 10px;
+  transition: flex-basis 0.5s;
 }
 .legalAdvice .cards {
   display: flex;
@@ -128,10 +129,13 @@
   padding-top: 50px;
 }
 .legalAdvice .card .left {
-  display: none;
   opacity: 0;
-  padding: 15px;
+  transform: translateX(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  height: 0;
+  overflow: hidden;
   border-right: 1px solid #fff;
+  padding: 0 20px;
 }
 .legalAdvice .card .top {
   display: flex;
@@ -139,72 +143,95 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  width: 100%;
-  transition: 0.5s;
-  padding: 15px;
+  padding: 20px;
 }
 .legalAdvice p {
   font-size: 12px;
 }
-.legalAdvice .card:hover {
-  flex-basis: 38rem;
-  cursor: pointer;
-}
-.legalAdvice .card:hover .top span {
-  display: none;
-  opacity: 0;
-}
-.legalAdvice .cards:hover .card:not(:hover) {
-  flex-basis: 15rem;
-}
-.legalAdvice .card:hover .left {
-  display: block;
-  opacity: 1;
-}
-.legalAdvice .card .left span{
+.legalAdvice .card .left span {
   font-weight: 900;
 }
-.legalAdvice .left p {
-  padding-top: 20px;
+@media (min-width: 1300px) {
+  .legalAdvice .card {
+    height: 400px;
+  }
+  .legalAdvice .card:hover {
+    flex-basis: 38rem;
+
+    cursor: pointer;
+  }
+  .legalAdvice .card:hover .top span {
+    display: none;
+    opacity: 0;
+  }
+  .legalAdvice .cards:hover .card:not(:hover) {
+    flex-basis: 15rem;
+  }
+  .legalAdvice .card:hover .left {
+    opacity: 1;
+    transform: translateX(0);
+    height: auto;
+  }
+  .legalAdvice .left p {
+    padding-top: 20px;
+  }
+  .legalAdvice .card:hover {
+    display: flex;
+    justify-content: space-between;
+  }
 }
-.legalAdvice .card:hover {
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 1191px) {
+@media (max-width: 1299px) {
   .legalAdvice .cards {
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
+  }
+  .legalAdvice .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 80%;
+    gap: 20px;
+  }
+  .legalAdvice .card .left {
+    opacity: 1;
+    height: auto;
+  }
+  .legalAdvice .card .left span {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .legalAdvice .card .top span {
+    display: none;
+    opacity: 0;
   }
 }
 @media (max-width: 768px) {
   .legalAdvice .card {
-    width: 100%;
-    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    align-items: center;
+    height: auto;
+    gap: 20px;
   }
-  .legalAdvice .cards:hover .card:not(:hover) {
-    flex-basis: 20rem; 
+  .legalAdvice .card .left {
+    text-align: center;
+    opacity: 1;
+    height: auto;
+    border-right: none;
+    transform: translateX(0);
   }
-  .legalAdvice .cards:hover{
-    flex-basis: 20rem; 
+  .legalAdvice .card .left span {
+    display: block;
+    padding-bottom: 10px;
   }
-  @media (max-width: 400px) {
-    .legalAdvice .card {
-      width: 100%;
-      display: flex;
-      height: auto;
-      flex-direction: column;
-      gap: 10px;
-      align-items: center;
-    }
-    .legalAdvice .card .left {
-      text-align: center;
-      border-right: none;
-      border-top: 1px solid #fff;
-    }
+  .legalAdvice .card .top span {
+    display: none;
+    opacity: 0;
   }
 }
+
 /*------------------------------------------------------------------------------------*/
 .startcompany .heading {
   text-align: center;
@@ -237,8 +264,8 @@
   flex-direction: column;
   align-items: center;
 }
-.startcompany .parent .whatupCard{
-  background-color: #1B2340;
+.startcompany .parent .whatupCard {
+  background-color: #1b2340;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -248,18 +275,18 @@
   justify-content: center;
   gap: 5px;
 }
-.whatupCard span{
+.whatupCard span {
   font-size: 14px;
   font-weight: bold;
 }
-.startcompany .card{
- position: relative;
- background-image: url("/assets/images/legalconsultations/cardpattern.png");
- z-index: -1;
- background-size: contain;
- background-repeat: no-repeat;
+.startcompany .card {
+  position: relative;
+  background-image: url("/assets/images/legalconsultations/cardpattern.png");
+  z-index: -1;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.startcompany .img2{
+.startcompany .img2 {
   position: absolute;
   top: 70px;
   right: 60px;
@@ -273,14 +300,13 @@
   color: gray;
 }
 .startcompany label {
-  text-align: start !important;
-  align-self: flex-start;
-  padding-right: 70px;
+  margin-bottom: 5px;
+  /* padding-right: 40px; */
 }
 .startcompany .line {
   position: relative;
 }
-.line{
+.line {
   display: flex;
   justify-content: center;
 }
@@ -314,7 +340,7 @@
   .startcompany .Img {
     display: flex;
     flex-direction: column;
-        justify-content: center;
+    justify-content: center;
     padding-top: 50px !important;
   }
   .startcompany .Img:not(:first-child) {
@@ -368,7 +394,7 @@
   cursor: pointer;
 }
 .buttons button.active {
-  background-color: #fff; 
+  background-color: #fff;
   color: #000;
   padding: 5px 15px;
   border-radius: 25px;
@@ -448,6 +474,15 @@
   gap: 5px;
   justify-content: flex-end;
 }
+@media (max-width:768px) {
+  .reserveConsultation .companiesServices .card,
+.individualServices .card {
+
+  height: 700px;
+}
+
+  
+}
 /*------------------------------------------------------------------------------------*/
 .whyUs {
   min-height: 100vh;
@@ -477,14 +512,14 @@
   justify-content: space-between;
   padding-top: 50px;
 }
-@media (max-width : 1191px) {
-  .whyUs .cards{
+@media (max-width: 1191px) {
+  .whyUs .cards {
     flex-wrap: wrap;
     justify-content: center;
-    }
+  }
 }
-@media (max-width : 768px) {
-  .whyUs .card{
+@media (max-width: 768px) {
+  .whyUs .card {
     width: 100%;
   }
 }
@@ -496,7 +531,7 @@
   flex-direction: column;
   gap: 80px;
 }
-.ourCustomers .header{
+.ourCustomers .header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -590,3 +625,73 @@
 .accordionQuesContent.open {
   max-height: 1000px;
 }
+/* .divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 200px;
+}
+
+.divider div {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  background-color: #d9d9d93d; 
+  text-align: center;
+  padding: 20px;
+  border-radius: 25px;
+  position: relative;
+  z-index: 10;
+}
+.divider p{
+  position: relative;
+  z-
+} */
+
+/* .divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 4px; 
+  background-color: red;
+  transform: translateY(-50%);
+  z-index: -1;
+} */
+
+.divider , .dividerTwo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+}
+.divider div , .dividerTwo .contentWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: #d9d9d93d; 
+  flex: 3;
+  margin: auto;
+  padding: 10px;
+  border-radius: 25px;
+}
+.dividerTwo .imgContainer{
+  display: flex;
+  align-items: center;
+}
+
+.divider span , .dividerTwo span{
+  flex: 1;
+  border-top: 4px dotted rgba(128, 128, 128, 0.499);
+
+}
+
+
+
+
+
