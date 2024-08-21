@@ -54,7 +54,7 @@ const JoinUsSlider = () => {
         <SwiperSlide key={el.id} className={styles.swiperSlide}>
           <div className={styles.parent}>
           <div className={styles.content}>
-            <h2>{el.title}</h2>
+            <h3>{el.title}</h3>
             <p>{el.desc}</p>
           </div>
           <Image src={el.path} width={265} height={222} alt={el.path}/>

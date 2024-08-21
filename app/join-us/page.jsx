@@ -1,6 +1,7 @@
 import JoinUsSlider from "@/components/join-us/client/JoinUsSlider";
 import KnowOurValues from "@/components/join-us/client/KnowOurValues";
 import Divider from "@/components/join-us/Divider";
+import JobOpportunities from "@/components/join-us/JobOpportunities";
 import styles from "@/components/join-us/join-us.module.css";
 import Links from "@/components/join-us/Links";
 import OurJourney from "@/components/join-us/OurJourney";
@@ -46,6 +47,7 @@ function JoinUs() {
         <Divider/>
         <StartInternship/>
         <Divider/>
+        <JobOpportunities/>
         <OurJourney/>
     </div>
   );
