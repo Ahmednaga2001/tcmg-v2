@@ -1,0 +1,283 @@
+.page {
+    width: 100%;
+    height: 100%;
+  }
+  .page section {
+    padding: 80px;
+  }
+  .hero {
+    background-image: url(/assets/images/branches/Pattern.png);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .page h1,
+  .page h2 {
+    font-size: 50px;
+    line-height: 1.4;
+  }
+  .hero .content {
+    padding: 80px 0;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 24px;
+  }
+ /*---------------------------------------------------------------------------------*/
+  .locations{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.locations h2{
+    text-align: center;
+}
+.egyLocations .parent , .saudiaLocation .parent , .dubaiLocation .parent , .chinaLocation .parent{
+    padding-top: 50px;
+  }
+  .egyLocations .parent{
+    display: flex;
+    justify-content: space-between;
+  }
+  .parentLocations{
+    background: linear-gradient(#1B2340,#0E152C);
+    border: 1px solid #ffffff74;
+    border-left: none;
+    border-right: 0;
+    height: 647px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 50px 50px 0;
+    padding: 0 20px;
+  }
+  .locationOne{
+    border-bottom: 4px dotted rgba(128, 128, 128, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .locationTwo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .cardImg{
+position: relative;
+  }
+  .overlay{
+    position: absolute;
+    top: 0;
+    left : 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1B2340;
+    z-index: 10;
+    opacity:.2;
+  }
+  .locations img{
+    position: relative;
+  }
+  .locations p , .locations span{
+    font-size: 16px;
+  }
+ .saudiaLocation .parentLocations , .dubaiLocation .parentLocations , .chinaLocation .parentLocations{
+    height: 304px;
+    border-radius: 50px 0 0 50px;
+ }
+ .saudiaLocation .parent , .dubaiLocation .parent , .chinaLocation .parent{
+    display: flex;
+   justify-content: space-between;
+ }
+ .location{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+ }
+.chinaLocation .parentLocations{
+    border-radius: 0 50px 50px 0;
+}
+.contactInformation{
+    min-height: 100vh;
+}
+.contactInformation h2{
+    text-align: start;
+}
+.contactInformation p{
+    padding: 50px 0;
+    font-size: 24px;
+}
+ /*---------------------------------------------------------------------------------*/
+.contactNumbers .parentLocations{
+  height: 475px;
+}
+.contactNumbers .locationInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  text-align: center;
+  padding: 20px 0;
+}
+.locationInfo:not(:last-child){
+  border-bottom: 4px dotted rgba(128, 128, 128, 0.6);
+
+}
+/*---------------------------------------------------------------------------------*/
+.contactForm h2 {
+  text-align: center;
+}
+.contactForm .formPage {
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+    /* background:linear-gradient(#D8D8D8 , #D8D8D8); */
+
+  background: linear-gradient(#111931, #1a223f);
+  padding: 80px;
+}
+.contactForm .names {
+  display: flex;
+  gap: 20px;
+}
+.contactForm .inp {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.contactForm select {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  color: #000;
+  margin-top: 30px;
+  border: none;
+}
+.contactForm .formPage input[type = "text"] {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.contactForm .formPage textarea {
+  width: 100%;
+  resize: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.checkBox {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 30px 0;
+gap: 10px;
+}
+.formPage button {
+  background: transparent;
+  background: none;
+  border: none; 
+  text-align: center;
+  width: 100%;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  gap: 10px;
+  transition-property: opacity;
+  transition-property: gap;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+  color: grey;
+}
+.formPage button:hover {
+  gap: 20px;
+  opacity: 80%;
+}
+
+
+@media (max-width: 1191px) {
+  .page h1, .page h2 {
+    font-size: 35px; /* Ensure the font size is suitable for your design */
+    text-align: center;
+  }
+  .egyLocations .parent , .chinaLocation .parent , .dubaiLocation .parent , .saudiaLocation .parent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+.location .parentLocations .parent{
+  width: 80%;
+}
+.locations .parentLocations , .contactNumbers .parentLocations{
+  background-color: green;
+  width: 60%;
+  margin: auto;
+  border-radius: 50px;
+}
+  .locations .cardImg , .contactNumbers .cardImg{
+    width: 60%;
+   margin: auto;
+  }
+.locations img , .contactNumbers img{
+    width: 100%;
+  }
+  .hero .content , .contactInformation p {
+    font-size: 18px; 
+    text-align: center;
+  }
+  .hero .content img{
+    display: none;
+  }
+  .contactInformation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+}
+@media (max-width: 768px) {
+  .page section{
+    padding: 20px;
+  }
+  .contactForm{
+    font-size: 16px;
+  }
+  .hero .content{
+    align-items: center;
+  }
+  .hero .content , .contactInformation p{
+    font-size: 16px; 
+    padding-top: 20px;
+  }
+  .locations .parentLocations , .contactNumbers .parentLocations{
+    width: 100%;
+  }
+ .locations .cardImg , .contactNumbers .cardImg{
+  width: 100%;
+ }
+  .locations img , .contactNumbers img{
+    width: 100%;
+  }
+  .contactForm .formPage{
+    width: 100%;
+    padding: 20px;
+  }
+
+}

@@ -1,0 +1,349 @@
+.page {
+  width: 100%;
+  height: 100%;
+}
+.page section {
+  padding: 80px;
+}
+.hero {
+  background-image: url(/assets/images/Pattern.png);
+  background-size: cover;
+  background-position: center center;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+.page h1,
+.page h2 {
+  font-size: 50px;
+  line-height: 1.4;
+}
+.hero .content {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 70px 0px;
+}
+/*-----------------------------------------------------------------*/
+.ourofferings {
+  min-height: 100vh;
+}
+.ourofferings h2 {
+  text-align: center;
+}
+.ourofferings .parent {
+  padding-top: 80px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ourofferings .card {
+  width: 20rem;
+  background: linear-gradient(#1b2340, #0e152c);
+  border-radius: 30px 30px 0 0;
+}
+.ourofferings .topCard {
+  padding: 80px 50px;
+  background: linear-gradient(#1b2340, #1b2340);
+  border-radius: 30px;
+  position: relative;
+}
+.ourofferings .topCard h3 {
+  text-align: center;
+}
+.ourofferings .card p {
+  padding: 30px;
+}
+.ourofferings .topCard span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(#1b2340, #1c2d4f);
+  position: absolute;
+  top: -15px;
+  right: 50%;
+  transform: translateX(50%);
+}
+/*-----------------------------------------------------------------*/
+.succeesfactors {
+  min-height: 100vh;
+}
+.succeesfactors h2 {
+  text-align: center;
+}
+.succeesfactors .parent {
+  padding-top: 80px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.succeesfactors .card {
+  width: 20rem;
+  height: 430px;
+  background: linear-gradient(#1b2340, #1b2340);
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.succeesfactors .topCard {
+  background-color: #fff;
+  border-radius: 0 0 0 50px;
+  padding: 40px;
+}
+.succeesfactors p {
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+}
+.succeesfactors .overlay {
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.4s ease-in-out;
+  border-radius: 25px;
+}
+.succeesfactors .topOverlay {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #000;
+  padding: 30px;
+}
+.succeesfactors .overlay p {
+  padding: 20px;
+  text-align: center;
+}
+.succeesfactors .card:hover .overlay {
+  transform: scaleY(1);
+}
+/*------------------------------------------------------------------------------*/
+.bestPractice h2,
+.category h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.bestPractice,
+.category {
+  min-height: 100vh;
+}
+.practiceContainer,
+.categoryContainer {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.practiceCard,
+.categoryCard {
+  position: relative;
+  width: 100%;
+}
+.imgleft {
+  position: absolute;
+  left: -20px;
+  top: -40px;
+  z-index: 10;
+}
+.imgright {
+  position: absolute;
+  right: -20px;
+  top: -40px;
+  z-index: 10;
+}
+.bestPractice .content,
+.category .content {
+  height: 200px;
+  padding: 20px;
+  background: linear-gradient(#353e5c, #353e5c);
+  padding: 20px;
+  border-radius: 25px;
+  width: 95%;
+}
+.bestPractice .content p,
+.category .content p {
+  width: 85%;
+}
+.contentleft {
+  width: 95%;
+  height: 200px;
+  padding: 20px;
+  background: linear-gradient(#353e5c, #353e5c);
+  padding: 20px;
+  border-radius: 25px;
+  padding-right: 200px;
+  margin-right: 5%;
+}
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.linkContainer > a:first-child {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.6s;
+}
+.linkItem:first-child:hover {
+  transform: scale(1.1);
+}
+.linkContainer > a:last-child {
+  background-color: #fff;
+  padding: 10px 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  color: #000;
+}
+/*-----------------------------------------------------------------*/
+.accordionQuestions h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.accordionQuesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+.accordionQuesHeader img {
+  cursor: pointer;
+}
+.accordionQuesContent {
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
+}
+.accordionQues:not(:first-of-type) {
+  margin-top: 10px;
+}
+.accordionQuesContent {
+  overflow: hidden;
+  max-height: 0;
+  font-size: 16px;
+  transition: max-height 0.6s;
+}
+.accordionQuesContent p {
+  padding: 20px 10px;
+}
+.accordionQuesContent.open {
+  max-height: 1000px;
+}
+.accordionQuestions h2{
+  text-align: start;
+}
+/*-----------------------------------------------------------------*/
+@media (max-width : 1191px) {
+  .hero .content {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .practiceCard .imgleft , .categoryCard .imgleft {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+  }
+  .practiceCard .imgright , .categoryCard .imgright {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .bestPractice .contentleft , .category .contentleft {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bestPractice .content , .category .content {
+    text-align: center;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    order: 2;
+  }
+  .practiceCard , .categoryCard {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(#353e5c, #353e5c);
+    border-radius: 25px;
+  }
+  .bestPractice .contentleft p , .category .contentleft p {
+    width: 85%;
+  }
+  .ourofferings{
+    text-align: center;
+  }
+}
+
+@media (max-width : 768px) {
+  .accordion h2,
+  .succeesfactors h2,
+  .accordionQuestions h2,
+  .bestPractice h2,
+  .category h2,
+  .ourofferings h2,
+  .hero h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .page section{
+    padding: 20px;
+  }
+ 
+  .hero p , .bestPractice p , .category p , .ourofferings p {
+    font-size: 16px;
+  }
+  .bestPractice .contentleft p , .category .contentleft p , .bestPractice .content , .category .content{
+    width: 100%;
+  }
+  .categoryCard , .practiceCard{
+    width: 100%;
+  }
+  .leftcontent .img {
+    width: 100%;
+    height: 100%;
+  }
+  .succeesfactors .card{
+    height:  auto;
+  }
+}
+/* @media (max-width : 400px) {
+  .succeesfactors .card {
+    height: 500px;
+  }
+} */
