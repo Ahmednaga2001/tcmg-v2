@@ -1,6 +1,6 @@
 import styles from "@/components/establish/establish.module.css";
 import Image from "next/image";
-import LegalServiceAccordion from "./LegalServiceAccordion";
+import LegalServiceAccordion from "./client/LegalServiceAccordion";
 const data = [
   {
     title: "ترخيص مزاولة النشاط ",
@@ -49,7 +49,7 @@ const LegalServices = () => {
           عملنا بجد لتقديم خدمات ذكية ومرنة ومعقولة التكلفة تعود بالنفع على جميع
           عملائنا الراغبون في تأسيس الشركات في مصر والإمارات. تصفح قائمة خدماتنا
           ، واتصل بنا لحجز لقاء تمهيدي مع أحد خبراء الشركات بالمجموعة التجارية
-          والبحرية للمحاماة.{" "}
+          والبحرية للمحاماة.
         </p>
       </div>
       <div className={styles.accordionParent}>

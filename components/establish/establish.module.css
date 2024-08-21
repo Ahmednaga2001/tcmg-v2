@@ -25,7 +25,19 @@
 .hero .content p {
   font-size: 24px;
 }
-
+.hero a{
+  display: flex;
+  align-items: center;
+  gap:10px;
+  transition-property: opacity;
+  transition-property: gap;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+.hero a:hover {
+  gap: 20px;
+}
 /*------------------------------------------------------------------------------------*/
 .uniqueServiceFeatures,
 .startcompany,
@@ -145,13 +157,18 @@
 }
 .accordionItem {
   background: linear-gradient(#1b2340, #0e152c);
+  /* background-color: #1B2340; */
   border-radius: 25px;
   color: #fff;
   width: 38rem;
   padding: 10px 0;
   margin-bottom: 40px;
 }
+.accordionItem span{
+  font-weight: 600;
+}
 .accordionContent {
+  background-color: #1b234061;
   max-height: 0;
   font-size: 16px;
   transition: max-height 1s;
@@ -279,15 +296,16 @@
   position: absolute;
   top: 30%;
   right: -40px;
-  background-image: linear-gradient(#0D152C,#000);
-  width: calc(100% + 80px);
+  background-image: url(/assets/images/establish/Pattern2.png);
+  background-size: cover;  width: calc(100% + 80px);
   height: 50%;
   border-radius: 50px;
   z-index: -1;
 }
 .companiesTypes .swiperSlide {
-  /* background-color: #2d2425e7; */
-  background-image: linear-gradient(#0D152C,#000);
+  height: 300px;
+  background-image: url(/assets/images/establish/Pattern2.png);
+  background-size: cover;
   padding: 80px 50px;
   text-align: center;
   border-radius: 50px;
@@ -388,10 +406,16 @@
   margin: 30px 0;
   gap: 10px;
 }
-.formPage span {
-  display: flex;
+.formPage button {
+  background: transparent;
+  background: none;
+  border: none; 
+  text-align: center;
+  width: 100%;
+   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 16px;
   gap: 10px;
   transition-property: opacity;
   transition-property: gap;
@@ -400,11 +424,10 @@
   cursor: pointer;
   color: grey;
 }
-.formPage span:hover {
+.formPage button:hover {
   gap: 20px;
   opacity: 80%;
 }
-
 /*------------------------------------------------------------------------------------*/
 .accordionQuestions h2 {
   text-align: start !important;
@@ -534,7 +557,7 @@
     content: none;
   }
   .dreamCompany span:first-child{
-    font-size: 30px;
+    font-size: 24px;
   }
   .dreamCompany span:last-child{
     font-size: 18px;

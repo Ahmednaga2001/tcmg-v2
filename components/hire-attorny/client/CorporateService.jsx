@@ -1,6 +1,6 @@
 "use client";
 import styles from "@/components/hire-attorny/hireattorny.module.css";
-import HireCard from "./HireCard";
+import HireCard from "../HireCard";
 import Image from "next/image";
 import { useState } from "react";
 const dataOne = [

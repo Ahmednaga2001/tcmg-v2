@@ -44,7 +44,7 @@ const StartCompany = () => {
             src={data[1].path}
             width={300}
             height={302}
-            alt="Hire-lawyer-Female imaga"
+            alt="Person Image"
           />
         </div>
         <div className={styles.line}></div>
@@ -65,7 +65,7 @@ const StartCompany = () => {
             src={data[2].path}
             width={300}
             height={302}
-            alt="Business-World image"
+            alt="Business-World Image"
           />
         </div>
       </div>

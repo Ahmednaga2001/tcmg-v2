@@ -8,6 +8,7 @@ import OurCustomers from "@/components/legal-consultations/OurCustomers";
 import ReserveConsultation from "@/components/legal-consultations/ReserveConsultation";
 import StartCompany from "@/components/legal-consultations/StartCompany";
 import WhyTrustUs from "@/components/legal-consultations/WhyTrustUs";
+import Link from "next/link";
 function LegalConsultation() {
   return (
     <div className={styles.page}>

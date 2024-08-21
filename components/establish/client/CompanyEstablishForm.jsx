@@ -1,7 +1,7 @@
 "use client"
 import styles from "@/components/establish/establish.module.css";
 import Image from "next/image";
-const RequestLawyer = () => {
+const CompanyEstablishForm = () => {
   return (
     <section className={styles.RequestLawyer}>
       <div className={styles.formPage}>
@@ -72,7 +72,7 @@ const RequestLawyer = () => {
           أوافق على سياسة الخصوصية
             <input type="checkbox" />
           </div>
-          <span>
+          <button>
           إرسال           
            <Image
               src="/assets/icons/establish/arrow-left.png"
@@ -80,11 +80,11 @@ const RequestLawyer = () => {
               width={26}
               height={26}
             />
-          </span>
+          </button>
         </form>
       </div>
     </section>
   );
 };
 
-export default RequestLawyer;
+export default CompanyEstablishForm;

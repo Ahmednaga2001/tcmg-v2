@@ -17,7 +17,7 @@ const LegalServiceAccordion = ({ title, path, desc }) => {
               src={path}
               width={80}
               height={97}
-              alt={title}
+              alt={path}
               className={styles.accordionItemIcon}
             />
             <span>{title}</span>

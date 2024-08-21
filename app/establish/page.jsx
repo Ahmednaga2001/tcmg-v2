@@ -1,12 +1,17 @@
-import Accordion from "@/components/establish/Accordion";
+import Accordion from "@/components/establish/client/Accordion";
 import Countries from "@/components/establish/Countries";
-import DreamCompany from "@/components/establish/DreamCompany";
+import DreamCompany from "@/components/establish/client/DreamCompany";
 import styles from "@/components/establish/establish.module.css";
 import LegalServices from "@/components/establish/LegalServices";
-import RequestLawyer from "@/components/establish/RequestLawyer";
 import StartCompany from "@/components/establish/StartCompany";
-import TypesofCompanies from "@/components/establish/TypesofCompanies";
-import UniqueServiceFeatures from "@/components/establish/UniqueServiceFeatures";
+import TypesofCompanies from "@/components/establish/client/TypesofCompanies";
+import UniqueServiceFeatures from "@/components/establish/client/UniqueServiceFeatures";
+import CompanyEstablishForm from "@/components/establish/client/CompanyEstablishForm";
+import Link from "next/link";
+import Image from "next/image";
+export const metadata={
+  title : "Establish"
+}
 function Establish() {
   return (
     <div className={styles.establish}>
@@ -16,6 +21,10 @@ function Establish() {
           <p>
           مع المجموعة التجارية والبحرية للمحاماة،<br/>أصبح حلم ريادة الأعمال وتأسيس شركة راسخة واقعاً.
           </p>
+          <Link href="#">
+          تعرف على المزيد
+          <Image src="/assets/icons/establish/arrowleft.png" width={20} height={20} alt="arrow-left"/>
+          </Link>
         </div>
       </section>
       <UniqueServiceFeatures />
@@ -24,7 +33,7 @@ function Establish() {
       <Countries />
       <TypesofCompanies />
       <DreamCompany />
-      <RequestLawyer />
+      <CompanyEstablishForm/>
       <Accordion />
     </div>
   );

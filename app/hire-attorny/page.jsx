@@ -1,12 +1,13 @@
-import Accordion from "@/components/hire-attorny/Accordion";
-import CorporateService from "@/components/hire-attorny/CorporateService";
+import Accordion from "@/components/hire-attorny/client/Accordion";
+import CorporateService from "@/components/hire-attorny/client/CorporateService";
 import styles from "@/components/hire-attorny/hireattorny.module.css";
-import IndividualServices from "@/components/hire-attorny/IndividualServices";
+import IndividualServices from "@/components/hire-attorny/client/IndividualServices";
 import LegalInstructions from "@/components/hire-attorny/LegalInstructions";
-import RequestLawyer from "@/components/hire-attorny/RequestLawyer";
-import WhyChoose from "@/components/hire-attorny/WhyChoose";
-import Image from "next/image";
-
+import RequestLawyer from "@/components/hire-attorny/client/RequestLawyer";
+import WhyChoose from "@/components/hire-attorny/client/WhyChoose";
+export const metadata = {
+  title : "Hire-Attorny"
+}
 function HireAttorny() {
   return (
     <div className={styles.page}>
@@ -30,9 +31,9 @@ function HireAttorny() {
       <WhyChoose />
       <IndividualServices />
       <CorporateService />
-<LegalInstructions/>
-      <RequestLawyer/>
-       <Accordion/>
+      <LegalInstructions />
+      <RequestLawyer />
+      <Accordion />
     </div>
   );
 }

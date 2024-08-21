@@ -89,7 +89,7 @@ const Category = () => {
           تصفح القطاعات القانونية
           <Image
             src="assets/icons/legalservices/arrow-left.svg"
-            alt="Navigate to full team page"
+            alt="arrow-left"
             width={30}
             height={30}
           />

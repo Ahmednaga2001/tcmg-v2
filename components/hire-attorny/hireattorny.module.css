@@ -215,13 +215,13 @@
 }
 .legalinstructions .cirecleImg1M {
   position: absolute;
-  left: -30px;
+  left: -35px;
   top: -10px;
 }
 .legalinstructions .cirecleImg2 {
   position: absolute;
   bottom: -10px;
-  left: -10px;
+  left: -15px;
 }
 /*---------------------------------------------------------------------------------*/
 .RequestLawyer h2 {
@@ -278,10 +278,16 @@ align-items: center;
 margin: 30px 0;
 gap: 10px;
 }
-.formPage span {
-  display: flex;
+.formPage button {
+  background: transparent;
+  background: none;
+  border: none; 
+  text-align: center;
+  width: 100%;
+   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 16px;
   gap: 10px;
   transition-property: opacity;
   transition-property: gap;
@@ -290,7 +296,7 @@ gap: 10px;
   cursor: pointer;
   color: grey;
 }
-.formPage span:hover {
+.formPage button:hover {
   gap: 20px;
   opacity: 80%;
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "@/components/legal-services/legalservices.module.css"
 const VisonCard = ({visionContentstyle , title , desc}) => {  
   return (

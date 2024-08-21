@@ -7,11 +7,13 @@ import Vision from "@/components/about/Vision";
 import Team from "@/components/about/Team";
 import Owner from "@/components/about/Owner";
 import BuisnessHistory from "@/components/about/BuisnessHistory";
-
+export const metadata = {
+  title: 'About',
+}
 function AboutUs() {
   return (
     <div className={styles.about}>
-      <AboutSlider/>
+      <AboutSlider />
       <section className={styles.absection}>
         <div className={styles.aboutparent}>
           <div className={styles.aboutcontent}>

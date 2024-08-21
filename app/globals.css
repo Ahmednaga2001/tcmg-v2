@@ -123,7 +123,7 @@ a {
     background-position: center !important;
     background-image: url(/assets/icons/establish/prev.png) !important; 
     z-index: 10 !important;
-    left: -30px !important;   
+    left: -40px !important;   
   }
   #companiesTypes  .swiper-button-next {
     background-repeat: no-repeat !important;

@@ -1,7 +1,5 @@
 "use client";
-import Image from "next/image";
 import styles from "@/components/hire-attorny/hireattorny.module.css";
-import { useState } from "react";
 import AccordionCard from "./AccordionCard";
 
 const data = [

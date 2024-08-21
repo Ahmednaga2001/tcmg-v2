@@ -34,10 +34,10 @@ const DreamCompany = () => {
           spaceBetween={30}
           effect="fade"
           pagination={{ clickable: true }}
-          navigation={{
-            nextEl: '.swiper-button-prev',
-           prevEl: '.swiper-button-next'
-       }}
+            navigation={{
+              nextEl: '.dream-next',  // Unique class for next button
+              prevEl: '.dream-prev',  // Unique class for previous button
+            }}
           loop={true}
           autoplay={{
             delay: 5000,
@@ -54,7 +54,7 @@ const DreamCompany = () => {
           {info.map((el) => (
             <SwiperSlide key={el.id} >
               <div className={styles.swiperSlide}>
-                <Image src={el.path} width={1440} height={458} alt='image for country' />
+                <Image src={el.path} width={1440} height={458} alt={el.path}/>
 
                 <div className={styles.content}>
                   <span>{el.title}</span>
@@ -64,8 +64,8 @@ const DreamCompany = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="swiper-button-prev"/>
-        <div className="swiper-button-next"/>
+        <div className="swiper-button-prev dream-prev"/>
+        <div className="swiper-button-next dream-next"/>
       </div>
 
     </section>

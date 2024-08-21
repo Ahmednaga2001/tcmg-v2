@@ -58,8 +58,8 @@ const UniqueServiceFeatures = () => {
         <Swiper
           spaceBetween={10}
           navigation={{
-               nextEl: '.swiper-button-prev',
-              prevEl: '.swiper-button-next'
+               nextEl: '.slideprev',
+              prevEl: '.slidenext'
           }}
           centeredSlides={true} // Center the active slide
           slidesPerView={1}
@@ -117,8 +117,8 @@ const UniqueServiceFeatures = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="swiper-button-prev"/>
-        <div className="swiper-button-next"/>
+        <div className="swiper-button-prev slidenext"/>
+        <div className="swiper-button-next slideprev"/>
       </div>
     </section>
   );

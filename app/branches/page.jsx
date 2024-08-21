@@ -3,7 +3,10 @@ import styles from "@/components/branches/branches.module.css";
 import CardImg from "@/components/branches/CardImg";
 import ContactInformation from "@/components/branches/ContactInformation";
 import ContactNumbers from "@/components/branches/ContactNumbers";
-import ContactForm from "@/components/branches/ContactForm";
+import ContactForm from "@/components/branches/client/ContactForm";
+export const metadata = {
+  title: "Branches",
+};
 
 function Branches() {
   return (
@@ -56,7 +59,7 @@ function Branches() {
               <div className={styles.overlay}></div>
               <CardImg
                 classStyle="egyImg"
-                w={536.32}
+                w={537}
                 h={647}
                 path="/assets/images/branches/Egypt.png"
                 alt="Egypt Locations"
@@ -72,10 +75,10 @@ function Branches() {
               <div className={styles.overlay}></div>
               <CardImg
                 classStyle="egyImg"
-                w={536}
+                w={536.32}
                 h={304}
                 path="/assets/images/branches/alriyadh.png"
-                alt="alriyadh Locations"
+                alt="Alriyadh Locations"
               />
             </div>
             <div className={styles.parentLocations}>
@@ -97,10 +100,10 @@ function Branches() {
               <div className={styles.overlay}></div>
               <CardImg
                 classStyle="egyImg"
-                w={536}
+                w={536.32}
                 h={304}
                 path="/assets/images/branches/dubai.png"
-                alt="dubai Locations"
+                alt="Dubai Locations"
               />
             </div>
             <div className={styles.parentLocations}>
@@ -127,23 +130,22 @@ function Branches() {
                 <span>دبي – الإمارات العربية المتحدة</span>
               </div>
             </div>
-               <div className={styles.cardImg}>
+            <div className={styles.cardImg}>
               <div className={styles.overlay}></div>
               <CardImg
                 classStyle="egyImg"
-                w={536}
+                w={536.32}
                 h={304}
                 path="/assets/images/branches/china.png"
-                alt="china Locations"
+                alt="China Locations"
               />
             </div>
           </div>
         </div>
-
       </section>
-      <ContactInformation/>
-<ContactNumbers/>
-<ContactForm/>
+      <ContactInformation />
+      <ContactNumbers />
+      <ContactForm />
     </div>
   );
 }

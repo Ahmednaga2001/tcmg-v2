@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import styles from "@/components/hire-attorny/hireattorny.module.css";
 import Image from "next/image";
 const RequestLawyer = () => {
@@ -68,21 +68,21 @@ const RequestLawyer = () => {
               id=""
               placeholder="ما هي قضيتك المراد توكيل محامي لها؟"
             ></textarea>
-           <span>?</span>
+            <span>?</span>
           </div>
           <div className={styles.checkBox}>
-          أوافق على سياسة الخصوصية
+            أوافق على سياسة الخصوصية
             <input type="checkbox" />
           </div>
-          <span>
-          إرسال           
-           <Image
+          <button>
+            إرسال
+            <Image
               src="/assets/icons/hireattorny/arrow-left.png"
               alt="Arrow Left Small"
               width={26}
               height={26}
             />
-          </span>
+          </button>
         </form>
       </div>
     </section>
