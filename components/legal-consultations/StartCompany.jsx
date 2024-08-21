@@ -91,7 +91,7 @@ const StartCompany = () => {
             <p>{data[2].desc}</p>
           </div>
           <div className={styles.line}>
-          <Image src="/assets/symbols/about/circle.svg" className={styles.circleImg} alt='circle image' width={30} height={30} />     
+          <Image src="/assets/symbols/legalconsultations/circle.svg" className={styles.circleImg} alt='circle image' width={30} height={30} />     
           </div>
           <div className={styles.Img}>
             <label htmlFor="kind">نوع الاستشارة</label>

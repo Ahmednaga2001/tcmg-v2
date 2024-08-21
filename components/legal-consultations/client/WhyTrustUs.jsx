@@ -75,7 +75,7 @@ const WhyTrustUs = () => {
               src={item.path}
               width={169}
               height={170}
-              alt={item.title}
+              alt={item.path}
             />
             <Counter targetNumber={item.targetNumber} />
             <span>{item.title}</span>

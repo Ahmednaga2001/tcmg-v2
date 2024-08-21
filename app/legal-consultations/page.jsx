@@ -1,14 +1,16 @@
-import Accordion from "@/components/legal-consultations/Accordion";
+import Accordion from "@/components/legal-consultations/client/Accordion";
 import DividerOne from "@/components/legal-consultations/DividerOne";
 import DividerTwo from "@/components/legal-consultations/DividerTwo";
 import InstantLegalAdviceforAll from "@/components/legal-consultations/InstantLegalAdviceforAll";
 import styles from "@/components/legal-consultations/legalconsultations.module.css";
 import LegalSupport from "@/components/legal-consultations/LegalSupport";
 import OurCustomers from "@/components/legal-consultations/OurCustomers";
-import ReserveConsultation from "@/components/legal-consultations/ReserveConsultation";
+import ReserveConsultation from "@/components/legal-consultations/client/ReserveConsultation";
 import StartCompany from "@/components/legal-consultations/StartCompany";
-import WhyTrustUs from "@/components/legal-consultations/WhyTrustUs";
-import Link from "next/link";
+import WhyTrustUs from "@/components/legal-consultations/client/WhyTrustUs";
+export const metadata={
+  title : "Legal Consultations"
+}
 function LegalConsultation() {
   return (
     <div className={styles.page}>

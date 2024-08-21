@@ -1,7 +1,7 @@
 "use client";
 import styles from "@/components/legal-consultations/legalconsultations.module.css";
-import CompaniesServices from "./CompaniesServices";
-import IndividualServices from "./IndividualServices";
+import CompaniesServices from "../CompaniesServices";
+import IndividualServices from "../IndividualServices";
 import { useState } from "react";
 
 const ReserveConsultation = () => {
