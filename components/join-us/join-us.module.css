@@ -19,8 +19,18 @@
     justify-content: center;
     gap: 10px;
 }
+.about .parent{
+    display: flex;
+   justify-content: space-between;
 
-
+}
+.about .parent div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
 .swiperOne{
     min-height: 70vh;
     padding: 80px;
