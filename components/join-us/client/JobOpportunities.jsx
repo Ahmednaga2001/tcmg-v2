@@ -72,8 +72,8 @@ const JobOpportunities = () => {
         className="mySwiper"
       >
        {
-        data.map((el)=>(
-            <SwiperSlide>
+        data.map((el,index)=>(
+            <SwiperSlide key={index}>
                 <div className={styles.content}>
                 <Image src={el.path} width={364} height={295} alt={el.alt}/>
                 <p>{el.title}</p>
