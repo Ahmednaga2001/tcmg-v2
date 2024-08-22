@@ -44,16 +44,16 @@ const JobOpportunities = () => {
       </div>
       <div className={styles.left}>
       <Swiper
-    //   breakpoints={{
-    //     768: {
-    //       slidesPerView: 1, // 1 slide per view at 768px or less
-    //       centeredSlides: true, // Centered slides at this breakpoint
-    //     },
-    //     1024: {
-    //       slidesPerView: 2, // 2 slides per view at 1024px or less
-    //       centeredSlides: false, // Optionally adjust centeredSlides
-    //     },
-    //   }}
+      breakpoints={{
+        768: {
+          slidesPerView: 1, // 1 slide per view at 768px or less
+          centeredSlides: true, // Centered slides at this breakpoint
+        },
+        1024: {
+          slidesPerView: 2, // 2 slides per view at 1024px or less
+          centeredSlides: false, // Optionally adjust centeredSlides
+        },
+      }}
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
@@ -68,7 +68,7 @@ const JobOpportunities = () => {
         autoplay={true}
         loop={true}
         pagination={true}
-        modules={[EffectCoverflow,Autoplay]}
+        modules={[EffectCoverflow]}
         className="mySwiper"
       >
        {
