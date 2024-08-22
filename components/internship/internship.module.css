@@ -210,3 +210,24 @@
     
 }
 
+.aspirations{
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1B2340;
+  gap: 20px;
+}
+.aspirations p{
+  width: 80%;
+}
+@media (max-width : 1191px) {
+  .aspirations{
+    align-items: center;
+    text-align: center;
+  }
+  .aspirations p{
+    width: 100%;
+  }
+  
+}
