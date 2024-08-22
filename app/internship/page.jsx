@@ -1,5 +1,6 @@
 import Challenges from "@/components/internship/Challenges";
 import Experience from "@/components/internship/client/Experience";
+import InternshipTcmg from "@/components/internship/client/InternshipTcmg";
 import Offer from "@/components/internship/client/Offer";
 import styles from "@/components/internship/internship.module.css"
 import PathToLegalExcellence from "@/components/internship/PathToLegalExcellence";
@@ -20,8 +21,9 @@ function Internship() {
       <section className={styles.aspirations}>
         <h2>ما نطمح إليه من فريق المتدربين الخاص بنا</h2>
         <p>نتطلع إلى انضمام أشخاص ملهمون وملتزمون بالتعلم والنمو المهني. نبحث عن من يريدون تدريب محاماة ولكن يُشتَرط أن يكونوا ممن يمتلكون شغفًا وحماسًا للعمل في مجال القانون، والذين يتمتعون بقدرة على التواصل الفعّال والعمل الجماعي. نحن نرغب في وجود أشخاص يتمتعون بالمرونة والقدرة على التكيف مع تغييرات البيئة المهنية ويسعون دائمًا لتحقيق أفضل النتائج والتميز في عملهم. إذا كنت تبحث مكتب محاماة يقدم خدمة تدريب محامين حديثي التخرج ويقدم فرص للتطور, فنحن نتطلع إلى مشاركتك في رحلتنا وتحقيق النجاح والنمو معًا.</p>
-
       </section>
+      
+      <InternshipTcmg/>
   </div>;
 }
 
