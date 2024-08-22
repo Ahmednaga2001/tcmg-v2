@@ -34,7 +34,6 @@
     flex-direction: column;
     gap: 40px;
   }
-
   .tcmgPartnership {
     min-height: 70vh;
       background-image: url(/assets/images/strategicrelations/pattern.png);
@@ -48,11 +47,9 @@
     gap: 40px;
     width: 70%;
   }
-  
   .ourJourney a {
     justify-content: flex-start;
   }
-
   @media (max-width : 1191px) {
     .page h1,  .page h2{
       font-size: 35px;
@@ -69,9 +66,11 @@
       align-items: center;
       text-align: center;
     }
+    .features h2{
+      text-align: center;
+    }
     
   }
-
   @media (max-width : 768px) {
     .page section{
       padding: 20px;
@@ -89,5 +88,131 @@
     .about p{
       padding-top: 30px;
     }
-    
   }
+  /*---------------------------------------------------------------------------------*/
+.features {
+  min-height: 100vh;
+}
+.features .topContent {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.accordionParent {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.accordionItemHeader > div:first-child {
+  width: 100%;
+  gap: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accordionItemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+.accordionItem {
+  background:linear-gradient(#1B2340,#0E152C);
+  border-radius: 25px;
+  color: #fff;
+  width: 40rem;
+}
+.accordionContent {
+  max-height: 0;
+  font-size: 16px;
+  transition: max-height 1s ease-out;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #1B2340;
+}
+.accordionContent.open {
+  max-height: 1000px;
+}
+.accordionContent p {
+  padding: 10px;
+  text-align: center;
+}
+.bottomIcon {
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.accordionArrowIcon {
+  transition: opacity 0.4s;
+  cursor: pointer;
+}
+.accordionArrowIcon.hide {
+  opacity: 0;
+}
+.accordionItem span {
+  font-weight: bold;
+}
+@media (max-width : 768px) {
+  .accordionItem{
+    width: 100%;
+  }
+    
+}
+/*-------------------------------------------------------------------------*/
+.legalNetwork {
+  min-height: 100vh;
+  padding: 80px 0 !important;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.Img {
+  background-color: var(--main);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+}
+.legalNetwork .content {
+  margin-right: 450px;
+  height: 100%;
+  background-color: #fff;
+  padding: 70px;
+}
+@media (max-width : 1191px) {
+  .Img {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-20px);
+    display: flex;
+    justify-content: center;
+  }
+  .legalNetwork .content {
+    margin-right: 0;
+    padding: 100px;
+    text-align: center;
+  }
+}
+@media (max-width : 768px) {
+  .legalNetwork .content{
+    padding: 20px;
+    margin-right: 0;
+  }
+}
+@media (max-width : 400px) {
+ .legalNetwork img{
+  width: 100%;
+ }
+  
+}
