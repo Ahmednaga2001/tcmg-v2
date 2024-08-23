@@ -1,7 +1,9 @@
 import AchieveSuccess from "@/components/hiring/AchieveSuccess";
 import CareerJourney from "@/components/hiring/CareerJourney";
 import CareerProgressSteps from "@/components/hiring/CareerProgressSteps";
+import Accordion from "@/components/hiring/client/Accordion";
 import TcmgJob from "@/components/hiring/client/TcmgJob";
+import WhyChoose from "@/components/hiring/client/WhyChoose";
 import styles from "@/components/hiring/hiring.module.css"
 import Links from "@/components/join-us/Links";
 function Hiring() {
@@ -20,7 +22,9 @@ function Hiring() {
 
       <CareerJourney/>
       <CareerProgressSteps/>
+      <WhyChoose/>
       <TcmgJob/>
+      <Accordion/>
 
     </div>
   )
