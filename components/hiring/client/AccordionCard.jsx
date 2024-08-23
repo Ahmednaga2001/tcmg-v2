@@ -1,4 +1,4 @@
-import styles from "@/components/hiring/hiring.module.css";
+import styles from "@/components/internship/internship.module.css";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -12,7 +12,7 @@ const AccordionCard = ({title , desc}) => {
     <div className={styles.accordionQuesHeader} onClick={handleIsOpen}>
       <h3>{title}</h3>
       <Image
-        src="/assets/icons/hiring/buttonDropdown.png"
+        src="/assets/icons/internship/buttonDropdown.png"
         width={30}
         height={30}
         alt="Toggle"
