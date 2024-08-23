@@ -5,6 +5,8 @@ import Offer from "@/components/internship/client/Offer";
 import styles from "@/components/internship/internship.module.css"
 import PathToLegalExcellence from "@/components/internship/PathToLegalExcellence";
 import Links from "@/components/join-us/Links";
+import GraduationForm from "../../components/internship/client/GraduationForm ";
+import Accordion from "@/components/internship/client/Accordion";
 function Internship() {
   return <div className={styles.page}>
     <section className={styles.hero}>
@@ -24,6 +26,8 @@ function Internship() {
       </section>
       
       <InternshipTcmg/>
+      <GraduationForm/>
+      <Accordion/>
   </div>;
 }
 

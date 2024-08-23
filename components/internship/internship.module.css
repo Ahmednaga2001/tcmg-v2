@@ -109,6 +109,9 @@
     align-items: center;
     gap: 20px;
   }
+  .path p{
+    text-align: center;
+  }
   .path h2 , .path h3{
     text-align: center;
   }
@@ -121,8 +124,7 @@
   .experience .topContent p{
     width: 100%;
     text-align: center;
-    background-color: red;
-  }
+    }
 }
 
  /*---------------------------------------------------------------------------------*/
@@ -205,6 +207,9 @@
 }
 @media (max-width : 768px) {
   .accordionItem{
+    width: 100%;
+  }
+  .experience .topContent p{
     width: 100%;
   }
     
@@ -338,4 +343,185 @@
     align-items: center;
     text-align: center;
   }
+}
+
+ 
+/*---------------------------------------------------------------------------------*/
+.graduationForm h2 {
+  text-align: center;
+}
+.graduationForm .formPage {
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  background: linear-gradient(#111931, #1a223f);
+  padding: 80px;
+}
+.graduationForm .names {
+  display: flex;
+  gap: 20px;
+}
+.graduationForm .inp {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.graduationForm select {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  color: #000;
+  margin-top: 30px;
+  border: none;
+}
+.graduationForm .formPage input[type = "text"] {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.graduationForm .formPage textarea {
+  width: 100%;
+  resize: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.checkBox {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 30px 0;
+gap: 10px;
+}
+.formPage button {
+  background: transparent;
+  background: none;
+  border: none; 
+  text-align: center;
+  width: 100%;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  gap: 10px;
+  transition-property: opacity;
+  transition-property: gap;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+  color: grey;
+}
+.formPage button:hover {
+  gap: 20px;
+  opacity: 80%;
+}
+.graduationForm .emailContact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.graduationForm .emailContact p{
+  width: 30%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.file {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #fff;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.file .right{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+  color: #ffffffab;
+}
+.fileInput {
+  opacity: 0; /* Hide the default file input */
+  position: absolute; /* Position it absolutely within the container */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  cursor: pointer;
+}
+.fileLabel Image {
+  vertical-align: middle; /* Align the image with the text */
+}
+/*---------------------------------------------------------------------------------*/
+.accordionQuestions {
+  min-height: 100vh;
+}
+.accordionQuestions h2{
+ padding-bottom: 20px;
+}
+ .accordionQuesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+ .accordionQuesHeader img {
+  cursor: pointer;
+}
+ .accordionQuesContent {
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
+}
+.accordionQues:not(:first-of-type){
+  margin-top: 10px;
+}
+ .accordionQuesContent{
+  overflow: hidden;
+  max-height: 0;
+  font-size: 16px;
+  transition: max-height 0.6s;
+}
+.accordionQuesContent p {
+  padding: 20px 10px;
+}
+ .accordionQuesContent.open {
+  max-height: 1000px;
+}
+
+
+@media (max-width : 1191px) {
+  .accordionQuestions h2{
+    text-align: center;
+  }  
+}
+@media (max-width : 768px) {
+  .page section{
+    padding: 20px;
+  }
+  .graduationForm .formPage {
+    width: 100%;
+    padding: 20px;
+  }
+  .accordionItem {
+    width: 100%;
+  }
+ .graduationForm .emailContact p{
+    width: 100%;
+  }
+  .aspirations p , .accordionQuestions p , .path p , .experience p{
+    font-size: 16px;
+ 
+  }
+  
 }
