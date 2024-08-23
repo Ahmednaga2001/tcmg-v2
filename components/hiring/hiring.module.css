@@ -1,457 +1,491 @@
 .page {
-    width: 100%;
-    height: 100%;
-  }
-  .page section {
-    padding: 80px;
-  }
-  .hero {
-   min-height: 70vh;
-   display: flex;
-   align-items: center;
-   background: linear-gradient(#0e152ce4,#0e152ce4),url(/assets/images/hiring/pattern1.png);
-   background-size: cover;
-   background-repeat: no-repeat;
-  }
+  width: 100%;
+  height: 100%;
+}
+.page h1,
+.page h2 {
+  font-size: 50px;
+  line-height: 1.4;
+}
+.page section {
+  padding: 80px;
+}
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#0e152ce4, #0e152ce4),
+    url(/assets/images/hiring/pattern1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-  
+@media (max-width: 1191px) {
   .page h1,
   .page h2 {
-    font-size: 50px;
-    line-height: 1.4;
+    font-size: 35px;
   }
-  /*-------------------------------------------------------------------------*/
-.achieveSuccess {
-    min-height: 100vh;
-    padding: 80px 0 !important;
-    color: #000;
-    display: flex;
-    flex-direction: column;
+  .hero {
     justify-content: center;
-    position: relative;
-  }
-  .achieveSuccess .Img {
-    background-color: var(--main);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 40px;
-  }
-  .achieveSuccess .content {
-    margin-right: 450px;
-    height: 100%;
-    background-color: #fff;
-    padding: 70px;
-  }
-  @media (max-width : 1191px) {
-    .achieveSuccess .Img {
-      position: relative;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      transform: translateY(-20px);
-      display: flex;
-      justify-content: center;
-    }
-    .achieveSuccess .content {
-      margin-right: 0;
-      padding: 100px;
-      text-align: center;
-    }
-  }
-  @media (max-width : 768px) {
-    .achieveSuccess .content{
-      padding: 20px;
-      margin-right: 0;
-    }
-  }
-  @media (max-width : 400px) {
-   .achieveSuccess img{
-    width: 100%;
-   }
-  }
-
-
-
-  .careerJourney{
-    min-height:70vh ;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  .careerJourney div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .careerJourney p{
-    width: 70%;
-  }
-
-
-  .steps{
-    min-height: 70vh;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-
-
-
-
-  .tcmgJob{
-    min-height: 70vh;
-    background-image: url(/assets/images/hiring/pattern2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .tcmgJob .parent{
-    width: 60%;
-    backdrop-filter: blur(5px);
-    background-color: #dddddd33;
-    padding: 100px 50px;
-    display: flex;
-    flex-direction: column;
-  
-    gap: 40px;
-   
-  }
-  .tcmgJob form {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  .tcmgJob h3{
     text-align: center;
   }
-  .tcmgJob .selectParent{
+}
+@media (max-width: 768px) {
+  .page section {
+    padding: 20px;
+  }
+  .steps p , .achieveSuccess p , .steps p , .whyChoose p , .accordionQuestions p , .careerJourney p {
+    font-size: 16px;
+  }
+}
+/*-------------------------------------------------------------------------*/
+.achieveSuccess {
+  min-height: 100vh;
+  padding: 80px 0 !important;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.achieveSuccess .Img {
+  background-color: var(--main);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+}
+.achieveSuccess .content {
+  margin-right: 450px;
+  height: 100%;
+  background-color: #fff;
+  padding: 70px;
+}
+@media (max-width: 1191px) {
+  .achieveSuccess .Img {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-20px);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
-  .tcmgJob select {
-      /* appearance: none;       */
-      /* -webkit-appearance: none;
+  .achieveSuccess .content {
+    margin-right: 0;
+    padding: 100px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .achieveSuccess .content {
+    padding: 20px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 400px) {
+  .achieveSuccess img {
+    width: 100%;
+  }
+}
+
+/*-------------------------------------------------------------------------*/
+.careerJourney {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.careerJourney div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.careerJourney p {
+  width: 70%;
+}
+
+.steps {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 1191px) {
+  .careerJourney img{
+    display: none;
+    align-items: center;
+  }
+  .careerJourney p , .careerJourney h2{
+    width: 100%;
+    text-align: center;
+  }
+  .steps{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+/*-------------------------------------------------------------------------*/
+.whyChoose {
+  min-height: 100vh;
+}
+.whyChooseContent p {
+  padding-top: 60px;
+}
+.accordionParent {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.accordionItemHeader > div:first-child {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.accordionItemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.accordionItem {
+  background-color: #fff;
+  border-radius: 15px;
+  /* border-radius: 15px 15px 0 0; */
+  color: #000;
+  width: 32rem;
+  cursor: pointer;
+}
+.accordionContent {
+  max-height: 0;
+  font-size: 16px;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+  background-color: #1b2340;
+  color: #fff;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.accordionContent.open {
+  max-height: 1000px;
+}
+.accordionContent p {
+  padding: 10px;
+  text-align: center;
+}
+.bottomIcon {
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.accordionArrowIcon {
+  transition: opacity 0.4s;
+  cursor: pointer;
+}
+.accordionArrowIcon.hide {
+  opacity: 0;
+}
+.accordionItem span {
+  font-weight: bold;
+}
+@media (max-width : 1191px) {
+  .whyChoose h2 , .whyChoose p{
+    text-align: center;
+    
+  }
+}
+@media (max-width : 768px) {
+  .accordionItem{
+    width: 100%;
+  }
+}
+/*-------------------------------------------------------------------------*/
+.tcmgJob {
+  min-height: 70vh;
+  background-image: url(/assets/images/hiring/pattern2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tcmgJob .parent {
+  width: 60%;
+  backdrop-filter: blur(5px);
+  background-color: #dddddd33;
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.tcmgJob form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.tcmgJob h3 {
+  text-align: center;
+}
+.tcmgJob .selectParent {
+  display: flex;
+  justify-content: space-between;
+}
+.tcmgJob select {
+  /* appearance: none;       */
+  /* -webkit-appearance: none;
       -moz-appearance: none; */
-      border: none;          
-      background: none;       
-      padding: 10px;          
-      font-size: 16px;       
-      color: #ffffff;            
-      width: 30%;
-      outline: none;
-             
-  }
-  
-  .tcmgJob select {
-      /* background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="none" stroke="%23000" stroke-width="2" d="M8 9l4-4 4 4M8 15l4 4 4-4"/></svg>');
+  border: none;
+  background: none;
+  padding: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  width: 30%;
+  outline: none;
+}
+
+.tcmgJob select {
+  /* background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="none" stroke="%23000" stroke-width="2" d="M8 9l4-4 4 4M8 15l4 4 4-4"/></svg>');
       background-repeat: no-repeat;
       background-position: right 10px center;
       background-size: 10px; */
+}
+.tcmgJob option[disabled] {
+  color: #aaa;
+}
+.tcmgJob option {
+  /* backdrop-filter: blur(5px); */
+  background-color: #dddddd;
+  color: #000;
+  padding: 10px;
+}
+.tcmgJob button {
+  background: transparent;
+  background: none;
+  border: none;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  gap: 10px;
+  transition-property: opacity;
+  transition-property: gap;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+  color: #fff;
+}
+.tcmgJob button:hover {
+  gap: 20px;
+  opacity: 80%;
+}
+@media (max-width: 1191px) {
+  .tcmgJob select {
+    width: 50%;
   }
-  
-  .tcmgJob  option[disabled] {
-      color: #aaa;          
-  }
-  .tcmgJob option{
-    /* backdrop-filter: blur(5px); */
-    background-color: #dddddd;
-    color: #000;
-    padding: 10px;
-  }
-  .tcmgJob button {
-    background: transparent;
-    background: none;
-    border: none; 
-    text-align: center;
-    width: 100%;
-     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    gap: 10px;
-    transition-property: opacity;
-    transition-property: gap;
-    transition-duration: 200ms;
-    transition-timing-function: ease-in-out;
-    cursor: pointer;
-    color: #fff;
-  }
-  .tcmgJob button:hover {
-    gap: 20px;
-    opacity: 80%;
-  }
-  
-  @media (max-width : 1191px) {
-    .tcmgJob select{
-      width: 50%;
-    }
-    .tcmgJob .parent{
-      width: 80%;
-    }
-  }
-  @media (max-width : 768px) {
-    .tcmgJob select{
-      width: 100%;
-    }
-    .tcmgJob .parent{
-      width: 100%;
-    }
-    .tcmgJob .selectParent{
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-  }
-  /*---------------------------------------------------------------------------------*/
-.graduationForm h2 {
-    text-align: center;
-  }
-  .jobForm .formPage {
-    border-radius: 10px;
+  .tcmgJob .parent {
     width: 80%;
-    margin: auto;
-    background: linear-gradient(#111931, #1a223f);
-    padding: 80px;
   }
-  .jobForm .names {
-    display: flex;
-    gap: 20px;
+}
+@media (max-width: 768px) {
+  .tcmgJob select {
+    width: 100%;
   }
-  .jobForm .inp {
-    background-color: #fff;
-    display: flex;
+  .tcmgJob .parent {
+    width: 100%;
+  }
+  .tcmgJob .selectParent {
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-    gap: 10px;
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 30px;
+    text-align: center;
   }
-  .jobForm select {
-    width: 100%;
-    padding: 10px;
-    outline: none;
-    border-radius: 10px;
-    color: #000;
-    margin-top: 30px;
-    border: none;
-  }
-  .jobForm .formPage input[type = "text"] {
-    background-color: transparent;
-    width: 100%;
-    outline: none;
-    border: none;
-  }
-  .jobForm .formPage textarea {
-    width: 100%;
-    resize: none;
-    background-color: transparent;
-    width: 100%;
-    outline: none;
-    border: none;
-  }
-  .checkBox {
+}
+/*---------------------------------------------------------------------------------*/
+.graduationForm h2 {
+  text-align: center;
+}
+.jobForm .formPage {
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  background: linear-gradient(#111931, #1a223f);
+  padding: 80px;
+}
+.jobForm .names {
+  display: flex;
+  gap: 20px;
+}
+.jobForm .inp {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.jobForm select {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  color: #000;
+  margin-top: 30px;
+  border: none;
+}
+.jobForm .formPage input[type="text"] {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.jobForm .formPage textarea {
+  width: 100%;
+  resize: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.checkBox {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 30px 0;
   gap: 10px;
-  }
-  .formPage button {
-    background: transparent;
-    background: none;
-    border: none; 
-    text-align: center;
-    width: 100%;
-     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    gap: 10px;
-    transition-property: opacity;
-    transition-property: gap;
-    transition-duration: 200ms;
-    transition-timing-function: ease-in-out;
-    cursor: pointer;
-    color: grey;
-  }
-  .formPage button:hover {
-    gap: 20px;
-    opacity: 80%;
-  }
-  .jobForm .emailContact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .jobForm .emailContact p{
-    width: 30%;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .file {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #fff;
-    padding: 10px;
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 30px;
-  }
-  .file .right{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    font-size: 14px;
-    color: #ffffffab;
-  }
-  .fileInput {
-    opacity: 0; /* Hide the default file input */
-    position: absolute; /* Position it absolutely within the container */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    cursor: pointer;
-  }
-  .fileLabel Image {
-    vertical-align: middle; /* Align the image with the text */
-  }
-  /*---------------------------------------------------------------------------------*/
-  .accordionQuestions {
-  }
-  .accordionQuestions h2{
-   padding-bottom: 20px;
-  }
-   .accordionQuesHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 20px;
-  }
-   .accordionQuesHeader img {
-    cursor: pointer;
-  }
-   .accordionQuesContent {
-    border-bottom: 1px solid #fff;
-    font-size: 16px;
-  }
-  .accordionQues:not(:first-of-type){
-    margin-top: 10px;
-  }
-   .accordionQuesContent{
-    overflow: hidden;
-    max-height: 0;
-    font-size: 16px;
-    transition: max-height 0.6s;
-  }
-  .accordionQuesContent p {
-    padding: 20px 10px;
-  }
-   .accordionQuesContent.open {
-    max-height: 1000px;
-  }
-  
-  
-  @media (max-width : 1191px) {
-    .accordionQuestions h2{
-      text-align: center;
-    }  
-  }
-  @media (max-width : 768px) {
-    .page section{
-      padding: 20px;
-    }
-    .graduationForm .formPage {
-      width: 100%;
-      padding: 20px;
-    }
-    .accordionItem {
-      width: 100%;
-    }
-   .graduationForm .emailContact p{
-      width: 100%;
-    }
-    .aspirations p , .accordionQuestions p , .path p , .experience p{
-      font-size: 16px;
-   
-    }
-    
-  }
-
-.whyChoose{
-    min-height: 100vh;
 }
-  .whyChooseContent p {
-    padding-top: 60px;
+.formPage button {
+  background: transparent;
+  background: none;
+  border: none;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  gap: 10px;
+  transition-property: opacity;
+  transition-property: gap;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+  color: grey;
+}
+.formPage button:hover {
+  gap: 20px;
+  opacity: 80%;
+}
+.jobForm .emailContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.jobForm .emailContact p {
+  width: 30%;
+  text-align: center;
+  margin-top: 30px;
+}
+.file {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #fff;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.file .right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+  color: #ffffffab;
+}
+.fileInput {
+  opacity: 0; /* Hide the default file input */
+  position: absolute; /* Position it absolutely within the container */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  cursor: pointer;
+}
+.fileLabel Image {
+  vertical-align: middle; /* Align the image with the text */
+}
+/*---------------------------------------------------------------------------------*/
+.accordionQuestions {
+}
+.accordionQuestions h2 {
+  padding-bottom: 20px;
+}
+.accordionQuesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+.accordionQuesHeader img {
+  cursor: pointer;
+}
+.accordionQuesContent {
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
+}
+.accordionQues:not(:first-of-type) {
+  margin-top: 10px;
+}
+.accordionQuesContent {
+  overflow: hidden;
+  max-height: 0;
+  font-size: 16px;
+  transition: max-height 0.6s;
+}
+.accordionQuesContent p {
+  padding: 20px 10px;
+}
+.accordionQuesContent.open {
+  max-height: 1000px;
+}
+
+@media (max-width: 1191px) {
+  .accordionQuestions h2 {
+    text-align: center;
   }
-  .accordionParent {
-    padding-top: 60px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
+}
+@media (max-width: 768px) {
+  .page section {
+    padding: 20px;
   }
-  .accordionItemHeader > div:first-child {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  }
-  .accordionItemHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+  .graduationForm .formPage {
+    width: 100%;
     padding: 20px;
   }
   .accordionItem {
-    background-color: #fff;
-    border-radius: 15px;
-    /* border-radius: 15px 15px 0 0; */
-    color: #000;
-    width: 32rem;
-    cursor: pointer;
+    width: 100%;
   }
-  .accordionContent {
-    max-height: 0;
+  .graduationForm .emailContact p {
+    width: 100%;
+  }
+  .aspirations p,
+  .accordionQuestions p,
+  .path p,
+  .experience p {
     font-size: 16px;
-    transition: max-height 0.5s ease-out;
-    overflow: hidden;
-    background-color: #1B2340;
-    color: #fff;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-
+  }
 }
-  .accordionContent.open {
-    max-height: 300px;
-  }
-  .accordionContent p {
-    padding: 10px;
-    text-align: center;
-  }
-  .bottomIcon {
-    cursor: pointer;
-    display: block;
-    margin: auto;
-    margin-bottom: 10px;
-  }
-  .accordionArrowIcon {
-    transition: opacity 0.4s;
-    cursor: pointer;
-  }
-  .accordionArrowIcon.hide {
-    opacity: 0;
-  }
-  .accordionItem span{
-    font-weight: bold;
-  }
-  /*---------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------------*/
