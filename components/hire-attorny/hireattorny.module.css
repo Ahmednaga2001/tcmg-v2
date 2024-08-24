@@ -231,7 +231,8 @@
   border-radius: 10px;
   width: 80%;
   margin: auto;
-  background: linear-gradient(#111931, #1a223f);
+  backdrop-filter: blur(5px);
+  background-color: #dddddd27;
   padding: 80px;
 }
 .RequestLawyer .names {

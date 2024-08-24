@@ -57,7 +57,7 @@ const AskLawyer = () => {
           لطلب
         </p>
       </div>
-      <div className={styles.startcompanyparent}>
+      <div className={styles.askParent}>
         {data.map((el, index) => (
           <div className={styles.parent} key={index}>
             <div className={styles.content}>

@@ -2,6 +2,7 @@ import styles from "@/components/ask-attorny/ask-attrony.module.css";
 import AskLawyer from "@/components/ask-attorny/AskLawyer";
 import ConnectwithLegalExpert from "@/components/ask-attorny/ConnectwithLegalExpert";
 import About from "@/components/ask-attorny/About";
+import AskLawyerForm from "@/components/ask-attorny/client/AskLawyerForm";
 function AskAttorny() {
   return (
     <div className={styles.page}>
@@ -15,6 +16,7 @@ function AskAttorny() {
       <ConnectwithLegalExpert/>
       <About/>
       <AskLawyer/>
+      <AskLawyerForm/>
     </div>
   );
 }
