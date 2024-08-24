@@ -1,5 +1,22 @@
+import styles from "@/components/ask-attorny/ask-attrony.module.css";
+import AskLawyer from "@/components/ask-attorny/AskLawyer";
+import ConnectwithLegalExpert from "@/components/ask-attorny/ConnectwithLegalExpert";
+import About from "@/components/ask-attorny/About";
 function AskAttorny() {
-  return <div>AskAttorny</div>;
+  return (
+    <div className={styles.page}>
+      <section className={styles.hero}>
+        <h1>
+          بناء شراكات استراتيجية: اكتشف فرص التعاون والتواصل مع مكاتب TCMG
+          للمحاماة لتحقيق النجاح المشترك
+        </h1>
+      </section>
+
+      <ConnectwithLegalExpert/>
+      <About/>
+      <AskLawyer/>
+    </div>
+  );
 }
 
 export default AskAttorny;
