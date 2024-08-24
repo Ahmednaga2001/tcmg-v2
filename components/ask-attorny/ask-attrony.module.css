@@ -60,7 +60,7 @@
     margin-right: 450px;
     height: 100%;
     background-color: #fff;
-    padding: 70px;
+    padding: 30px 50px;
   }
   @media (max-width: 1191px) {
     .connect .Img {
