@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { useEffect, useState, useRef } from "react";
 import styles from "@/components/legal-consultations/legalconsultations.module.css";
 import Image from "next/image";
@@ -27,23 +27,24 @@ const Counter = ({ targetNumber }) => {
   const ref = useRef(null);
 
   useEffect(() => {
+    const currentRef = ref.current; // Store ref.current in a variable
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.unobserve(ref.current); // Stop observing once visible
+          observer.unobserve(currentRef); // Use the variable here
         }
       },
-      { threshold: 0.1 } // Trigger when 10% of the element is visible
+      { threshold: 0.1 }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -51,8 +52,8 @@ const Counter = ({ targetNumber }) => {
   useEffect(() => {
     if (isVisible && count < targetNumber) {
       const interval = setInterval(() => {
-        setCount((prevCount) => Math.min(prevCount + 1, targetNumber));
-      }, 0.2); // Adjust interval duration as needed
+        setCount((prevCount) => Math.min(prevCount + 20, targetNumber)); // Increment by 10 or adjust as needed
+      }, 50); // Adjust interval duration as needed
 
       return () => clearInterval(interval);
     }
@@ -75,7 +76,7 @@ const WhyTrustUs = () => {
               src={item.path}
               width={169}
               height={170}
-              alt={item.path}
+              alt={item.title} // Use title for alt attribute
             />
             <Counter targetNumber={item.targetNumber} />
             <span>{item.title}</span>
