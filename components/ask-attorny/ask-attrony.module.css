@@ -19,6 +19,41 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+/* ask-attrony.module.css */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+overflow-y: auto;
+  background: #0d152cec;
+  z-index: 1000;
+  transition: opacity 0.3s;
+}
+.popupContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.popup.hidden {
+  opacity: 0;
+  visibility: hidden; /* Hide the popup */
+  pointer-events: none; /* Disable interaction when hidden */
+}
+
+.popup p {
+  width: 100%;
+  text-align: center;
+}
+
+.popup button {
+  color: #fff !important;
+}
+
 @media (max-width: 1191px) {
   .page h1,
   .page h2 {
@@ -38,7 +73,7 @@
   .ask p,
   .whyChoose p,
   .accordionQuestions p,
-  .careerJourney p {
+  .careerJourney p , .popup p{
     font-size: 16px;
     text-align: center;
   }
@@ -132,8 +167,8 @@
   align-items: center;
   text-align: center;
 }
-.ask .askParent{
-    margin-top: 50px;
+.ask .askParent {
+  margin-top: 50px;
 }
 .ask .parent {
   display: flex;
@@ -179,9 +214,9 @@
 }
 
 @media (max-width: 1191px) {
-    .askParent{
-        margin-top: 0;
-    }
+  .askParent {
+    margin-top: 0;
+  }
   .parent {
     flex-direction: column;
     align-items: center;
@@ -201,12 +236,12 @@
     flex-direction: column;
     justify-content: center;
     padding-top: 0;
-}
-.ask .Img:not(:first-child) {
+  }
+  .ask .Img:not(:first-child) {
     order: 1;
     margin-top: 50px !important;
   }
-  
+
   .ask .content {
     order: 2;
     padding-top: 0 !important;
@@ -262,7 +297,7 @@
   margin-top: 30px;
   border: none;
 }
-.askLawyerForm .formPage input[type = "text"] {
+.askLawyerForm .formPage input[type="text"] {
   background-color: transparent;
   width: 100%;
   outline: none;
@@ -277,19 +312,20 @@
   height: 100px;
 }
 .checkBox {
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 30px 0;
-gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  gap: 10px;
 }
-.formPage button {
+.formPage button,
+.popup button {
   background: transparent;
   background: none;
-  border: none; 
+  border: none;
   text-align: center;
   width: 100%;
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 16px;
@@ -301,7 +337,8 @@ gap: 10px;
   cursor: pointer;
   color: grey;
 }
-.formPage button:hover {
+.formPage button:hover,
+.popup button:hover {
   gap: 20px;
   opacity: 80%;
 }
