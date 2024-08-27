@@ -154,32 +154,33 @@
   align-items: center;
   gap: 20px;
   cursor: pointer;
+
 }
 .accordionItem {
   background: linear-gradient(#1b2340, #0e152c);
   /* background-color: #1B2340; */
-  border-radius: 25px;
   color: #fff;
   width: 38rem;
   padding: 10px 0;
   margin-bottom: 40px;
+  border-radius: 15px;
+
 }
 .accordionItem span{
   font-weight: 600;
 }
 .accordionContent {
-  background-color: #1b234061;
+  background-color: #1b23403f;
   max-height: 0;
   font-size: 16px;
   transition: max-height 1s;
-  border-radius: 25px;
   overflow: hidden;
 }
 .accordionContent.open {
   max-height: 1000px;
 }
 .accordionContent p {
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 

@@ -36,6 +36,11 @@ const data = [
     }
 ]
 const JobOpportunities = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleSlideChange = (swiper) => {
+    setActiveIndex(swiper.realIndex);
+  };
   return (
     <section className={styles.jobOpportunities}>
       <div className={styles.right}>
@@ -44,39 +49,52 @@ const JobOpportunities = () => {
       </div>
       <div className={styles.left}>
       <Swiper
-      breakpoints={{
-        768: {
-          slidesPerView: 1, // 1 slide per view at 768px or less
-          centeredSlides: true, // Centered slides at this breakpoint
-        },
-        1024: {
-          slidesPerView: 2, // 2 slides per view at 1024px or less
-          centeredSlides: false, // Optionally adjust centeredSlides
-        },
-      }}
+     breakpoints={{
+      320: {
+        slidesPerView: 1,
+      },
+      620 : {
+         slidesPerView : 1.5
+      },
+      768: {
+        slidesPerView: 1.8,
+      },
+      1024: {
+        slidesPerView: 2.8,
+      },
+      1440: {
+        slidesPerView: 3,
+      }
+    }}
+    slidesPerView={3}
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={3}
         coverflowEffect={{
           rotate:0,
           stretch: 0,
           depth: 100,
           modifier: 2.5,
-          slideShadows: true,
         }}
         autoplay={true}
         loop={true}
-        pagination={true}
-        modules={[EffectCoverflow]}
+        pagination={{
+          clickable : true
+        }}
+        modules={[EffectCoverflow , Autoplay]}
         className="mySwiper"
+        onSlideChange={handleSlideChange}
+
       >
        {
         data.map((el,index)=>(
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index}  style={{
+              opacity: activeIndex === index ? 1 : 0.7,
+              transition: "opacity 0.3s",
+            }}>
                 <div className={styles.content}>
                 <Image src={el.path} width={364} height={295} alt={el.alt}/>
-                <p>{el.title}</p>
+                <p className={styles.jobTitle}>{el.title}</p>
                 </div>
        
             </SwiperSlide>

@@ -6,14 +6,15 @@
   padding: 80px;
 }
 .hero {
- min-height: 70vh;
- display: flex;
- align-items: center;
- background: linear-gradient(#0e152ce4,#0e152ce4),url(/assets/images/internship/pattern1.png);
- background-size: cover;
- background-repeat: no-repeat;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#0e152ce4, #0e152ce4),
+    url(/assets/images/internship/pattern1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.hero h1{
+.hero h1 {
   width: 85%;
 }
 
@@ -45,7 +46,7 @@
   background-color: #fff;
   padding: 70px;
 }
-@media (max-width : 1191px) {
+@media (max-width: 1191px) {
   .discover .Img {
     position: relative;
     top: 0;
@@ -62,30 +63,32 @@
     text-align: center;
   }
 }
-@media (max-width : 768px) {
-  .discover .content{
+@media (max-width: 768px) {
+  .discover .content {
     padding: 20px;
     margin-right: 0;
   }
 }
-@media (max-width : 400px) {
- .discover img{
-  width: 100%;
- }
+@media (max-width: 400px) {
+  .discover img {
+    width: 100%;
+  }
 }
-.path{
+/*-------------------------------------------------------------------------*/
+.path {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.path p{
-  background-color: #1B2340;
+.path p {
+  background-color: #1b2340;
   padding: 20px;
 }
-.challenges{
+.challenges {
   min-height: 50vh;
-  background:linear-gradient(#0000004b,#0000004b), url(/assets/images/internship/pattern2.png);
+  background: linear-gradient(#0000004b, #0000004b),
+    url(/assets/images/internship/pattern2.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -94,44 +97,49 @@
   position: relative;
   text-align: center;
 }
-@media (max-width : 1191px) {
-  .page h1 , .page h2{
+@media (max-width: 1191px) {
+  .page h1,
+  .page h2 {
     font-size: 35px;
   }
-  .hero{
+  .hero {
     justify-content: center;
   }
-  .hero h1{
+  .hero h1 {
     width: 100%;
     text-align: center;
   }
-  .path{
+  .path {
     align-items: center;
     gap: 20px;
   }
-  .path p{
+  .path p {
     text-align: center;
   }
-  .path h2 , .path h3{
+  .path h2,
+  .path h3 {
     text-align: center;
   }
-  .experience h2 , .offer h2{
+  .experience h2,
+  .offer h2 {
     text-align: center;
   }
-  .experience .topContent{
+  .experience .topContent {
     align-items: center;
   }
-  .experience .topContent p{
+  .experience .topContent p {
     width: 100%;
     text-align: center;
-    }
+  }
 }
 
- /*---------------------------------------------------------------------------------*/
- .offer , .experience {
+/*---------------------------------------------------------------------------------*/
+.offer,
+.experience {
   min-height: 100vh;
 }
-.offer .topContent , .experience .topContent {
+.offer .topContent,
+.experience .topContent {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -158,29 +166,27 @@
   align-items: center;
   gap: 20px;
   padding: 10px;
-
 }
 .accordionItem {
-  border-radius: 15px 15px 0 0;
+  border-radius: 15px;
   background-color: #fff;
-  color: #000;;
-  width: 40rem;
+  color: #000;
+  width: 36rem;
 }
-.experience .accordionItem{
-  background:linear-gradient(#1B2340,#0E152C) !important;
+.experience .accordionItem {
+  background: linear-gradient(#1b2340, #0e152c) !important;
   color: #fff;
 }
-.experience .topContent p{
+.experience .topContent p {
   width: 70%;
 }
 .accordionContent {
   max-height: 0;
   font-size: 16px;
-  transition: max-height 1s ease-out;
+  transition: max-height 1s;
   overflow: hidden;
-  background-color: #1B2340;
+  background-color: #1b2340;
   color: #fff;
-  
 }
 .accordionContent.open {
   max-height: 1000px;
@@ -205,39 +211,38 @@
 .accordionItem span {
   font-weight: bold;
 }
-@media (max-width : 768px) {
-  .accordionItem{
+@media (max-width: 768px) {
+  .accordionItem {
     width: 100%;
   }
-  .experience .topContent p{
+  .experience .topContent p {
     width: 100%;
   }
-    
 }
-
-.aspirations{
+/*-------------------------------------------------------------------------*/
+.aspirations {
   min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #1B2340;
+  background-color: #1b2340;
   gap: 20px;
 }
-.aspirations p{
+.aspirations p {
   width: 80%;
 }
-@media (max-width : 1191px) {
-  .aspirations{
+@media (max-width: 1191px) {
+  .aspirations {
     align-items: center;
     text-align: center;
   }
-  .aspirations p{
+  .aspirations p {
     width: 100%;
   }
-  
 }
+/*-------------------------------------------------------------------------*/
 
-.internshipTcmg{
+.internshipTcmg {
   min-height: 70vh;
   background-image: url(/assets/images/internship/pattern3.png);
   background-size: cover;
@@ -246,7 +251,7 @@
   justify-content: center;
   align-items: center;
 }
-.internshipTcmg .parent{
+.internshipTcmg .parent {
   width: 60%;
   backdrop-filter: blur(5px);
   background-color: #dddddd33;
@@ -260,38 +265,31 @@
   flex-direction: column;
   gap: 40px;
 }
-.internshipTcmg h3{
+.internshipTcmg h3 {
   text-align: center;
 }
-.internshipTcmg .selectParent{
+.internshipTcmg .selectParent {
   display: flex;
   justify-content: space-between;
 }
 .internshipTcmg select {
-    /* appearance: none;       */
-    /* -webkit-appearance: none;
+  /* appearance: none;       */
+  /* -webkit-appearance: none;
     -moz-appearance: none; */
-    border: none;          
-    background: none;       
-    padding: 10px;          
-    font-size: 16px;       
-    color: #ffffff;            
-    width: 30%;
-    outline: none;
-           
+  border: none;
+  background: none;
+  padding: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  width: 30%;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
 }
-
-.internshipTcmg select {
-    /* background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"><path fill="none" stroke="%23000" stroke-width="2" d="M8 9l4-4 4 4M8 15l4 4 4-4"/></svg>');
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 10px; */
+.internshipTcmg option[disabled] {
+  color: #aaa;
 }
-
-.internshipTcmg  option[disabled] {
-    color: #aaa;          
-}
-.internshipTcmg option{
+.internshipTcmg option {
   /* backdrop-filter: blur(5px); */
   background-color: #dddddd;
   color: #000;
@@ -300,10 +298,10 @@
 .internshipTcmg button {
   background: transparent;
   background: none;
-  border: none; 
+  border: none;
   text-align: center;
   width: 100%;
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 16px;
@@ -320,22 +318,22 @@
   opacity: 80%;
 }
 
-@media (max-width : 1191px) {
-  .internshipTcmg select{
+@media (max-width: 1191px) {
+  .internshipTcmg select {
     width: 50%;
   }
-  .internshipTcmg .parent{
+  .internshipTcmg .parent {
     width: 80%;
   }
 }
-@media (max-width : 768px) {
-  .internshipTcmg select{
+@media (max-width: 768px) {
+  .internshipTcmg select {
     width: 100%;
   }
-  .internshipTcmg .parent{
+  .internshipTcmg .parent {
     width: 100%;
   }
-  .internshipTcmg .selectParent{
+  .internshipTcmg .selectParent {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -343,7 +341,6 @@
   }
 }
 
- 
 /*---------------------------------------------------------------------------------*/
 .graduationForm h2 {
   text-align: center;
@@ -379,7 +376,7 @@
   margin-top: 30px;
   border: none;
 }
-.graduationForm .formPage input[type = "text"] {
+.graduationForm .formPage input[type="text"] {
   background-color: transparent;
   width: 100%;
   outline: none;
@@ -394,19 +391,19 @@
   border: none;
 }
 .checkBox {
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 30px 0;
-gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  gap: 10px;
 }
 .formPage button {
   background: transparent;
   background: none;
-  border: none; 
+  border: none;
   text-align: center;
   width: 100%;
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 16px;
@@ -422,12 +419,12 @@ gap: 10px;
   gap: 20px;
   opacity: 80%;
 }
-.graduationForm .emailContact{
+.graduationForm .emailContact {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.graduationForm .emailContact p{
+.graduationForm .emailContact p {
   width: 30%;
   text-align: center;
   margin-top: 30px;
@@ -444,7 +441,7 @@ gap: 10px;
   border-radius: 10px;
   margin-top: 30px;
 }
-.file .right{
+.file .right {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -465,27 +462,27 @@ gap: 10px;
 .accordionQuestions {
   min-height: 100vh;
 }
-.accordionQuestions h2{
- padding-bottom: 20px;
+.accordionQuestions h2 {
+  padding-bottom: 20px;
 }
- .accordionQuesHeader {
+.accordionQuesHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #fff;
   padding-bottom: 20px;
 }
- .accordionQuesHeader img {
+.accordionQuesHeader img {
   cursor: pointer;
 }
- .accordionQuesContent {
+.accordionQuesContent {
   border-bottom: 1px solid #fff;
   font-size: 16px;
 }
-.accordionQues:not(:first-of-type){
+.accordionQues:not(:first-of-type) {
   margin-top: 10px;
 }
- .accordionQuesContent{
+.accordionQuesContent {
   overflow: hidden;
   max-height: 0;
   font-size: 16px;
@@ -494,18 +491,17 @@ gap: 10px;
 .accordionQuesContent p {
   padding: 20px 10px;
 }
- .accordionQuesContent.open {
+.accordionQuesContent.open {
   max-height: 1000px;
 }
 
-
-@media (max-width : 1191px) {
-  .accordionQuestions h2{
+@media (max-width: 1191px) {
+  .accordionQuestions h2 {
     text-align: center;
-  }  
+  }
 }
-@media (max-width : 768px) {
-  .page section{
+@media (max-width: 768px) {
+  .page section {
     padding: 20px;
   }
   .graduationForm .formPage {
@@ -515,12 +511,13 @@ gap: 10px;
   .accordionItem {
     width: 100%;
   }
- .graduationForm .emailContact p{
+  .graduationForm .emailContact p {
     width: 100%;
   }
-  .aspirations p , .accordionQuestions p , .path p , .experience p{
+  .aspirations p,
+  .accordionQuestions p,
+  .path p,
+  .experience p {
     font-size: 16px;
- 
   }
-  
 }

@@ -27,7 +27,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-overflow-y: auto;
+  overflow-y: auto;
   background: #0d152cec;
   z-index: 1000;
   transition: opacity 0.3s;
@@ -73,7 +73,8 @@ overflow-y: auto;
   .ask p,
   .whyChoose p,
   .accordionQuestions p,
-  .careerJourney p , .popup p{
+  .careerJourney p,
+  .popup p {
     font-size: 16px;
     text-align: center;
   }
