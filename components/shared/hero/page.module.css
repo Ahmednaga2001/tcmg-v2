@@ -1,0 +1,12 @@
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#0e152cec, #0e152cf7),
+      url(/assets/images/sectors/pattern.png);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
