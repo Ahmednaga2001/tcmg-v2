@@ -127,7 +127,7 @@ const teamMembers = [
   {
     name: "أستاذ كرم موريس",
     position: "محامي شركات",
-    imageSrc: "/assets/images/about/Karim.png",
+    imageSrc: "/assets/images/about/karimmores.png",
     description: "أمثل الدعم القانوني من الجانبين في التماثل دفاعًا عن حقوق الشركات خاصة الصغيرة, وتقديم الدعم والمتابعة الدائمة منذ بداية تأسيس الشركة حتى الانتهاء من إتمام الإجراءات القانونية وأمور التوثيق؛ ساعيًا لمساعدة رجال الأعمال والمبتدئين على ممارسة عملهم بناءً على أساس قانوني راسخ.",
     iconSrc: "assets/symbols/about/hand.svg",
     iconAlt: "Symbol of a hand"
