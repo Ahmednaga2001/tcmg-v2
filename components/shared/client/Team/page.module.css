@@ -1,0 +1,50 @@
+.ourTeam {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+.swiperContainerWrapper {
+  padding-top: 50px;
+}
+.swiperSlide {
+  height: 400px;
+}
+.ourTeam .header,
+.ourCustomers .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 30px;
+  background-image: linear-gradient(to bottom, #dddddd00, #dddddd15);
+  border-radius: 8px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .card:nth-child(2) {
+    scale: 1.15;
+} */
+
+.card p:last-child {
+  font-size: 14px;
+  color: #845f38;
+}

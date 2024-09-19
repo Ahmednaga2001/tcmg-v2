@@ -3,6 +3,12 @@ import styles from "./page.module.css";
 import Carousel from "@/client/homePage/Carousel";
 import Branches from "@/client/homePage/Branches";
 import Parteners from "@/client/homePage/Parteners";
+import HomeHero from "@/components/home/homeHero/HomeHero";
+import HomeCarousel from "@/components/home/client/homeCarousel/HomeCarousel";
+import HomeWhyUs from "@/components/home/homeWhyUs/HomeWhyUs";
+import Team from "@/components/shared/client/Team/Team";
+import Customers from "@/components/shared/customers/Customers";
+import Stats from "@/components/shared/stats/Stats";
 
 const services = [
   {
@@ -221,13 +227,15 @@ const customersJsx = customers.map((customer) => (
 function Home() {
   return (
     <div className={styles.page}>
-      <Hero />
-      <Carousel />
-      <WhyUs />
+      <HomeHero/>
+      <HomeCarousel/>
+      <HomeWhyUs />
       <Scroll />
-      <OurTeam />
-      <Stats />
-      <OurCustomers />
+      <Team/>
+      {/* <Stats /> */}
+      <Stats/>
+      {/* <OurCustomers /> */}
+      <Customers/>
       <Articles />
       <Branches />
       <Parteners />
@@ -235,22 +243,7 @@ function Home() {
   );
 }
 
-function Hero() {
-  return (
-    <header className={styles.hero}>
-      <div className={styles.content}>
-        <h1>
-          المجموعة التجارية والبحرية للمحاماة اختيارك الأول لدعم قانوني قوي
-        </h1>
-        <p>
-          خبرة متراكمة, تقنيات مبتكرة ونتائج فعّالة: مزايا يتمتع بها محامين
-          ومستشارين المكتب؛ خدمةً للحق القانوني وتحقيقًا للعدالة, بمستوى متطور
-          من الخدمات القانونية الشاملة وأعمال الشركات.
-        </p>
-      </div>
-    </header>
-  );
-}
+
 
 function WhyUs() {
   return (
@@ -346,28 +339,28 @@ function OurTeam() {
   );
 }
 
-function Stats() {
-  return (
-    <section className={styles.stats}>
-      <div>
-        <span>+300</span>
-        <span>العملاء</span>
-      </div>
-      <div>
-        <span>40</span>
-        <span>عدد الخبراء</span>
-      </div>
-      <div>
-        <span>+50</span>
-        <span>سنين الخبرة</span>
-      </div>
-      <div>
-        <span>7</span>
-        <span>مكاتب محاماة اقليمية</span>
-      </div>
-    </section>
-  );
-}
+// function Stats() {
+//   return (
+//     <section className={styles.stats}>
+//       <div>
+//         <span>+300</span>
+//         <span>العملاء</span>
+//       </div>
+//       <div>
+//         <span>40</span>
+//         <span>عدد الخبراء</span>
+//       </div>
+//       <div>
+//         <span>+50</span>
+//         <span>سنين الخبرة</span>
+//       </div>
+//       <div>
+//         <span>7</span>
+//         <span>مكاتب محاماة اقليمية</span>
+//       </div>
+//     </section>
+//   );
+// }
 
 function OurCustomers() {
   return (

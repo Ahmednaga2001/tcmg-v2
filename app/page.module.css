@@ -9,13 +9,13 @@
     padding: 80px;
 }
 
-.hero {
+/* .hero {
     background-image: url(/assets/images/homePage/Pattern.png);
     background-size: cover;
     background-position: center center;
     height: 90vh;
     display: flex;
-}
+} */
 
 .page h1,
 .page h2 {
@@ -23,18 +23,18 @@
     line-height: 1.4;
 }
 
-.hero .content {
+/* .hero .content {
     width: 70%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     gap: 40px;
-}
+} */
 
 /* ============================================================================ */
 
-.carousel {
+/* .carousel {
     height: 100%;
     width: 100%;
     background-color: var(--main);
@@ -68,17 +68,17 @@
 
 .carousel .caroChild div p {
     width: 75%;
-}
+} */
 
 /* ============================================================================ */
-.whyUs {
+/* .whyUs {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 40px;
     text-align: center;
-}
+} */
 
 /* ============================================================================ */
 
@@ -135,7 +135,7 @@
 
 /* ============================================================================ */
 
-.ourTeam {
+/* .ourTeam {
 
 
     display: flex;
@@ -176,7 +176,7 @@
 .card p:last-child {
     font-size: 14px;
     color: #845F38;
-}
+} */
 
 /* ============================================================================ */
 
@@ -215,7 +215,7 @@
 
 /* ============================================================================ */
 
-.ourCustomers {
+/* .ourCustomers {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -285,7 +285,7 @@
 
 .customer .bottom img {
     align-self: flex-end;
-}
+} */
 
 /* ============================================================================ */
 
