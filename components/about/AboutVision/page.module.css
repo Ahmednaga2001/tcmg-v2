@@ -1,0 +1,110 @@
+/*------------------------------------------------------------------------------------*/
+.visionSectionContainer {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .visionItem {
+    position: relative;
+    width: 100%;
+
+  }
+  .visionItem .imgLeft {
+    position: absolute;
+    left: -20px;
+    top: -40px;
+    z-index: 10;
+  }
+  .visionItem .imgRight {
+    position: absolute;
+    right: -20px;
+    top: -40px;
+    z-index: 10;
+  }
+  .visioncontent {
+    height: 200px;
+    background: linear-gradient(#353e5c, #353e5c);
+    padding: 20px;
+    border-radius: 25px;
+    width: 95%;
+  }
+  .visioncontentleft {
+    width: 95%;
+    height: 200px;
+    padding: 20px;
+    background: linear-gradient(#353e5c, #353e5c);
+    border-radius: 25px;
+    padding-right: 200px;
+    margin-right: 5%;
+
+  }
+  .aboutVision h2{
+    text-align: center;
+  }
+  .visioncontent p {
+    width: 85%;
+
+  }
+  /*-------------------------------------------------------------------------*/
+  @media (max-width: 1191px) {
+    .visionItem .imgLeft {
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0; 
+      }
+      .visionItem .imgRight {
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+      .visioncontentleft {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-right: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .visioncontent {
+        text-align: center;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        order: 2;
+      }
+      .visionItem {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(#353e5c, #353e5c);
+        border-radius: 25px;
+      }
+      .visioncontentleft p {
+        width: 85%;
+      }    
+    
+  }
+  @media (max-width: 767px) {
+    .visionItem p , .visionItem h3{
+      text-align: center;
+    }
+    .visioncontentleft p , .visioncontent p{
+        width: 100%;
+      }
+      .visionItem{
+        width: 100%;
+      }    
+  }

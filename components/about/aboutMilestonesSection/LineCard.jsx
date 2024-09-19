@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import styles from "@/components/about/About.module.css"
+import styles from "@/components/about/aboutMilestonesSection/aboutMilestonesSection.module.css";
 const LineCard = () => {
   return (
     <div className={styles.betweencontent}>

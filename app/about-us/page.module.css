@@ -1,0 +1,18 @@
+.aboutPage section {
+  padding: 80px;
+}
+@media (max-width: 1191px) {
+  .aboutPage h1,
+  .aboutPage h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutPage p {
+    font-size: 16px;
+  }
+  .aboutPage section {
+    padding: 20px;
+  }
+}

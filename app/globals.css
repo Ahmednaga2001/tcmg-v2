@@ -1,152 +1,209 @@
 :root {
-    --main: #0D152C;
-    --font: #FFFFFF;
+  --main: #0D152C;
+  --font: #FFFFFF;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    direction: rtl;
-    font-family: janna reg;
-    word-spacing: 1px;
-    letter-spacing: 1px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: janna reg;
+  word-spacing: 1px;
+  letter-spacing: 1px;
 }
 
+h1,
+h2 {
+  font-size: 50px;
+  line-height: 1.4;
+}
+
+
+
 ::selection {
-    background-color: var(--font);
-    color: var(--main);
+  background-color: var(--font);
+  color: var(--main);
 }
 
 ::-webkit-scrollbar {
-    background-color: var(--font);
-    width: 10px;
+  background-color: var(--font);
+  width: 10px;
 
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--main);
+  background-color: var(--main);
 }
 
 @font-face {
-    font-family: janna bol;
-    src: url(../public/assets/fonts/Janna\ LT\ Bold.ttf);
+  font-family: janna bol;
+  src: url(../public/assets/fonts/Janna\ LT\ Bold.ttf);
 }
 
 @font-face {
-    font-family: janna reg;
-    src: url(../public/assets/fonts/Janna\ LT\ Regular.ttf);
+  font-family: janna reg;
+  src: url(../public/assets/fonts/Janna\ LT\ Regular.ttf);
 }
 
 body {
-    height: 100vh;
-    background-color: var(--main);
-    color: var(--font);
-    font-size: 18px;
-    overflow-x: hidden;
+  height: 100vh;
+  background-color: var(--main);
+  color: var(--font);
+  font-size: 18px;
+  overflow-x: hidden;
 }
 
 ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: var(--font);
+  text-decoration: none;
+  color: var(--font);
 }
 
 
 .swiper-pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    /* Adjust the space between slides and pagination */
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  /* Adjust the space between slides and pagination */
 }
 
 .swiper-pagination-bullet {
-    border: 2px solid var(--font);
+  border: 2px solid var(--font);
 }
 
 
 
-  #featureSlide{
-    position: relative;
+#featureSlide {
+  position: relative;
+}
+
+#featureSlide .swiper-button-next {
+  background-repeat: no-repeat !important;
+  background-size: 100% auto !important;
+  background-position: center !important;
+  background-image: url(/assets/icons/establish/next.png) !important;
+  z-index: 10 !important;
+  right: -40px !important;
+}
+
+
+
+#featureSlide .swiper-button-prev {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  z-index: 10;
+  left: -40px !important;
+  background-image: url(/assets/icons/establish/prev.png);
+}
+
+
+
+#dreamCompany {
+  position: relative;
+}
+
+#dreamCompany .swiper-button-next {
+  background-repeat: no-repeat !important;
+  background-size: 100% auto !important;
+  background-position: center !important;
+  background-image: url(/assets/icons/establish/next.png) !important;
+  z-index: 10 !important;
+}
+
+#dreamCompany .swiper-button-prev {
+  background-repeat: no-repeat !important;
+  background-size: 100% auto !important;
+  background-position: center !important;
+  background-image: url(/assets/icons/establish/prev.png) !important;
+  z-index: 10 !important;
+}
+
+
+#companiesTypes .swiper-button-prev {
+  background-repeat: no-repeat !important;
+  background-size: 100% auto !important;
+  background-position: center !important;
+  background-image: url(/assets/icons/establish/prev.png) !important;
+  z-index: 10 !important;
+  left: -40px !important;
+}
+
+#companiesTypes .swiper-button-next {
+  background-repeat: no-repeat !important;
+  background-size: 100% auto !important;
+  background-position: center !important;
+  background-image: url(/assets/icons/establish/next.png) !important;
+  z-index: 10 !important;
+  right: -30px !important;
+}
+
+
+#featureSlide .swiper-button-next::after,
+#featureSlide .swiper-button-prev::after,
+#dreamCompany .swiper-button-next::after,
+#dreamCompany .swiper-button-prev::after,
+#companiesTypes .swiper-button-prev::after,
+#companiesTypes .swiper-button-next::after {
+  display: none !important;
+  content: none !important;
+}
+
+
+@media (max-width : 768px) {
+
+  #featureSlide .swiper-button-prev,
+  #companiesTypes .swiper-button-prev {
+    left: -10px !important;
   }
 
-  #featureSlide .swiper-button-next {
-    background-repeat: no-repeat !important;
-    background-size: 100% auto !important;
-    background-position: center !important;
-    background-image: url(/assets/icons/establish/next.png) !important; 
-    z-index: 10 !important;  
-    right: -40px !important; 
+  #featureSlide .swiper-button-next,
+  #companiesTypes .swiper-button-next {
+    right: -10px !important;
   }
-  
+}
 
-  
-  #featureSlide .swiper-button-prev {
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-    z-index: 10; 
-     left: -40px !important;
-    background-image: url(/assets/icons/establish/prev.png); 
-  }
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-property: opacity;
+  transition-property: gap;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
 
+.link:hover {
+  gap: 20px;
+  opacity: 80%;
+}
 
+.flickity-prev-next-button {
+  background-color: transparent !important;
+  margin: 0px 100px;
+  scale: 1.4;
+  border-radius: 10px;
+}
 
-  #dreamCompany {
-    position: relative;
-  }
-  #dreamCompany  .swiper-button-next {
-    background-repeat: no-repeat !important;
-    background-size: 100% auto !important;
-    background-position: center !important;
-    background-image: url(/assets/icons/establish/next.png) !important; 
-    z-index: 10 !important;  
-  }
-   
-  #dreamCompany  .swiper-button-prev {
-    background-repeat: no-repeat !important;
-    background-size: 100% auto !important;
-    background-position: center !important;
-    background-image: url(/assets/icons/establish/prev.png) !important; 
-    z-index: 10 !important;  
-  }
+.flickity-button svg {
+  color: var(--font);
+}
 
+.flickity-prev-next-button:hover {
+  filter: opacity(80%);
+  background-color: transparent;
+}
 
-  #companiesTypes  .swiper-button-prev {
-    background-repeat: no-repeat !important;
-    background-size: 100% auto !important;
-    background-position: center !important;
-    background-image: url(/assets/icons/establish/prev.png) !important; 
-    z-index: 10 !important;
-    left: -40px !important;   
-  }
-  #companiesTypes  .swiper-button-next {
-    background-repeat: no-repeat !important;
-    background-size: 100% auto !important;
-    background-position: center !important;
-    background-image: url(/assets/icons/establish/next.png) !important; 
-    z-index: 10 !important;  
-    right: -30px !important; 
-  }
-   
-
-  #featureSlide .swiper-button-next::after ,  #featureSlide .swiper-button-prev::after , #dreamCompany .swiper-button-next::after , #dreamCompany .swiper-button-prev::after , #companiesTypes .swiper-button-prev::after , #companiesTypes .swiper-button-next::after {
-    display: none !important;
-    content: none !important;
-  }
-
-
-  @media (max-width : 768px) {
-
-      #featureSlide .swiper-button-prev , #companiesTypes .swiper-button-prev{
-        left: -10px !important;
-      }
-      #featureSlide .swiper-button-next , #companiesTypes .swiper-button-next{
-        right: -10px !important;
-      }
-  }
+.flickity-page-dots {
+  display: none;
+  position: absolute;
+  bottom: 40px;
+}

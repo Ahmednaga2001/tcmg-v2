@@ -1,6 +1,6 @@
-import styles from "@/components/about/About.module.css";
+import styles from "./page.module.css";
 import Image from "next/image";
-const Owner = () => {
+const AboutOwner = () => {
   return (
     <section className={styles.owner}>
       <div className={styles.ownerImg}>
@@ -27,4 +27,4 @@ const Owner = () => {
   );
 };
 
-export default Owner;
+export default AboutOwner;

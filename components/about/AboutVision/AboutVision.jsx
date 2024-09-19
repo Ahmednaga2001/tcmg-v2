@@ -1,7 +1,7 @@
-import styles from "@/components/about/About.module.css";
-import VisionImg from "@/components/about/VisionImg";
-import VisonCard from "@/components/about/VisonCard";
-const visionData = [
+import styles from "@/components/about/AboutVision/page.module.css";
+import VisionCard from "./VisonCard";
+import VisionImage from "./VisionImg";
+const data = [
   {
     title: "التوسع علي النطاق المحلي",
     desc: "نفخر أننا حققنا أولى طموحتنا بالتوسع في مصر وفتح فروع في القاهرة والإسكندرية وتوصيل خدماتنا القانونية لأكبر عدد ممكن من العملاء, أفرادًا أو شركاتٍ أو أي كيان قانوني آخر. باعتبارنا أحد مكاتب المحاماة الرائدة في مصر بمعايير عالمية المستوى.",
@@ -44,87 +44,83 @@ const visionData = [
     path: "/assets/images/about/visionimg8.png",
   },
 ];
-const Vision = () => {
+
+
+const AboutVision = () => {
   return (
     <>
-      <section className={styles.section}>
-        <h2 className={styles.centerHeading}>رؤيتنا للمستقبل</h2>
-        <div className={styles.parentvision}>
-          <div className={styles.vision}>
-            <VisonCard
-              visionContentstyle="visioncontent"
-              title={visionData[0].title}
-              desc={visionData[0].desc}
-            />
-            <VisionImg imgStyle="imgleft" path={visionData[0].path} />
-          </div>
-          <div className={styles.vision}>
-            <VisionImg imgStyle="imgright" path={visionData[1].path} />
-            <VisonCard
-              visionContentstyle="visioncontentleft"
-              title={visionData[1].title}
-              desc={visionData[1].desc}
-            />
-          </div>
-          <div className={styles.vision}>
-            <VisonCard
-              visionContentstyle="visioncontent"
-              title={visionData[2].title}
-              desc={visionData[2].desc}
-            />
-            <VisionImg imgStyle="imgleft" path={visionData[2].path} />
-          </div>
+      <section className={styles.aboutVision}>
+        <h2 className={styles.aboutSectionHeading}>رؤيتنا للمستقبل</h2>
+        <div className={styles.visionSectionContainer}>
+          {data.slice(0, 3).map((item, index) => (
+            <div className={styles.visionItem} key={item.title + index}>
+              {index % 2 === 0 ? (
+                <>
+                  <VisionCard
+                    visionContentStyle="visioncontent"
+                    title={item.title}
+                    desc={item.desc}
+                  />
+                  <VisionImage
+                    imgStyle="imgLeft"
+                    path={item.path}
+                  />
+                </>
+              ) : (
+                <>
+                  <VisionImage
+                    imgStyle="imgRight"
+                    path={item.path}
+                  />
+                  <VisionCard
+                    visionContentStyle="visioncontentleft"
+                    title={item.title}
+                    desc={item.desc}
+                  />
+                </>
+              )}
+            </div>
+          ))}
         </div>
       </section>
-      <section className={styles.section}>
-        <h2 className={styles.centerHeading}>
+      <section className={styles.aboutVision}>
+        <h2 className={styles.aboutSectionHeading}>
           الهدف والمهمة الراسخين منذ تاريخ النشأة
         </h2>
-        <div className={styles.parentvision}>
-          <div className={styles.vision}>
-            <VisonCard
-              visionContentstyle="visioncontent"
-              title={visionData[3].title}
-              desc={visionData[3].desc}
-            />
-            <VisionImg imgStyle="imgleft" path={visionData[3].path} />
-          </div>
-          <div className={styles.vision}>
-            <VisionImg imgStyle="imgright" path={visionData[4].path} />
-            <VisonCard
-              visionContentstyle="visioncontentleft"
-              title={visionData[4].title}
-              desc={visionData[4].desc}
-            />
-          </div>
-          <div className={styles.vision}>
-            <VisonCard
-              visionContentstyle="visioncontent"
-              title={visionData[5].title}
-              desc={visionData[5].desc}
-            />
-            <VisionImg imgStyle="imgleft" path={visionData[5].path} />
-          </div>
-          <div className={styles.vision}>
-            <VisionImg imgStyle="imgright" path={visionData[6].path} />
-            <VisonCard
-              visionContentstyle="visioncontentleft"
-              title={visionData[6].title}
-              desc={visionData[6].desc}
-            />
-          </div>
-          <div className={styles.vision}>
-            <VisionImg imgStyle="imgleft" path={visionData[7].path} />
-            <VisonCard
-              visionContentstyle="visioncontent"
-              title={visionData[7].title}
-              desc={visionData[7].desc}
-            />
-          </div>
+        <div className={styles.visionSectionContainer}>
+          {data.slice(3).map((item, index) => (
+            <div className={styles.visionItem} key={item.title + index}>
+              {index % 2 === 0 ? (
+                <>
+                  <VisionCard
+                    visionContentStyle="visioncontent"
+                    title={item.title}
+                    desc={item.desc}
+                  />
+                  <VisionImage
+                    imgStyle="imgLeft"
+                    path={item.path}
+                  />
+                </>
+              ) : (
+                <>
+                  <VisionImage
+                    imgStyle="imgRight"
+                    path={item.path}
+                  />
+                  <VisionCard
+                    visionContentStyle="visioncontentleft"
+                    title={item.title}
+                    desc={item.desc}
+                  />
+                </>
+              )}
+            </div>
+          ))}
         </div>
       </section>
     </>
   );
 };
 
-export default Vision;
+export default AboutVision;
