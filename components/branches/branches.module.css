@@ -110,8 +110,15 @@
   font-size: 24px;
 }
 /*---------------------------------------------------------------------------------*/
+.contactNumbers h2 {
+  text-align: center;
+}
 .contactNumbers .parentLocations {
   height: 475px;
+}
+.contactNumbers .egyLocations{
+  width: 70%;
+  margin: auto;
 }
 .contactNumbers .locationInfo {
   display: flex;
@@ -178,8 +185,16 @@
     padding-top: 20px;
   }
   .locations .parentLocations,
-  .contactNumbers .parentLocations {
+  .contactNumbers .parentLocations , .egyLocations .parentLocations {
     width: 100%;
+  }
+  .egyLocations{
+    width: 100% !important;
+  }
+   .parentLocations {
+    height: auto !important;
+    width: 100% !important;
+    background-color: red !important;
   }
   .locations .cardImg,
   .contactNumbers .cardImg {
