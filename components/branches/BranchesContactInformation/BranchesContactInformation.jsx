@@ -1,5 +1,5 @@
-import styles from "@/components/branches/branches.module.css"
-const ContactInformation = () => {
+import styles from "./page.module.css"
+const BranchesContactInformation = () => {
   return (
     <section className={styles.contactInformation}>
       <div className={styles.content}>
@@ -10,4 +10,5 @@ const ContactInformation = () => {
     </section>
   )
 }
-export default ContactInformation
+
+export default BranchesContactInformation

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from "@/components/branches/CardImg"
+import styles from "./branches.module.css"
 const CardImg = ({w,h,path,classStyle,alt}) => {    
   return (
     <div className={styles[classStyle]}>

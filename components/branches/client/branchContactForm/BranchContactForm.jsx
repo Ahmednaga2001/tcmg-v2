@@ -1,7 +1,8 @@
-"use client";
-import styles from "@/components/branches/branches.module.css";
-import Image from "next/image";
-const ContactForm = () => {
+import React from 'react';
+import styles from "./page.module.css";
+import Image from 'next/image';
+
+const BranchContactForm = () => {
   return (
     <section className={styles.contactForm}>
       <div className={styles.formPage}>
@@ -9,7 +10,8 @@ const ContactForm = () => {
         <form action="">
           <div className={styles.names}>
             <div className={styles.inp}>
-              <input type="text" placeholder="الاسم الاول" />
+              <label htmlFor="firstName" className={styles.hiddenLabel}>الاسم الاول</label>
+              <input id="firstName" type="text" placeholder="الاسم الاول" />
               <Image
                 src="/assets/icons/branches/user.png"
                 width={24}
@@ -18,7 +20,8 @@ const ContactForm = () => {
               />
             </div>
             <div className={styles.inp}>
-              <input type="text" placeholder="اسم العائلة" />
+              <label htmlFor="lastName" className={styles.hiddenLabel}>اسم العائلة</label>
+              <input id="lastName" type="text" placeholder="اسم العائلة" />
               <Image
                 src="/assets/icons/branches/user.png"
                 width={24}
@@ -28,7 +31,8 @@ const ContactForm = () => {
             </div>
           </div>
           <div className={styles.inp}>
-            <input type="text" placeholder="البريد الالكتروني" />
+            <label htmlFor="email" className={styles.hiddenLabel}>البريد الالكتروني</label>
+            <input id="email" type="text" placeholder="البريد الالكتروني" />
             <Image
               src="/assets/icons/branches/email.png"
               width={24}
@@ -37,7 +41,8 @@ const ContactForm = () => {
             />
           </div>
           <div className={styles.inp}>
-            <input type="text" placeholder="رقم الهاتف" />
+            <label htmlFor="phone" className={styles.hiddenLabel}>رقم الهاتف</label>
+            <input id="phone" type="text" placeholder="رقم الهاتف" />
             <Image
               src="/assets/icons/branches/phone.png"
               width={24}
@@ -45,7 +50,7 @@ const ContactForm = () => {
               alt="phone icon"
             />
           </div>
-          <select name="" id="">
+          <select name="" id="clientCategory">
             <option value="فئة العميل" disabled selected>
               فئة العميل
             </option>
@@ -54,13 +59,14 @@ const ContactForm = () => {
           </select>
 
           <div className={styles.inp}>
-            <textarea name="" id="" placeholder="اكتب رسالتك هنا"></textarea>
+            <label htmlFor="message" className={styles.hiddenLabel}>اكتب رسالتك هنا</label>
+            <textarea id="message" placeholder="اكتب رسالتك هنا"></textarea>
           </div>
           <div className={styles.checkBox}>
             أوافق على سياسة الخصوصية
             <input type="checkbox" />
           </div>
-          <button>
+          <button type="submit">
             إرسال استمارة التواصل
             <Image
               src="/assets/icons/branches/arrow-left.png"
@@ -75,4 +81,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default BranchContactForm;

@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(#0e152cec, #0e152cf7),
+    background: linear-gradient(#0e152ce5, #0e152ce5),
       url(/assets/images/sectors/pattern.png);
 
     background-size: cover;
