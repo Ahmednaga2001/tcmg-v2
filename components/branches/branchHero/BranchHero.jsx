@@ -16,12 +16,6 @@ const BranchHero = () => {
             لتجدوا شريككم القانوني الذي سيقف إلى جانبكم في كل الأوقات، ويضمن لكم
             تحقيق أفضل نتائج ممكنة بكل بساطة.
           </p>
-          <Image
-            src="/assets/icons/branches/icon1.png"
-            width={192.4}
-            height={86.11}
-            alt="Branch Icon"
-          />
         </div>
       </section>
   )

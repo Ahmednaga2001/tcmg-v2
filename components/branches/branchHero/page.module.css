@@ -1,7 +1,7 @@
 .hero {
   background-image: url(/assets/images/branches/Pattern.png);
   background-size: cover;
-  min-height: 100vh;
+  /* min-height: 70vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,9 +23,7 @@
     font-size: 16px;
     padding-top: 20px;
   }
-  .hero .content img {
-    display: none;
-  }
+
 }
 @media (max-width: 768px) {
   .hero .content {
