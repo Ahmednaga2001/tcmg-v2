@@ -1,8 +1,8 @@
 import styles from "./page.module.css"
-const Hero = () => {
+const Hero = ({title}) => {
   return (
     <section className={styles.hero}>
-      <h1>القطاعات</h1>
+      <h1>{title}</h1>
     </section>
   )
 }

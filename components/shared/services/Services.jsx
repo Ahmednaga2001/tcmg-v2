@@ -2,13 +2,12 @@ import Image from "next/image"
 import styles from "./page.module.css"
 
 const Services = ({data}) => {
-    console.log(data);
     
   return (
     <section className={styles.services}>
       {
-        data.map((item)=>(
-            <div className={styles.service}>
+        data.map((item,index)=>(
+            <div className={styles.service} key={index}>
             <span>{item}</span>
             <a href="mailto:Pr@tcmglaw.com">
             إحجز الآن              
