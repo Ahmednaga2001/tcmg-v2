@@ -1,29 +1,22 @@
-import styles from "@/components/legal-services/legalservices.module.css";
-import OurOfferings from "@/components/legal-services/OurOfferings";
-import SuccessFactors from "@/components/legal-services/SuccessFactors";
-import Guidelines from "../../components/legal-services/BestPractice";
-import Category from "@/components/legal-services/Category";
+import styles from "./page.module.css";
+
 import Accordion from "@/components/legal-services/client/Accordion";
+import LegalServicesHero from "@/components/legal-services/legalServicesHero/LegalServicesHero";
+import LegalServicesSuccessFactor from "@/components/legal-services/legalServicesSuccessFactor/legalServicesSuccessFactor";
+import LegalServiceOurOfferings from "@/components/legal-services/legalServiceOurOfferings/LegalServiceOurOfferings";
+import LegalServicesSectors from "@/components/legal-services/legalServicesSectorAndPractices/LegalServicesSectors";
+import LegalServicesPractices from "@/components/legal-services/legalServicesSectorAndPractices/LegalServicesPractices";
 export const metadata = {
   title: 'Legal-Services',
 }
 function LegalServices() {
   return (
-    <div className={styles.page}>
-      <section className={styles.hero}>
-        <div className={styles.content}>
-          <h1>خدمات قانونية بمعايير عالمية المستوي</h1>
-          <p>
-            خدمات قانونية للأفراد والمؤسسات والشركات مقدمة من أكبر مكتب محاماة
-            في مصر بحبرات قانونية فاقت الـ 30 عاما ” تحت شعار مستوي جديد من
-            الحلول القانونية “
-          </p>
-        </div>
-      </section>
-      <OurOfferings/>
-      <SuccessFactors/>
-      <Guidelines/>
-      <Category/>
+    <div className={styles.legalServicesPage}>
+     <LegalServicesHero/>
+     <LegalServiceOurOfferings/>
+     <LegalServicesSuccessFactor/>
+      <LegalServicesPractices/>
+      <LegalServicesSectors/>
       <Accordion/>
     </div>
   );

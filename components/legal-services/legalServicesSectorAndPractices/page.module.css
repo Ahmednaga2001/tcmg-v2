@@ -1,0 +1,158 @@
+.bestPractice h2,
+.category h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.practiceContainer,
+.categoryContainer {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.practiceCard,
+.categoryCard {
+  position: relative;
+  width: 100%;
+}
+.imgleft {
+  position: absolute;
+  left: -20px;
+  top: -40px;
+  z-index: 10;
+}
+.imgright {
+  position: absolute;
+  right: -20px;
+  top: -40px;
+  z-index: 10;
+}
+.bestPractice .content,
+.category .content {
+  height: 200px;
+  padding: 20px;
+  background: linear-gradient(#353e5c, #353e5c);
+  padding: 20px;
+  border-radius: 25px;
+  width: 95%;
+}
+.bestPractice .content p,
+.category .content p {
+  width: 85%;
+}
+.contentleft {
+  width: 95%;
+  height: 200px;
+  padding: 20px;
+  background: linear-gradient(#353e5c, #353e5c);
+  padding: 20px;
+  border-radius: 25px;
+  padding-right: 200px;
+  margin-right: 5%;
+}
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.linkContainer > a:first-child {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.6s;
+}
+.linkItem:first-child:hover {
+  transform: scale(1.1);
+}
+.linkContainer > a:last-child {
+  background-color: #fff;
+  padding: 10px 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  color: #000;
+}
+
+@media (max-width: 1191px) {
+  .practiceCard .imgleft,
+  .categoryCard .imgleft {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .practiceCard .imgright,
+  .categoryCard .imgright {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .bestPractice .contentleft,
+  .category .contentleft {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bestPractice .content,
+  .category .content {
+    text-align: center;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    order: 2;
+  }
+  .practiceCard,
+  .categoryCard {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(#353e5c, #353e5c);
+    border-radius: 25px;
+  }
+  .bestPractice .contentleft p,
+  .category .contentleft p {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bestPractice p,
+  .category p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .bestPractice .contentleft p,
+  .category .contentleft p,
+  .bestPractice .content,
+  .category .content {
+    width: 100%;
+  }
+  .categoryCard,
+  .practiceCard {
+    width: 100%;
+  }
+  .leftcontent .img {
+    width: 100%;
+    height: 100%;
+  }
+}

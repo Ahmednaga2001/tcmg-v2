@@ -1,6 +1,6 @@
-import styles from "@/components/legal-services/legalservices.module.css"
 import Image from "next/image";
 import { useState } from "react";
+import styles from "./page.module.css"
 
 const AccordionCard = ({title , desc}) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +8,8 @@ const AccordionCard = ({title , desc}) => {
       setIsOpen(!isOpen);
     };
   return (
-    <div className={styles.accordionQues}>
+    <div className={styles.accordionContainer}>
+      <div className={styles.accordionQues}>
     <div className={styles.accordionQuesHeader} onClick={handleIsOpen}>
       <h3>{title}</h3>
       <Image
@@ -26,6 +27,7 @@ const AccordionCard = ({title , desc}) => {
       <p>{desc}</p>
     </div>
   </div>
+    </div>
   )
 }
 

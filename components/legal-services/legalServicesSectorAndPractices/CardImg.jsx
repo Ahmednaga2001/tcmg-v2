@@ -1,4 +1,4 @@
-import styles from "@/components/legal-services/legalservices.module.css"
+import styles from "./page.module.css"
 import Image from 'next/image'
 const CardImg = ({imgStyle , path , title}) => {      
   return (

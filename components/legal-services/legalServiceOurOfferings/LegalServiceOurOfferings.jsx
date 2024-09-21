@@ -1,5 +1,5 @@
-import styles from "@/components/legal-services/legalservices.module.css"
 import OfferingCard from "./OfferingCard"
+import styles from "./page.module.css"
 const data = [
     {
         id : 1,
@@ -22,21 +22,26 @@ const data = [
         desc : "نقدم كذلك كأحد الخدمات القانونية الإضافية، متابعة أحداث القضية حفاظًا على حقوقك والتأكد من سلامتها ضد الجاني."
     }
 ]
-const OurOfferings = () => {
+const LegalServiceOurOfferings = () => {
   return (
     <section className={styles.ourofferings}>
-        <h2>ما الذي يمكننا تقديمه لك؟</h2>
-        <div className={styles.parent}>
-          {
-            data.map((el)=>{
-                return <OfferingCard id={el.id} title = {el.title} desc={el.desc} key={el.id}/>
-            })
-          }
+    <h2>ما الذي يمكننا تقديمه لك؟</h2>
+    <div className={styles.parent}>
+      {
+        data.map((el , index)=>{
+            return (
+              <div>
+              <OfferingCard  id={el.id} title = {el.title} desc={el.desc} key={index}/>
+              </div>
+            )
+        })
+      }
 
-        </div>
-    
-    </section>
+    </div>
+
+</section>
   )
 }
 
-export default OurOfferings
+export default LegalServiceOurOfferings
+0
