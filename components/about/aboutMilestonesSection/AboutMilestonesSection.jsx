@@ -60,7 +60,9 @@ const cardInfo = [
 const AboutMilestones = () => {
   return (
     <section className={styles.aboutMilestonesSection}>
-      {cardInfo.map((card, index) => (
+      <h2>تاريخ المجموعة التجارية والبحرية للمحاماة</h2>
+   <div className={styles.cards}>
+   {cardInfo.map((card, index) => (
         <div className={styles.aboutMilestoneItem} key={index}>
           {index % 2 === 0 ? (
             <>
@@ -77,6 +79,7 @@ const AboutMilestones = () => {
           )}
         </div>
       ))}
+   </div>
     </section>
   );
 };

@@ -1,5 +1,5 @@
 .hero {
-    min-height: 70vh;
+    /* min-height: 70vh; */
     display: flex;
     align-items: center;
     padding: 0 !important;
@@ -13,7 +13,7 @@
     background-image: url(/assets/images/about/Pattern1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 70vh;
+    /* min-height: 70vh; */
     display: flex;
     
   }
