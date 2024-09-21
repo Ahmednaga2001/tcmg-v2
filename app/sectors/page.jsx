@@ -9,7 +9,7 @@ const Sectors = () => {
   
   return (
     <section className={styles.sectors}>
-      <Hero title = {"القطاعات"}/>
+      <Hero title = {"القطاعات"} path={"/assets/images/sectors/hero.jpg"}/>
       <Services data = {data}/>
           </section>
   )

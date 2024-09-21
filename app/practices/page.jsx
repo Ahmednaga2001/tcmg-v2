@@ -13,7 +13,7 @@ const Practices = () => {
   
   return (
     <section className={styles.practices}>
-      <Hero title = {"الممارسات"}/>
+      <Hero title = {"الممارسات"} path={"/assets/images/practices/hero.jpg"}/>
       <Services data = {data}/>
           </section>
   )
