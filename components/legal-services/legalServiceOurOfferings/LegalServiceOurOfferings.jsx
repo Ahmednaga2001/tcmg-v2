@@ -28,10 +28,10 @@ const LegalServiceOurOfferings = () => {
     <h2>ما الذي يمكننا تقديمه لك؟</h2>
     <div className={styles.parent}>
       {
-        data.map((el , index)=>{
+        data.map((el,index)=>{
             return (
-              <div>
-              <OfferingCard  id={el.id} title = {el.title} desc={el.desc} key={index}/>
+              <div key={index}>
+              <OfferingCard  id={el.id} title = {el.title} desc={el.desc} />
               </div>
             )
         })
