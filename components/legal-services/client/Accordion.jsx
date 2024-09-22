@@ -1,5 +1,5 @@
 "use client";
-import AccordionCard from "@/components/shared/client/accordionCard/AccordionCard";
+import AccordionCard from "@/components/shared/client/AccordionCard";
 import styles from "@/app/legal-services/page.module.css"
 const data = [
   {

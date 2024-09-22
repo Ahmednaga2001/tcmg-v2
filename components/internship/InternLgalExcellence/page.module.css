@@ -1,0 +1,24 @@
+.path {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .path p {
+    background-color: #1b2340;
+    padding: 20px;
+  }
+
+  @media (max-width: 1191px) {
+    .path {
+        align-items: center;
+        gap: 20px;
+      }
+      .path p {
+        text-align: center;
+      }
+      .path h2,
+      .path h3 {
+        text-align: center;
+      }
+    
+  }

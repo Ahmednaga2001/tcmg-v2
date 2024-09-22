@@ -1,4 +1,4 @@
-import styles from "@/components/internship/internship.module.css";
+import styles from "./page.module.css";
 import OfferAccordion from "./OfferAccordion";
 const data = [
   {
@@ -22,7 +22,7 @@ const data = [
     path : "/assets/icons/internship/التعاون ومشاركة الخبرات.png"
   }
 ];
-const Offer = () => {
+const InternOffer = () => {
   return (
     <section className={styles.offer}>
       <div className={styles.topContent}>
@@ -54,4 +54,4 @@ const Offer = () => {
   );
 };
 
-export default Offer;
+export default InternOffer;

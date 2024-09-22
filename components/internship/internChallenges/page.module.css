@@ -1,0 +1,12 @@
+.challenges {
+    min-height: 50vh;
+    background: linear-gradient(#0000004b, #0000004b),
+      url(/assets/images/internship/pattern2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+  }

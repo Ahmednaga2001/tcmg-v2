@@ -1,11 +1,11 @@
-import styles from "@/components/internship/internship.module.css";
 import Image from "next/image";
+import styles from "./page.module.css";
 const Discover = () => {
   return (
     <section className={styles.discover}>
       <div className={styles.Img}>
         <Image
-          src="/assets/images/internship/imageone"
+          src="/assets/images/internship/imageone.png"
           className={styles.img}
           width={407}
           height={533}

@@ -19,7 +19,9 @@ h2 {
   line-height: 1.4;
 }
 
-
+.accordionQuestions h2{
+  text-align: center;
+}
 
 ::selection {
   background-color: var(--font);

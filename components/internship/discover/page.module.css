@@ -1,0 +1,56 @@
+.discover {
+  color: #000 !important;
+  padding: 80px 0 !important; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+}
+.discover .Img {
+  background-color: var(--main);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+}
+.discover .content {
+  margin-right: 400px;
+  height: 100%;
+  background-color: #fff;
+  padding: 70px;
+}
+@media (max-width: 1191px) {
+  .discover .Img {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-20px);
+    display: flex;
+    justify-content: center;
+  }
+  .discover .content {
+    margin-right: 0;
+    padding: 100px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .discover .content {
+    padding: 20px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 400px) {
+  .discover img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1540px) {
+  .discover {
+    min-height: 60vh;
+  }
+}

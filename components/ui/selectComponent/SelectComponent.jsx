@@ -10,7 +10,7 @@ const SelectComponent = ({ options  , selectedOption , setSelectedOption , head}
     <div className={styles.container}>
      
       <div className={styles.heading} onClick={() => setOpen(!open)}>
-      <h3  >{selectedOption?selectedOption : head}</h3>
+      <h3  >{selectedOption || head}</h3>
       <Image src={"/assets/icons/form/drop.png"} width={5} height={10} alt='drop icon'/>
       </div>
      {

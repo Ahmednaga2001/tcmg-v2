@@ -1,18 +1,18 @@
-.legalServicesPage section {
+.internPage section {
     padding: 80px;
   }
   @media (max-width: 1191px) {
-    .legalServicesPage h1,
-    .legalServicesPage h2 {
+    .internPage h1,
+    .internPage h2 {
       font-size: 35px;
     }
   }
   
   @media (max-width: 768px) {
-    .legalServicesPage p {
+    .internPage p {
       font-size: 16px;
     }
-    .legalServicesPage section {
+    .internPage section {
       padding: 20px;
     }
    

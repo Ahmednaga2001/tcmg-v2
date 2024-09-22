@@ -1,5 +1,4 @@
-import styles from "@/components/internship/internship.module.css";
-import OfferAccordion from "./OfferAccordion";
+import styles from "./page.module.css"
 import ExperienceAccordion from "./ExperienceAccordion";
 const data = [
   {
@@ -35,7 +34,7 @@ const data = [
   },
 
 ];
-const Experience = () => {
+const InternExperience = () => {
   return (
     <section className={styles.experience}>
       <div className={styles.topContent}>
@@ -78,4 +77,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default InternExperience;

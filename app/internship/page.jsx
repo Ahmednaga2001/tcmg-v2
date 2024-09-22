@@ -1,34 +1,31 @@
-import Challenges from "@/components/internship/Challenges";
-import Experience from "@/components/internship/client/Experience";
-import InternshipTcmg from "@/components/internship/client/InternshipTcmg";
-import Offer from "@/components/internship/client/Offer";
-import styles from "@/components/internship/internship.module.css"
-import PathToLegalExcellence from "@/components/internship/PathToLegalExcellence";
+import PathToLegalExcellence from "@/components/internship/InternLgalExcellence/PathToLegalExcellence";
 import Links from "@/components/join-us/Links";
-import GraduationForm from "../../components/internship/client/GraduationForm ";
-import Accordion from "@/components/internship/client/Accordion";
+import InternHero from "@/components/internship/internHero/InternHero";
+import InternChallenges from "@/components/internship/internChallenges/InternChallenges";
+import InternOffer from "@/components/internship/client/internOffer/Offer";
+import InternExperience from "@/components/internship/client/internOffer/InternExperience";
+import InternAspirations from "@/components/internship/InternAspirations/InternAspirations";
+import InternTcmg from "@/components/internship/client/internTcmg/InternTcmg";
+import InternGraduationForm from "@/components/internship/client/internGraduationForm/InternGraduationForm";
+import Accordion from "@/components/internship/client/Accordion/Accordion";
+import styles from "./page.module.css";
+import Discover from "@/components/internship/discover/Discover";
 function Internship() {
-  return <div className={styles.page}>
-    <section className={styles.hero}>
-        <h1>
-          بناء شراكات استراتيجية: اكتشف فرص التعاون والتواصل  مع مكاتب TCMG
-          للمحاماة لتحقيق النجاح المشترك
-        </h1>
-      </section>
-      <Links/>
-      <PathToLegalExcellence/>
-      <Challenges/>
-      <Offer/>
-      <Experience/>
-      <section className={styles.aspirations}>
-        <h2>ما نطمح إليه من فريق المتدربين الخاص بنا</h2>
-        <p>نتطلع إلى انضمام أشخاص ملهمون وملتزمون بالتعلم والنمو المهني. نبحث عن من يريدون تدريب محاماة ولكن يُشتَرط أن يكونوا ممن يمتلكون شغفًا وحماسًا للعمل في مجال القانون، والذين يتمتعون بقدرة على التواصل الفعّال والعمل الجماعي. نحن نرغب في وجود أشخاص يتمتعون بالمرونة والقدرة على التكيف مع تغييرات البيئة المهنية ويسعون دائمًا لتحقيق أفضل النتائج والتميز في عملهم. إذا كنت تبحث مكتب محاماة يقدم خدمة تدريب محامين حديثي التخرج ويقدم فرص للتطور, فنحن نتطلع إلى مشاركتك في رحلتنا وتحقيق النجاح والنمو معًا.</p>
-      </section>
-      
-      <InternshipTcmg/>
-      <GraduationForm/>
+  return (
+    <div className={styles.internPage}>
+      <InternHero />
+      <Links />
+      <Discover/>
+      <PathToLegalExcellence />
+      <InternChallenges />
+      <InternOffer />
+      <InternExperience />
+      <InternAspirations />
+      <InternTcmg/>
+      <InternGraduationForm />
       <Accordion/>
-  </div>;
+    </div>
+  );
 }
 
 export default Internship;
