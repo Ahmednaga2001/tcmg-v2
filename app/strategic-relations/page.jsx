@@ -1,4 +1,4 @@
-import Links from "@/components/join-us/Links";
+import Links from "@/components/shared/linksPagination/Links";
 import OurFeatures from "@/components/strategic-relations/client/OurFeatures";
 import JoinOurLegalNetwork from "@/components/strategic-relations/JoinOurLegalNetwork";
 import styles from "@/components/strategic-relations/strategicrelations.module.css";
@@ -14,7 +14,7 @@ function StrategicRelations() {
         </h1>
       </section>
       
-      <Links />
+      <Links/>
 <JoinOurLegalNetwork/>
       <section className={styles.about}>
           <div className={styles.top}>
