@@ -7,7 +7,7 @@ import InternExperience from "@/components/internship/client/internOffer/InternE
 import InternAspirations from "@/components/internship/InternAspirations/InternAspirations";
 import InternTcmg from "@/components/internship/client/internTcmg/InternTcmg";
 import InternGraduationForm from "@/components/internship/client/internGraduationForm/InternGraduationForm";
-import Accordion from "@/components/internship/client/Accordion/Accordion";
+import Accordion from "@/components/internship/client/accordion/Accordion";
 import styles from "./page.module.css";
 import Discover from "@/components/internship/discover/Discover";
 function Internship() {
