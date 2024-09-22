@@ -244,15 +244,7 @@
   border-top: 4px dotted rgba(128, 128, 128, 0.715);
 }
 /*---------------------------------------------------------------------------------*/
-.links {
-  background-color: #1b2340;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 10px;
-  font-size: 24px;
-  flex-wrap: wrap;
-}
+
 /*---------------------------------------------------------------------------------*/
 .jobOpportunities {
   min-height: 100vh;

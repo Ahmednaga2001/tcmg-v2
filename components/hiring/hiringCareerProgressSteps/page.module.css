@@ -1,0 +1,13 @@
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  @media (max-width: 1191px) {
+   
+    .steps{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }

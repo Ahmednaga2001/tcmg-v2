@@ -1,14 +1,14 @@
-.ourTeam {
+/* .ourTeam {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 40px;
   text-align: center;
-}
-.swiperContainerWrapper {
+} */
+/* .swiperContainerWrapper {
   padding-top: 50px;
-}
+} */
 .swiperSlide {
   height: 400px;
 }

@@ -1,5 +1,5 @@
 "use client";
-import styles from "@/components/hiring/hiring.module.css";
+import styles from "./page.module.css"
 import Image from "next/image";
 import { useState } from "react";
 

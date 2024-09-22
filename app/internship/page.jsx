@@ -1,5 +1,4 @@
 import PathToLegalExcellence from "@/components/internship/InternLgalExcellence/PathToLegalExcellence";
-import Links from "@/components/join-us/Links";
 import InternHero from "@/components/internship/internHero/InternHero";
 import InternChallenges from "@/components/internship/internChallenges/InternChallenges";
 import InternOffer from "@/components/internship/client/internOffer/Offer";
@@ -10,11 +9,12 @@ import InternGraduationForm from "@/components/internship/client/internGraduatio
 import Accordion from "@/components/internship/client/accordion/Accordion";
 import styles from "./page.module.css";
 import Discover from "@/components/internship/discover/Discover";
+import Links from "@/components/shared/linksPagination/Links";
 function Internship() {
   return (
     <div className={styles.internPage}>
       <InternHero />
-      <Links />
+      <Links/>
       <Discover/>
       <PathToLegalExcellence />
       <InternChallenges />

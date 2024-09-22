@@ -1,11 +1,12 @@
-import styles from "@/components/join-us/join-us.module.css"
+
 import Link from "next/link"
+import styles from "./page.module.css"
 
 const Links = () => {
   return (
     <div className={styles.links}>
         <Link href="/internship">متدربين</Link>
-        <Link href="">محامين</Link>
+        <Link href="/hiring">محامين</Link>
         <Link href="/strategic-relations">علاقات عامة</Link>
       
     </div>

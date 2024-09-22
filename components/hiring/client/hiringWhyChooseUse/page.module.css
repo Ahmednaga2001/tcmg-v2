@@ -1,0 +1,78 @@
+.whyChoose {
+}
+.whyChooseContent p {
+  padding-top: 60px;
+}
+.accordionParent {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.accordionItemHeader > div:first-child {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.accordionItemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.accordionItem {
+  border-radius: 15px;
+  /* border-radius: 15px 15px 0 0; */
+  color: #000;
+  width: 32rem;
+  cursor: pointer;
+}
+.accordionContent {
+  max-height: 0;
+  font-size: 16px;
+  transition: max-height 1s;
+  overflow: hidden;
+  background-color: #121a36f5;
+  color: #fff;
+
+  border-radius: 0 0 15px 15px;
+}
+.accordionContent.open {
+  max-height: 1000px;
+}
+.accordionContent p {
+  padding: 10px;
+  text-align: center;
+}
+.bottomIcon {
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.accordionArrowIcon {
+  transition: opacity 0.4s;
+  cursor: pointer;
+}
+.accordionArrowIcon.hide {
+  opacity: 0;
+}
+.accordionItem span {
+  font-weight: bold;
+}
+@media (max-width: 1191px) {
+  .whyChoose h2,
+  .whyChoose p {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .accordionItem {
+    width: 100%;
+  }
+}

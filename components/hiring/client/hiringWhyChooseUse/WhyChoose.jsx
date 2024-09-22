@@ -1,5 +1,5 @@
 "use client";
-import styles from "@/components/hiring/hiring.module.css";
+import styles from "./page.module.css"
 import WhyChooseAccordion from "./WhyChooseAccordion";
 const data = [
   {
@@ -19,7 +19,7 @@ const data = [
     desc : "في TCMG تمثل ثقافة العمل الاحترافية أساس عملنا؛ فنحن لا نوفر وظائف المحاماه فقط, بل نعتمد على الاحترام المتبادل والتعاون الفعَّال بين أفراد الفريق. نحن نشجع على التواصل الصريح والشفافية في التعاملات؛ مما يساهم في بناء ثقة قوية بيننا وبين عملائنا. على عكس كثير من الوظائف القانونية, فنحن نلتزم بمعايير الجودة العالية في أداء عملنا ونسعى جاهدين لتحقيق الرضا الكامل لعملائنا من خلال العمل بنزاهة ومسؤولية."
   }
 ];
-const WhyChoose = () => {
+const HiringWhyChooseUs = () => {
   return (
     <section className={styles.whyChoose}>
       <div className={styles.whyChooseContent}>
@@ -54,4 +54,4 @@ const WhyChoose = () => {
   );
 };
 
-export default WhyChoose;
+export default HiringWhyChooseUs;

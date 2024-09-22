@@ -1,0 +1,17 @@
+.hero {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#0e152ce4, #0e152ce4),
+      url(/assets/images/hiring/pattern1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+  }
+
+  @media (max-width: 1191px) {
+   
+    .hero {
+      justify-content: center;
+      text-align: center;
+    }
+  }

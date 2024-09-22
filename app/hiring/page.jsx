@@ -1,34 +1,32 @@
-import AchieveSuccess from "@/components/hiring/AchieveSuccess";
-import CareerJourney from "@/components/hiring/CareerJourney";
-import CareerProgressSteps from "@/components/hiring/CareerProgressSteps";
+import PartnerWithExperts from "@/components/hiring/PartnerWithExperts/PartnerWithExperts";
 import Accordion from "@/components/hiring/client/Accordion";
-import TcmgJob from "@/components/hiring/client/TcmgJob";
-import WhyChoose from "@/components/hiring/client/WhyChoose";
-import styles from "@/components/hiring/hiring.module.css"
-import Links from "@/components/join-us/Links";
+import HiringGraduationForm from "@/components/hiring/client/hiringGraduationForm/HiringGraduationForm";
+import HiringTcmgJob from "@/components/hiring/client/hiringTcmgJob/HiringTcmgJob";
+import HiringWhyChooseUs from "@/components/hiring/client/hiringWhyChooseUse/WhyChoose";
+import HireingAchieveSuccess from "@/components/hiring/hireingAchieveSuccess/HireingAchieveSuccess";
+import HiringCareerJourney from "@/components/hiring/hiringCareerJourney/HiringCareerJourney";
+import HiringCareerProgressSteps from "@/components/hiring/hiringCareerProgressSteps/HiringCareerProgressSteps";
+import HiringHero from "@/components/hiring/hiringHero/HiringHero";
+import Team from "@/components/shared/client/Team/Team";
+import Links from "@/components/shared/linksPagination/Links";
+import styles from "./page.module.css";
 function Hiring() {
   return (
-    <div className={styles.page}>
-        <section className={styles.hero}>
-        <h1>
-          بناء شراكات استراتيجية: اكتشف فرص التعاون والتواصل مع مكاتب TCMG
-          للمحاماة لتحقيق النجاح المشترك
-        </h1>
-      </section> 
+    <div className={styles.hiringPage}>
+      <HiringHero />
 
-      <Links/>
-
-      <AchieveSuccess/>
-
-      <CareerJourney/>
-      <CareerProgressSteps/>
-      <WhyChoose/>
-      <TcmgJob/>
-      <Accordion/>
-
+      <Links />
+      <HireingAchieveSuccess />
+      <HiringCareerJourney />
+      <HiringCareerProgressSteps />
+      <HiringWhyChooseUs />
+      <PartnerWithExperts />
+      <Team />
+      <HiringTcmgJob />
+      <HiringGraduationForm />
+      <Accordion />
     </div>
-  )
-   
+  );
 }
 
 export default Hiring;
