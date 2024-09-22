@@ -1,13 +1,18 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 import styles from "./page.module.css";
-import Image from 'next/image';
 import Input from '@/components/ui/Input';
-import Select from '@/components/ui/Select';
 import TextArea from '@/components/ui/TextArea';
 import CheckBox from '@/components/ui/CheckBox';
 import Button from '@/components/ui/Button';
+import SelectComponent from '@/components/ui/selectComponent/SelectComponent';
 
 const BranchContactForm = () => {
+  const options = [
+    {  value: "أفراد" },
+    {  value: "مؤسسات وشركات" }
+  ];
+  const [selectedOption, setSelectedOption] = useState(null);
   return (
     <section className={styles.contactForm}>
       <div className={styles.formPage}>
@@ -23,7 +28,7 @@ const BranchContactForm = () => {
           <Input label="البريد الالكتروني" imgPath="/assets/icons/form/email.png" placeholder="البريد الالكتروني" alt="email icon"/>
           <Input label="رقم الهاتف" imgPath="/assets/icons/form/phone.png" placeholder="رقم الهاتف" alt="phone icon"/>
      
-          <Select label="فئة العميل" options={["أفراد", "شركات ومؤسسات"]}/>
+          <SelectComponent head={"فئة العميل"}  options={options} selectedOption={selectedOption} setSelectedOption={setSelectedOption}/>
           <TextArea label="الرسالة" placeholder="اكتب رسالتك هنا" />
          
           <CheckBox label="أوافق على سياسة الخصوصية" />
