@@ -31,7 +31,7 @@ const data = [
 function Accordion(){
   return (
   
-    <section className={styles.accordionQuestions}>
+    <section className="accordionQuestions">
       <h2>الأسئلة الشائعة حول الخدمات القانونية</h2>
       {data.map((el,index) => (
         <AccordionCard title={el.title} desc={el.desc} key={index} />
