@@ -3,10 +3,10 @@ import KnowOurValues from "@/components/join-us/client/KnowOurValues";
 import Divider from "@/components/join-us/Divider";
 import JobOpportunities from "@/components/join-us/client/JobOpportunities";
 import styles from "@/components/join-us/join-us.module.css";
-import Links from "@/components/join-us/Links";
 import OurJourney from "@/components/join-us/OurJourney";
 import StartInternship from "@/components/join-us/StartInternship";
 import Image from "next/image";
+import Links from "@/components/shared/linksPagination/Links";
 
 function JoinUs() {
   return (
