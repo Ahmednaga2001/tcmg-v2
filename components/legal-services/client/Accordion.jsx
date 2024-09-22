@@ -1,6 +1,7 @@
 "use client";
-import AccordionCard from "@/components/shared/client/AccordionCard";
-import styles from "@/app/legal-services/page.module.css"
+
+import AccordionCard from "@/components/shared/client/accordionCard/AccordionCard";
+
 const data = [
   {
     title:

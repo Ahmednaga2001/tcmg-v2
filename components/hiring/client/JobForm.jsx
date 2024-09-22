@@ -99,7 +99,7 @@ const GraduationForm = () => {
       </div>
       <div className={styles.emailContact}>
         <p>
-          بريد التواصل للمنحة الصيفية  لطلاب السنة الثالثة والرابعة بكلية الحقوق{" "}
+          بريد التواصل للمنحة الصيفية لطلاب السنة الثالثة والرابعة بكلية الحقوق{" "}
         </p>
         <a href="mailto:Careers@tcmglaw.com">Careers@tcmglaw.com</a>
       </div>
