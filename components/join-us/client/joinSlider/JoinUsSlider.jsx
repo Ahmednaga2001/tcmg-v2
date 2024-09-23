@@ -6,7 +6,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, EffectFade,Pagination } from "swiper/modules";
-import styles from "@/components/join-us/join-us.module.css"
+import styles from "./page.module.css"
 import Image from 'next/image';
 const info = [
     {

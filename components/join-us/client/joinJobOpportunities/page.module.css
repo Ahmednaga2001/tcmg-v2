@@ -1,0 +1,77 @@
+.jobOpportunities {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.jobOpportunities h2 {
+  border-bottom: 1px solid #fff;
+  width: fit-content;
+  padding-bottom: 20px;
+}
+.jobOpportunities p {
+  padding-top: 20px;
+}
+
+.jobOpportunities .left {
+  width: 50%;
+}
+.jobOpportunities .left .content {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiperSlide {
+  width: 355px !important   ;
+  height: 282px !important;
+}
+.jobOpportunities .jobTitle {
+  /* width: 100%; */
+  backdrop-filter: blur(5px);
+  background-color: #dddddd33;
+  text-align: center;
+  padding: 15px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  border-radius: 0 0 10px 10px;
+  font-weight: bold;
+}
+@media (max-width: 1400px) {
+  .jobOpportunities {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .jobOpportunities h2 {
+    text-align: center;
+    width: 100%;
+    border: none;
+  }
+  .jobOpportunities .left {
+    width: 80%;
+  }
+  .jobOpportunities .right {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .jobOpportunities {
+    padding: 20px;
+  }
+  .jobOpportunities img {
+    width: 100%;
+  }
+  .jobOpportunities .left .content {
+    width: 100%;
+  }
+  .swiperSlide{
+    width: 100% !important;
+  }
+}

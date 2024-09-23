@@ -1,0 +1,24 @@
+.joinPage section {
+    padding: 80px;
+  }
+  @media (max-width: 1191px) {
+    .joinPage h1,
+    .joinPage h2 {
+      font-size: 35px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .joinPage p {
+      font-size: 16px;
+    }
+    .joinPage section {
+      padding: 20px;
+    }
+    .joinPage p{
+        font-size: 16px;
+    }
+   
+  }
+  
+  

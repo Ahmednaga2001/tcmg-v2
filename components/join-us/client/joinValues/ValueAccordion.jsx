@@ -1,9 +1,9 @@
 "use client";
-import styles from "@/components/join-us/join-us.module.css";
+import styles from "./page.module.css";
 import Image from "next/image";
 import { useState } from "react";
 
-const WhyChooseAccordion = ({ title, path, desc }) => {
+const ValueAccordion = ({ title, path, desc }) => {
   const [isOpenOne, setIsOpenOne] = useState(false);
 
   const handleIsOpenOne = () => {
@@ -55,4 +55,4 @@ const WhyChooseAccordion = ({ title, path, desc }) => {
   );
 };
 
-export default WhyChooseAccordion;
+export default ValueAccordion;

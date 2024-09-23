@@ -1,0 +1,30 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 2px dashed rgba(255, 255, 255, 0.292);
+
+  }
+  .about .parent {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about .parent div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  @media (max-width : 1191px) {
+    .about .parent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .about img {
+        display: none;
+      }
+    
+  }

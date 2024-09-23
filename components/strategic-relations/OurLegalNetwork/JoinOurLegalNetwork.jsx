@@ -7,8 +7,8 @@ const JoinOurLegalNetwork = () => {
         <Image
           src="/assets/images/strategicrelations/Mask group.png"
           className={styles.img}
-          width={424}
-          height={450}
+          width={425}
+          height={555}
           alt="Mask group image"
         />
       </div>

@@ -1,8 +1,7 @@
-import styles from "@/components/join-us/join-us.module.css"
 import Image from "next/image"
 import Link from "next/link"
-
-const OurJourney = () => {
+import styles from "./page.module.css"
+const JoinOurJourney = () => {
   return (
     <section className={styles.ourJourney}>
         <div>
@@ -18,4 +17,4 @@ const OurJourney = () => {
   )
 }
 
-export default OurJourney
+export default JoinOurJourney

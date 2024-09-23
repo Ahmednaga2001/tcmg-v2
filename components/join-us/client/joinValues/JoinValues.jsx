@@ -1,5 +1,5 @@
-import styles from "@/components/join-us/join-us.module.css";
-import WhyChooseAccordion from "./WhyChooseAccordion";
+import styles from "./page.module.css";
+import ValueAccordion from "./ValueAccordion";
 const data = [
   {
     title: "التأثير",
@@ -22,7 +22,7 @@ const data = [
     path : "/assets/icons/joinus/التعاون.png"
   }
 ];
-const KnowOurValues = () => {
+const JoinValues = () => {
   return (
     <section className={styles.values}>
       <div className={styles.topContent}>
@@ -36,29 +36,20 @@ const KnowOurValues = () => {
         </p>
       </div>
       <div className={styles.accordionParent}>
-        <WhyChooseAccordion
-          title={data[0].title}
-          desc={data[0].desc}
-          path={data[0].path}
-        />
-        <WhyChooseAccordion
-          title={data[1].title}
-          desc={data[1].desc}
-          path={data[1].path}
-        />
-        <WhyChooseAccordion
-          title={data[2].title}
-          desc={data[2].desc}
-          path={data[2].path}
-        />
-        <WhyChooseAccordion
-          title={data[3].title}
-          desc={data[3].desc}
-          path={data[3].path}
-        />
+        {
+          data.map((el) => (
+            <ValueAccordion
+              key={el.title}
+              title={el.title}
+              path={el.path}
+              desc={el.desc}
+            />
+          ))
+        }
+     
       </div>
     </section>
   );
 };
 
-export default KnowOurValues;
+export default JoinValues;

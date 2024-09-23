@@ -25,9 +25,9 @@ const FeatureAccordion = ({ title, path, desc }) => {
           </div>
           <Image
             src="/assets/icons/strategicrelations/ep_arrow-down-bold.png"
-            alt="arrow-down"
-            width={24}
-            height={24}
+            alt="Drop Icon"
+            width={20}
+            height={11}
             className={`${styles.accordionArrowIcon} ${
               isOpenOne ? "" : ""
             }`}
@@ -42,10 +42,10 @@ const FeatureAccordion = ({ title, path, desc }) => {
           <p>{desc}</p>
           <Image
             src="/assets/icons/strategicrelations/arrow-down.png"
-            width={24}
-            height={24}
+            width={20}
+            height={13}
             onClick={handleIsOpenOne}
-            alt="bottomIcon"
+            alt="Up Icon"
             className={styles.bottomIcon}
           />
         </div>
