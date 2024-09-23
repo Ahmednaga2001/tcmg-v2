@@ -1,0 +1,30 @@
+.expert{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.expert div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.expert p{
+    width: 80%;
+}
+
+@media (max-width: 1191px) {
+    .expert .content img{
+        display: none;
+    }
+    .expert p{
+        width: 100%;
+    }
+    .expert div{
+        justify-content: center;
+        text-align: center;
+    }
+    .expert h2{
+        text-align: center;
+    }
+    
+}
