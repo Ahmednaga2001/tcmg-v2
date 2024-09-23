@@ -7,40 +7,10 @@ import "swiper/css/pagination";
 import { Autoplay, Navigation } from "swiper/modules";
 import Image from "next/image";
 
-const data = [
-  {
-    id: 1,
-    name: "محمد أبو ضيف",
-    category: "الرئيس التنفيذي",
-    img: "/assets/images/homePage/lawyers/محمد ابوضيف.png",
-  },
-  {
-    id: 2,
-    name: "هشام محمود",
-    category: "محامي جنائي",
-    img: "/assets/images/homePage/lawyers/هشام محمود.png",
-  },
-  {
-    id: 3,
-    name: "خلف حسين",
-    category: "محامي مدني",
-    img: "/assets/images/homePage/lawyers/خلف حسين.png",
-  },
-  {
-    id: 4,
-    name: "سهى خيري",
-    category: "محامية بنوك",
-    img: "/assets/images/homePage/lawyers/سهي خيري.png",
-  },
-  {
-    id: 5,
-    name: "كرم موريس",
-    category: "محامي شركات",
-    img: "/assets/images/homePage/lawyers/كرم موريس.png",
-  },
-];
 
-const Team = () => {
+
+const Team = ({lawyers}) => {
+  
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleSlideChange = (swiper) => {
@@ -51,6 +21,7 @@ const Team = () => {
     <section>
       <div className={styles.swiperContainerWrapper} id="featureSlide">
         <Swiper
+        effect="coverflow"
           spaceBetween={10}
           centeredSlides={true} // Center the active slide
           slidesPerView={1}
@@ -80,7 +51,7 @@ const Team = () => {
           modules={[Navigation, Autoplay]}
           onSlideChange={handleSlideChange}
         >
-          {data.map((lawyer, index) => (
+          {lawyers?.map((lawyer, index) => (
             <SwiperSlide
               className={styles.swiperSlide}
               key={lawyer.id}

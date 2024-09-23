@@ -197,7 +197,25 @@ a {
   scale: 1.4;
   border-radius: 10px;
 }
+.flickity-prev-next-button.previous {
+  left: -60px !important;
 
+}
+.flickity-prev-next-button.next {
+  right: -60px !important;
+
+}
+@media (max-width : 768px) {
+  .flickity-prev-next-button.previous {
+    left: -80px !important;
+  
+  }
+  .flickity-prev-next-button.next {
+    right: -80px !important;
+  
+  }
+  
+}
 .flickity-button svg {
   color: var(--font);
 }

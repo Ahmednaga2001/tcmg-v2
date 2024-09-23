@@ -231,7 +231,7 @@ function Home() {
       <HomeCarousel/>
       <HomeWhyUs />
       <Scroll />
-      <Team/>
+      <Team lawyers={lawyers}/>
       {/* <Stats /> */}
       <Stats/>
       {/* <OurCustomers /> */}

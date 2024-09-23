@@ -24,7 +24,38 @@ const data = [
     desc : "المجموعة التجارية والبحرية للمحاماة شريكك الأول لتحقيق أهدافك وتطوير أعمالك على أسس متينة."
   }
 ]
-const page = () => {
+const lawyers = [
+  {
+    id: 1,
+    name: "محمد أبو ضيف",
+    category: "الرئيس التنفيذي",
+    img: "/assets/images/homePage/lawyers/محمد ابوضيف.png",
+  },
+  {
+    id : 2,
+    name : "آية محمد",
+    category : "النقل والشحن",
+    img : "/assets/images/homePage/lawyers/آية محمد.png"
+  },
+  {
+    id : 3,
+    name : "دعاء قنديل",
+    category : "صياغة العقود وقانون الشركات",
+    img : "/assets/images/homePage/lawyers/دعاء قنديل.png"
+  },{
+    id : 4,
+    name : "أحمد سعيد",
+    category : "التحكيم التجاري وقانون الشركات",
+    img : "/assets/images/homePage/lawyers/أحمد سعيد.png"
+  },
+  {
+    id : 5,
+    name : "سهى خيري",
+    category : "التمويل والبنوك",
+    img : "/assets/images/homePage/lawyers/سهي خيري.png"
+  }
+
+];const page = () => {
   return (
     <div className={styles.buisnessPage}>
       <BusinessHero/>
@@ -32,7 +63,7 @@ const page = () => {
       <BusinessRoadToExcellence/>
       <BusinessExperience/>
       <BusinessAbout/>
-      <Team/>
+      <Team lawyers={lawyers}/>
       <Slider data = {data}/>
     </div>
   )

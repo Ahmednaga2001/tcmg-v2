@@ -40,6 +40,12 @@
     font-size: 40px;
     font-family: janna bol;
 }
+@media (max-width: 768px) {
+    .branches .branche .content span:first-child{
+        font-size: 30px;
+        font-family: janna bol;
+    }
+}
 
 .branches .branche img:first-child {
     width: 100%;
