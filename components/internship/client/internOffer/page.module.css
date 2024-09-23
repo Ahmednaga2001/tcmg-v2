@@ -32,9 +32,13 @@
   align-items: center;
   gap: 20px;
   padding: 10px;
-  border-radius: 30px 30px 0 0 !important;
   background-color: #fff;
 }
+.offer .accordionItemHeader{
+  border-radius: 30px 30px 0 0 !important;
+
+}
+
 .accordionItem {
   border-radius: 15px;
   color: #000;
@@ -42,18 +46,22 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .experience .accordionItem {
-  background: linear-gradient(#1b2340, #0e152c) !important;
+  /* background: linear-gradient(#1b2340, #0e152c) !important; */
   color: #fff;
-  background-color: red !important;
+  border-radius: 15px ;
+
 }
 .experience .accordionItemHeader{
   background: linear-gradient(#1b2340, #0e152c) !important;
+  border-radius: 15px;
 
 }
 .experience .topContent p {
   width: 70%;
 }
 .accordionContent {
+  border-radius: 0 0 15px 15px;
+
   max-height: 0;
   font-size: 16px;
   transition: max-height 1s;

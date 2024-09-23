@@ -1,0 +1,28 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about .top{
+    display: flex;
+    justify-content: space-between;
+  }
+  .about .body{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  @media (max-width: 768px) {
+    .about{
+        align-items: center;
+        text-align: center;
+      }
+      .about img{
+        display: none;
+      }
+      .about p{
+        padding-top: 30px;
+      }
+    
+  }

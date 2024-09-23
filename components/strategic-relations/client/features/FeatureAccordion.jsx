@@ -1,8 +1,7 @@
 "use client";
-import styles from "@/components/strategic-relations/strategicrelations.module.css";
 import Image from "next/image";
 import { useState } from "react";
-
+import styles from "./page.module.css"
 const FeatureAccordion = ({ title, path, desc }) => {
   const [isOpenOne, setIsOpenOne] = useState(false);
 

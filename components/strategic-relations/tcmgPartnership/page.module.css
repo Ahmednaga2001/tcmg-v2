@@ -1,0 +1,25 @@
+ 
+  .tcmgPartnership {
+    /* min-height: 70vh; */
+      background-image: url(/assets/images/strategicrelations/pattern.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .tcmgPartnership div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    width: 70%;
+  }
+.tcmgPartnership a{
+  text-decoration: underline;
+}
+  @media (max-width: 1191px) {
+    .tcmgPartnership div{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+      }
+    
+  }

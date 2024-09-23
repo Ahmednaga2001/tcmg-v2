@@ -1,5 +1,5 @@
-import styles from "@/components/strategic-relations/strategicrelations.module.css";
 import Image from "next/image";
+import styles from "./page.module.css";
 const JoinOurLegalNetwork = () => {
   return (
     <section className={styles.legalNetwork}>

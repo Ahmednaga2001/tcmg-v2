@@ -1,5 +1,5 @@
-import styles from "@/components/strategic-relations/strategicrelations.module.css";
 import FeatureAccordion from "./FeatureAccordion";
+import styles from "./page.module.css";
 const data = [
   {
     title: "الخبرة والاحترافية",

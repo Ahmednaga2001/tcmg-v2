@@ -1,0 +1,57 @@
+.legalNetwork {
+    min-height: 100vh;
+    padding: 80px 0 !important;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .Img {
+    background-color: var(--main);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+  }
+  .legalNetwork .content {
+    margin-right: 450px;
+    height: 100%;
+    background-color: #fff;
+    padding: 70px;
+  }
+  @media (max-width : 1191px) {
+    .Img {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: translateY(-20px);
+      display: flex;
+      justify-content: center;
+    }
+    .legalNetwork .content {
+      margin-right: 0;
+      padding: 100px;
+      text-align: center;
+    }
+  }
+  @media (max-width : 768px) {
+    .legalNetwork .content{
+      padding: 20px;
+      margin-right: 0;
+    }
+  }
+  @media (max-width : 400px) {
+   .legalNetwork img{
+    width: 100%;
+   }
+    
+  }
+  @media (min-width: 1920px) {
+    .legalNetwork{
+      min-height: 60vh;
+    }
+    
+  }

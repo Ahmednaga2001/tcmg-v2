@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react'
-import Select from 'react-dropdown-select'
 import styles from "./page.module.css"
 import Image from 'next/image'
 
