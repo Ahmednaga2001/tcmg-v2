@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import styles from "./page.module.css"
+import styles from "./page.module.css";
 const FeatureAccordion = ({ title, path, desc }) => {
   const [isOpenOne, setIsOpenOne] = useState(false);
 
@@ -12,7 +12,7 @@ const FeatureAccordion = ({ title, path, desc }) => {
   return (
     <div>
       <div className={styles.accordionItem}>
-        <div className={styles.accordionItemHeader}>
+        <div className={styles.accordionItemHeader} onClick={handleIsOpenOne}>
           <div>
             <Image
               src={path}
@@ -28,10 +28,7 @@ const FeatureAccordion = ({ title, path, desc }) => {
             alt="Drop Icon"
             width={20}
             height={11}
-            className={`${styles.accordionArrowIcon} ${
-              isOpenOne ? "" : ""
-            }`}
-            onClick={handleIsOpenOne}
+            className={`${styles.accordionArrowIcon} ${isOpenOne ? "" : ""}`}
           />
         </div>
         <div

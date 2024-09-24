@@ -13,7 +13,7 @@ const ExperienceAccordion = ({ title, path, desc }) => {
   return (
     <div>
       <div className={styles.accordionItem}>
-        <div className={styles.accordionItemHeader}>
+        <div className={styles.accordionItemHeader} onClick={handleIsOpenOne}>
           <div>
             <Image
               src={path}
@@ -29,10 +29,7 @@ const ExperienceAccordion = ({ title, path, desc }) => {
             alt="arrow-down.png"
             width={24}
             height={24}
-            className={`${styles.accordionArrowIcon} ${
-              isOpenOne ? "" : ""
-            }`}
-            onClick={handleIsOpenOne}
+            className={`${styles.accordionArrowIcon} ${isOpenOne ? "" : ""}`}
           />
         </div>
         <div

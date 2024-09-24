@@ -6,4 +6,11 @@
     padding: 10px;
     font-size: 24px;
     flex-wrap: wrap;
+  
+  }
+  .links a{
+    color: #ffffff99;
+  }
+  .activeLink {
+    color: #fff !important; /* White color for the active link */
   }

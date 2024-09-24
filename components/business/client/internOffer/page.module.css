@@ -9,34 +9,40 @@
 
 .accordionParent {
   padding-top: 60px;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: repeat(2,40%);
   gap: 40px;
+  justify-content: center;
 }
 .accordionItemHeader > div:first-child {
   width: 100%;
   gap: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .accordionItemHeader {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  
   gap: 20px;
   padding: 10px;
   background-color: #fff;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 50px 10px 10px;
+
 }
 
 .accordionItem {
   border-radius: 15px;
   color: #000;
-  width: 36rem;
+  /* width: 36rem; */
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .experience .accordionItem {
@@ -95,6 +101,9 @@
   .accordionContent {
     height: auto;
   }
+  .accordionParent{
+    grid-template-columns: repeat(1,70%);
+  }
 }
 @media (max-width: 768px) {
   .accordionItem {
@@ -105,5 +114,11 @@
   }
   .experience p {
     font-size: 16px;
+  }
+  .accordionParent{
+    grid-template-columns: repeat(1,100%);
+  }
+  .accordionItemHeader{
+    padding: 10px;
   }
 }

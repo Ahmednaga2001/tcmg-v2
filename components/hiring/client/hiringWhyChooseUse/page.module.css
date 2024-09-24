@@ -5,9 +5,12 @@
 }
 .accordionParent {
   padding-top: 60px;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: repeat(2,40%);
   justify-content: center;
   gap: 40px;
 }
@@ -29,7 +32,7 @@
   border-radius: 15px;
   /* border-radius: 15px 15px 0 0; */
   color: #000;
-  width: 32rem;
+  /* width: 32rem; */
   cursor: pointer;
 }
 .accordionContent {
@@ -70,9 +73,17 @@
   .whyChoose p {
     text-align: center;
   }
+  .accordionParent{
+    grid-template-columns: repeat(1, 70%);
+
+  }
 }
 @media (max-width: 768px) {
   .accordionItem {
     width: 100%;
+  }
+  .accordionParent{
+    grid-template-columns: repeat(1, 100%);
+
   }
 }

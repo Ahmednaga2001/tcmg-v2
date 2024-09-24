@@ -13,7 +13,7 @@ const ValueAccordion = ({ title, path, desc }) => {
   return (
     <div>
       <div className={styles.accordionItem}>
-        <div className={styles.accordionItemHeader}>
+        <div className={styles.accordionItemHeader} onClick={handleIsOpenOne}>
           <div>
             <Image
               src={path}
@@ -32,7 +32,6 @@ const ValueAccordion = ({ title, path, desc }) => {
             className={`${styles.accordionArrowIcon} ${
               isOpenOne ? styles.hide : ""
             }`}
-            onClick={handleIsOpenOne}
           />
         </div>
         <div

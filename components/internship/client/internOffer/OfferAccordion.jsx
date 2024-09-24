@@ -13,7 +13,7 @@ const OfferAccordion = ({ title, path, desc }) => {
   return (
     <div>
       <div className={styles.accordionItem}>
-        <div className={styles.accordionItemHeader}>
+        <div className={styles.accordionItemHeader} onClick={handleIsOpenOne}>
           <div>
             <Image
               src={path}
@@ -29,10 +29,7 @@ const OfferAccordion = ({ title, path, desc }) => {
             alt="arrow-top"
             width={20}
             height={11}
-            className={`${styles.accordionArrowIcon} ${
-              isOpenOne ? "" : ""
-            }`}
-            onClick={handleIsOpenOne}
+            className={`${styles.accordionArrowIcon} ${isOpenOne ? "" : ""}`}
           />
         </div>
         <div

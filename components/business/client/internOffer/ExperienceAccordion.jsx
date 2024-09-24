@@ -24,13 +24,6 @@ const ExperienceAccordion = ({ title, path, desc }) => {
             />
             <span>{title}</span>
           </div>
-          {/* <Image
-            src="/assets/icons/internship/ep_arrow-down-bold.png"
-            alt="arrow-down.png"
-            width={24}
-            height={24}
-            className={`${styles.accordionArrowIcon} ${isOpenOne ? "" : ""}`}
-          /> */}
         </div>
         <div
           className={`${styles.accordionContent} ${
@@ -38,14 +31,7 @@ const ExperienceAccordion = ({ title, path, desc }) => {
           }`}
         >
           <p>{desc}</p>
-          {/* <Image
-            src="/assets/icons/strategicrelations/arrow-down.png"
-            width={24}
-            height={24}
-            onClick={handleIsOpenOne}
-            alt="bottomIcon"
-            className={styles.bottomIcon}
-          /> */}
+
         </div>
       </div>
     </div>

@@ -8,17 +8,14 @@
     justify-content: space-between;
     align-items: center;
   }
-  .careerJourney p {
-    width: 70%;
-  }
+
 
   @media (max-width: 1191px) {
     .careerJourney img{
         display: none;
         align-items: center;
       }
-      .careerJourney p , .careerJourney h2{
-        width: 100%;
+      .careerJourney h2{
         text-align: center;
       }    
   }
