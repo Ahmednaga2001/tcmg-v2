@@ -68,8 +68,8 @@ const BranchLocations = () => {
             {/* <div className={styles.overlay}></div> */}
             <CardImg
               classStyle="egyImg"
-              w={551}
-              h={475}
+              w={537}
+              h={305}
               path="/assets/images/branches/dubai.png"
               alt="Dubai Locations"
             />
