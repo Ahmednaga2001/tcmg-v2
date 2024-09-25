@@ -55,7 +55,8 @@ const lawyers = [
     img : "/assets/images/homePage/lawyers/سهي خيري.png"
   }
 
-];const page = () => {
+];
+const page = () => {
   return (
     <div className={styles.buisnessPage}>
       <BusinessHero/>

@@ -1,0 +1,19 @@
+.lawyers .content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+.lawyers .lawyerContainer{
+padding-top: 50px;
+    background-image: url(/assets/images/legalconsultations/Pattern2.png);
+    background-repeat: no-repeat ;
+    background-position: center center;
+}
+@media (max-width: 768px) {
+    .lawyers .lawyerContainer{
+        background-image: none;
+    }
+    
+}

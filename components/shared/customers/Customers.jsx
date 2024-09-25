@@ -30,7 +30,7 @@ const data = [
     body: "تعاقدي مع مكتب المحامي محمد أبو ضيف وشركائه الخبراء مكَّنني على تحقيق أهدافي القانونية بداية من كتابة العقود وحتى تأسيس الشركة في مصر الحبيبة. حقاً أنا أقدر ذلك",
   },
 ];
-const Customers = () => {
+const Customers = ({customers}) => {
   return (
     <section className={styles.ourCustomers}>
       <div className={styles.header}>
@@ -43,7 +43,7 @@ const Customers = () => {
         />
       </div>
       <div className={styles.customers}>
-        {data.map((customer) => (
+        {customers.map((customer) => (
           <div className={styles.customer} key={customer.id}>
             <div className={styles.top}>
               <div className={styles.left}>

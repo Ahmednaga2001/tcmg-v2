@@ -24,9 +24,7 @@
    width: 100%;
   
   }
-.accordionItemIcon{
-  /* margin-left: auto; */
-}
+
   .accordionItemHeader {
     display: flex;
     justify-content: space-between;
@@ -38,9 +36,7 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
   cursor: pointer;
   }
-  .accordionItem span{
- 
-  }
+
   .accordionItem {
     /* background:linear-gradient(#1B2340,#0E152C); */
     /* border-radius: 25px; */

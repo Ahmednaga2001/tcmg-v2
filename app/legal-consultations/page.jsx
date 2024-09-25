@@ -1,46 +1,63 @@
+import DividerOne from "@/components/legal-consultations/consultDivider/DividerOne";
+import DividerTwo from "@/components/legal-consultations/consultDivider/DividerTwo";
+import styles from "./page.module.css";
+import OurCustomers from "@/components/shared/customers/Customers";
+import ConsultHero from "@/components/legal-consultations/consultHero/ConsultHero";
+import ConsultSupport from "@/components/legal-consultations/consultSupport/ConsultSupport";
+import ConsultLegalAdvice from "@/components/legal-consultations/consultLegalAdvice/ConsultLegalAdvice";
+import ConsultNowEasy from "@/components/legal-consultations/consultNowEasy/ConsultNowEasy";
+import ConsultReserve from "@/components/legal-consultations/client/consultReserve/ReserveConsultation";
+import ConsultWhyTrust from "@/components/legal-consultations/client/consultWhyTrust/ConsultWhyTrust";
 import Accordion from "@/components/legal-consultations/client/Accordion";
-import DividerOne from "@/components/legal-consultations/DividerOne";
-import DividerTwo from "@/components/legal-consultations/DividerTwo";
-import InstantLegalAdviceforAll from "@/components/legal-consultations/InstantLegalAdviceforAll";
-import styles from "@/components/legal-consultations/legalconsultations.module.css";
-import LegalSupport from "@/components/legal-consultations/LegalSupport";
-import OurCustomers from "@/components/legal-consultations/OurCustomers";
-import ReserveConsultation from "@/components/legal-consultations/client/ReserveConsultation";
-import StartCompany from "@/components/legal-consultations/StartCompany";
-import WhyTrustUs from "@/components/legal-consultations/client/WhyTrustUs";
+import ConsultStrongestLawyers from "@/components/legal-consultations/consultStrongestLawyers/ConsultStrongestLawyers";
 export const metadata={
   title : "Legal Consultations"
 }
+
+const customers = [
+  {
+    id: 1,
+    img: "/assets/images/legalconsultations/حسام نصار.png",
+    name: "المهندس حسام نصار",
+    category: "مهندس إماراتي خبير",
+    body: "جهود إستثنائية في دعم الموكلين والعمل على خطاهم. سعيد بتعاملي مع المجموعة التجارية والبحرية وممتن لما قدموه لي من خدمات",
+  },
+  {
+    id: 2,
+    img: "/assets/images/legalconsultations/هيثم الشيمي.png",
+    name: "أستاذ هيثم الشيمي",
+    category: "مدير ماليات",
+    body: "دقة عالية وسرعة في الإداء وتعامل راقي مع محامو المكتب. بدعمهم تتحقق الأهداف وتحل المشكلات القانونية، شكراً لكم",
+  },
+  {
+    id: 3,
+    img: "/assets/images/legalconsultations/فاطمة عيسى.png",
+    name: "أستاذة فاطمة عيسى",
+    category: "رائدة أعمال",
+    body: "خدمات قانونية على أعلى مستوى تدعم عالم المال والأعمال، والأفضل من ذلك خبرة المحامين وسرعة الأداء والرد. شكراً جزيلاً على هذا الخبرات اللامعة",
+  },
+  {
+    id: 4,
+    img: "/assets/images/legalconsultations/أحمد سليم.png",
+    name: "أستاذ أحمد سليم",
+    category: "مستثمر ورجل أعمال",
+    body: "تعاقدي مع مكتب المحامي محمد أبو ضيف وشركائه الخبراء مكَّنني على تحقيق أهدافي القانونية بداية من كتابة العقود وحتى تأسيس الشركة في مصر الحبيبة. حقاً أنا أقدر ذلك",
+  },
+];
 function LegalConsultation() {
   return (
-    <div className={styles.page}>
-      <section className={styles.hero}>
-        <div className={styles.content}>
-          <h1>
-            المجموعة التجارية والبحرية للمحاماة والاستشارات القانونية بوابتك نحو
-            عالم من الأمان والوضوح
-          </h1>
-          <p>
-            في ظل التعقيدات القانونية التي سادت هذا العصر؛ يواجه الكثير من
-            الضحايا صعوبة في استرجاع حقوقهم. فإذا كنت تتعرض لانتهاك في حقوقك, أو
-            تواجه مشكلة في استعادها, أو حتى تبحث عن محامي استشارات قانونية يرشدك
-            في كافة شؤونك المالية أو الأسرية أو التجارية. الآن يجب أن تتوقف عن
-            البحث عن محامي؛ فهنا يأتي دور المجموعة التجارية والبحرية أفضل مكتب
-            محاماة واستشارات قانونية في مصر, وأحد أفضلها في الشرق الأوسط؛ لاتخاذ
-            خطوة جريئة نحو تطبيق القانون وتحقيق العدالة, لكافة عملائنا المتقدمين
-            لطلب المشورة في قضاياهم, أو المساعدة في فهم أحد فروع القانون. 
-          </p>
-        </div>
-      </section>
-      <LegalSupport />
-      <InstantLegalAdviceforAll />
-      <StartCompany />
-      <ReserveConsultation />
+    <div className={styles.consultPage}>
+      <ConsultHero/>
+      <ConsultSupport/>
+      <ConsultStrongestLawyers/>
+     <ConsultLegalAdvice/>
+     <ConsultNowEasy/>
+      <ConsultReserve/>
       <DividerOne />
-      <WhyTrustUs />
-      <OurCustomers />
+      <ConsultWhyTrust/>
+      <OurCustomers customers={customers} />
       <DividerTwo />
-      <Accordion />
+     <Accordion/>
     </div>
   );
 }

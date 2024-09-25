@@ -1,5 +1,5 @@
-import styles from "@/components/legal-consultations/legalconsultations.module.css"
-import LegalSupportCard from "./LegalSupportCard"
+import ConsultSupportCard from "./ConsultSupportCard"
+import styles from "./page.module.css"
 const data = [
     {
         title : "بناء علاقات استراتيجية قوية مع العملاء",
@@ -21,7 +21,7 @@ const data = [
     },
   
 ]
-const LegalSupport = () => {
+const ConsultSupport = () => {
   return (
     <section className={styles.legalSupport}>
         <div>
@@ -31,7 +31,7 @@ const LegalSupport = () => {
         <div className={styles.parent}>
           {
             data.map((el,index)=>{
-                return <LegalSupportCard  title = {el.title} path={el.path} w={el.w} h={el.h} key={index}/>
+                return <ConsultSupportCard  title = {el.title} path={el.path} w={el.w} h={el.h} key={index}/>
             })
           }
 
@@ -40,4 +40,4 @@ const LegalSupport = () => {
   )
 }
 
-export default LegalSupport
+export default ConsultSupport

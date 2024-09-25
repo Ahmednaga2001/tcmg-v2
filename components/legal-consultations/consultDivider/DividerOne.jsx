@@ -1,5 +1,4 @@
-import styles from "@/components/legal-consultations/legalconsultations.module.css";
-
+import styles from "./page.module.css"
 const DividerOne = () => {
   return (
     <div className={styles.divider}>

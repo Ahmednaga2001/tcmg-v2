@@ -1,34 +1,75 @@
-import styles from "@/components/legal-consultations/legalconsultations.module.css";
+"use client";
 import Image from "next/image";
+import styles from "./page.module.css";
+import SelectComponent from "@/components/ui/selectComponent/SelectComponent";
+import { useEffect, useState } from "react";
+import ImageSlider from "./ImgSlider";
+import SelectSlider from "./SelectSlider";
+
 const data = [
   {
     title: "1- اختر الاستشارة المطلوبة",
     desc: "اختار استشارتك المطلوبة التي تناسب احتياجاتك، سواء استشارة قانونية فورية عبر الاتصال أو تحديد موعد لزيارتنا بمكتبنا بالقاهرة أو من خلال حجز استشارة قانونية أون لاين عبر تحديد موعد اجتماع مع مستشار قانوني متخصص.",
-    path: "/assets/images/legalconsultations/whatsup.png",
+    images: [
+      {
+        path: "/assets/images/legalconsultations/whatsup.png",
+        label: "استشارة واتس آب",
+      },
+      {
+        path: "/assets/images/legalconsultations/استشارة مكتبية.png",
+        label: "استشارة مكتبية",
+      },
+    ],
     w: 115,
     h: 116,
   },
   {
     title: "2- احجز موعدك",
     desc: "حدد موعد استشارتك بكل مرونة باختيار اليوم المطلوب لعقد الاستشارة والتوقيت المناسب خلال ساعات عملنا بما يناسب وقتك الثمين وسيكون المستشار القانوني مستعد للتواصل معك في الوقت المُحدد.",
-    path: "/assets/images/legalconsultations/Calender.png",
+    path: "/assets/images/legalconsultations/Calender.svg",
     w: 300,
     h: 302,
-
   },
   {
     title: "3- املئ استمارة الاستشارة",
     desc: "املئ استمارة الاستشارة ببياناتك الصحيحة كالأسم ورقم الموبايل والبريد الإلكتروني واكتب نبذة عن قضيتك المراد عقد الاستشارة من أجله، وأخيراً تحديد تخصص المستشار القانوني المطلوب.",
+    path: "/assets/images/legalconsultations/استمارة الاستشارة.png",
+    w: 468,
+    h: 64,
+    data: [
+      {
+        title: "نوع الاستشارة",
+        label: "النوع",
+        path: "/assets/icons/legalconsultations/dropdownbutton.png",
+        w: 14,
+        h: 8,
+      },
+      {
+        title: "تخصص الاستشارة",
+        label: "التخصص",
+        path: "/assets/icons/legalconsultations/dropdownbutton.png",
+        w: 14,
+        h: 8,
+      },
+      {
+        title: " اسم العميل",
+        label: "العميل",
+        path: "/assets/icons/legalconsultations/user.png",
+        w: 27,
+        h: 27,
+      },
+    ],
   },
   {
     title: "4- أتمم مدفوعاتك بآمان",
     desc: "كن على يقين أن مدفوعاتك ستتم بآمان، فلدينا نظام حماية وآمان صارم على المدفوعات. واطمئن فلن يتم حفظ بيانات البطاقة الإئتمانية خاصتك على الموقع، بمجرد أن يتم الدفع ستحجز استشارتك بأعلى قدر من الآمان والخصوصية.",
+
     path: "/assets/images/legalconsultations/card.png",
     path2: "/assets/images/legalconsultations/card2.png",
     w: 248,
     h: 178,
-    w2 : 209,
-    h2 : 131
+    w2: 209,
+    h2: 131,
   },
   {
     title: "5- احصل على الدعم القانوني",
@@ -38,7 +79,8 @@ const data = [
     h: 197,
   },
 ];
-const StartCompany = () => {
+
+const ConsultNowEasy = () => {
   return (
     <section className={styles.startcompany}>
       <div className={styles.heading}>
@@ -52,18 +94,20 @@ const StartCompany = () => {
             <p>{data[0].desc}</p>
           </div>
           <div className={styles.line}>
-          <Image src="/assets/symbols/about/circle.svg" className={styles.circleImg} alt='circle image' width={30} height={30} />     
+            <Image
+              src="/assets/symbols/about/circle.svg"
+              className={styles.circleImg}
+              alt="circle image"
+              width={30}
+              height={30}
+            />
           </div>
           <div className={styles.Img}>
-            <div className={styles.whatupCard}>
-              <Image
-                src={data[0].path}
-                width={data[0].w}
-                height={data[0].h}
-                alt="whatsup image"
-              />
-              <span>استشارة واتس آب</span>
-            </div>
+            <ImageSlider
+              images={data[0].images}
+              width={data[0].w}
+              height={data[0].h}
+            />
           </div>
         </div>
 
@@ -77,7 +121,13 @@ const StartCompany = () => {
             />
           </div>
           <div className={styles.line}>
-          <Image src="/assets/symbols/about/circle.svg" className={styles.circleImg} alt='circle image' width={30} height={30} />     
+            <Image
+              src="/assets/symbols/about/circle.svg"
+              className={styles.circleImg}
+              alt="circle image"
+              width={30}
+              height={30}
+            />
           </div>
           <div className={styles.content}>
             <h3>{data[1].title}</h3>
@@ -91,39 +141,45 @@ const StartCompany = () => {
             <p>{data[2].desc}</p>
           </div>
           <div className={styles.line}>
-          <Image src="/assets/symbols/legalconsultations/circle.svg" className={styles.circleImg} alt='circle image' width={30} height={30} />     
+            <Image
+              src="/assets/symbols/legalconsultations/circle.svg"
+              className={styles.circleImg}
+              alt="circle image"
+              width={30}
+              height={30}
+            />
           </div>
           <div className={styles.Img}>
-            <label htmlFor="kind">نوع الاستشارة</label>
-            <select name="" id="kind">
-              <option value="النوع" disabled selected>
-                النوع
-              </option>
-            </select>
+            <SelectSlider data={data[2].data} />
           </div>
         </div>
 
         <div className={styles.parent}>
           <div className={styles.Img}>
-          <div className={styles.card}>
-            <Image
-              src={data[3].path}
-              width={data[3].w}
-              height={data[3].h}
-              alt={data[3].path}
-            />
-            <Image
-              src={data[3].path2}
-              width={data[3].w2}
-              height={data[3].h2}
-              alt={data[3].path2}
-              className={styles.img2}
-
-            />
+            <div className={styles.card}>
+              <Image
+                src={data[3].path}
+                width={data[3].w}
+                height={data[3].h}
+                alt={data[3].path}
+              />
+              <Image
+                src={data[3].path2}
+                width={data[3].w2}
+                height={data[3].h2}
+                alt={data[3].path2}
+                className={styles.img2}
+              />
             </div>
           </div>
           <div className={styles.line}>
-          <Image src="/assets/symbols/about/circle.svg" className={styles.circleImg} alt='circle image' width={30} height={30} />     
+            <Image
+              src="/assets/symbols/about/circle.svg"
+              className={styles.circleImg}
+              alt="circle image"
+              width={30}
+              height={30}
+            />
           </div>
           <div className={styles.content}>
             <h3>{data[3].title}</h3>
@@ -137,7 +193,13 @@ const StartCompany = () => {
             <p>{data[4].desc}</p>
           </div>
           <div className={styles.line}>
-          <Image src="/assets/symbols/about/circle.svg" className={styles.circleImg} alt='circle image' width={30} height={30} />     
+            <Image
+              src="/assets/symbols/about/circle.svg"
+              className={styles.circleImg}
+              alt="circle image"
+              width={30}
+              height={30}
+            />
           </div>
           <div className={styles.Img}>
             <Image
@@ -153,4 +215,4 @@ const StartCompany = () => {
   );
 };
 
-export default StartCompany;
+export default ConsultNowEasy;

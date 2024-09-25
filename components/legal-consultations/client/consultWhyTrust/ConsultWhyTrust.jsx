@@ -1,6 +1,6 @@
 "use client"
 import { useEffect, useState, useRef } from "react";
-import styles from "@/components/legal-consultations/legalconsultations.module.css";
+import styles from "./page.module.css";
 import Image from "next/image";
 
 const data = [
@@ -62,7 +62,7 @@ const Counter = ({ targetNumber }) => {
   return <p ref={ref}>{count}+</p>;
 };
 
-const WhyTrustUs = () => {
+const ConsultWhyTrust = () => {
   return (
     <section className={styles.whyUs}>
       <h2>لماذا تضع ثقتك بنا؟</h2>
@@ -87,4 +87,4 @@ const WhyTrustUs = () => {
   );
 };
 
-export default WhyTrustUs;
+export default ConsultWhyTrust;

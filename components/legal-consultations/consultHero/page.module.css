@@ -1,0 +1,23 @@
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(/assets/images/legalconsultations/Pattern1.png);
+    background-size: cover;
+    background-position: center center;
+    min-height: 70vh;
+  }
+  .hero .content {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 70px 0px;
+  }
+  @media (max-width: 1191px) {
+    .hero .content {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+
+      }    
+  }

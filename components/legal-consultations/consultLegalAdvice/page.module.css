@@ -1,0 +1,129 @@
+.legalAdvice {
+    /* min-height: 100vh; */
+  }
+  .legalAdvice .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+  .legalAdvice .card {
+    background-color: #1b2340;
+    padding: 30px 10px;
+    border-radius: 15px;
+    flex-basis: 20rem;
+    height: 300px;
+    margin: 10px;
+    transition: flex-basis 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+  }
+  .legalAdvice .cards {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+  .legalAdvice .card .left {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    height: 0;
+    overflow: hidden;
+    border-right: 1px solid #fff;
+    padding: 0 20px;
+  }
+  .legalAdvice .card .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .legalAdvice .card p {
+    font-size: 12px;
+  }
+  .legalAdvice .card .left span {
+    font-weight: 900;
+  }
+  @media (min-width: 1300px) {
+    .legalAdvice .card {
+      height: 400px;
+    }
+    .legalAdvice .card:hover {
+      flex-basis: 38rem;
+      cursor: pointer;
+    }
+    .legalAdvice .card:hover .top span {
+      display: none;
+      opacity: 0;
+    }
+    .legalAdvice .cards:hover .card:not(:hover) {
+      flex-basis: 15rem;
+    }
+    .legalAdvice .card:hover .left {
+      opacity: 1;
+      transform: translateX(0);
+      height: auto;
+    }
+    .legalAdvice .left p {
+      padding-top: 20px;
+    }
+    .legalAdvice .card:hover {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  @media (max-width: 1299px) {
+    .legalAdvice .cards {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .legalAdvice .card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-basis: 80%;
+      gap: 20px;
+    }
+    .legalAdvice .card .left {
+      opacity: 1;
+      height: auto;
+    }
+    .legalAdvice .card .left span {
+      display: block;
+      padding-bottom: 10px;
+    }
+  
+    .legalAdvice .card .top span {
+      display: none;
+      opacity: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    .legalAdvice .card {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      align-items: center;
+      height: auto;
+      gap: 20px;
+    }
+    .legalAdvice .card .left {
+      text-align: center;
+      opacity: 1;
+      height: auto;
+      border-right: none;
+      transform: translateX(0);
+    }
+    .legalAdvice .card .left span {
+      display: block;
+      padding-bottom: 10px;
+    }
+    .legalAdvice .card .top span {
+      display: none;
+      opacity: 0;
+    }
+  }
+  

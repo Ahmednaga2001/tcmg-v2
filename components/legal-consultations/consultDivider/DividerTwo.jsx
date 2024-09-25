@@ -1,6 +1,5 @@
-import styles from "@/components/legal-consultations/legalconsultations.module.css";
 import Image from "next/image";
-
+import styles from "./page.module.css";
 const paths = [
   "/assets/icons/legalconsultations/star2.png",
   "/assets/icons/legalconsultations/star1.png",
