@@ -1,6 +1,5 @@
 import styles from "@/components/about/AboutVision/page.module.css";
 const VisonCard = ({visionContentStyle , title , desc}) => {  
-  console.log(visionContentStyle);
   
   return (
     <div className={styles[visionContentStyle]}>

@@ -24,11 +24,11 @@ const BranchLocations = () => {
             </div>
           </div>
           <div className={styles.cardImg}>
-            <div className={styles.overlay}></div>
+            {/* <div className={styles.overlay}></div> */}
             <CardImg
               classStyle="egyImg"
-              w={551}
-              h={647}
+              w={537}
+              h={642}
               path="/assets/images/branches/Egypt.png"
               alt="Egypt Locations"
             />
@@ -49,7 +49,7 @@ const BranchLocations = () => {
             </div>
           </div>
           <div className={styles.cardImg}>
-            <div className={styles.overlay}></div>
+            {/* <div className={styles.overlay}></div> */}
             <CardImg
               classStyle="egyImg"
               w={536.32}
@@ -65,7 +65,7 @@ const BranchLocations = () => {
         <h2>الإمارات العربية المتحدة</h2>
         <div className={styles.parent}>
           <div className={styles.cardImg}>
-            <div className={styles.overlay}></div>
+            {/* <div className={styles.overlay}></div> */}
             <CardImg
               classStyle="egyImg"
               w={551}
@@ -123,7 +123,7 @@ const BranchLocations = () => {
         <h2>فلسطين</h2>
         <div className={styles.parent}>
           <div className={styles.cardImg}>
-            <div className={styles.overlay}></div>
+            {/* <div className={styles.overlay}></div> */}
             <CardImg
               classStyle="egyImg"
               w={551}

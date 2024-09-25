@@ -79,5 +79,8 @@ transition: .6s;
   .ourofferings .card .bottomCard{
     height: auto;
   }
+  .ourofferings .card {
+    width: 100%;
+  }
   
 }

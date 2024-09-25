@@ -10,6 +10,12 @@
     justify-content: space-between;
     align-items: center;
   }
+  .numbers div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   .numbers span {
     display: block;
     font-size: 50px;
