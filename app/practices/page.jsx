@@ -9,6 +9,9 @@ const data = [
   "Tax - قضايا الضرائب","Insurance -قضايا التأمين","Administrative - القضايا الإدارية","Criminal Law - القضايا الجنائية",
   "Civil - القضايا المدنية","Legal Consultation - إستشارة قانونية","استشارة قانونية مميزة VIP"
 ]
+export const metadata={
+  title : "Practices",
+}
 const Practices = () => {
   
   return (

@@ -10,6 +10,9 @@ import HiringHero from "@/components/hiring/hiringHero/HiringHero";
 import Team from "@/components/shared/client/Team/Team";
 import Links from "@/components/shared/linksPagination/Links";
 import styles from "./page.module.css";
+export const metadata={
+  title : "Hiring"
+}
 function Hiring() {
   return (
     <div className={styles.hiringPage}>

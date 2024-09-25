@@ -43,7 +43,7 @@ const Customers = ({customers}) => {
         />
       </div>
       <div className={styles.customers}>
-        {customers.map((customer) => (
+        {customers && customers.map((customer) => (
           <div className={styles.customer} key={customer.id}>
             <div className={styles.top}>
               <div className={styles.left}>

@@ -7,7 +7,9 @@ import JoinIntern from "@/components/join-us/joinIntern/JoinIntern";
 import JoinOurJourney from "@/components/join-us/joinOurJournery/JoinOurJourney";
 import styles from "./page.module.css";
 import JoinJobOpportunities from "@/components/join-us/client/joinJobOpportunities/JoinJobOpportunities";
-
+export const metadata={
+  title : "Join-Us"
+}
 function JoinUs() {
   return (
     <div className={styles.joinPage}>

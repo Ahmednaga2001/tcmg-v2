@@ -10,6 +10,9 @@ import Accordion from "@/components/internship/client/accordion/Accordion";
 import styles from "./page.module.css";
 import Discover from "@/components/internship/discover/Discover";
 import Links from "@/components/shared/linksPagination/Links";
+export const metadata={
+  title : "Internship",
+}
 function Internship() {
   return (
     <div className={styles.internPage}>

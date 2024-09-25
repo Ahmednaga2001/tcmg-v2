@@ -5,6 +5,9 @@ import RelationAbout from "@/components/strategic-relations/relationAbout/Relati
 import TcmgPartnership from "@/components/strategic-relations/tcmgPartnership/TcmgPartnership";
 import styles from "./page.module.css"
 import RelationHero from "@/components/strategic-relations/relationHero/RelationHero";
+export const metadata={
+  title : "Strategic Relations",
+}
 function StrategicRelations() {
   return (
     <div className={styles.relationPage}>

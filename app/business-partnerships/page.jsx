@@ -56,6 +56,9 @@ const lawyers = [
   }
 
 ];
+export const metadata={
+  title : "Business Partnerships",
+}
 const page = () => {
   return (
     <div className={styles.buisnessPage}>
