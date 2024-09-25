@@ -32,9 +32,7 @@
   border-radius: 0 50px 50px 0;
   padding: 0 20px;
 }
-.dubaiLocation .parentLocations{
-  height: 305px !important;
-}
+
 
 .locationOne {
   border-bottom: 4px dashed rgba(128, 128, 128, 0.6);
@@ -63,7 +61,7 @@
   opacity: 0.2;
 } */
 .locations img {
-  position: relative;
+  /* position: relative; */
 }
 .locations p,
 .locations span {
@@ -72,7 +70,7 @@
 .saudiaLocation .parentLocations,
 .dubaiLocation .parentLocations,
 .chinaLocation .parentLocations {
-  height: 304px;
+  height: 305px;
   border-radius: 50px 0 0 50px;
 }
 .palestineLocation .parentLocations {
@@ -172,6 +170,16 @@
     display: flex;
   margin: auto;
   }
+  .parentLocations , .dubaiLocation .parentLocations{
+    padding: 15px;
+    height: auto;
+  }
+  .locationOne{
+    padding-bottom: 12px;
+  }
+  .locationTwo{
+    padding-top: 12px;
+  }
 }
 @media (max-width: 768px) {
   .locations img,
@@ -197,6 +205,7 @@
     height: auto !important;
     width: 100% !important;
   }
+ 
   .locations .cardImg,
   .contactNumbers .cardImg {
     width: 100%;

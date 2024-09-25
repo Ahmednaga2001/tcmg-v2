@@ -53,7 +53,7 @@ const BranchLocations = () => {
             <CardImg
               classStyle="egyImg"
               w={536.32}
-              h={304}
+              h={305}
               path="/assets/images/branches/alriyadh.png"
               alt="Alriyadh Locations"
             />
@@ -111,7 +111,7 @@ const BranchLocations = () => {
             <CardImg
               classStyle="egyImg"
               w={551}
-              h={304}
+              h={305}
               path="/assets/images/branches/china.png"
               alt="China Locations"
             />
