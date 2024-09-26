@@ -1,7 +1,6 @@
-"use client";
 import Hero from "@/components/shared/hero/Hero";
 import styles from "./page.module.css";
-import LawyersForm from "@/components/lawyers/client/lawyersForm/lawyersForm";
+import LawyersForm from "@/components/lawyers/client/lawyersForm/LawyersForm";
 
 
 const page = () => {
