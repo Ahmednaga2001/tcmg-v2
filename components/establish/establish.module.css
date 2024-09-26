@@ -1,43 +1,11 @@
-.hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(/assets/images/establish/Pattern.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  padding: 80px;
-  display: flex;
-  align-items: center;
-}
+
 .establish h1,
 .establish h2 {
   font-size: 50px;
   line-height: 1.4;
 }
-.hero .content {
-  width: 70%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 40px;
-}
 
-.hero .content p {
-  font-size: 24px;
-}
-.hero a{
-  display: flex;
-  align-items: center;
-  gap:10px;
-  transition-property: opacity;
-  transition-property: gap;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out;
-  cursor: pointer;
-}
-.hero a:hover {
-  gap: 20px;
-}
+
 /*------------------------------------------------------------------------------------*/
 .uniqueServiceFeatures,
 .startcompany,
@@ -56,82 +24,11 @@
 .countries h2 , .dreamCompany h2 {
   text-align: center;
 }
-.uniqueServiceFeatures .swiperContainerWrapper , .startcompany .startcompanyparent , .legalServices .accordionParent , .countries .parentvision , .companiesTypes .swiperContainer , .dreamCompany .swiperContainer{
+.uniqueServiceFeatures .swiperContainerWrapper  , .legalServices .accordionParent , .countries .parentvision , .companiesTypes .swiperContainer , .dreamCompany .swiperContainer{
   padding-top: 50px;
 }
-.uniqueServiceFeatures .Content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
 
-.uniqueServiceFeatures .swiperSlide {
-  height: 500px;
-  background-color: #1b234085;
-  padding: 40px 20px;
-  text-align: center;
-  cursor: pointer;
-  position: relative;
-}
-/* .mySwiper {
-  --swiper-navigation-color: #fff;
-} */
-.uniqueServiceFeatures span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  background-color: #1C2D4F;
-  border-bottom-left-radius: 20px;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  font-weight: 900;
-  font-family: janna bol;
-
-}
 /*------------------------------------------------------------------------------------*/
-.startcompany .parent {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-
-.startcompany .content p,
-.content h3 {
-  width: 80%;
-  margin: auto;
-}
-.startcompany .content,
-.startcompany .Img {
-  width: 40rem;
-}
-.startcompany .Img {
-  padding-top: 50px;
-}
-.startcompany .content {
-  padding-top: 100px;
-}
-.Img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.startcompany .line {
-  position: relative;
-}
-.line::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-left: 4px dotted rgba(128, 128, 128, 0.6);
-}
 
 /*------------------------------------------------------------------------------------*/
 .legalServices .header {
@@ -466,49 +363,20 @@
 }
 
 @media (max-width: 1191px) {
-  .hero .content {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
+ 
   .establish h1,
   .establish h2 {
     text-align: center;
     font-size: 35px;
   }
-  .line {
-    display: none;
-  }
+ 
   .companiesTypes .swiperContainer {
     width: 80%;
   }
 }
 
 @media (max-width: 900px) {
-  .parent {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  .startcompany .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .startcompany .Img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .startcompany .Img:not(:first-child) {
-    order: 1;
-    padding-top: 20px !important;
-  }
-  .startcompany .content {
-    order: 2;
-    padding-top: 0 !important;
-  }
+
 }
 @media (max-width: 768px) {
   .hero,
@@ -544,10 +412,7 @@
   .startcompany p {
     font-size: 16px;
   }
-  .startcompany .content,
-  .startcompany .Img {
-    width: 100%;
-  }
+ 
   
   .companiesTypes .swiperContainer {
     width: 100%;

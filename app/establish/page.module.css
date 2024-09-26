@@ -1,0 +1,9 @@
+.establishPage section {
+  padding: 80px;
+}
+@media (max-width: 768px) {
+    .establishPage section{
+        padding: 20px;
+    }
+    
+}

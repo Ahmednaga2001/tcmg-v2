@@ -1,23 +1,24 @@
-import styles from "@/components/establish/establish.module.css";
+import React from "react";
+import styles from "./page.module.css"
 import Image from "next/image";
 const data = [
-  {
-    title: "1- احجز استشارة قانونية",
-    desc: "احصل على استشارة قانونية مع محامي شركات من المحامين الخبراء في المجموعة التجارية والبحرية للمحاماة لتحديد الشكل القانوني المناسب لشركتك.",
-    path: "/assets/images/establish/Calender.png",
-  },
-  {
-    title: "2- قم بتوكيل محامي",
-    desc: "الآن انتهى دورنا، وبدء مشوارك في عالم ريادة الأعمال. اطمأن كل المعاينات والإجراءات تنتهي في بضعة ايام بعدها أعلن عن نشاطك التجاري وانطلق.",
-    path: "/assets/images/establish/Hire-lawyer-Female.png",
-  },
-  {
-    title: "3- إنطلق في عالم الأعمال",
-    desc: "الآن انتهى دورنا، وبدء مشوارك في عالم ريادة الأعمال. اطمأن كل المعاينات والإجراءات تنتهي في بضعة ايام بعدها أعلن عن نشاطك التجاري وانطلق.",
-    path: "/assets/images/establish/Business-World.png",
-  },
-];
-const StartCompany = () => {
+    {
+      title: "1- احجز استشارة قانونية",
+      desc: "احصل على استشارة قانونية مع محامي شركات من المحامين الخبراء في المجموعة التجارية والبحرية للمحاماة لتحديد الشكل القانوني المناسب لشركتك.",
+      path: "/assets/images/establish/Calender.png",
+    },
+    {
+      title: "2- قم بتوكيل محامي",
+      desc: "الآن انتهى دورنا، وبدء مشوارك في عالم ريادة الأعمال. اطمأن كل المعاينات والإجراءات تنتهي في بضعة ايام بعدها أعلن عن نشاطك التجاري وانطلق.",
+      path: "/assets/images/establish/Hire-lawyer-Female.png",
+    },
+    {
+      title: "3- إنطلق في عالم الأعمال",
+      desc: "الآن انتهى دورنا، وبدء مشوارك في عالم ريادة الأعمال. اطمأن كل المعاينات والإجراءات تنتهي في بضعة ايام بعدها أعلن عن نشاطك التجاري وانطلق.",
+      path: "/assets/images/establish/Business-World.png",
+    },
+  ];
+const EstablishCompany = () => {
   return (
     <section className={styles.startcompany}>
       <h2>اتبع الخطوات التالية لبدء تأسيس شركتك بنجاح</h2>
@@ -74,4 +75,4 @@ const StartCompany = () => {
   );
 };
 
-export default StartCompany;
+export default EstablishCompany;

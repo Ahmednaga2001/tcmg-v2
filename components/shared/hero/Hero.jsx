@@ -1,12 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css"
-const Hero = ({title,path}) => {
-  console.log(path);
+const Hero = ({title,path,w,h}) => {
+  console.log(w,h);
   
   return (
-    <section className={styles.hero} style={{backgroundImage: `url(${path}) , background-size:cover , background-repeat: no-repeat`}}>
+    <section className={styles.hero}>
       <div>
-        <Image src={path} width={200} height={200} alt={path}/>
+        <Image src={path} width={w||200}  quality={100} height={h || 200} alt={path}/>
       </div>
       <h1>{title}</h1>
     </section>
