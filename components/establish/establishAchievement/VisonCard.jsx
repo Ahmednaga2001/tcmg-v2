@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/components/establish/establish.module.css"
+import styles from "./page.module.css"
 const VisonCard = ({visionContentstyle , title , desc}) => {  
   return (
     <div className={styles[visionContentstyle]}>

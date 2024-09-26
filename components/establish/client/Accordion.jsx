@@ -1,6 +1,6 @@
 "use client";
-import styles from "@/components/establish/establish.module.css";
-import AccordionCard from "./AccordionCard";
+
+import AccordionCard from "@/components/shared/client/accordionCard/AccordionCard";
 
 const data = [
   {
@@ -105,7 +105,7 @@ const data = [
 
 const Accordion = () => {
   return (
-    <section className={styles.accordionQuestions}>
+    <section className="accordionQuestions">
       <h2>أسئلة عملائنا حول خدمة تأسيس الشركات</h2>
       {data.map((el, index) => (
         <AccordionCard title={el.title} desc={el.desc} key={index} />

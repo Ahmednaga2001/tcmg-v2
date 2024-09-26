@@ -6,12 +6,16 @@ const Input = ({label , imgPath , placeholder , alt}) => {
     <div className={styles.inp}>
               <label htmlFor={label} className={styles.hiddenLabel}>{label}</label>
               <input id={label} type="text" placeholder={placeholder} />
-              <Image
+            {
+              imgPath && (
+                <Image
                 src={imgPath}
                 width={24}
                 height={24}
                 alt={alt}
               />
+              )
+            }
             </div>
   )
 }

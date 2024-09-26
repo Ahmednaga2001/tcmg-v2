@@ -1,9 +1,8 @@
 "use client";
-import styles from "@/components/establish/establish.module.css";
 import Image from "next/image";
 import { useState } from "react";
-
-const LegalServiceAccordion = ({ title, path, desc }) => {  
+import styles from "./page.module.css";
+const LegalServiceCard = ({ title, path, desc }) => {
   const [isOpenOne, setIsOpenOne] = useState(false);
 
   const handleIsOpenOne = () => {
@@ -11,16 +10,17 @@ const LegalServiceAccordion = ({ title, path, desc }) => {
   };
 
   return (
+    <div>
       <div className={styles.accordionItem}>
         <div className={styles.accordionItemHeader} onClick={handleIsOpenOne}>
-            <Image
-              src={path}
-              width={80}
-              height={97}
-              alt={path}
-              className={styles.accordionItemIcon}
-            />
-            <span>{title}</span>
+          <Image
+            src={path}
+            width={80}
+            height={96}
+            alt={path}
+            className={styles.accordionItemIcon}
+          />
+          <span>{title}</span>
         </div>
         <div
           className={`${styles.accordionContent} ${
@@ -30,8 +30,8 @@ const LegalServiceAccordion = ({ title, path, desc }) => {
           <p>{desc}</p>
         </div>
       </div>
-
+    </div>
   );
 };
 
-export default LegalServiceAccordion;
+export default LegalServiceCard;

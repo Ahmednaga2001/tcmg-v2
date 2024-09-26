@@ -1,0 +1,107 @@
+.countries h2{
+    text-align: center;
+}
+.countries .parentvision {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding-top: 50px;
+  }
+  .countries .vision {
+    position: relative;
+    width: 100%;
+  }
+  .countries .vision .imgleft {
+    position: absolute;
+    left: 0;
+    top: -40px;
+    z-index: 10;
+    padding: 10px;
+    background-color: #d8d8d836;
+    border-radius: 25px;
+  }
+  .countries .vision .imgright {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    z-index: 10;
+    padding: 10px;
+    background-color: #d8d8d836;
+    border-radius: 25px;
+  }
+  .countries .visioncontent {
+    height: 200px;
+    background-color: #d8d8d836;
+    padding: 20px;
+    border-radius: 25px;
+    width: 95%;
+  }
+  .countries .visioncontentleft {
+    height: 200px;
+    padding: 20px;
+    background-color: #d8d8d836;
+    border-radius: 25px;
+    padding-right: 230px;
+    margin-right: 5%;
+  }
+  .visioncontent p {
+    width: 80%;
+  }
+  @media (max-width: 1191px) {
+    .countries .vision {
+      background-color: #d8d8d836;
+      width: 60%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 25px;
+    }
+    .countries .vision .imgleft {
+      position: relative;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: none !important;
+      order: 1;
+    }
+    .countries .vision .imgright {
+      position: relative;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: none !important;
+      order: 1;
+    }
+    .countries .visioncontent {
+      text-align: center;
+      order: 2;
+      height: auto !important;
+      background: none !important;
+      width: 100%;
+    }
+    .countries .visioncontentleft {
+      text-align: center;
+      order: 2;
+      padding-right: 0 !important;
+      height: auto !important;
+      background: none !important;
+      width: 100%;
+    }
+    .visioncontent p,
+    .visioncontentleft p {
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    .countries .vision {
+      width: 100%;
+    }
+   
+    .countries .parentvision {
+      gap: 20px;
+    }
+    
+  }

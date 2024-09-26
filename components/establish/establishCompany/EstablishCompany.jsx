@@ -5,7 +5,7 @@ const data = [
     {
       title: "1- احجز استشارة قانونية",
       desc: "احصل على استشارة قانونية مع محامي شركات من المحامين الخبراء في المجموعة التجارية والبحرية للمحاماة لتحديد الشكل القانوني المناسب لشركتك.",
-      path: "/assets/images/establish/Calender.png",
+      path: "/assets/images/establish/Calender.svg",
     },
     {
       title: "2- قم بتوكيل محامي",
@@ -43,7 +43,7 @@ const EstablishCompany = () => {
           <div className={styles.Img}>
             <Image
               src={data[1].path}
-              width={300}
+              width={264}
               height={302}
               alt="Person Image"
             />

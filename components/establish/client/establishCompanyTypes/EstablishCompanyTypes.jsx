@@ -6,7 +6,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, EffectFade, Navigation } from "swiper/modules";
-import styles from "@/components/establish/establish.module.css";
+import styles from "./page.module.css";
 const info = [
   {
     title: "تأسيس شركة فردية ",
@@ -33,7 +33,7 @@ const info = [
     desc: "مجموعة مكاتب TCMG, طريقك الأنسب لبدء إجراءات تأسيس شركتك المستقلَّة, بالاستناد على خبراء تأسيس الشركات في التوجيه وإعداد كافة الاتفاقيات والمستندات اللازمة, وصولاً لمرحلة التسجيل الرسمي للشركة. انطلق بكل ثقة بشركتك في عالم الأعمال والتجارة.",
   },
 ];
-const TypesofCompanies = () => {
+const EstablishCompanyTypes = () => {
   return (
     <section className={styles.companiesTypes}>
       <h2>ما هي أنواع الشركات التي نختص بها؟</h2>
@@ -75,4 +75,4 @@ const TypesofCompanies = () => {
   );
 };
 
-export default TypesofCompanies;
+export default EstablishCompanyTypes;

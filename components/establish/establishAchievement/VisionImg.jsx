@@ -1,4 +1,4 @@
-import styles from "@/components/establish/establish.module.css"
+import styles from "./page.module.css"
 import Image from 'next/image'
 const VisionImg = ({imgStyle , path,alt}) => {      
   return (

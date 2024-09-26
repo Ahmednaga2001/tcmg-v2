@@ -1,6 +1,6 @@
-import styles from "@/components/establish/establish.module.css";
 import Image from "next/image";
-import LegalServiceAccordion from "./client/LegalServiceAccordion";
+import styles from "./page.module.css";
+import LegalServiceCard from "./LegalServiceCard";
 const data = [
   {
     title: "ترخيص مزاولة النشاط ",
@@ -10,9 +10,7 @@ const data = [
   },
   {
     title: "صياغة العقود",
-    dec: ` 
-نتولى أمور صياغة العقود وتوثيقها بكافة أنواعها خاصة فيما يتعلق بشؤون تأسيس الشركات داخل مصر وخارجها. كما يتولى فريق عملنا صياغة عقود العلاقات التجارية بين الشركات لضمان نجاح جميع الأطراف.
-`,
+    desc:"نتولى أمور صياغة العقود وتوثيقها بكافة أنواعها خاصة فيما يتعلق بشؤون تأسيس الشركات داخل مصر وخارجها. كما يتولى فريق عملنا صياغة عقود العلاقات التجارية بين الشركات لضمان نجاح جميع الأطراف.",
     path: "/assets/icons/establish/صياغة العقود.png",
   },
   {
@@ -53,7 +51,7 @@ const data = [
     path: "/assets/icons/establish/متابعة ما بعد التأسيس.png",
   },
 ];
-const LegalServices = () => {
+const EstablishLegalServices = () => {
   return (
     <section className={styles.legalServices}>
       <div className={styles.header}>
@@ -72,17 +70,39 @@ const LegalServices = () => {
         </p>
       </div>
       <div className={styles.accordionParent}>
-        {data.map((el, index) => (
-          <LegalServiceAccordion
-            title={el.title}
-            desc={el.desc}
-            path={el.path}
-            key={index}
-          />
-        ))}
+        <LegalServiceCard
+          title={data[0].title}
+          path={data[0].path}
+          desc={data[0].desc}
+        />
+        <LegalServiceCard
+          title={data[1].title}
+          path={data[1].path}
+          desc={data[1].desc}
+        />
+        <LegalServiceCard
+          title={data[2].title}
+          path={data[2].path}
+          desc={data[2].desc}
+        />
+        <LegalServiceCard
+          title={data[3].title}
+          path={data[3].path}
+          desc={data[3].desc}
+        />
+        <LegalServiceCard
+          title={data[4].title}
+          path={data[4].path}
+          desc={data[4].desc}
+        />
+        <LegalServiceCard
+          title={data[5].title}
+          path={data[5].path}
+          desc={data[5].desc}
+        />
       </div>
     </section>
   );
 };
 
-export default LegalServices;
+export default EstablishLegalServices;

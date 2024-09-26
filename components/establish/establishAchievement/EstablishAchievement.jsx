@@ -1,4 +1,4 @@
-import styles from "@/components/establish/establish.module.css";
+import styles from "./page.module.css";
 import VisionImg from "./VisionImg";
 import VisonCard from "./VisonCard";
 
@@ -29,7 +29,7 @@ const data = [
     }
 ];
 
-const Countries = () => {
+const EstablishAchievement = () => {
   return (
     <section className={styles.countries}>
       <h2>ما هي الدول التي نقدم خدمة تأسيس الشركات بها؟</h2>
@@ -62,4 +62,4 @@ const Countries = () => {
   );
 }
 
-export default Countries;
+export default EstablishAchievement;
