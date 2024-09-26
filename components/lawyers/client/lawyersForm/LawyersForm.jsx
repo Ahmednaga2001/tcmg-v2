@@ -1,3 +1,4 @@
+"use client";
 import SelectComponentThree from "@/components/ui/selectComponentThree/SelectComponentThree";
 import React, { useState } from "react";
 import Image from "next/image";
