@@ -1,0 +1,66 @@
+.atriclePage section{
+    padding: 80px;
+}
+.articleHero{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    text-align: center;
+}
+.atriclePage ul{
+    list-style-type: disc !important;
+    
+}
+.atriclePage ol{
+    list-style-position: inside;
+}
+ .serviceContent{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.serviceContent{
+    
+}
+.brand{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.headTitle{
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+}
+.brandImportant{
+    margin-top: 30px;
+}
+.brandImportant img{
+    margin-top: 30px;
+}
+
+@media (max-width:768px) {
+    .atriclePage section{
+        padding: 20px;
+    }
+    .atriclePage h1 , .atriclePage h2{
+        font-size: 35px;
+    }
+    .atriclePage p , .atriclePage li{
+        text-align: center;
+        font-size: 16px;
+    }
+    .atriclePage .headTitle{
+        text-align: center;
+    }
+   .brand img , .brandImportant img{
+    width: 100%;
+    height: 100%;
+   }
+   .brand{
+   }
+   .brandImportant img{
+   }
+    
+}
