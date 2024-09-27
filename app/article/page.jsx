@@ -2,6 +2,7 @@ import ArticleHero from "@/components/article/ArticleHero"
 import styles from "./page.module.css"
 import ArticleServiceOne  from "@/components/article/articleServiceOne"
 import ArticleServiceTwo from "@/components/article/ArticleServiceTwo"
+import ArticleServiceThree from "@/components/article/ArticleServiceThree"
  const Aertice = () => {
   return (
     <div className={styles.atriclePage}>
@@ -9,6 +10,7 @@ import ArticleServiceTwo from "@/components/article/ArticleServiceTwo"
         <ArticleHero/>
         <ArticleServiceOne/>
         <ArticleServiceTwo/>
+        <ArticleServiceThree/>
         </section>
         
     </div>
