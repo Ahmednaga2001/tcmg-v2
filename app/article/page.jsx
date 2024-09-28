@@ -6,6 +6,8 @@ import ArticleServiceOne from "@/components/article/ArticleServiceOne"
 import AerticleServiceFive from "@/components/article/AerticleServiceFive"
 import ArticleDivider from "@/components/article/articleDivider"
 import ArticleServieSix from "@/components/article/ArticleServieSix"
+import ArticleContact from "@/components/article/ArticleContact"
+import { ArticleConclution } from "@/components/article/ArticleConclution"
  const Aertice = () => {
   return (
     <div className={styles.atriclePage}>
@@ -18,7 +20,8 @@ import ArticleServieSix from "@/components/article/ArticleServieSix"
         <ArticleDivider/>
         <ArticleServieSix/>
         </section>
-        
+        <ArticleContact/>
+        <ArticleConclution/>
     </div>
   )
 }

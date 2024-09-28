@@ -3,6 +3,9 @@
 }
 .atriclePage .mainTitle{
     font-size: 50px;
+    display: block;
+    line-height: 1.4;
+
 }
 .articleHero{
     display: flex;
@@ -53,13 +56,22 @@
     margin-top: 30px;
 }
 
+@media (max-width:1191px) {
+    .brand img , .brandImportant img , .regImg{
+        width: 100%;
+        height: 100%;
+       }
+       .atriclePage h1 , .atriclePage h2 , .mainTitle{
+        font-size: 35px;
+        text-align: center;
+    }
+    
+}
 @media (max-width:768px) {
     .atriclePage section{
         padding: 20px;
     }
-    .atriclePage h1 , .atriclePage h2{
-        font-size: 35px;
-    }
+   
     .atriclePage p , .atriclePage li{
         text-align: center;
         font-size: 16px;
@@ -67,10 +79,7 @@
     .atriclePage .headTitle{
         text-align: center;
     }
-   .brand img , .brandImportant img , .regImg{
-    width: 100%;
-    height: 100%;
-   }
+ 
    .brand{
    }
    .brandImportant img{
@@ -93,4 +102,42 @@ margin: auto;
     gap: 10px;
     justify-content: center;
     border-radius: 12px;
+}
+/*----------------------------------------------------------------*/
+.articleContact{
+    background-color: #fff;
+    background-image: url("/assets/images/article/pattern.png");
+    background-repeat: no-repeat;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+
+}
+.articleContact span{
+    font-weight: bold;
+}
+.articleContact a{
+    color: #000;
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .articleContact{
+        align-items: center;
+        text-align: center;
+    }
+}
+/*----------------------------------------------------------------*/
+.articleConclution{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+@media (max-width : 1191px){ 
+.articleConclution{
+    align-items: center;
+    text-align: center;
+}
+    
 }
