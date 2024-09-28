@@ -1,5 +1,5 @@
 import styles from "@/app/article/page.module.css"
-export const ArticleConclution = () => {
+ const ArticleConclution = () => {
   return (
     <section className={styles.articleConclution}>
           <h2>الخاتمة</h2>
@@ -8,3 +8,4 @@ export const ArticleConclution = () => {
     </section>
   )
 }
+export default ArticleConclution

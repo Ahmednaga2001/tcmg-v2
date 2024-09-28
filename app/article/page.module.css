@@ -139,5 +139,60 @@ margin: auto;
     align-items: center;
     text-align: center;
 }
-    
+}
+/*----------------------------------------------------------------*/
+.articleMarks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+}
+.articleMarks .topContent { 
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 50px 0;
+}
+.marksContainer{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.marksContainer p{
+border-radius: 4px;
+border:  1px solid #ffffff85;
+background : linear-gradient(var(--main) , #d8d8d811);
+padding: 10px;
+}
+@media (max-width: 1191px) {
+  .marksContainer{
+    grid-template-columns: repeat(2,1fr);
+
+  }
+}
+@media (max-width: 768px) {
+  .marksContainer{
+    grid-template-columns: repeat(1,1fr);
+
+  }
+  .articleMarks .bottom{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+  .articleMarks .socialIcons{
+    justify-content: center;
+  }
+}
+
+.articleMarks .bottom{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 50px 0;
+}
+.articleMarks .socialIcons{
+    display: flex;
+    gap: 10px;
 }

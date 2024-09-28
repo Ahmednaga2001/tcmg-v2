@@ -4,10 +4,11 @@ import ArticleServiceTwo from "@/components/article/ArticleServiceTwo"
 import ArticleServiceThree from "@/components/article/ArticleServiceThree"
 import ArticleServiceOne from "@/components/article/ArticleServiceOne"
 import AerticleServiceFive from "@/components/article/AerticleServiceFive"
-import ArticleDivider from "@/components/article/articleDivider"
 import ArticleServieSix from "@/components/article/ArticleServieSix"
 import ArticleContact from "@/components/article/ArticleContact"
-import { ArticleConclution } from "@/components/article/ArticleConclution"
+import ArticleMarks from "@/components/article/ArticleMarks"
+import ArticleDivider from "@/components/article/ArticleDivider"
+import ArticleConclution from "@/components/article/ArticleConclution"
  const Aertice = () => {
   return (
     <div className={styles.atriclePage}>
@@ -22,6 +23,8 @@ import { ArticleConclution } from "@/components/article/ArticleConclution"
         </section>
         <ArticleContact/>
         <ArticleConclution/>
+        <ArticleMarks/>
+        
     </div>
   )
 }
