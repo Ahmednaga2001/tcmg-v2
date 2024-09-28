@@ -22,7 +22,7 @@
 .bulletContent{
     margin-top: 30px;
 }
-.bulletContent ul{
+.bulletContent ul , .orderedContent ol{
     margin-top: 10px;
 }
 .bulletContent .desc{
@@ -49,7 +49,7 @@
 .brandImportant{
     margin-top: 30px;
 }
-.brandImportant img{
+.brandImportant img , .regImg{
     margin-top: 30px;
 }
 
@@ -67,7 +67,7 @@
     .atriclePage .headTitle{
         text-align: center;
     }
-   .brand img , .brandImportant img{
+   .brand img , .brandImportant img , .regImg{
     width: 100%;
     height: 100%;
    }
@@ -76,4 +76,21 @@
    .brandImportant img{
    }
     
+}
+
+.divider{
+    padding: 30px 0;
+}
+.divider p{
+margin: auto;    
+    background-color: #fff;
+    color: #000;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    border-radius: 12px;
 }

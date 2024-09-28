@@ -1,6 +1,5 @@
 import styles from "@/app/article/page.module.css"
-export const BulletContent = ({ items, title, desc }) => {
-    
+export const BulletContent = ({ items, title, desc , desc2 }) => {
     return (
         <div className={styles.bulletContent}>
             {title && <span className={styles.headTitle}>{title}</span>}
@@ -13,6 +12,7 @@ export const BulletContent = ({ items, title, desc }) => {
                     </li>
                 ))}
             </ul>
+            {desc2 && (<p>{desc2}</p>)}
         </div>
     );
 }
