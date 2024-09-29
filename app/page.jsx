@@ -9,6 +9,7 @@ import HomeWhyUs from "@/components/home/homeWhyUs/HomeWhyUs";
 import Team from "@/components/shared/client/Team/Team";
 import Customers from "@/components/shared/customers/Customers";
 import Stats from "@/components/shared/stats/Stats";
+import { HomeTeam } from "@/components/home/client/homeTeam/HomeTeam";
 
 const services = [
   {
@@ -231,11 +232,9 @@ function Home() {
       <HomeCarousel/>
       <HomeWhyUs />
       <Scroll />
-      <Team lawyers={lawyers}/>
-      {/* <Stats /> */}
+      <HomeTeam/>
       <Stats/>
-      {/* <OurCustomers /> */}
-      <Customers/>
+      <Customers customers={customers}/>
       <Articles />
       <Branches />
       <Parteners />

@@ -56,11 +56,12 @@ const HomeCarousel = () => {
         <SwiperSlide key={el.id} className={styles.carousel}>
           <div className={styles.caroChild}>
             <h2>{el.header}</h2>
-            <div>
+            <div className={styles.bodyContent}>
               <p>{el.body}</p>
               <Image src={el.img} alt={el.img} width={130} height={100} />
             </div>
 
+            <div>
             <span className="link">
               {el.span}
               <Image
@@ -70,6 +71,7 @@ const HomeCarousel = () => {
                 height={20}
               />
             </span>
+            </div>
           </div>
         </SwiperSlide>
       ))}
