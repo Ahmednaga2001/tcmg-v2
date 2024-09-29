@@ -1,7 +1,7 @@
 import styles from "./page.module.css"
 const HomeHero = () => {
   return (
-    <header className={styles.hero}>
+    <section className={styles.hero}>
         <div className={styles.content}>
           <h1>
             المجموعة التجارية والبحرية للمحاماة اختيارك الأول لدعم قانوني قوي
@@ -12,7 +12,7 @@ const HomeHero = () => {
             من الخدمات القانونية الشاملة وأعمال الشركات.
           </p>
         </div>
-      </header>
+      </section>
   )
 }
 

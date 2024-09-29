@@ -2,7 +2,6 @@
     background-image: url(/assets/images/homePage/Pattern.png);
     background-size: cover;
     background-position: center center;
-    height: 70vh;
     display: flex;
 }
 .hero .content {

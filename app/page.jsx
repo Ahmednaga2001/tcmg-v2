@@ -10,6 +10,7 @@ import Team from "@/components/shared/client/Team/Team";
 import Customers from "@/components/shared/customers/Customers";
 import Stats from "@/components/shared/stats/Stats";
 import { HomeTeam } from "@/components/home/client/homeTeam/HomeTeam";
+import HomeScroll from "@/components/home/client/homeScroll/HomeScroll";
 
 const services = [
   {
@@ -198,32 +199,8 @@ const displayJsx = function (obj) {
   ));
 };
 
-const lawyersJsx = lawyers.map((lawyer) => (
-  <div className={styles.card} key={lawyer.id}>
-    <Image src={lawyer.img} alt={lawyer.name} width={279} height={300} />
-    <p>{lawyer.name}</p>
-    <p>{lawyer.category}</p>
-  </div>
-));
 
-const customersJsx = customers.map((customer) => (
-  <div className={styles.customer} key={customer.id}>
-    <div className={styles.top}>
-      <div className={styles.left}>
-        <span>{customer.name}</span>
-        <br />
-        <span>{customer.category}</span>
-      </div>
-      <div className={styles.right}>
-        <Image src={customer.img} alt={customer.name} width={80} height={80} />
-      </div>
-    </div>
-    <div className={styles.bottom}>
-      <Image src="/assets/icons/quote.svg" alt="Quote" width={28} height={23} />
-      <p>{customer.body}</p>
-    </div>
-  </div>
-));
+
 
 function Home() {
   return (
@@ -231,161 +208,23 @@ function Home() {
       <HomeHero/>
       <HomeCarousel/>
       <HomeWhyUs />
-      <Scroll />
+      <HomeScroll cases = {cases} services={services}/>
       <HomeTeam/>
       <Stats/>
       <Customers customers={customers}/>
-      <Articles />
-      <Branches />
-      <Parteners />
+      {/* <Articles /> */}
+       <Branches />
+       <Parteners />
     </div>
   );
 }
 
 
 
-function WhyUs() {
-  return (
-    <section className={styles.whyUs}>
-      <h2>لماذا تختارنا وبكل ثقة؟</h2>
-      <p>
-        يمتاز مكتبنا عن غيره من مكاتب المحاماة المعتمدة الأخرى في الأخلاقيات
-        التي تسيّر آلية العمل داخل مكتبنا، بالإضافة إلى مبادئ المحامين والشركاء
-        العاملين في المكتب والمؤمنين بأهمية تطوير الذات على المستوى العملي
-        والقانوني سعيًا منهم لتحويل مكتبنا لشركة محاماة دولية في مصر. فقد شهد
-        عملاؤنا بقوة مكتبنا وثقة التعامل معنا، والمبادئ التالية ما ستجدها عند
-        التعامل معنا:
-      </p>
-      <div className="slider"></div>
-    </section>
-  );
-}
 
-function Scroll() {
-  return (
-    <>
-      <section className={styles.scroll}>
-        <div className={styles.right}>
-          <h2>خدمات قانونية عالمية المستوى منذ 1986</h2>
-          <p>
-            نختصّ بتقديم أكثر من 30 خدمة قانونية بخبرات عالمية وفهم واسع للبيئة
-            القانونية. لتقديم أفضل مستوى من الحلول القانونية على الصعيد المحلي
-            والدولي في مكتبنا بقلب مدينة القاهرة. فمن خلال دمج خبرات فريق العمل
-            المكون من أكثر من 40 محامي متخصصين في مجالات القانون المختلفة، تكمن
-            قوتنا في تقديم خدمات قانونية بمعايير أداء عالمية ومستوى فاعلية ممتاز
-            في الجودة والوقت.
-          </p>
-          <span className="link">
-            توجه إلي صفحة الخدمات القانونية
-            <Image
-              src="assets/icons/arrow-left.svg"
-              alt="Arrow Left Small"
-              width={20}
-              height={20}
-            />
-          </span>
-        </div>
-        <div className={styles.left}>{displayJsx(services)}</div>
-      </section>
-      <section className={styles.scroll}>
-        <div className={styles.right}>
-          <h2>محامين خبراء في مجالات القانون والقضايا المختلفة</h2>
-          <p>
-            ما يميز مكتبنا عن مكاتب المحاماة الأخرى، هو انفرادنا بالتخصصات
-            القانونية التي تتطلب خبرة قانونية وفكر استراتيجي من الدرجة الأولى.
-            حيث نفخر بوجود شركائنا المتخصصين في مجالات القانون المختلفة،
-            والمستعدون لدعم عملائنا الكرام بكل السبل الممكنة لتحقيق أهدافهم
-            بأسرع وقت وبأعلى جودة ممكنة؛ سعياً منا لنصبح أفضل شركة محاماة في مصر
-            في المستقبل القريب.
-          </p>
-          <span className="link">
-            تصفح كامل الخدمات القانونية
-            <Image
-              src="assets/icons/arrow-left.svg"
-              alt="Arrow Left Small"
-              width={20}
-              height={20}
-            />
-          </span>
-        </div>
-        <div className={styles.left}>{displayJsx(cases)}</div>
-      </section>
-    </>
-  );
-}
 
-function OurTeam() {
-  return (
-    <section className={styles.ourTeam}>
-      <div className={styles.header}>
-        <h2>فريق العمل</h2>
-        <Image
-          src="/assets/icons/crown.svg"
-          alt="Crown"
-          width={60}
-          height={25}
-        />
-      </div>
-      <p>
-        تتكون الهيكلة الإدارية للمجموعة التجارية والبحرية من أشهر محامين مصر
-        أصحاب الخبرات في تخصصات القضايا المحلية والدولية المختلفة. حيث نضم
-        مجموعة من الكوادر مجموعة من الكوادر البشرية المتخصصة في مجالات القانون
-        المختلفة. ولأن الجودة والسرعة هي شعارنا؛ نعمل بروح الفريق لدمج الخبرات
-        والمعرفة المتراكمة في دعم عملائنا الكرام على تحقيق أهدافهم القانونية.
-      </p>
-      <div className={styles.cards}>{lawyersJsx}</div>
-    </section>
-  );
-}
 
-// function Stats() {
-//   return (
-//     <section className={styles.stats}>
-//       <div>
-//         <span>+300</span>
-//         <span>العملاء</span>
-//       </div>
-//       <div>
-//         <span>40</span>
-//         <span>عدد الخبراء</span>
-//       </div>
-//       <div>
-//         <span>+50</span>
-//         <span>سنين الخبرة</span>
-//       </div>
-//       <div>
-//         <span>7</span>
-//         <span>مكاتب محاماة اقليمية</span>
-//       </div>
-//     </section>
-//   );
-// }
 
-function OurCustomers() {
-  return (
-    <section className={styles.ourCustomers}>
-      <div className={styles.header}>
-        <h2>آراء عملائنا الكرام</h2>
-        <Image
-          src="/assets/icons/crown.svg"
-          alt="Crown"
-          width={60}
-          height={25}
-        />
-      </div>
-      <div className={styles.customers}>{customersJsx}</div>
-      <div className="link">
-        <span>مشاهدة كامل الأراء</span>
-        <Image
-          src="/assets/icons/arrow-left.svg"
-          alt="Left-Arrow"
-          width={20}
-          height={20}
-        />
-      </div>
-    </section>
-  );
-}
 
 function Articles() {
   return (
