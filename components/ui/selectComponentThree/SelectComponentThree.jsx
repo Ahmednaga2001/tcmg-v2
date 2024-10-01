@@ -22,6 +22,7 @@ const SelectComponentThree = ({ options, selectedOption, setSelectedOption, head
                 setSelectedOption(option.value); 
                 setOpen(false); 
               }}
+              
             >
               {option.value}
             </li>

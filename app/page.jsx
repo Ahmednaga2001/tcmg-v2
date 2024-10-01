@@ -11,6 +11,7 @@ import Customers from "@/components/shared/customers/Customers";
 import Stats from "@/components/shared/stats/Stats";
 import { HomeTeam } from "@/components/home/client/homeTeam/HomeTeam";
 import HomeScroll from "@/components/home/client/homeScroll/HomeScroll";
+import HomeArticleScroll from "@/components/home/client/homeScroll/HomeArticleScroll";
 
 const services = [
   {
@@ -212,7 +213,8 @@ function Home() {
       <HomeTeam/>
       <Stats/>
       <Customers customers={customers}/>
-      {/* <Articles /> */}
+    
+      <HomeArticleScroll articles={articles}/>
        <Branches />
        <Parteners />
     </div>

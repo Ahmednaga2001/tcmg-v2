@@ -10,18 +10,18 @@ export const ServiceOrCaseItemSlider = ({services}) => {
   return (
     <Swiper
       spaceBetween={30}
-      // effect="fade"
+      effect="fade"
       pagination={{
         clickable: true,
         horizontalClass: "--swiper-pagination-horizontal",
         type: "bullets",
       }}
-      // loop={true}
-      // autoplay={{
-      //   delay: 5000,
-      //   disableOnInteraction: false,
-      // }}
-      // modules={[EffectFade, Pagination, Autoplay]}
+      loop={true}
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: false,
+      }}
+      modules={[EffectFade, Pagination, Autoplay]}
       style={{
         "--swiper-navigation-color": "#fff",
         "--swiper-pagination-color": "#fff",

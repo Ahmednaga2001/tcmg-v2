@@ -4,58 +4,61 @@ import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 import LawyersCard from "../lawersCard/LawyersCard";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 const practices = [
-  { value: "الأندماج والاستحواذ" },
-  { value: "قضايا أسواق المال" },
-  { value: "قضايا التمويل والأوراق المالية" },
-  { value: "التحكيم التجاري الدولي" },
-  { value: "التجارة الدولية" },
-  { value: "قضايا الاتصالات" },
-  { value: "قضايا المعاملات المصرفية" },
-  { value: "أعمال الشركات" },
-  { value: "قضايا الأموال العامة" },
-  { value: "قضايا الإنشاءات والمقاولات" },
-  { value: "القضايا العقارية" },
-  { value: "الملكية الفكرية" },
-  { value: "قضايا التنفيذ والإفلاس" },
-  { value: "قضايا الضرائب" },
-  { value: "قضايا التأمين" },
-  { value: "القضايا الإدارية" },
-  { value: "القضايا الجنائية" },
-  { value: "القضايا المدنية" },
-  { value: "إستشارة قانونية" },
-  { value: "استشارة قانونية مميزة VIP" },
-];
-const sectors = [
-  { value: "العقارات" },
-  { value: "الخدمات المالية" },
-  { value: "الرعاية الصحية" },
-  { value: "الفنادق والترفيه" },
-  { value: "التجزئة والمستهلك" },
-  { value: "التصنيع" },
-  { value: "النقل والشحن البحري" },
-  { value: "النقل" },
-  { value: "السيارات" },
-  { value: "التأمين" },
-  { value: "التعليم" },
-  { value: "وسائل الإعلام" },
-  { value: "الطاقة" },
-  { value: "الاتصالات" },
-];
-const locations = [
-  { value: "مصر" },
-  { value: "الإمارات" },
-  { value: "السعودية" },
-  { value: "الصين" },
-  { value: "فلسطين" },
-];
-const cities = [
-  { value: "الجيزة" },
-  { value: "الإسكندرية" },
-  { value: "القاهرة" },
-  { value: "العاشر من رمضان" },
+  { id: 1, value: "الأندماج والاستحواذ" },
+  { id: 2, value: "قضايا أسواق المال" },
+  { id: 3, value: "قضايا التمويل والأوراق المالية" },
+  { id: 4, value: "التحكيم التجاري الدولي" },
+  { id: 5, value: "التجارة الدولية" },
+  { id: 6, value: "قضايا الاتصالات" },
+  { id: 7, value: "قضايا المعاملات المصرفية" },
+  { id: 8, value: "أعمال الشركات" },
+  { id: 9, value: "قضايا الأموال العامة" },
+  { id: 10, value: "قضايا الإنشاءات والمقاولات" },
+  { id: 11, value: "القضايا العقارية" },
+  { id: 12, value: "الملكية الفكرية" },
+  { id: 13, value: "قضايا التنفيذ والإفلاس" },
+  { id: 14, value: "قضايا الضرائب" },
+  { id: 15, value: "قضايا التأمين" },
+  { id: 16, value: "القضايا الإدارية" },
+  { id: 17, value: "القضايا الجنائية" },
+  { id: 18, value: "القضايا المدنية" },
+  { id: 19, value: "إستشارة قانونية" },
+  { id: 20, value: "استشارة قانونية مميزة VIP" },
 ];
 
+const sectors = [
+  { id: 1, value: "العقارات" },
+  { id: 2, value: "الخدمات المالية" },
+  { id: 3, value: "الرعاية الصحية" },
+  { id: 4, value: "الفنادق والترفيه" },
+  { id: 5, value: "التجزئة والمستهلك" },
+  { id: 6, value: "التصنيع" },
+  { id: 7, value: "النقل والشحن البحري" },
+  { id: 8, value: "النقل" },
+  { id: 9, value: "السيارات" },
+  { id: 10, value: "التأمين" },
+  { id: 11, value: "التعليم" },
+  { id: 12, value: "وسائل الإعلام" },
+  { id: 13, value: "الطاقة" },
+  { id: 14, value: "الاتصالات" },
+];
+
+const locations = [
+  { id: 1, value: "مصر" },
+  { id: 2, value: "الإمارات" },
+  { id: 3, value: "السعودية" },
+  { id: 4, value: "الصين" },
+  { id: 5, value: "فلسطين" },
+];
+
+const cities = [
+  { id: 1, value: "الجيزة" },
+  { id: 2, value: "الإسكندرية" },
+  { id: 3, value: "القاهرة" },
+  { id: 4, value: "العاشر من رمضان" },
+];
 const lawyersInfo = [
   {
     id: 1,
@@ -158,9 +161,24 @@ const LawyersForm = () => {
   const [selectedLoction, setSelectedLoction] = useState(null);
   const [selectedCity, setSelectedCity] = useState(null);
 
+  const [FilteredLawyers, setFilteredLawyers] = useState(lawyersInfo);
+  
+  
+  
+ const handleSubmit = (e) => {
+  const l = []
+  e.preventDefault();
+  FilteredLawyers.filter((lawyer) => {
+    if (lawyer.title.toLowerCase().includes(name.toLowerCase())) {
+      l.push(lawyer)
+    }
+    setFilteredLawyers(l)
+  })
+
+ }
   return (
     <section className={styles.l}>
-      <form action="">
+      <form action="" onSubmit={handleSubmit}>
         <div className={styles.inputsSearchContainer}>
           <div className={styles.customInput}>
             <input
@@ -226,7 +244,7 @@ const LawyersForm = () => {
       </form>
 
       <div className={styles.display}>
-        {lawyersInfo &&
+        {/* {lawyersInfo &&
           lawyersInfo.map((lawyer) => (
             <LawyersCard
               key={lawyer.id}
@@ -234,7 +252,17 @@ const LawyersForm = () => {
               category={lawyer.category}
               imgPath={lawyer.imgPath}
             />
-          ))}
+          ))} */}
+          {
+            FilteredLawyers.map((lawyer) => (
+              <LawyersCard
+                key={lawyer.id}
+                title={lawyer.title}
+                category={lawyer.category}
+                imgPath={lawyer.imgPath}
+              />
+            ))
+          }
       </div>
     </section>
   );

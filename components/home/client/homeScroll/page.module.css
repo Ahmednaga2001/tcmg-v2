@@ -92,7 +92,7 @@
   } */
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .scroll .right{
     text-align: start;
     align-items: flex-start;

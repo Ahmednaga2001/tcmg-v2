@@ -36,75 +36,7 @@
 }
     
 }
-/* .hero .content {
-    width: 70%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    gap: 40px;
-} */
 
-/* ============================================================================ */
-
-/* .carousel {
-    height: 100%;
-    width: 100%;
-    background-color: var(--main);
-    color: var(--font);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.carousel .caroChild {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    gap: 40px;
-    padding-bottom: 100px;
-    animation: fade 1.5s ease-out;
-}
-
-
-.carousel .caroChild div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    width: 100%;
-}
-
-.carousel .caroChild div p {
-    width: 75%;
-} */
-
-/* ============================================================================ */
-/* .whyUs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 40px;
-    text-align: center;
-} */
-
-/* ============================================================================ */
-
-
-@keyframes fade {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 100%;
-    }
-}
 
 /* ============================================================================ */
 
@@ -152,7 +84,7 @@
 } */
 
 /* ============================================================================ */
-
+/* 
 .stats {
     background-image: url(/assets/images/homePage/باترن.svg);
     background-position: center center;
@@ -184,7 +116,7 @@
     font-family: janna bol;
     font-size: 57px;
     font-weight: 900;
-}
+} */
 
 /* ============================================================================ */
 
@@ -263,7 +195,7 @@
 /* ============================================================================ */
 
 
-.branches {
+ .branches {
     width: 100%;
     padding: 0px !important;
 }
@@ -313,7 +245,7 @@
 
 .branches .link:hover {
     opacity: 100%;
-}
+} 
 
 /* ============================================================================ */
 
@@ -330,4 +262,4 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} 
