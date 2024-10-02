@@ -1,8 +1,7 @@
 "use client";
-import styles from "@/components/hire-attorny/hireattorny.module.css";
 import Image from "next/image";
 import { useState } from "react";
-
+import styles from "./page.module.css"
 const WhyChooseAccordion = ({ title, path, desc }) => {
   const [isOpenOne, setIsOpenOne] = useState(false);
 
@@ -13,7 +12,8 @@ const WhyChooseAccordion = ({ title, path, desc }) => {
   return (
     <div>
       <div className={styles.accordionItem}>
-        <div className={styles.accordionItemHeader}>
+        <div className={styles.accordionItemHeader} onClick={handleIsOpenOne}
+        >
           <div>
             <Image
               src={path}
@@ -29,16 +29,13 @@ const WhyChooseAccordion = ({ title, path, desc }) => {
             alt="doublalarroweleft"
             width={24}
             height={24}
-            className={`${styles.accordionArrowIcon} ${
-              isOpenOne ? styles.hide : ""
-            }`}
-            onClick={handleIsOpenOne}
+            className={`${styles.accordionArrowIcon} ${isOpenOne ? styles.hide : ""
+              }`}
           />
         </div>
         <div
-          className={`${styles.accordionContent} ${
-            isOpenOne ? styles.open : ""
-          }`}
+          className={`${styles.accordionContent} ${isOpenOne ? styles.open : ""
+            }`}
         >
           <p>{desc}</p>
           <Image

@@ -1,5 +1,5 @@
-import styles from "@/components/hire-attorny/hireattorny.module.css";
 import Image from "next/image";
+import styles from "./page.module.css"
 const LegalInstructions = () => {
   return (
     <section className={styles.legalinstructions}>

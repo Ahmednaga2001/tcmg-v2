@@ -1,32 +1,30 @@
 "use client";
-import styles from "@/components/hire-attorny/hireattorny.module.css";
-import Image from "next/image";
-import { useState } from "react";
+import styles from "./page.module.css"
 import WhyChooseAccordion from "./WhyChooseAccordion";
 const data = [
   {
     title: "تحقيق الأهداف القانونية",
     desc: "يمكننا ضمان لك بعد انتهائك من إجراءات توكيل محامي, تحقيق جميع أهدافك القانونية باحترافية عالية وفي أسرع وقت ممكن.",
     path: "/assets/icons/hireattorny/icon1.png",
-    w : 16,
-    h : 16
+    w : 48,
+    h : 35
   },
   {
     title: "الترافع أمام المحاكم",
     desc: "ينوب عنك المحامي الذي وكّلته في قضاياك القانونية بالمثول أمام المحاكم بقوة؛ دفاعًا عن حقوقك, واستشهادًا بنصرة قضيتك.",
     path: "/assets/icons/hireattorny/icon2.png",
-    w : 41,
-    h : 53
+    w : 48,
+    h : 42
   },
   {
     title: "بناء علاقات استراتيجية",
     desc: "يسعى محامونا في المجموعة التجارية والبحرية لبناء علاقات استراتيجة مع عملائنا تقويةً للعلاقات الناشئة بين المحامي والموكِّل.",
     path: "/assets/icons/hireattorny/icon3.png",
-    w : 46,
+    w : 48,
     h : 29
   },
 ];
-const WhyChoose = () => {
+const HireWhyChoose = () => {
   return (
     <section className={styles.whyChoose}>
       <div className={styles.whyChooseContent}>
@@ -61,4 +59,4 @@ const WhyChoose = () => {
   );
 };
 
-export default WhyChoose;
+export default HireWhyChoose;

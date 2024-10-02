@@ -4,6 +4,7 @@ import styles from "./page.module.css"
 import Image from 'next/image'
 
 const SelectComponent = ({ options  , selectedOption , setSelectedOption , head}) => {
+  
     const [open , setOpen] = useState(false)
   return (
     <div className={styles.container}>
@@ -15,6 +16,7 @@ const SelectComponent = ({ options  , selectedOption , setSelectedOption , head}
      {
         open && (
           <ul className={styles.options}>
+         
             {options.map((option) => (
               <li key={option.value} onClick={()=>{setSelectedOption(option.value),setOpen(!open)}}>{option.value}</li>
             ))}

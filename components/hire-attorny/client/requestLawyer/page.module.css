@@ -1,0 +1,41 @@
+.RequestLawyer h2 {
+    text-align: center;
+  }
+  .RequestLawyer .formPage {
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    backdrop-filter: blur(5px);
+    background-color: #dddddd27;
+    padding: 80px;
+  }
+  .RequestLawyer .names {
+    display: flex;
+    gap: 20px;
+  }
+  .RequestLawyer .inp {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  .RequestLawyer .formPage textarea {
+    width: 100%;
+    resize: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    border: none;
+  }
+
+  @media (max-width: 768px) {
+    .RequestLawyer .formPage {
+        width: 100%;
+        padding: 20px;
+      }
+    
+  }
