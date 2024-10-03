@@ -1,11 +1,14 @@
 import React from 'react'
 import styles from "./page.module.css"
 import Image from 'next/image'
-const Input = ({label , imgPath , placeholder , alt}) => {
+const Input = ({label , style, imgPath , placeholder , alt}) => {
+  console.log(style);
+  
   return (
-    <div className={styles.inp}>
+  <div className={styles.inpContainer}>
               <label htmlFor={label} className={styles.hiddenLabel}>{label}</label>
-              <input id={label} type="text" placeholder={placeholder} />
+    <div className={styles.inp} style={style}>
+              <input  id={label} type="text" placeholder={placeholder} />
             {
               imgPath && (
                 <Image
@@ -17,6 +20,7 @@ const Input = ({label , imgPath , placeholder , alt}) => {
               )
             }
             </div>
+  </div>
   )
 }
 
