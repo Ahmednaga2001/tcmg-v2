@@ -4,7 +4,16 @@
     margin-top: 30px;
     font-size: 14px;
     cursor: pointer;
+    /* display: flex;
+    flex-direction: column;
+    gap: 10px; */
 
+}
+.container .label{
+  display: bloc;
+  padding-top: 10px !important;
+  margin-top:10px !important ;
+  color: red;
 }
 .heading{
     background-color: #fff;

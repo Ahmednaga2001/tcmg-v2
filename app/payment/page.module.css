@@ -1,14 +1,14 @@
 .paymentPage section{
     padding: 80px;
 }
-.paymentPage ul{
+.paymentPage .steps{
     display: flex;
     justify-content: center;
     gap: 40px;
     padding-top: 50px;
     direction: ltr;
 }
-.paymentPage ul li{
+.paymentPage .steps li{
     display: flex;
     justify-content: center;
     align-items: center;

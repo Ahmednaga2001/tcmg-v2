@@ -1,0 +1,29 @@
+.cardInfo{
+    background-color: #fff;
+    color: #000;
+    height: fit-content;
+    padding: 30px;
+    width: 40%;
+    font-size: 14px;
+}
+.heading , .price{
+    font-size: 18px;
+    font-weight: 700px;
+}
+.totalParent{
+    border-top: 1px solid #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+
+}
