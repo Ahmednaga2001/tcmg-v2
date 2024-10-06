@@ -1,25 +1,36 @@
-import React from 'react'
-import styles from "./page.module.css"
-import Input from '@/components/ui/Input'
-import SelectComponent from '@/components/ui/selectComponent/SelectComponent'
-import { useState } from 'react'
-import CheckBox from '@/components/ui/CheckBox'
-import Image from 'next/image'
-import CardInfo from '../cardInfo.jsx/CardInfo'
+import React, { useState } from 'react';
+import styles from "./page.module.css";
+import Input from '@/components/ui/Input';
+import SelectComponent from '@/components/ui/selectComponent/SelectComponent';
+import Image from 'next/image';
+import CardInfo from '../cardInfo.jsx/CardInfo';
+import ModalPrivacy from '../modalPrivacy/ModalPrivacy';
+
 const options = [
-    {
-        value: 'أفراد',
-    },
-    {
-        value: 'مؤسسات وشركات',
-    },
-]
-export default function AdditionalInfo() {
-    const [selectedOption, setSelectedOption] = useState(null)
+    { value: 'أفراد' },
+    { value: 'مؤسسات وشركات' },
+];
+
+export default function AdditionalInfo({ onNextStep }) {
+    const [selectedOption, setSelectedOption] = useState(null);
+    const [showModal, setShowModal] = useState(false); // Control modal visibility
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setShowModal(true); // Show the modal
+    };
+
+    // Trigger onNextStep after closing the modal
+    const handleModalClose = () => {
+        setShowModal(false);
+        onNextStep(); // Proceed to the next step when the modal closes
+    };
+
     return (
         <section className={styles.additionalInfo}>
             <div className={styles.formPage}>
-                <form action="">
+                <p>يرجي إدخال بيانات بشكل صحيح وسيتم التواصل خلال ساعة من الحجز في خلال مواعيد العمل الرسمية من 9 صباحًا لـ 11 مساءًا</p>
+                <form onSubmit={handleSubmit}>
                     <Input
                         label="الاسم بالكامل"
                         placeholder="الاسم بالكامل"
@@ -30,13 +41,20 @@ export default function AdditionalInfo() {
                         }}
                         color="#fff"
                     />
-                    <Input label="رقم الهاتف" imgPath={"/assets/icons/form/ic_round-phone.png"} style={{
-                        background: "linear-gradient(var(--main))",
-                        border: "1px solid #fff",
-                    }}
-                        color="#fff" />
-
-                    <SelectComponent options={options} head={"فئة العميل"} selectedOption={selectedOption} setSelectedOption={setSelectedOption}
+                    <Input 
+                        label="رقم الهاتف"
+                        imgPath={"/assets/icons/form/ic_round-phone.png"} 
+                        style={{
+                            background: "linear-gradient(var(--main))",
+                            border: "1px solid #fff",
+                        }}
+                        color="#fff" 
+                    />
+                    <SelectComponent 
+                        options={options} 
+                        head={"فئة العميل"} 
+                        selectedOption={selectedOption} 
+                        setSelectedOption={setSelectedOption}
                         label={"فئة العميل ( إختر النوع)"}
                         imgPath={'/assets/icons/form/mdi_arrow-down-drop.png'}
                         w={24}
@@ -49,26 +67,30 @@ export default function AdditionalInfo() {
                     />
                     <div className={styles.message}>
                         <label htmlFor="message">موضوع الإستشارة</label>
-                        <div className={styles.inp} >
-                            <textarea name="" id="message" placeholder="كيف سمعت عنا؟"></textarea>
+                        <div className={styles.inp}>
+                            <textarea id="message" placeholder="كيف سمعت عنا؟"></textarea>
                             <span>؟</span>
                         </div>
                     </div>
-
-                    <div className={styles.terms} >
-                        <input type="checkbox" name="" id="" />
+                    <div className={styles.terms}>
+                        <input type="checkbox" />
                         أوافق على سياسة الخصوصية و سياسة الإستخدام
-
                     </div>
                     <button type="submit" className={styles.registerWay}>
                         المتابعة
                         <Image src="/assets/icons/form/arrow-left-black.png" width={24} height={24} alt="arrow-left icon" />
-
                     </button>
-
                 </form>
             </div>
-            <CardInfo/>
+            <CardInfo />
+
+            {/* Show Modal if `showModal` is true */}
+            {showModal && (
+                <ModalPrivacy
+                    showModal={showModal}
+                    setShowModal={handleModalClose} // Close modal and trigger next step
+                />
+            )}
         </section>
-    )
+    );
 }

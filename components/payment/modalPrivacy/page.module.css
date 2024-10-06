@@ -1,0 +1,40 @@
+.modalPrivacy{
+    padding: 20px 40px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+transform: translate(-50%, -50%);
+    width: 80%;
+    /* height: 90%; */
+    background-color: #fff;
+    z-index: 9999;
+    color: #000;
+    text-align: center;
+    border-radius: 32px;
+    font-size: 16px;
+    line-height: 1.8rem;
+}
+.modalPrivacy p{
+    color: gray;
+}
+.modalPrivacy div{
+  text-align: start;
+  
+
+}
+@media (max-width: 1191px) {
+    .modalPrivacy{
+        width: 90%;
+        padding: 20px;
+        font-size: 14px;
+        line-height: 1.5rem;
+        height: 80%;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 768px) {
+    .modalPrivacy{
+        width: 100%;
+    }
+}

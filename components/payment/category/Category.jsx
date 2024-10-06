@@ -55,7 +55,11 @@ const categoryData = [
     }
     
 ]
-export const Category = () => {
+export const Category = ({onNextStep}) => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        onNextStep(); // Trigger next step on form submission
+      };
   return (
     <section className={styles.majors}>
         {
@@ -63,7 +67,7 @@ export const Category = () => {
                 <div  className={styles.majorCard} key={category.id}>
                     <span>{category.title}</span>
                     <p><span></span>{category.major}</p>
-                    <span className={styles.btn}>
+                    <span className={styles.btn} onClick={handleSubmit}>
                         احجز الان
                         <Image src={"/assets/icons/form/arrow-left-white.png"} width={20} height={20} alt="Arrow Right" />
                     </span>
