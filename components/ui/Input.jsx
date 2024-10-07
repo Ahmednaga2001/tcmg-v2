@@ -1,16 +1,35 @@
-import React from 'react'
-import styles from "./page.module.css"
-import Image from 'next/image'
-const Input = ({ label, style, imgPath, placeholder, alt,color }) => {
-  console.log(style);
+import React from 'react';
+import styles from './page.module.css';
+import Image from 'next/image';
+
+const Input = ({ label, style, imgPath, placeholder, alt, color, type = "text", showPassword, setShowPassword }) => {
+
+  const togglePasswordVisibility = () => {
+    if (type === 'password') {
+      setShowPassword(prev => !prev);
+    }
+  };
 
   return (
     <div className={styles.inpContainer}>
       <label htmlFor={label} className={styles.hiddenLabel}>{label}</label>
       <div className={styles.inp} style={style}>
-        <input style={{color}} id={label} type="text" placeholder={placeholder} />
+        <input
+          type={type === 'password' && showPassword ? 'text' : type}
+          style={{ color }}
+          id={label}
+          placeholder={placeholder}
+        />
         {
-          imgPath && (
+          type === 'password' && imgPath ? (
+            <Image
+              src={imgPath}
+              width={24}
+              height={24}
+              alt={alt}
+              onClick={togglePasswordVisibility}
+            />
+          ) : imgPath && (
             <Image
               src={imgPath}
               width={24}
@@ -21,7 +40,7 @@ const Input = ({ label, style, imgPath, placeholder, alt,color }) => {
         }
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Input
+export default Input;

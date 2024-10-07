@@ -1,14 +1,14 @@
-import React from 'react';
+import React,{useState} from 'react';
 import styles from './page.module.css';
 import Input from '@/components/ui/Input';
 import Image from 'next/image';
+import { EmailLogin} from '../emailLogin/EmailLogin';
 
 export const Register = ({ onNextStep }) => {
-  // Handlers for social logins (can be integrated with OAuth logic later)
+  const [openLogin , setOpenLogin] = useState(false)
   const handleGoogleLogin = () => {
-    // Simulate login logic (replace with actual Google OAuth implementation)
     console.log('Google login');
-    onNextStep(); // Navigate to next step after successful login
+    onNextStep(); 
   };
 
   const handleFacebookLogin = () => {
@@ -21,14 +21,20 @@ export const Register = ({ onNextStep }) => {
     onNextStep();
   };
 
+  const handleEmailLogin = () => {
+    setOpenLogin(true)
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    onNextStep(); // Trigger next step on form submission
+    onNextStep();
   };
 
   return (
     <section>
-      <div className={styles.registerCard}>
+      {
+        !openLogin ? (
+          <div className={styles.registerCard}>
         <span className={styles.header}>التسجيل باستخدام حسابك</span>
         <form onSubmit={handleSubmit}>
           <div className={styles.registerWay} onClick={handleGoogleLogin}>
@@ -43,7 +49,7 @@ export const Register = ({ onNextStep }) => {
             <span>تسجيل الدخول بـــ Apple</span>
             <Image src="/assets/icons/payment/apple.svg" width={32} height={32} alt="Apple Icon" />
           </div>
-          <div className={styles.registerWay}>
+          <div className={styles.registerWay} onClick={handleEmailLogin} >
             <span>تسجيل الدخول بـــ Email</span>
             <Image src="/assets/icons/payment/email.svg" width={32} height={32} alt="Email Icon" />
           </div>
@@ -65,6 +71,9 @@ export const Register = ({ onNextStep }) => {
           </button>
         </form>
       </div>
+        ):
+        <EmailLogin onNextStep={onNextStep}/>
+      }
     </section>
   );
 };
