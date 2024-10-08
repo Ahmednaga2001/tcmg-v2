@@ -51,6 +51,7 @@ const LegalServicesSectors = () => {
             imgStyle="imgright"
             path={data[1].path}
             title={data[1].title}
+            
           />
           <CardContent
             visionContentstyle="contentleft"
