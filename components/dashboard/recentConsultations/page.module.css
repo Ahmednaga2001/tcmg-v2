@@ -1,0 +1,48 @@
+
+.recentConsultations{
+    padding-top: 50px;
+}
+
+.recentConsultations div:first-of-type{
+display: flex;
+gap: 20px;
+}
+.recentConsultations div:first-of-type span{
+    font-size: 20px;
+}
+.recentConsultations div:first-of-type button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #C6C6C6;
+
+}
+.recentConsultations table{
+    width: 100%;
+    text-align: center;
+}
+.recentConsultations table thead td{
+    border-bottom: 1px solid #C6C6C6;
+color: #C6C6C6;
+padding: 10px 0;
+}
+.actions{
+    display: flex;
+    color: #B6C9FF;
+    gap: 10px  ;
+    justify-content: center;
+}
+.actions button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #B6C9FF;
+    margin: 10px 0;
+}
+.actions button:first-child{
+    border-left: 1px solid #B6C9FF;
+    padding-left: 10px;
+}
+
