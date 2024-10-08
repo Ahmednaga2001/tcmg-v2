@@ -32,7 +32,8 @@
 .category .content {
   height: 200px;
   padding: 20px;
-  background: linear-gradient(#353e5c, #353e5c);
+  background-color: #1C2340;
+  /* background: linear-gradient(#353e5c, #353e5c); */
   padding: 20px;
   border-radius: 25px;
   width: 95%;
@@ -45,7 +46,9 @@
   width: 95%;
   height: 200px;
   padding: 20px;
-  background: linear-gradient(#353e5c, #353e5c);
+  background-color: #1C2340;
+
+  /* background: linear-gradient(#353e5c, #353e5c); */
   padding: 20px;
   border-radius: 25px;
   padding-right: 200px;
@@ -125,8 +128,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #1C2340;
 
-    background: linear-gradient(#353e5c, #353e5c);
+    /* background: linear-gradient(#353e5c, #353e5c); */
     border-radius: 25px;
   }
   .bestPractice .contentleft p,

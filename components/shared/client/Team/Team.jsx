@@ -59,7 +59,7 @@ const Team = ({lawyers}) => {
                 // border: activeIndex === index ? "1px solid #ffffff74" : "none",
                 opacity: activeIndex === index ? 1 : 0.7,
                 transition: "border 0.3s , opacity 0.2s",
-                // transform: activeIndex === index ? "scale(1.1)" : "scale(1)",
+                transform: activeIndex === index ? "scale(1.1)" : "scale(1)",
 
               }}
             >

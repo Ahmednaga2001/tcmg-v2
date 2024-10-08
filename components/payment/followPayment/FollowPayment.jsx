@@ -4,6 +4,7 @@ import Image from 'next/image';
 import CardInfo from '../cardInfo.jsx/CardInfo';
 import SuccessfulPaymentModal from '../successfulPaymentModal/SuccessfulPaymentModal';
 import UploadImgModal from '../uploadImgModal/UploadImgModal';
+import { useRouter } from 'next/navigation';
 
 const paymentOptions = [
     {
@@ -33,6 +34,10 @@ export default function FollowPayment() {
     const [selectedPayment, setSelectedPayment] = useState(null);  // Track the selected payment option
     const [showModal, setShowModal] = useState(false);  // Control the modal visibility
 const [showModal2, setShowModal2] = useState(false);  // Control the modal visibility
+const [isPaymentSuccess, setIsPaymentSuccess] = useState(false); // Track if payment is successful
+const router = useRouter(); // Initialize the router
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
         if(selectedPayment === 'kashier') {
@@ -48,6 +53,12 @@ const [showModal2, setShowModal2] = useState(false);  // Control the modal visib
         }
         // Add other conditions for different payment options if needed
     };
+  const handlePaymentSuccess = () => {
+    setIsPaymentSuccess(true);
+    setShowModal(false);
+    setShowModal2(false);
+    router.push('/request-summary');
+  }
 
     return (
         <section className={styles.followPayment}>
@@ -100,12 +111,13 @@ const [showModal2, setShowModal2] = useState(false);  // Control the modal visib
             </div>
             <CardInfo />
 
-            {/* Display the successful payment modal when showModal is true */}
             {showModal && (
-                <SuccessfulPaymentModal showModal={showModal} setShowModal={setShowModal} />
+                <SuccessfulPaymentModal showModal={showModal} setShowModal={setShowModal}
+                onSuccess={handlePaymentSuccess}
+
+                 />
             )}
 
-            {/* Display the successful payment modal when showModal2 is true */}
             {showModal2 && (
                 <UploadImgModal showModal={showModal2} setShowModal={setShowModal2} />
             )}
