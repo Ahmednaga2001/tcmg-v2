@@ -1,20 +1,11 @@
-import React from 'react';
-import styles from "./page.module.css";
-import AccountInfo from '@/components/dashboard/accountInfo/AccountInfo';
-import RecentConsultations from '@/components/dashboard/recentConsultations/RecentConsultations';
-import SideBar from '@/components/dashboard/sideBar/SideBar';
+import ClientDashBoard from "@/components/dashboard/clientDashBoard/ClientDashBoard";
 
-export default function Page() {
+
+export const metadata = {
+  title: "Dashboard",
+}
+export default function page() {
   return (
-    <div className={styles.dashboard}>
-      <div className={styles.container}>
-        <SideBar />
-        <section>
-      <AccountInfo />
-      <RecentConsultations />
-
-        </section>
-      </div>
-    </div>
-  );
+    <ClientDashBoard/>
+  )
 }

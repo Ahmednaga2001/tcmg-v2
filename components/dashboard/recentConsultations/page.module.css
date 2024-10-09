@@ -1,16 +1,17 @@
-
-.recentConsultations{
+.recentConsultations {
     padding-top: 50px;
 }
 
-.recentConsultations div:first-of-type{
-display: flex;
-gap: 20px;
+.recentConsultations div:first-of-type {
+    display: flex;
+    gap: 20px;
 }
-.recentConsultations div:first-of-type span{
+
+.recentConsultations div:first-of-type span {
     font-size: 20px;
 }
-.recentConsultations div:first-of-type button{
+
+.recentConsultations div:first-of-type button {
     background: none;
     border: none;
     outline: none;
@@ -18,22 +19,39 @@ gap: 20px;
     color: #C6C6C6;
 
 }
-.recentConsultations table{
-    width: 100%;
+
+.tableContainer {
+    overflow: auto;
+}
+
+.recentConsultations table {
     text-align: center;
+    overflow: auto;
+    min-width: 900px;
+    width: 100%;
+    border-spacing: 0;
 }
-.recentConsultations table thead td{
-    border-bottom: 1px solid #C6C6C6;
-color: #C6C6C6;
-padding: 10px 0;
+
+.recentConsultations table td {
+    padding: 10px;
 }
-.actions{
+
+.recentConsultations table thead td {
+    color: #C6C6C6;
+    border-bottom: 1px solid #9D9D9D;
+
+}
+
+
+
+.actions {
     display: flex;
     color: #B6C9FF;
-    gap: 10px  ;
+    gap: 10px;
     justify-content: center;
 }
-.actions button{
+
+.actions button {
     background: none;
     border: none;
     outline: none;
@@ -41,8 +59,14 @@ padding: 10px 0;
     color: #B6C9FF;
     margin: 10px 0;
 }
-.actions button:first-child{
+
+.actions button:first-child {
     border-left: 1px solid #B6C9FF;
     padding-left: 10px;
 }
 
+@media (max-width: 768px) {
+    .recentConsultations table td {
+        font-size: 16px;
+    }
+}

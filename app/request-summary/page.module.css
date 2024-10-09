@@ -76,6 +76,7 @@ padding: 80px;
 .summary table thead th{
     background-color: #000;
     padding: 10px  !important;
+
 }
 .summary table tbody td{
     background-color: #fff;
@@ -102,4 +103,5 @@ padding: 80px;
     .tableContainer table td{
         font-size: 14px;
     }
+  
 }

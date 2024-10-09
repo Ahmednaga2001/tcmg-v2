@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './page.module.css';
 
 export default function RecentConsultations() {
@@ -8,7 +7,8 @@ export default function RecentConsultations() {
         <span>الإستشارات الأخيرة</span>
         <button>مشاهدة الكل</button>
       </div>
-      <table>
+     <div className={styles.tableContainer}>
+     <table>
         <thead>
           <tr>
             <td>رقم الطلب</td>
@@ -33,6 +33,7 @@ export default function RecentConsultations() {
           </tr>
         </tbody>
       </table>
+     </div>
     </div>
   );
 }
