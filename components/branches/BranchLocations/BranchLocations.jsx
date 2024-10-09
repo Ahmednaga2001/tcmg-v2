@@ -1,5 +1,6 @@
+import Image from "next/image";
 import CardImg from "../CardImg";
-import styles from "@/components/branches/branches.module.css";
+import styles from "./page.module.css";
 const BranchLocations = () => {
   return (
     <section className={styles.locations}>
@@ -8,23 +9,32 @@ const BranchLocations = () => {
         <div className={styles.parent}>
           <div className={styles.parentLocations}>
             <div className={styles.locationOne}>
-              <h4>العباسية (الفرع الرئيسي)</h4>
+              <h3>العباسية (الفرع الرئيسي)</h3>
               <p>
                 5 أبراج الملتقى - ميدان العباسية - بجانب محكمة شمال القاهرة
                 الابتدائية
               </p>
               <span>11517</span>
               <span>القاهرة - مصر</span>
+              <a href="#" className={styles.locationLink}>
+                <Image src="/assets/icons/form/Map pin.png" width={16} height={16} alt="location icon" />
+                الفرع علي الخريطة
+                <Image src="/assets/icons/form/arrow-left-white.png" width={16} height={16} alt="location icon" />
+              </a>
             </div>
             <div className={styles.locationTwo}>
-              <h4>رمسيس</h4>
+              <h3>رمسيس</h3>
               <p>83 برج مصر للتأمين - شارع رمسيس - أمام سنترال رمسيس</p>
               <span>11522</span>
               <span>القاهرة - مصر</span>
+              <a href="#" className={styles.locationLink}>
+                <Image src="/assets/icons/form/Map pin.png" width={16} height={16} alt="location icon" />
+                الفرع علي الخريطة
+                <Image src="/assets/icons/form/arrow-left-white.png" width={16} height={16} alt="location icon" />
+              </a>
             </div>
           </div>
           <div className={styles.cardImg}>
-            {/* <div className={styles.overlay}></div> */}
             <CardImg
               classStyle="egyImg"
               w={537}
@@ -36,12 +46,42 @@ const BranchLocations = () => {
         </div>
       </div>
 
-      <div className={styles.chinaLocation}>
+      <div className={styles.dubaiLocation}>
+        <h2>الإمارات العربية المتحدة</h2>
+        <div className={styles.parent}>
+          <div className={styles.cardImg}>
+            <CardImg
+              classStyle="egyImg"
+              w={551}
+              h={475}
+              path="/assets/images/branches/dubai.png"
+              alt="Dubai Locations"
+            />
+          </div>
+          <div className={styles.parentLocations}>
+            <div className={styles.locationOne}>
+              <h3>دبى</h3>
+              <p>(بالتعاون مع زايد الشحي للمحاماة)</p>
+              <span>مبنى المسعود - شارع آل مكتوم - بورسعيد</span>
+              <span>3669</span>
+              <span>دبي – الإمارات العربية المتحدة</span>
+            </div>
+            <div className={styles.locationTwo}>
+              <h3> دبي</h3>
+              <p>(بالتعاون مع ذا ويلث تيلر لخدمات رجال الأعمال ذ.م.م)</p>
+              <span>48 مبنى بروج محور الشيخ زايد</span>
+              <span>دبى - الامارات العربية المتحدة</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.saudiaLocation}>
         <h2>المملكة العربية السعودية</h2>
         <div className={styles.parent}>
           <div className={styles.parentLocations}>
             <div className={styles.location}>
-              <h4>الرياض</h4>
+              <h3>الرياض</h3>
               <p>(بالتعاون مع الجبار و المزارقة للمحاماة)</p>
               <span>مخرج 7 - طريق عائمان بن عفان</span>
               <span>11536</span>
@@ -49,7 +89,6 @@ const BranchLocations = () => {
             </div>
           </div>
           <div className={styles.cardImg}>
-            {/* <div className={styles.overlay}></div> */}
             <CardImg
               classStyle="egyImg"
               w={536.32}
@@ -61,40 +100,19 @@ const BranchLocations = () => {
         </div>
       </div>
 
-      <div className={styles.dubaiLocation}>
-        <h2>الإمارات العربية المتحدة</h2>
-        <div className={styles.parent}>
-          <div className={styles.cardImg}>
-            {/* <div className={styles.overlay}></div> */}
-            <CardImg
-              classStyle="egyImg"
-              w={537}
-              h={305}
-              path="/assets/images/branches/dubai.png"
-              alt="Dubai Locations"
-            />
-          </div>
-          <div className={styles.parentLocations}>
-            <div className={styles.locationOne}>
-              <h4>دبى</h4>
-              <p>(بالتعاون مع زايد الشحي للمحاماة)</p>
-              <span>مبنى المسعود - شارع آل مكتوم - بورسعيد</span>
-              <span>3669</span>
-              <span>دبي – الإمارات العربية المتحدة</span>
-            </div>
-            <div className={styles.locationTwo}>
-              <h4> دبي</h4>
-              <p>(بالتعاون مع ذا ويلث تيلر لخدمات رجال الأعمال ذ.م.م)</p>
-              <span>48 مبنى بروج محور الشيخ زايد</span>
-              <span>دبى - الامارات العربية المتحدة</span>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div className={styles.chinaLocation}>
         <h2>الصين</h2>
         <div className={styles.parent}>
+          <div className={styles.cardImg}>
+            <CardImg
+              classStyle="egyImg"
+              w={551}
+              h={305}
+              path="/assets/images/branches/china.png"
+              alt="China Locations"
+            />
+          </div>
           <div className={styles.parentLocations}>
             <div className={styles.location}>
               <h4>تشنغدو</h4>
@@ -106,14 +124,28 @@ const BranchLocations = () => {
               <span>منطقة تشنغهوا، مدينة تشنغدو، مقاطعة سيتشوان، الصين </span>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className={styles.ammanLocation}>
+        <h2>عمان</h2>
+        <div className={styles.parent}>
+          <div className={styles.parentLocations}>
+            <div className={styles.location}>
+              <h3>الأردن</h3>
+              <p>(بالتعاون مع شركة المرسي لأعمال المحاماة )</p>
+              <span>  خلدا - بالقرب من اشارات البنك العربي </span>
+              <span>مجمع رقم 116</span>
+              <span> منطقة تشنغهوا، مدينة تشنغدو، مقاطعة سيتشوان، الصينعمّان - خلدا - الأردن</span>
+            </div>
+          </div>
           <div className={styles.cardImg}>
-            {/* <div className={styles.overlay}></div> */}
             <CardImg
               classStyle="egyImg"
-              w={551}
+              w={536.32}
               h={305}
-              path="/assets/images/branches/china.png"
-              alt="China Locations"
+              path="/assets/images/branches/amman.png"
+              alt="Amman Locations"
             />
           </div>
         </div>
@@ -123,7 +155,6 @@ const BranchLocations = () => {
         <h2>فلسطين</h2>
         <div className={styles.parent}>
           <div className={styles.cardImg}>
-            {/* <div className={styles.overlay}></div> */}
             <CardImg
               classStyle="egyImg"
               w={551}
