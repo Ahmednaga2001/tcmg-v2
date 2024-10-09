@@ -1,18 +1,21 @@
+"use client";
 import React from 'react'
 import styles from './page.module.css'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 export default function RequestSummary() {
+  const router = useRouter()
   return (
     <div className={styles.requestSummary}>
       <section>
         <h2 className={styles.heading}>ملخص الطلب</h2>
         <div className={styles.buttons}>
           <div >
-            <button>
+            <button onClick={() => router.push("/")} >
               العودة إلي الصفحة الرئيسية
               <Image src="/assets/icons/form/arrow-left-black.png" alt="Cupon Icon" width={14} height={14} />
             </button>
-            <button>
+            <button onClick={() => router.push("/dashboard")}>
               حسابى
               <Image src="/assets/icons/form/arrow-left-white.png" alt="Cupon Icon" width={14} height={14} />
             </button>
