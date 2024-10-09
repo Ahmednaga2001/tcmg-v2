@@ -48,7 +48,7 @@ padding: 80px;
 
 /*  */
 
-.summary span{
+.order{
     display: block;
     text-align: center;
     font-weight: bold;
@@ -64,19 +64,42 @@ padding: 80px;
   overflow: hidden; 
 }
 .requestSummary table {
-    width: 100%; 
     border-collapse: collapse; 
     text-align: center;
     border-radius: 40px;
-    overflow: scroll;
+    padding: 20px !important;
+    overflow: auto;
+    min-width: 400px;
+    width: 100%;
     
 }
 .summary table thead th{
     background-color: #000;
-    padding: 20px 0 !important;
+    padding: 10px  !important;
 }
 .summary table tbody td{
-    padding: 20px 0 !important;
     background-color: #fff;
     color: #000;
+    padding: 10px;
+    border-bottom: 1px solid #9D9D9D;
+}
+.tax{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.summary table tr{
+}
+.tableContainer{
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+    .requestSummary section{
+        padding: 20px;
+    }
+    .tableContainer table td{
+        font-size: 14px;
+    }
 }

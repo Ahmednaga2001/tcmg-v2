@@ -17,10 +17,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <SpeedInsights />
       <body className={inter.className}>
-        {/* <Nav />
-        <SideNav /> */}
+        <Nav />
+        <SideNav />
         <main>{children}</main>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

@@ -27,8 +27,8 @@ export default function RequestSummary() {
 
       <section className={styles.summary}>
       <div className={styles.parent}>
-      <span>الطلب #0000818</span>
-        <div>
+      <span className={styles.order}>الطلب #0000818</span>
+        <div className={styles.tableContainer}> 
           <table>
             <thead>
               <tr>
@@ -49,22 +49,19 @@ export default function RequestSummary() {
                 <td>EGP 299.00</td>
               </tr>
               <tr>
-                <td >تفاصيل الضريبة</td>
-                <td></td>
-                <td>EGP 29.90</td>
-              </tr>
-              <tr>
-                <td>ضريبة (10%)</td>
-                <td>
+                <td className={styles.tax}>
+                  <span>تفاصيل الضريبة</span>
+                  <span>ضريبة (10%)</span>
+                  <span>إجمالي الضريبة</span>
                 </td>
-                <td>EGP 299.00</td>
-
-              </tr>
-              <tr>
-                <td>إجمالي الضريبة</td>
                 <td></td>
-                <td>EGP 299.00</td>
+                <td className={styles.tax}> 
+                  <span>EGP 29.90</span>
+                  <span>EGP 29.90</span>
+                  <span>EGP 29.90</span>
+                </td>
               </tr>
+            
 
               <tr>
                 <td>إجمالي الفاتورة</td>
