@@ -67,14 +67,14 @@
     color: #ffffffab;
   }
   .fileInput {
-    opacity: 0; /* Hide the default file input */
-    position: absolute; /* Position it absolutely within the container */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    opacity: 0; 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
     cursor: pointer;
   }
   .fileLabel Image {
-    vertical-align: middle; /* Align the image with the text */
+    vertical-align: middle;
   }
 
   @media (max-width: 768px) {

@@ -1,5 +1,4 @@
 .modalPrivacy{
-    padding: 20px 40px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -13,19 +12,22 @@ transform: translate(-50%, -50%);
     border-radius: 32px;
     font-size: 16px;
     line-height: 1.8rem;
+    padding: 20px;
 }
 .modalPrivacy p{
     color: gray;
 }
 .modalPrivacy div{
   text-align: start;
-  
 
+}
+.modalPrivacy ol{
+    list-style-position: inside;
+    text-align: start;
 }
 @media (max-width: 1191px) {
     .modalPrivacy{
         width: 90%;
-        padding: 20px;
         font-size: 14px;
         line-height: 1.5rem;
         height: 80%;

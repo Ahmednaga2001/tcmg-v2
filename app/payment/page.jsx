@@ -12,23 +12,42 @@ import ModalPrivacy from '@/components/payment/modalPrivacy/ModalPrivacy';
 import FollowPayment from '@/components/payment/followPayment/FollowPayment';
 
 function Page() {
-    const [currentStep, setCurrentStep] = useState(1); // Track the current step
-    console.log(currentStep);
+    const [currentStep, setCurrentStep] = useState(1); 
 
     const handleNextStep = () => {
-        setCurrentStep(currentStep + 1); // Move to the next step
+        setCurrentStep(currentStep + 1); 
+    };
+
+ 
+
+    const stepContent = (step) => {
+        if (currentStep === step) {
+            return (
+                <img 
+                    src={`/assets/icons/payment/correct.svg`}
+                    alt={`Step ${step}`} 
+                />
+            );
+        }
+        return step;
     };
 
     return (
         <div className={styles.paymentPage}>
             <section>
-                <h2>تسجيل الدخول</h2>
+                <h2>
+                    {currentStep==1 && "تسجيل الدخول"}
+                    {currentStep==2 && "إختيار التخصص"}
+                    {currentStep==3 && "إختيار المحامي"}
+                    {currentStep==4 && "معلومات اضافية"}
+                    {currentStep==5 && "متابعة الدفع"}
+                </h2>
                 <ul className={styles.steps}>
-                    <li style={{ backgroundColor: currentStep === 1 ? '#845F38' : '' }}>1</li>
-                    <li style={{ backgroundColor: currentStep === 2 ? '#845F38' : '' }}>2</li>
-                    <li style={{ backgroundColor: currentStep === 3 ? '#845F38' : '' }}>3</li>
-                    <li style={{ backgroundColor: currentStep === 4 ? '#845F38' : '' }}>4</li>
-                    <li style={{ backgroundColor: currentStep === 5 ? '#845F38' : '' }}>5</li>
+                    <li  className={currentStep === 1 ? styles.active : ''}>{stepContent(1)}</li>
+                    <li  className={currentStep === 2 ? styles.active : ''}>{stepContent(2)}</li>
+                    <li  className={currentStep === 3 ? styles.active : ''}>{stepContent(3)}</li>
+                    <li  className={currentStep === 4 ? styles.active : ''}>{stepContent(4)}</li>
+                    <li  className={currentStep === 5 ? styles.active : ''}>{stepContent(5)}</li>
                 </ul>
             </section>
 

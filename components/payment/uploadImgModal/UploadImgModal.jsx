@@ -1,12 +1,13 @@
+// UploadImgModal.jsx
 import React, { useRef, useState } from 'react';
 import styles from "./page.module.css";
 import Image from 'next/image';
 import SuccessfulPaymentModal from '../successfulPaymentModal/SuccessfulPaymentModal';
 
-export default function UploadImgModal() {
+export default function UploadImgModal({ onSuccess, showModal, setShowModal }) {
     const fileInputRef = useRef(null);
     const [selectedImage, setSelectedImage] = useState(null);
-    const [showModal, setShowModal] = useState(false);
+    const [showModal2, setShowModal2] = useState(false); 
 
     const handleImageClick = () => {
         fileInputRef.current.click();
@@ -23,55 +24,48 @@ export default function UploadImgModal() {
         }
     };
 
-    // Function to handle the button click
     const handleSubmit = (e) => {
         e.preventDefault();
-        setShowModal(true);
-   
+        setShowModal2(true);
+       
     };
 
     return (
         <>
-            {
-                !showModal && (
-                    <div className={styles.uploadImgModal}>
-                        <div onClick={handleImageClick} className={styles.imageWrapper}>
-                            {selectedImage ? (
-                                <Image src={selectedImage} alt="Uploaded" width={164} height={326} />
-                            ) : (
-                                <Image src="/assets/images/payment/imgUpload.png" alt="Upload Image" width={164} height={326} />
-                            )}
-                        </div>
-
-                        <input
-                            type="file"
-                            accept="image/*"
-                            ref={fileInputRef}
-                            className={styles.hiddenFileInput}
-                            onChange={handleFileChange}
-                        />
-                        {selectedImage && (
-                            <span>تم إرفاق الصورة بنجاح</span>
+            {!showModal2 && (
+                <div className={styles.uploadImgModal}>
+                    <div onClick={handleImageClick} className={styles.imageWrapper}>
+                        {selectedImage ? (
+                            <Image src={selectedImage} alt="Uploaded" width={164} height={326} />
+                        ) : (
+                            <Image src="/assets/images/payment/imgUpload.png" alt="Upload Image" width={164} height={326} />
                         )}
-
-                        <button
-                            type="button"
-                            onClick={handleSubmit}
-                            disabled={!selectedImage} // Disable button until an image is uploaded
-                        >
-                            المتابعة
-                            <Image src="/assets/icons/form/arrow-left-black.png" alt="Arrow Left" width={24} height={24} />
-                        </button>
-
                     </div>
 
-                )
-            }
-            {
-                showModal && (
-                    <SuccessfulPaymentModal />
-                )
-            }
+                    <input
+                        type="file"
+                        accept="image/*"
+                        ref={fileInputRef}
+                        className={styles.hiddenFileInput}
+                        onChange={handleFileChange}
+                    />
+                    {selectedImage && (
+                        <span>تم إرفاق الصورة بنجاح</span>
+                    )}
+
+                    <button
+                        type="button"
+                        onClick={handleSubmit}
+                        disabled={!selectedImage} 
+                    >
+                        المتابعة
+                        <Image src="/assets/icons/form/arrow-left-black.png" alt="Arrow Left" width={24} height={24} />
+                    </button>
+                </div>
+            )}
+            {showModal2 && (
+                <SuccessfulPaymentModal onSuccess={onSuccess} setShowModal={setShowModal2} />
+            )}
         </>
     );
 }

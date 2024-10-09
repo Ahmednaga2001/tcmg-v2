@@ -1,3 +1,4 @@
+// FollowPayment.jsx
 import React, { useState } from 'react';
 import styles from "./page.module.css";
 import Image from 'next/image';
@@ -8,21 +9,21 @@ import { useRouter } from 'next/navigation';
 
 const paymentOptions = [
     {
-        id : 1,
+        id: 1,
         name: 'كاشير',
         logo: '/assets/images/payment/kashier.svg',
         alt: 'Kashier Logo',
         value: 'kashier'
     },
     {
-        id : 2,
+        id: 2,
         name: 'باى موب',
         logo: '/assets/images/payment/paymob.svg',
         alt: 'Paymob Logo',
         value: 'paymob'
     },
     {
-        id : 3,
+        id: 3,
         name: 'انستا باي',
         logo: '/assets/images/payment/instapay.svg',
         alt: 'Instapay Logo',
@@ -31,43 +32,37 @@ const paymentOptions = [
 ];
 
 export default function FollowPayment() {
-    const [selectedPayment, setSelectedPayment] = useState(null);  // Track the selected payment option
-    const [showModal, setShowModal] = useState(false);  // Control the modal visibility
-const [showModal2, setShowModal2] = useState(false);  // Control the modal visibility
-const [isPaymentSuccess, setIsPaymentSuccess] = useState(false); // Track if payment is successful
-const router = useRouter(); // Initialize the router
-
+    const [selectedPayment, setSelectedPayment] = useState(null);
+    const [showModal, setShowModal] = useState(false);
+    const [showModal2, setShowModal2] = useState(false);
+    const [isPaymentSuccess, setIsPaymentSuccess] = useState(false);
+    const router = useRouter();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(selectedPayment === 'kashier') {
-            setShowModal(true); // Show the modal when Kashier is selected
+        if (selectedPayment === 'kashier' || selectedPayment === 'paymob') {
+            setShowModal(true);
         }
-
-        if(selectedPayment === 'paymob') {
-            setShowModal(true); // Show the modal when Paymob is selected
+        if (selectedPayment === 'instapay') {
+            setShowModal2(true);
         }
-
-        if(selectedPayment === 'instapay') {
-            setShowModal2(true); // Show the modal when Instapay is selected
-        }
-        // Add other conditions for different payment options if needed
     };
-  const handlePaymentSuccess = () => {
-    setIsPaymentSuccess(true);
-    setShowModal(false);
-    setShowModal2(false);
-    router.push('/request-summary');
-  }
+
+    const handlePaymentSuccess = () => {
+        setIsPaymentSuccess(true);
+        setShowModal(false);
+        setShowModal2(false);
+        router.push('/request-summary');
+    };
 
     return (
         <section className={styles.followPayment}>
             <div className={styles.formPage}>
                 <p><strong>الدفع عن طريق </strong>(اختر الطريقة المفضلة لك)</p>
                 <div className={styles.paymentParent}>
-                    {paymentOptions.map((option, index) => (
+                    {paymentOptions.map((option) => (
                         <div
-                            key={index}
+                            key={option.id}
                             className={styles.paymentLogo}
                             onClick={() => setSelectedPayment(option.value)}
                         >
@@ -112,14 +107,19 @@ const router = useRouter(); // Initialize the router
             <CardInfo />
 
             {showModal && (
-                <SuccessfulPaymentModal showModal={showModal} setShowModal={setShowModal}
-                onSuccess={handlePaymentSuccess}
-
-                 />
+                <SuccessfulPaymentModal
+                    showModal={showModal}
+                    setShowModal={setShowModal}
+                    onSuccess={handlePaymentSuccess}
+                />
             )}
 
             {showModal2 && (
-                <UploadImgModal showModal={showModal2} setShowModal={setShowModal2} />
+                <UploadImgModal
+                    showModal={showModal2}
+                    setShowModal={setShowModal2}
+                    onSuccess={handlePaymentSuccess}
+                />
             )}
         </section>
     );

@@ -7,17 +7,14 @@ import { EmailLogin} from '../emailLogin/EmailLogin';
 export const Register = ({ onNextStep }) => {
   const [openLogin , setOpenLogin] = useState(false)
   const handleGoogleLogin = () => {
-    console.log('Google login');
     onNextStep(); 
   };
 
   const handleFacebookLogin = () => {
-    console.log('Facebook login');
     onNextStep();
   };
 
   const handleAppleLogin = () => {
-    console.log('Apple login');
     onNextStep();
   };
 
@@ -59,10 +56,12 @@ export const Register = ({ onNextStep }) => {
             <span></span>
           </div>
           <Input
-            style={{ background: 'linear-gradient(var(--main), #d8d8d811)', color: '#fff' }}
+            style={{ backgroundColor : '#0D152C',backdropFilter: 'blur(22px)', color: '#fff' , border : "1px solid #fff" }}
+            color={"#fff"}
             label="البريد الالكتروني"
             imgPath="/assets/icons/form/ic_round-email.svg"
             placeholder="البريد الالكتروني"
+            type='email'
             alt="email icon"
           />
           <button type="submit" className={styles.registerWay}>

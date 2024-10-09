@@ -2,7 +2,8 @@ import React from 'react';
 import styles from './page.module.css';
 import Image from 'next/image';
 
-const Input = ({ label, style, imgPath, placeholder, alt, color, type = "text", showPassword, setShowPassword }) => {
+const Input = ({ display='none',label, style, imgPath, placeholder, alt, color, type = "text", showPassword, setShowPassword }) => {
+console.log(color);
 
   const togglePasswordVisibility = () => {
     if (type === 'password') {
@@ -12,7 +13,7 @@ const Input = ({ label, style, imgPath, placeholder, alt, color, type = "text", 
 
   return (
     <div className={styles.inpContainer}>
-      <label htmlFor={label} className={styles.hiddenLabel}>{label}</label>
+      <label style={{ display }} htmlFor={label} className={styles.hiddenLabel}>{label}</label>
       <div className={styles.inp} style={style}>
         <input
           type={type === 'password' && showPassword ? 'text' : type}

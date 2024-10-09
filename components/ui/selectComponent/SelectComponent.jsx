@@ -3,12 +3,12 @@ import React, { useState } from 'react'
 import styles from "./page.module.css"
 import Image from 'next/image'
 
-const SelectComponent = ({ options, label,selectedOption, setSelectedOption, head, style , imgPath = '/assets/icons/form/drop.png' ,w=5 , h=10}) => {
+const SelectComponent = ({display='hidden', options, label,selectedOption, setSelectedOption, head, style , imgPath = '/assets/icons/form/drop.png' ,w=5 , h=10}) => {
 
   const [open, setOpen] = useState(false)
   return (
     <div className={styles.container}>
-      {label && <label  className={styles.label}>{label}</label>}
+      {label && <label style={{display}}  className={styles.label}>{label}</label>}
       <div className={styles.heading} onClick={() => setOpen(!open)} style={style} >
         <h3  >{selectedOption || head}</h3>
         <Image src={imgPath} width={w} height={h} alt='drop icon' />

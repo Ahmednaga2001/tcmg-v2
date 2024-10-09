@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    background: linear-gradient(#1b2340, #0e152c);
+    background: linear-gradient(#1B2340, #0E152C);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 17px;
     height: 250px;
@@ -80,8 +80,6 @@
     .chooseLawyer {
       width: 90%;
     }
-  }
-  @media (max-width: 500px) {
     .lawyerCard {
         width: 100%;
       flex-direction: column;
@@ -102,4 +100,5 @@
       height: auto;
     }
   }
+ 
   

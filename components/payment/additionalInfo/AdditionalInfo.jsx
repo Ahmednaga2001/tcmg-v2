@@ -40,6 +40,7 @@ export default function AdditionalInfo({ onNextStep }) {
                             border: "1px solid #fff",
                         }}
                         color="#fff"
+                        display = "block"
                     />
                     <Input 
                         label="رقم الهاتف"
@@ -49,6 +50,8 @@ export default function AdditionalInfo({ onNextStep }) {
                             border: "1px solid #fff",
                         }}
                         color="#fff" 
+                        display = "block"
+
                     />
                     <SelectComponent 
                         options={options} 
@@ -64,6 +67,8 @@ export default function AdditionalInfo({ onNextStep }) {
                             border: "1px solid #fff",
                             color: "#fff"
                         }}
+                        display = "block"
+
                     />
                     <div className={styles.message}>
                         <label htmlFor="message">موضوع الإستشارة</label>
