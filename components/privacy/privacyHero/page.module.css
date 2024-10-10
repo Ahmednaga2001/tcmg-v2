@@ -1,0 +1,15 @@
+.hero{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1{
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .hero{
+        min-height: 20vh;
+    }
+}

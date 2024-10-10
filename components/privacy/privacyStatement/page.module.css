@@ -1,0 +1,15 @@
+.privacyStatement div{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* background-image: url(/assets/images/privacypolicy/pattern.png); */
+}
+@media (max-width: 1191px) {
+    .privacyStatement h2{
+        text-align: center;
+    }
+    .privacyStatement p{
+        font-size: 16px;
+        text-align: center;
+    }
+}

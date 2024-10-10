@@ -5,6 +5,9 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 export default function RequestSummary() {
   const router = useRouter()
+  const handlePrint = () => {
+    window.print()
+  }
   return (
     <div className={styles.requestSummary}>
       <section>
@@ -20,7 +23,7 @@ export default function RequestSummary() {
               <Image src="/assets/icons/form/arrow-left-white.png" alt="Cupon Icon" width={14} height={14} />
             </button>
           </div>
-          <button>
+          <button onClick={handlePrint}>
             طباعة
             <Image src="/assets/icons/form/printer.png" alt="Cupon Icon" width={24} height={24} />
           </button>

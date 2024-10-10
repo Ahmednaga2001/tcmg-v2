@@ -95,7 +95,12 @@ padding: 80px;
 .tableContainer{
     overflow-x: auto;
 }
-
+@media print {
+    .buttons {
+      display: none;
+    }
+   
+  }
 @media (max-width: 768px) {
     .requestSummary section{
         padding: 20px;
