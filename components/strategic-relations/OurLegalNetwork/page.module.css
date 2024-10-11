@@ -15,10 +15,13 @@
     right: 40px;
   }
   .legalNetwork .content {
-    margin-right: 450px;
-    height: 100%;
+    margin-right: 430px;
     background-color: #fff;
-    padding: 70px;
+    padding: 40px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    line-height: 1.4;
   }
   @media (max-width : 1191px) {
     .Img {

@@ -12,6 +12,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 import Image from "next/image";
+import Link from "next/link";
 const data = [
   {
     path: "/assets/images/joinus/cairo.png",
@@ -41,8 +42,9 @@ const JoinJobOpportunities = () => {
     setActiveIndex(swiper.realIndex);
   };
   return (
-    <section className={styles.jobOpportunities}>
-      <div className={styles.right}>
+    <section >
+    <div className={styles.jobOpportunities}>
+    <div className={styles.right}>
         <h2>فرص وظيفية مميزة بانتظارك</h2>
         <p>
           اذا كنت تبحث عن وظائف خاليه للمحامين فبإمكانك الانضمام إلينا؛ فنحن
@@ -110,6 +112,11 @@ const JoinJobOpportunities = () => {
           ))}
         </Swiper>
       </div>
+    </div>
+      <Link className={styles.link} href="/hiring">
+      اعرف التفاصيل
+      <Image src="/assets/icons/joinus/arrow-left.png" width={24} height={24} alt="arrow-left.png"/>
+      </Link>
     </section>
   );
 };

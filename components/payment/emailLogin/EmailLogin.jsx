@@ -24,16 +24,23 @@ export const EmailLogin = ({ onNextStep }) => {
           <span className={styles.header}>مرحبًا بك في المجموعة التجارية والبحرية للمحاماة</span>
           <form onSubmit={handleSubmit}>
             <Input
-              style={{ background: 'linear-gradient(var(--main), #d8d8d811)', color: '#fff' }}
+              style={{
+                background: "linear-gradient(rgba(255, 255, 255,.03) 0%, rgba(216, 216, 216, .03))",
+                color: '#fff'
+              }}
               label="البريد الالكتروني"
               imgPath="/assets/icons/form/ic_round-email.svg"
               placeholder="البريد الالكتروني"
               alt="email icon"
               type="email"
               color={"#fff"}
+
             />
             <Input
-              style={{ background: 'linear-gradient(var(--main), #d8d8d811)', color: '#fff' }}
+              style={{
+                background: "linear-gradient(rgba(255, 255, 255,.03) 0%, rgba(216, 216, 216, .03))",
+                color: '#fff'
+              }}
               label="كلمة السر"
               imgPath="/assets/icons/form/eye-slash.svg"
               placeholder="كلمة السر"

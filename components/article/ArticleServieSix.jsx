@@ -7,7 +7,7 @@ export default function ArticleServieSix() {
     <div>
             <div className={styles.brand}>
                <span className={styles.mainTitle}>الخدمات القانونية للعلامات التجارية داخل وخارج مصر</span>
-                <Image src="/assets/images/article/image4.svg" width={860} height={400} />
+                <Image src="/assets/images/article/image4.svg" alt="image4" width={860} height={400} />
                 <p>يمكن تقديم العديد من الخدمات القانونية للعلامات التجارية داخل مصر وخارجها بواسطة محامي علامات تجارية أو من خلال المجموعة التجارية والبحرية للمحاماة، ومن بين الخدمات التجارية التى تقدمها المجموعة:</p>
             </div>
             <BulletContent

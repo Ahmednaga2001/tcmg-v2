@@ -36,7 +36,7 @@ export default function AdditionalInfo({ onNextStep }) {
                         placeholder="الاسم بالكامل"
                         imgPath="/assets/icons/form/solar_user-bold.png"
                         style={{
-                            background: "linear-gradient(0deg, rgba(255, 255, 255, 0.01) 0%, rgba(216, 216, 216, 0.01) 100%)",
+                            background: "linear-gradient(rgba(255, 255, 255,.03) 0%, rgba(216, 216, 216, .03))",
                             border: "1px solid #fff",
                         }}
                         color="#fff"
@@ -44,9 +44,10 @@ export default function AdditionalInfo({ onNextStep }) {
                     />
                     <Input 
                         label="رقم الهاتف"
+                        placeholder={"رقم الهاتف"}
                         imgPath={"/assets/icons/form/ic_round-phone.png"} 
                         style={{
-                            background: "linear-gradient(var(--main))",
+                            background: "linear-gradient(rgba(255, 255, 255,.03) 0%, rgba(216, 216, 216, .03))",
                             border: "1px solid #fff",
                         }}
                         color="#fff" 
@@ -63,12 +64,23 @@ export default function AdditionalInfo({ onNextStep }) {
                         w={24}
                         h={24}
                         style={{
-                            background: "linear-gradient(rgba(255, 255, 255,.07) 0%, rgba(216, 216, 216, .07))",
+                            background: "linear-gradient(rgba(255, 255, 255,.03) 0%, rgba(216, 216, 216, .03))",
                             border: "1px solid #fff",
                             color: "#fff"
                         }}
                         display = "block"
 
+                    />
+                    <Input 
+                    label="التخصص" 
+                    placeholder="التخصص"
+                    imgPath={"/assets/icons/form/category.png"}
+                    style={{
+                        background: "linear-gradient(rgba(255, 255, 255,.03) 0%, rgba(216, 216, 216, .03))",
+                        border: "1px solid #fff",
+                    }}
+                    color="#fff" 
+                    display = "block"
                     />
                     <div className={styles.message}>
                         <label htmlFor="message">موضوع الإستشارة</label>

@@ -13,7 +13,6 @@ const InternGraduationForm = () => {
 
   const handleFileChange = (e) => {
     if (e.target.files.length > 0) {
-      console.log(e.target.files);
       
       setFileName(e.target.files[0].name);
     }

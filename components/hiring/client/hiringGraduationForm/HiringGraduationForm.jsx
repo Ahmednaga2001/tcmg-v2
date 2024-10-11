@@ -9,6 +9,14 @@ import { useState } from "react";
 const HiringGraduationForm = () => {
   const [selectedOffice, setSelectedOffice] = useState(null);
   const [selectedJob, setSelectedJob] = useState(null);
+  const [fileName, setFileName] = useState('');
+
+  const handleFileChange = (e) => {
+    if (e.target.files.length > 0) {
+      
+      setFileName(e.target.files[0].name);
+    }
+  }
   const options = [
     {
       value: "أفراد",
@@ -79,10 +87,20 @@ const HiringGraduationForm = () => {
 
           <div className={styles.file}>
             <div className={styles.right}>
-              <span>قم برفع سيرتك الذاتية</span>
-              <span>( ارفع ملف مدعوم وواضح بحد اقصي 15ميجا )</span>
+              {
+                fileName ? (
+                  <>
+                    <p>{fileName}</p>
+                  </>
+                ) : (
+                  <>
+                    <span>قم برفع سيرتك الذاتية</span>
+                    <span>( ارفع ملف مدعوم وواضح بصيغة PDF,WORD بحد اقصي 15ميجا )</span>
+                  </>
+                )
+              }
             </div>
-            <input type="file" id="file-upload" className={styles.fileInput} />
+            <input type="file" id="file-upload" className={styles.fileInput} onChange={handleFileChange} />
             <Image
               src="/assets/icons/form/Vector.png"
               width={24}

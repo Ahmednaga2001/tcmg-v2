@@ -17,7 +17,7 @@ const ArticleServiceTwo = () => {
             <span className={styles.headTitle}>أهمية تسجيل العلامة التجارية</span>
             <p>يهدف تسجيل العلامة التجارية بشكل عام إلى حماية حقوق الملكية الفكرية لصاحبها وتمييز منتجاته أو خدماته عن أقرانه من مقدمي الخدمة. كما يساعد على بناء الثقة والمصداقية والقيمة التسويقية للعلامة التجارية. ويمكن تلخيص فوائد العلامة التجارية فيما يلي:</p>
             <OrderedContent items={items} />
-            <Image src="/assets/images/article/image2.svg" width={860} height={400} />
+            <Image src="/assets/images/article/image2.svg" width={860} height={400} alt="Image 2" />
 
         </div>
     );

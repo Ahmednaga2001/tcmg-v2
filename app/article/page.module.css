@@ -5,6 +5,7 @@
     font-size: 50px;
     display: block;
     line-height: 1.4;
+    padding: 20px 0;
 
 }
 .articleHero{
@@ -13,6 +14,10 @@
     gap: 5px;
     justify-content: center;
     text-align: center;
+    background-image: url(/assets/images/article/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 70vh;
 }
 .atriclePage ul{
     list-style-type: disc !important;
@@ -21,9 +26,11 @@
 }
 .atriclePage ol{
     list-style-position: inside;
+    line-height: 1.8;
 }
 .bulletContent{
     margin-top: 30px;
+    line-height: 1.8;
 }
 .bulletContent ul , .orderedContent ol{
     margin-top: 10px;
@@ -161,7 +168,7 @@ margin: auto;
 .marksContainer p{
 border-radius: 4px;
 border:  1px solid #ffffff85;
-background : linear-gradient(var(--main) , #d8d8d811);
+background: linear-gradient(rgba(255, 255, 255, .03) 0%, rgba(216, 216, 216, .03) 100%);
 padding: 10px;
 }
 @media (max-width: 1191px) {
@@ -195,4 +202,7 @@ padding: 10px;
 .articleMarks .socialIcons{
     display: flex;
     gap: 10px;
+}
+.articleMarks .socialIcons img{
+    cursor: pointer;
 }

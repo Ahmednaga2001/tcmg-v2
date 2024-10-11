@@ -20,7 +20,7 @@ import Image from "next/image"
          <h4>أخبار ومقالات </h4>
          <div className={styles.socialIcons}>
          <Image src={"/assets/icons/article/instgram.svg"} width={52} height={52} alt="Instgram Icon"/>
-        <Image src={"/assets/icons/article/Group (2).svg"} width={52} height={52}/>
+        <Image src={"/assets/icons/article/Group (2).svg"} width={52} height={52} alt="Icon"/>
         <Image src={"/assets/icons/article/youtube.svg"} width={52} height={52} alt="Youtube Icon"/>
         <Image src={"/assets/icons/article/facebook.svg"} width={52} height={52} alt="Facebook Icon"/>
         <Image src={"/assets/icons/article/linkedin.svg"} width={52} height={52} alt="LinkedIn Icon"/>

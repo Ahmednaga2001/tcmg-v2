@@ -21,7 +21,6 @@
   .ourJourney a {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 5px;
     padding-top: 30px;
     transition: 0.3s;

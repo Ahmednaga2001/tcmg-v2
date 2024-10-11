@@ -6,11 +6,11 @@
 
 .activeItem {
    border-right: 6px solid #fff !important;
-   background-color: #ffffff05;
-  }
+    background: linear-gradient(rgba(255, 255, 255,.05) 0%, rgba(216, 216, 216, .05));
+}
 .sideBar ol li {
     cursor: pointer;
-   border-right: 6px solid #ffffff05;
+   border-right: 6px solid #ffffff11;
  padding: 20px;
  border-radius: 20px 0 0 20px;
    list-style-position: inside;

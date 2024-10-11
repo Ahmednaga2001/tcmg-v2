@@ -7,7 +7,7 @@ const HiringTcmgJob = () => {
     const [selectedJob, setSelectedJob] = useState("");
     const [selectedLocation, setSelectedLocation] = useState("");
     const optionsOne=[
-    
+  
       {
         value : "خدمات الأعمال",
       },
@@ -19,6 +19,9 @@ const HiringTcmgJob = () => {
       },
       {
         value : "تدريب",
+      },
+      {
+        value : "محامى متدرب"
       }
     ]
     const optionsTwo=[
@@ -26,16 +29,18 @@ const HiringTcmgJob = () => {
         value : "القاهرة"
       },
       {
-        value : "الرياض"
+        value : "دبى"
       },
       {
-        value : "دبى"
+        value : "الرياض"
       },
       {
         value : "تشغندو"
       },
       {
-        value : "فلسطين"
+        value : "عمان"
+      },{
+        value : "جنين"
       }
     ]
     return (

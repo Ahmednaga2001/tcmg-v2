@@ -31,7 +31,7 @@ const JoinIntern = () => {
           />
         </div>
       </div>
-      <Link href="#">
+      <Link href="/internship">
         اعرف التفاصيل
         <Image
           src="/assets/icons/joinus/arrow-left.png"

@@ -15,6 +15,12 @@ const JoinAbout = () => {
             مختلف مجالات القانون, مما يمكِّنهم من تقديم حلول فعّالة ومبتكرة
             لقضايا عملائهم.
           </p>
+          <Image
+          src="/assets/images/joinus/bottomL.png"
+          width={135}
+          height={135}
+          alt="bottomL image"
+        />
         </div>
         <Image
           src="/assets/images/joinus/topL.png"

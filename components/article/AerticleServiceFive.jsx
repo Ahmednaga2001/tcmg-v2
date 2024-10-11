@@ -1,11 +1,12 @@
 import styles from "@/app/article/page.module.css"
 import Image from "next/image"
 import OrderedContent from "./OrderedContent";
+import ArticleDivider from "./ArticleDivider";
 const AerticleServiceFive = () => {
     return (
         <div className={styles.articleRegister}>
             <span className={styles.mainTitle}>كيفية تسجيل العلامات التجارية في مصر؟</span>
-            <Image src="/assets/images/article/image3.svg" className={styles.regImg} width={860} height={400} />
+            <Image src="/assets/images/article/image3.svg" alt="image" className={styles.regImg} width={860} height={400} />
             <OrderedContent
                 desc={"ن توكيل محامي علامات تجارية هي أولوية قصوى لكل راغب في إتمام كافة العمليات القانونية المطلوبة، كما يجب على المتقدمين لتسجيل العلامة التجارية في مصر الالتزام بالإجراءات اللازمة وتقديم جميع الوثائق المطلوبة، والتأكد من عدم تعارض العلامة التجارية المراد تسجيلها مع العلامات التجارية المسجلة سابقََا، لضمان الحصول على حماية قانونية كاملة لحقوق الملكية الفكرية للعلامة التجارية في مصر. إليك كيفية تسجيل علامة تجارية في مصر من خلال:"}
                 items={[
@@ -37,6 +38,8 @@ const AerticleServiceFive = () => {
                     }
                 ]}
             />
+                    <ArticleDivider/>
+
             <span className={styles.mainTitle}>متطلبات تسجيل علامة تجارية في مصر</span>
             <OrderedContent
                 desc={"يجب أولاً على كل مَن يتساءل عن كيفية تسجيل علامة تجارية في مصر أو متقدِّم على طلب التسجيل، التعرف على متطلبات إتمام عملية التسجيل تطبيقًا للوائح القانونية المعمول بها في البلد المقصود. إليك متطلبات تسجيل العلامة التجارية في مصر:"}
