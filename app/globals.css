@@ -26,10 +26,10 @@ h2 {
   
 }
 
-::selection {
+/* ::selection {
   background-color: var(--font);
   color: var(--main);
-}
+} */
 
 ::-webkit-scrollbar {
   background-color: var(--font);
