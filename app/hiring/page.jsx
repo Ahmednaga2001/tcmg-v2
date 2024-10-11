@@ -13,6 +13,38 @@ import styles from "./page.module.css";
 export const metadata={
   title : "Hiring"
 }
+const lawyers = [
+  {
+    id: 1,
+    name: "محمد أبو ضيف",
+    category: "الرئيس التنفيذي",
+    img: "/assets/images/homePage/lawyers/محمد ابوضيف.png",
+  },
+  {
+    id: 2,
+    name: "هشام محمود",
+    category: "محامي جنائي",
+    img: "/assets/images/homePage/lawyers/هشام محمود.png",
+  },
+  {
+    id: 3,
+    name: "خلف حسين",
+    category: "محامي مدني",
+    img: "/assets/images/homePage/lawyers/خلف حسين.png",
+  },
+  {
+    id: 4,
+    name: "سهى خيري",
+    category: "محامية بنوك",
+    img: "/assets/images/homePage/lawyers/سهي خيري.png",
+  },
+  {
+    id: 5,
+    name: "كرم موريس",
+    category: "محامي شركات",
+    img: "/assets/images/homePage/lawyers/كرم موريس.png",
+  },
+];
 function Hiring() {
   return (
     <div className={styles.hiringPage}>
@@ -21,10 +53,11 @@ function Hiring() {
       <Links />
       <HireingAchieveSuccess />
       <HiringCareerJourney />
+
       <HiringCareerProgressSteps />
       <HiringWhyChooseUs />
       <PartnerWithExperts />
-      <Team />
+      <Team lawyers={lawyers} />
       <HiringTcmgJob />
       <HiringGraduationForm />
       <Accordion />

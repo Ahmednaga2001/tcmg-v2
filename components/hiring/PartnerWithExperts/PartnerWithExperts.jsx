@@ -1,5 +1,7 @@
 import Image from "next/image"
 import styles from "./page.module.css"
+import Team from "@/components/shared/client/Team/Team"
+
 const PartnerWithExperts = () => {
   return (
     <section className={styles.expert}>

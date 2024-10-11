@@ -1,7 +1,8 @@
 .challenges {
     min-height: 50vh;
-    background: linear-gradient(#0000004b, #0000004b),
+    background: linear-gradient(#0e152c5c, #0e152c5c),
       url(/assets/images/internship/pattern2.png);
+   /* background-image: url(/assets/images/internship/pattern2.png); */
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;

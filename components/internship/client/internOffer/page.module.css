@@ -1,9 +1,7 @@
-.offer,
-.experience {
-}
 .experience {
   border-bottom: 2px dashed rgba(255, 255, 255, 0.292);
 }
+
 .offer .topContent,
 .experience .topContent {
   display: flex;
@@ -13,21 +11,19 @@
 
 .accordionParent {
   padding-top: 60px;
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; */
   display: grid;
   grid-template-columns: repeat(2, 40%);
   justify-content: center;
   gap: 40px;
 }
-.accordionItemHeader > div:first-child {
+
+.accordionItemHeader>div:first-child {
   width: 100%;
   gap: 40px;
   display: flex;
   align-items: center;
 }
+
 .accordionItemHeader {
   display: flex;
   justify-content: space-between;
@@ -37,89 +33,129 @@
   background-color: #fff;
   padding: 10px 50px 10px 10px;
   cursor: pointer;
+  transition: border-radius .4s;
+
 }
+
 .offer .accordionItemHeader {
-  border-radius: 30px 30px 0 0 !important;
+  border-radius: 28px;
+
+}
+
+.offer .accordionItem {
+  border-radius: 28px;
+}
+
+.offer .accordionContent {
+  border-radius: 0 0 28px 28px;
+
 }
 
 .accordionItem {
-  border-radius: 15px;
   color: #000;
-  /* width: 36rem; */
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .experience .accordionItem {
-  /* background: linear-gradient(#1b2340, #0e152c) !important; */
   color: #fff;
-  border-radius: 15px;
+  border-radius: 12px;
 }
+
 .experience .accordionItemHeader {
   background: linear-gradient(#1b2340, #0e152c) !important;
-  border-radius: 15px;
+  border-radius: 12px;
+
 }
+
+.experience .accordionContent {
+  border-radius: 0 0 12px 12px;
+
+}
+
 .experience .topContent p {
   width: 70%;
 }
-.accordionContent {
-  border-radius: 0 0 15px 15px;
 
+.accordionContent {
   max-height: 0;
   font-size: 16px;
   transition: max-height 1s;
   overflow: hidden;
-  /* background-color: #1b2340; */
   background-color: #101830;
   color: #fff;
-  border-radius: 0 0 15px 15px;
   height: 200px;
 }
+
 .accordionContent.open {
   max-height: 1000px;
 }
+
+.offer .accordionItemHeader.open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.experience .accordionItemHeader.open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .accordionContent p {
   padding: 40px 20px;
   text-align: center;
 }
+
 .bottomIcon {
   cursor: pointer;
   display: block;
   margin: auto;
   margin-bottom: 10px;
 }
+
 .accordionArrowIcon {
   transition: opacity 0.4s;
   cursor: pointer;
 }
+
 .accordionArrowIcon.hide {
   opacity: 0;
 }
+
 .accordionItem span {
   font-weight: bold;
 }
+
 @media (max-width: 1191px) {
   .accordionContent {
     height: auto;
   }
+
   .accordionParent {
     grid-template-columns: repeat(1, 70%);
   }
 }
+
 @media (max-width: 768px) {
   .accordionItem {
     width: 100%;
   }
+
   .experience .topContent p {
     width: 100%;
   }
+
   .experience p {
     font-size: 16px;
   }
+
   .accordionParent {
     grid-template-columns: repeat(1, 100%);
   }
+
   .accordionItemHeader {
     padding: 10px;
   }
+
   .offer .topContent,
   .experience .topContent {
     align-items: center;

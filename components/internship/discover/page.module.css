@@ -1,5 +1,5 @@
 .discover {
-  color: #000 !important;
+  color: #000 ;
   padding: 80px 0 !important; 
   display: flex;
   flex-direction: column;
@@ -15,10 +15,13 @@
   right: 40px;
 }
 .discover .content {
-  margin-right: 400px;
-  height: 100%;
+  margin-right: 430px;
   background-color: #fff;
-  padding: 70px;
+  padding: 40px 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  line-height: 1.4;
 }
 @media (max-width: 1191px) {
   .discover .Img {

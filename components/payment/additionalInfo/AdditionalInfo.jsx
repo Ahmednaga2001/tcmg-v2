@@ -36,7 +36,7 @@ export default function AdditionalInfo({ onNextStep }) {
                         placeholder="الاسم بالكامل"
                         imgPath="/assets/icons/form/solar_user-bold.png"
                         style={{
-                            background: "linear-gradient(var(--main))",
+                            background: "linear-gradient(0deg, rgba(255, 255, 255, 0.01) 0%, rgba(216, 216, 216, 0.01) 100%)",
                             border: "1px solid #fff",
                         }}
                         color="#fff"
@@ -63,7 +63,7 @@ export default function AdditionalInfo({ onNextStep }) {
                         w={24}
                         h={24}
                         style={{
-                            background: "linear-gradient(var(--main))",
+                            background: "linear-gradient(rgba(255, 255, 255,.07) 0%, rgba(216, 216, 216, .07))",
                             border: "1px solid #fff",
                             color: "#fff"
                         }}

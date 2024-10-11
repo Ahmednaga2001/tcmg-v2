@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    border-bottom: 2px dashed rgba(255, 255, 255, 0.292);
+
   }
   .careerJourney div {
     display: flex;

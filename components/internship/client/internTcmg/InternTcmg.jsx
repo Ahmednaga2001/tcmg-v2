@@ -19,6 +19,9 @@ const InternTcmg = () => {
     },
     {
       value : "تدريب",
+    },
+    {
+      value : "محامى متدرب"
     }
   ]
   const optionsTwo=[
@@ -26,16 +29,18 @@ const InternTcmg = () => {
       value : "القاهرة"
     },
     {
-      value : "الرياض"
+      value : "دبى"
     },
     {
-      value : "دبى"
+      value : "الرياض"
     },
     {
       value : "تشغندو"
     },
     {
-      value : "فلسطين"
+      value : "عمان"
+    },{
+      value : "جنين"
     }
   ]
   return (

@@ -41,8 +41,8 @@
 }
 .popup.hidden {
   opacity: 0;
-  visibility: hidden; /* Hide the popup */
-  pointer-events: none; /* Disable interaction when hidden */
+  visibility: hidden; 
+  pointer-events: none; 
 }
 
 .popup p {

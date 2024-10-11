@@ -13,7 +13,7 @@ const OfferAccordion = ({ title, path, desc }) => {
   return (
     <div>
       <div className={styles.accordionItem}>
-        <div className={styles.accordionItemHeader} onClick={handleIsOpenOne}>
+        <div className={`${styles.accordionItemHeader} ${isOpenOne ? styles.open : ""}`} onClick={handleIsOpenOne}>
           <div>
             <Image
               src={path}
