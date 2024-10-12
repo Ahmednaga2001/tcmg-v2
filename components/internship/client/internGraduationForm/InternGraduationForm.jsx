@@ -7,22 +7,33 @@ import SelectComponent from "@/components/ui/selectComponent/SelectComponent";
 import Image from "next/image";
 import { useState } from "react";
 const InternGraduationForm = () => {
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOffice, setSelectedOffice] = useState(null);
   const [fileName, setFileName] = useState('');
-  console.log(fileName);
 
   const handleFileChange = (e) => {
     if (e.target.files.length > 0) {
-      
+
       setFileName(e.target.files[0].name);
     }
   }
-  const options = [
+  const officeOptions = [
     {
-      value: "أفراد",
+      value: "القاهرة",
     },
     {
-      value: "المؤسسات و الشركات"
+      value: "دبى",
+    },
+    {
+      value: "الرياض",
+    },
+    {
+      value: "تشنغدو"
+    },
+    {
+      value: "عمان"
+    },
+    {
+      value: "جنين"
     }
   ]
   return (
@@ -41,7 +52,7 @@ const InternGraduationForm = () => {
 
           <Input label="رقم الهاتف" imgPath="/assets/icons/form/phone.png" placeholder="رقم الهاتف" alt={"phone icon"} />
 
-          <SelectComponent head={"اختر المكتب"} options={options} selectedOption={selectedOption} setSelectedOption={setSelectedOption} />
+          <SelectComponent head={"اختر المكتب"} options={officeOptions} selectedOption={selectedOffice} setSelectedOption={setSelectedOffice} />
 
 
           <Input label="منطقة السكن الحالى / المحافظة" imgPath="/assets/icons/form/location.png" placeholder={"منطقة السكن الحالى / المحافظة"} alt={"location icon"} />

@@ -3,7 +3,6 @@ import styles from './page.module.css';
 import Image from 'next/image';
 
 const Input = ({ display='none',label, style, imgPath, placeholder, alt, color, type = "text", showPassword, setShowPassword }) => {
-console.log(color);
 
   const togglePasswordVisibility = () => {
     if (type === 'password') {

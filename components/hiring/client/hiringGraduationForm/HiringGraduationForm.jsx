@@ -17,14 +17,52 @@ const HiringGraduationForm = () => {
       setFileName(e.target.files[0].name);
     }
   }
-  const options = [
+  const jobOptions = [
     {
-      value: "أفراد",
+      value: "محامى",
     },
     {
-      value: "المؤسسات و الشركات",
+      value: "موظف ادارى"
     },
+    {
+      value : "محاسب قانونى"
+    },
+    {
+      value : "سكرتارية"
+    },
+    {
+      value : "بحوث"
+    },
+    {
+      value : "تسويق"
+    },
+    {
+      value : "مترجم قانونى"
+    },
+    {
+      value : "تدريب"
+    }
   ];
+  const officeOptions = [
+    {
+      value: "القاهرة",
+    },  
+    {
+      value: "دبى",
+    },
+    {
+      value: "الرياض",
+    },
+    {
+      value : "تشنغدو"
+    },
+    {
+      value : "عمان"
+    },
+    {
+      value : "جنين"
+    }
+  ]
   return (
     <section className={styles.graduationForm}>
       <div className={styles.formPage}>
@@ -62,13 +100,13 @@ const HiringGraduationForm = () => {
 
           <SelectComponent
             head={"اختر المكتب"}
-            options={options}
+            options={officeOptions}
             selectedOption={selectedOffice}
             setSelectedOption={setSelectedOffice}
           />
           <SelectComponent
             head={"اختر الوظيفة"}
-            options={options}
+            options={jobOptions}
             selectedOption={selectedJob}
             setSelectedOption={setSelectedJob}
           />

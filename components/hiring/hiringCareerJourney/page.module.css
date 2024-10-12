@@ -3,6 +3,9 @@
     flex-direction: column;
     gap: 40px;
     border-bottom: 2px dashed rgba(255, 255, 255, 0.292);
+    background-image: url(/assets/images/hiring/pattern3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 
   }
   .careerJourney div {

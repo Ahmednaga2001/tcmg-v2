@@ -11,9 +11,9 @@
     padding-top: 60px;
    
     display: grid;
-    grid-template-columns: repeat(2,40%);
+    grid-template-columns: repeat(2,35%);
     justify-content: center;
-    gap: 40px;
+    gap: 60px;
   }
   .accordionItemHeader > div:first-child {
     
@@ -29,7 +29,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 10px 50px 10px 10px;
+    padding: 30px;
     background: linear-gradient(#1b2340, #0e152c) !important;
     border-radius: 40px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -45,18 +45,21 @@
   }
   .accordionContent {
     border-radius: 0 0 40px 40px;
-
+  height: 280px;
     max-height: 0;
     font-size: 16px;
     transition: max-height 1s;
     overflow: hidden;
     background-color: #101830;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .accordionContent.open {
     max-height: 1000px;
   }
   .accordionContent p {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
   }
   .bottomIcon {
@@ -76,22 +79,36 @@
     font-weight: bold;
   }
 
+  @media (max-width : 1400px) {
+    .accordionContent{
+      height: 350px;
+    }
+  }
+
   @media (max-width : 1191px) {
     .features h2{
       text-align: center;
     }
     .accordionParent{
-      grid-template-columns: repeat(1,70%);
+      grid-template-columns: repeat(2,50%);
+    }
+    .accordionContent{
+      height: 300px;
     }
   }
-  @media (max-width : 768px) {
+  @media (max-width : 1000px) {
+    .accordionParent{
+      grid-template-columns: repeat(1,70%);
+      gap: 40px;
+      
+    }
+    .accordionContent{
+      height: auto;
+    } 
+  }
+  @media (max-width : 620px) {
     .accordionParent{
       grid-template-columns: repeat(1,100%);
       
     }
-    .accordionItemHeader{
-      padding: 10px;
-
-    }
-      
   }

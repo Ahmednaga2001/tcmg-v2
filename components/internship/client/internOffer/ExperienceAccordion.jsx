@@ -17,8 +17,8 @@ const ExperienceAccordion = ({ title, path, desc }) => {
           <div>
             <Image
               src={path}
-              width={80}
-              height={80}
+              width={60}
+              height={60}
               alt={title}
               className={styles.accordionItemIcon}
             />

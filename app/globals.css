@@ -20,10 +20,10 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  .accordionQuestions h2{
+  .accordionQuestions h2 {
     text-align: center;
   }
-  
+
 }
 
 /* ::selection {
@@ -185,12 +185,14 @@ a {
   transition-timing-function: ease-in-out;
   cursor: pointer;
 }
+
 @media (max-width : 768px) {
-  .link{
+  .link {
     font-size: 16px;
   }
-  
+
 }
+
 .link:hover {
   gap: 20px;
   opacity: 80%;
@@ -202,25 +204,30 @@ a {
   scale: 1.4;
   border-radius: 10px;
 }
+
 .flickity-prev-next-button.previous {
   left: -60px !important;
 
 }
+
 .flickity-prev-next-button.next {
   right: -60px !important;
 
 }
+
 @media (max-width : 768px) {
   .flickity-prev-next-button.previous {
     left: -80px !important;
-  
+
   }
+
   .flickity-prev-next-button.next {
     right: -80px !important;
-  
+
   }
-  
+
 }
+
 .flickity-button svg {
   color: var(--font);
 }

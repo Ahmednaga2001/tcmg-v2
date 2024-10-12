@@ -13,7 +13,7 @@ const WhyChooseAccordion = ({ title, path, desc }) => {
   return (
     <div>
       <div className={styles.accordionItem} >
-        <div className={styles.accordionItemHeader} onClick={handleIsOpenOne}>
+        <div className={`${styles.accordionItemHeader} ${isOpenOne ? styles.open : ""}`} onClick={handleIsOpenOne}>
             <Image
               src="/assets/icons/hiring/arrow-right.png"
               width={33}

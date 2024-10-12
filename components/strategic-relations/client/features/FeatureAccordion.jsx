@@ -16,8 +16,8 @@ const FeatureAccordion = ({ title, path, desc }) => {
           <div>
             <Image
               src={path}
-              width={90}
-              height={90}
+              width={60}
+              height={60}
               alt={title}
               className={styles.accordionItemIcon}
             />

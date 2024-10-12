@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import styles from "./page.module.css"
 import Image from 'next/image'
 
-const SelectComponent = ({display='hidden', options, label,selectedOption, setSelectedOption, head, style , imgPath = '/assets/icons/form/drop.png' ,w=10 , h=10}) => {
+const SelectComponent = ({display='hidden', options, label,selectedOption, setSelectedOption, head, style , imgPath = '/assets/icons/form/drop.svg' ,w=10 , h=10}) => {
 
   const [open, setOpen] = useState(false)
   return (
