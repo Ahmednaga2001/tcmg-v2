@@ -115,12 +115,12 @@ const EstablishFeatures = () => {
           </div>
         ))}
       </div>
-        <button onClick={handleNext} className={styles.nextbutton}>
+        <div onClick={handleNext} className={styles.nextbutton}>
           
-        </button>
-        <button onClick={handlePrev} className={styles.prevbutton}>
+        </div>
+        <div onClick={handlePrev} className={styles.prevbutton}>
           
-        </button>
+        </div>
       </div>
     </section>
   );
