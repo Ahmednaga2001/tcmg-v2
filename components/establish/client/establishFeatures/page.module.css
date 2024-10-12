@@ -48,7 +48,7 @@
     cursor: pointer;
     background-size: cover;
     background: none;
-    background-image: url(/assets/icons/establish/prev.png);
+    background-image: url(/assets/icons/establish/next.png);
     background-repeat: no-repeat;
     position: absolute;
     top: 50%;
