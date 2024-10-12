@@ -36,6 +36,14 @@
     z-index: 999;
 
 }
+.branche img{
+    transition: transform  1s;
+
+}
+.branchHover:hover img{
+
+    transform: scale(1.2);
+}
 .branches .branche .content span:first-child{
     font-size: 40px;
     font-family: janna bol;

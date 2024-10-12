@@ -7,7 +7,7 @@ import Image from "next/image";
 
 
 
-function Slider({ data }) {
+function Slider({ data , name }) {
   const flickityOptions = {
     initialIndex: 0,
     draggable: true,
@@ -18,6 +18,7 @@ function Slider({ data }) {
     pageDots: true,
     cellAlign: "center",
     wrapAround: true,
+    autoPlay : 3000
   };
 
   return (
@@ -29,7 +30,8 @@ function Slider({ data }) {
         static
       >
         {data.map((item, index) => (
-          <div className={styles.branche} key={index}>
+          <div             className={`${styles.branche} ${name ? styles.branchHover : ''}`} // Conditionally apply hover class
+          key={index}>
             <Image
               src={item.imgPath}
               alt={item.title}

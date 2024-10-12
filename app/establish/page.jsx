@@ -37,7 +37,7 @@ function Establish() {
     <EstablishLegalServices/>
     <EstablishAchievement/>
     <EstablishCompanyTypes/>
-      <Slider data = {sliderInfo}/>
+      <Slider data = {sliderInfo} name='est'/>
       <EstablishForm/>
       <Accordion />
     </div>
