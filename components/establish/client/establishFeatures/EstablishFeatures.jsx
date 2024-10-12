@@ -1,139 +1,133 @@
 "use client";
-import { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Autoplay, Navigation } from "swiper/modules";
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import styles from "./page.module.css"
+import styles from "./page.module.css"; 
+
 const data = [
   {
     id: 1,
     title: "المتابعة",
     desc: "يلتزم محامونا في المجموعة التجارية والبحرية للمحاماة بمتابعة الموكل خلال فترة القضية والاستئناف, وإبقاؤهم على علم بمتغيرات القضية وقرارات القضاة.",
-    path: "/assets/icons/establish/المتابعة1.png",
-    w : 80,
-    h : 80
+    path: "/assets/icons/establish/المتابعة1.svg",
+    w: 82,
+    h: 82
   },
   {
     id: 2,
     title: "الجودة",
     desc: "يراعي فريق العمل لدينا الجودة والمهارة في أداء واجبهم القانوني والاستجابة بإتقان لكافة متطلبات الموكلين والتأكيد على ضمان نجاح القضية بشكل احترافي.",
-    path: "/assets/icons/establish/الجودة.png",
-    w : 80,
-    h : 80
+    path: "/assets/icons/establish/الجودة1.svg",
+    w: 82,
+    h: 82
   },
   {
     id: 3,
     title: "التخصص",
-    desc: "محامونا ومحاسبونا متخصصون في تأسيس الشركات. مع فرق متنوعة متخصصة في الشركات الفردية والشركات ذات المسؤوليات المحدودة في مصر والإمارات ما يضمن نجاحك كرائد أعمال.​",
-    path: "/assets/icons/establish/specialization.png",
-    w : 80,
-    h : 80
+    desc: "تضم مكاتبنا فريق عمل كبير يشمل كافة تخصصات القانون للتغطية على جميع المشاكل والمسائل القانونية مستعدين للإجابة عن أي استفسار مُوَجَّه لهم.",
+    path: "/assets/icons/establish/التخصص1.svg",
+    w: 82,
+    h: 82
   },
   {
     id: 4,
     title: "المشاورة",
-    desc: "من خلال موقعنا، يمكنك ملء استمارة الاستشارات القانونية ، والذي يمكن أن يساعدك في الحصول على استشارات مجانية من خلال مكالمة هاتفية أو مقابلة مكتبية. نقدم هذه الخدمة مجانًا للعملاء الراغبون في تأسيس شركة أو طلب خدمات الشؤون القانونية للتحدث مع خبير الشركات قبل بدأ العمل.",
-    path: "/assets/icons/establish/Consultation.png",
-    w : 80,
-    h : 80
+    desc: "تتميز فئة المستشارين في TCMG الاستماع الجيد إلى مشكلة الموكل, والاستنتاجية وفن اختيار الأسئلة, وربط الأحداث للوصول إلى الحل القانوني الأنسب لمسألته.",
+    path: "/assets/icons/establish/المشاورة1.svg",
+    w: 82,
+    h: 82
   },
   {
     id: 5,
     title: "النتائج",
-    desc: "نحن نلتزم مع كل عملائنا الكرام بنتائج معينة يهدف إليها العملاء، لذا نبذل قصارى جهدنا لتكون النتائج النهائية لتأسيس شركة إلكترونية فردية أو شركات الأشخاص والشركات مرضية للعميل؛ والذي يبث روح التفائل به للإنطلاق في عالم الأعمال.",
-    path: "/assets/icons/establish/Resuts.png",
-    w : 80,
-    h : 80
+    desc: "نحرص في المجموعة التجارية والبحرية للمحاماة على تحقيق النتائج المرجوة من الموكلين والعملاء والحرص على نيل رضاهم بتنفيذ الاستراتيجيات المتقَنَة.",
+    path: "/assets/icons/establish/النتائج 1.svg",
+    w: 82,
+    h: 82
   },
   {
     id: 6,
     title: "السرعة",
-    desc: "  يمكنك معرفة الفترة الزمنية لتأسيس شركتك من خلال نطاق العمل المخصص لك. كن مطمئنًا ، ستنتهي جميع عمليات الإجراءات والشؤون القانونية في غضون أيام قليلة ، وبعد ذلك يمكنك الإعلان عن",
-    path: "/assets/icons/establish/Quickly.png",
-    w : 90,
-    h : 81
+    desc: "يراعي كل من محامونا ومستشارونا الاستجابة السريعة لطلبات الاستشارة والتوكيل, كذلك السرعة في تنفيذ واجباتهم القانونية تجاه الموكلين, مع مراعاة الدقة.",
+    path: "/assets/icons/establish/Quickly.svg",
+    w: 82,
+    h: 82
   },
 ];
-const EstablishFeatures = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleSlideChange = (swiper) => {
-    setActiveIndex(swiper.realIndex);
+const EstablishFeatures = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+    }, 5000); 
+
+    return () => clearInterval(intervalId); 
+  }, []);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
   };
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
+  };
+
+  const getCurrentItems = () => {
+    const items = [];
+    for (let i = 0; i < 3; i++) {
+      const index = (currentIndex + i) % data.length; 
+      items.push({
+        ...data[index],
+        isActive: i === 1, 
+        opacity: i === 1 ? 1 : 0.4, 
+      });
+    }
+    return items;
+  };
+
+  const currentItems = getCurrentItems();
 
   return (
     <section className={styles.uniqueServiceFeatures}>
       <h2>ما يميز خدمتنا في تأسيس الشركات عن باقي مكاتب المحاماة</h2>
-      <div className={styles.swiperContainerWrapper} id="featureSlide">
-        <Swiper
-          spaceBetween={10}
-          navigation={{
-               nextEl: '.slideprev',
-              prevEl: '.slidenext'
-          }}
-          centeredSlides={true} // Center the active slide
-          slidesPerView={1}
-          breakpoints={{
-            480: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            // Small screens (tablets)
-            768: {
-              slidesPerView: 1,
-              spaceBetween: 30,
-            },
-            // Medium screens (small laptops)
-            1000: {
-              slidesPerView: 2,
-              spaceBetween: 40,
-            },
-            // Large screens (desktops)
-            1200: {
-              slidesPerView: 3,
-              spaceBetween: 50,
-            },
-          }}
-          loop={true}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
-          modules={[Navigation , Autoplay]}
-          onSlideChange={handleSlideChange}
+      <div className={styles.container}>
+      <div className={styles.cardContainer}>
+        {currentItems.map((item) => (
+          <div
+            key={item.id}
+            className={styles.card}
+            style={{
+              opacity: item.opacity,
+              transition: "opacity 1s", 
+              transform: item.isActive ? 'scale(1.1)' : 'scale(1)', 
+            }}
+          >
+            <Image
+              src={item.path}
+              width={item.w}
+              height={item.h}
+              alt="Service Icon"
+            />
+            <h3>{item.title}</h3>
+            <p>{item.desc}</p>
+            <span>{item.id}</span>
+          </div>
+        ))}
+      </div>
+        <button onClick={handleNext} className={styles.nextbutton}>
           
-        >
-          {data.map((item, index) => (
-            <SwiperSlide
-              className={styles.swiperSlide}
-              key={index}
-              style={{
-                border: activeIndex === index ? "1px solid #ffffff74" : "none",
-                opacity: activeIndex === index ? 1 : 0.4,
-                transition: "border 0.3s ease, opacity 0.3s ease",
-              }}
-            >
-              <div className={styles.Content}>
-                <Image
-                  src={item.path}
-                  width={item.w}
-                  height={item.h}
-                  alt="Service Icon"
-                />
-                <h3>{item.title}</h3>
-                <p>{item.desc}</p>
-                <span>{item.id}</span>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        <div className="swiper-button-prev slidenext"/>
-        <div className="swiper-button-next slideprev"/>
+        </button>
+        <button onClick={handlePrev} className={styles.prevbutton}>
+          
+        </button>
       </div>
     </section>
   );
 };
 
 export default EstablishFeatures;
+
+
+
+

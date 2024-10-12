@@ -13,4 +13,5 @@
   }
   .activeLink {
     color: #fff !important; /* White color for the active link */
+    font-weight: bold;
   }

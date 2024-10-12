@@ -15,8 +15,8 @@ const LegalServiceCard = ({ title, path, desc }) => {
         <div className={styles.accordionItemHeader} onClick={handleIsOpenOne}>
           <Image
             src={path}
-            width={80}
-            height={96}
+            width={70}
+            height={70}
             alt={path}
             className={styles.accordionItemIcon}
           />

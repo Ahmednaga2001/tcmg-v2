@@ -138,6 +138,8 @@ a {
   background-image: url(/assets/icons/establish/prev.png) !important;
   z-index: 10 !important;
   left: -40px !important;
+  position: absolute;
+  top: 55%;
 }
 
 #companiesTypes .swiper-button-next {
@@ -147,6 +149,8 @@ a {
   background-image: url(/assets/icons/establish/next.png) !important;
   z-index: 10 !important;
   right: -30px !important;
+  position: absolute;
+  top: 55%;
 }
 
 

@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: repeat(2,40%);
     justify-content: center;
-    gap: 40px;
+    gap: 60px;
 
   }
   .accordionItemHeader {
@@ -20,7 +20,8 @@
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 40px;
-    padding: 10px 50px 10px 10px;
+    /* padding: 10px 50px 10px 10px; */
+    padding: 30px 60px;
 
   }
   .accordionItem {
@@ -37,7 +38,7 @@
     font-size: 16px;
     transition: max-height 1s;
     overflow: hidden;
-    height: 300px;
+    height: 280px;
 
   }
   .accordionContent.open {
@@ -50,15 +51,19 @@
 
   @media (max-width : 1191px) {
     .accordionParent{
-        grid-template-columns: repeat(1,70%);
+        grid-template-columns: repeat(2,50%);
 
     }
-    .accordionContent{
-        height: auto;
-    }
-    
   }
-  @media (max-width : 768px) {
+  @media (max-width : 1000px) {
+    .accordionParent{
+        grid-template-columns: repeat(1,70%);
+    }
+    .accordionContent{
+      height: auto;
+    }
+  }
+  @media (max-width : 620px) {
     .accordionParent{
         grid-template-columns: repeat(1,100%);
         
