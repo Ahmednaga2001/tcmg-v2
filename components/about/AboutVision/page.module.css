@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------------------------*/
 .visionSectionContainer {
-    padding: 20px 0;
+  padding-top: 80px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
   }
   .visionItem {
     position: relative;
@@ -24,7 +24,8 @@
   }
   .visioncontent {
     height: 200px;
-    background: linear-gradient(#353e5c, #353e5c);
+    /* background-color: #1C2340; */
+    background: linear-gradient(to left,#1D243D 3% , #121A36 100%);
     padding: 20px;
     border-radius: 25px;
     width: 95%;
@@ -33,7 +34,9 @@
     width: 95%;
     height: 200px;
     padding: 20px;
-    background: linear-gradient(#353e5c, #353e5c);
+    /* background-color: #1C2340; */
+    background: linear-gradient(to right,#1D243D 3% , #121A36 100%);
+
     border-radius: 25px;
     padding-right: 200px;
     margin-right: 5%;
@@ -89,8 +92,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: linear-gradient(#353e5c, #353e5c);
+        /* background: linear-gradient(#353e5c, #353e5c); */
+        /* background-color: #1C2340; */
         border-radius: 25px;
+      }
+      .visionItem:nth-child(odd){
+        background: linear-gradient(to bottom,#1D243D 3% , #121A36 100%);
+
+      }
+      .visionItem:nth-child(even){
+        background: linear-gradient(to top,#1D243D 3% , #121A36 100%);
+      }
+      .visioncontent,.visioncontentleft{
+        background: none;
       }
       .visioncontentleft p {
         width: 85%;

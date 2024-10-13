@@ -138,6 +138,7 @@ const HiringGraduationForm = () => {
                 )
               }
             </div>
+            <label htmlFor="file-upload" style={{display : 'none'}}>رفع ملف</label>
             <input type="file" id="file-upload" className={styles.fileInput} onChange={handleFileChange} />
             <Image
               src="/assets/icons/form/Vector.png"

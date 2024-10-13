@@ -7,7 +7,7 @@
     text-align: center;
 }
 .aboutMilestonesSection .cards{
-    padding: 50px 0;
+    padding-top: 80px;
 }
 .milestoneCard,
 .milestoneImageContainer {
@@ -27,9 +27,11 @@
 }
 
 .milestoneCard h3 {
-    border-right: 5px solid #fff;
+    border-right: 6px solid #fff;
     width: fit-content;
     padding-right: 10px;
+    font-size: 25px;
+    
 }
 
 .aboutMilestonesSection {

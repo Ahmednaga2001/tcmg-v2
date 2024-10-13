@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -76,33 +76,25 @@ const HomeWhyUs = () => {
       <div className={styles.swiperContainer}>
         <Swiper
           effect="coverflow"
-          spaceBetween={10}
-          centeredSlides={true}
-          slidesPerView={1}
-          breakpoints={{
-            480: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 1.7,
-              spaceBetween: 20,
-            },
-            1000: {
-              slidesPerView: 2.5,
-              spaceBetween: 20,
-            },
-            1200: {
-              slidesPerView: 3,
-              spaceBetween: 40,
-            },
-          }}
+          spaceBetween={100}
+          centeredSlides={true} // Center the active slide
+          slidesPerView={'auto'}
+          grabCursor={true}
+          coverflowEffect={
+            {
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 2.5,
+              slideShadows: false,
+          }
+        }
           loop={true}
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
           }}
-          modules={[Navigation, Autoplay, Pagination]} // Added modules back
+          modules={[Navigation, Autoplay, Pagination , EffectCoverflow]} // Added modules back
         >
           {lawyers.map((lawyer) => (
             <SwiperSlide key={lawyer.id} className={styles.SwiperSlide}>

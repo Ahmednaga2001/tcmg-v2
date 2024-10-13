@@ -12,3 +12,8 @@
     text-align: center;
     gap: 5px;
 }
+.homeTeam{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}

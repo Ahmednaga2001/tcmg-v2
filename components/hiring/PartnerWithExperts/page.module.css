@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 40px;
 }
-.expert div{
+.expert .content{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,7 +14,7 @@
         display: none;
     }
  
-    .expert div{
+    .expert .content{
         justify-content: center;
         text-align: center;
     }

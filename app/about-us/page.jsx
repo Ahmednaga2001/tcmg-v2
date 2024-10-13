@@ -1,6 +1,4 @@
 import styles from "./page.module.css";
-
-
 import AboutSection from "@/components/about/aboutSection/AboutSection";
 import AboutMilestones from "@/components/about/aboutMilestonesSection/AboutMilestonesSection";
 import AboutVision from "@/components/about/AboutVision/AboutVision";

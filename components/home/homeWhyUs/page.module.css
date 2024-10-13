@@ -14,7 +14,9 @@
     text-align: center;
 }
 .swiperContainer{
-    padding-top: 50px;
+    padding-top: 80px;
+    width: 85%;
+    margin: auto;
 }
 
 .ourTeam {
@@ -43,8 +45,9 @@
     flex-wrap: wrap;
 }
 .SwiperSlide{
-    width: 100%;
-    height: 500px;
+    width: 28.5rem !important;
+    height: 30rem;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,5 +76,22 @@
 }
 
 
-
+@media (max-width: 1191px) {
+    .swiperContainer{
+      width: 100%;
+    }
+    .SwiperSlide{
+      width: 28rem !important;
+  
+    }
+    
+  }
+  
+  @media (max-width: 767px) {
+  
+    .SwiperSlide{
+      width: 100% !important;
+      
+    }
+  }
   

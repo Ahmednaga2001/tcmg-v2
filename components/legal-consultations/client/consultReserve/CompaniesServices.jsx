@@ -71,7 +71,7 @@ const CompaniesServices = () => {
                 </span>
               ))}
             </div>
-            <Link href="#">
+            <Link href="/payment">
               تحديد
               <Image
                 src="/assets/icons/legalconsultations/arrow-left.png"

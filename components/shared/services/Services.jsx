@@ -1,5 +1,6 @@
 import Image from "next/image"
 import styles from "./page.module.css"
+import Link from "next/link"
 
 const Services = ({data}) => {
     
@@ -9,7 +10,7 @@ const Services = ({data}) => {
         data.map((item,index)=>(
             <div className={styles.service} key={index}>
             <span>{item}</span>
-            <a href="mailto:Pr@tcmglaw.com">
+            <Link href="/payment">
             إحجز الآن              
               <Image
                   src="assets/icons/arrow-left.svg"
@@ -17,7 +18,7 @@ const Services = ({data}) => {
                   width={20}
                   height={20}
                 />
-                </a>
+                </Link>
 
 
         </div>

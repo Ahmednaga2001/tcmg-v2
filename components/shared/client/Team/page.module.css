@@ -1,6 +1,15 @@
-
+/* .team{
+  padding: 0 80px 80px 80px !important;
+  background-color: red;
+} */
+.swiperContainer{
+  width: 85%;
+  margin: auto;
+}
 .swiperSlide {
-  height: 500px;
+  width: 28.5rem !important;
+  height: 30rem;
+  position: relative;
 }
 .ourTeam .header,
 .ourCustomers .header {
@@ -12,11 +21,12 @@
 }
 
 .cards {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   gap: 50px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+
 }
 
 .card {
@@ -30,11 +40,29 @@
   align-items: center;
 }
 
-/* .card:nth-child(2) {
-    scale: 1.15;
-} */
 
 .card p:last-child {
   font-size: 14px;
   color: #845f38;
+}
+
+@media (max-width: 1191px) {
+  .swiperContainer{
+    width: 100%;
+  }
+  .swiperSlide{
+    width: 28rem !important;
+
+  }
+  
+}
+
+@media (max-width: 767px) {
+  /* .team{
+    padding: 20px !important;
+  } */
+  .swiperSlide{
+    width: 100% !important;
+    
+  }
 }

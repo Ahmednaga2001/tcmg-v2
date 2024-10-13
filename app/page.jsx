@@ -228,29 +228,5 @@ function Home() {
 
 
 
-function Articles() {
-  return (
-    <article className={`${styles.scroll} ${styles.articles}`}>
-      <div className={styles.right}>
-        <h2>أحدث المقالات</h2>
-        <p>
-          تعلم أكثر من المكتبة القانونية المتكاملة وامتلك معرفة أوسع وأعمق في
-          البيئة القانونية من خلال استكشاف أحدث التطورات والمستجدات، واستفد من
-          مجموعة متنوعة من المصادر القانونية المتكاملة.
-        </p>
-        <span className="link">
-          إقرا المزيد
-          <Image
-            src="assets/icons/arrow-left.svg"
-            alt="Arrow Left Small"
-            width={20}
-            height={20}
-          />
-        </span>
-      </div>
-      <div className={styles.left}>{displayJsx(articles)}</div>
-    </article>
-  );
-}
 
 export default Home;

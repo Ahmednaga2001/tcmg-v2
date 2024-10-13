@@ -48,7 +48,7 @@ export const HomeTeam = () => {
             </p>
 
         </div>
-        <Team lawyers={lawyers}/>
+       <Team lawyers={lawyers}/>
 
     </section>
   )

@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 import LawyersCard from "../lawersCard/LawyersCard";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
 const practices = [
   { id: 1, value: "الأندماج والاستحواذ" },
   { id: 2, value: "قضايا أسواق المال" },

@@ -57,7 +57,7 @@ function Hiring() {
       <HiringCareerProgressSteps />
       <HiringWhyChooseUs />
       <PartnerWithExperts />
-      <Team lawyers={lawyers} />
+      {/* <Team lawyers={lawyers} /> */}
       <HiringTcmgJob />
       <HiringGraduationForm />
       <Accordion />

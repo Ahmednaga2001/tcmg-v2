@@ -32,8 +32,7 @@
 .category .content {
   height: 200px;
   padding: 20px;
-  background-color: #1C2340;
-  /* background: linear-gradient(#353e5c, #353e5c); */
+  background: linear-gradient(to left,#1D243D 3% , #121A36 100%);
   padding: 20px;
   border-radius: 25px;
   width: 95%;
@@ -46,9 +45,8 @@
   width: 95%;
   height: 200px;
   padding: 20px;
-  background-color: #1C2340;
+  background: linear-gradient(to right,#1D243D 3% , #121A36 100%);
 
-  /* background: linear-gradient(#353e5c, #353e5c); */
   padding: 20px;
   border-radius: 25px;
   padding-right: 200px;
@@ -109,6 +107,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: none;
+
   }
   .bestPractice .content,
   .category .content {
@@ -120,6 +120,7 @@
     align-items: center;
     padding: 20px;
     order: 2;
+    background: none;
   }
   .practiceCard,
   .categoryCard {
@@ -128,10 +129,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #1C2340;
 
-    /* background: linear-gradient(#353e5c, #353e5c); */
     border-radius: 25px;
+  }
+  .practiceCard:nth-child(odd) , .categoryCard:nth-child(odd){
+    background: linear-gradient(to bottom,#1D243D 3% , #121A36 100%);
+
+  }
+  .practiceCard:nth-child(even) , .categoryCard:nth-child(even){
+    background: linear-gradient(to top,#1D243D 3% , #121A36 100%);
+
   }
   .bestPractice .contentleft p,
   .category .contentleft p {
