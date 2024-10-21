@@ -32,11 +32,13 @@
 
 .carousel .caroChild div p {
     width: 75%;
+
 }
 
-@media (max-width: 1191px) {
+/* @media (max-width: 1191px) {
     .carousel .bodyContent img{
         display: none;
+       
     }
     .caroChild{
         align-items: center;
@@ -53,7 +55,7 @@
         width: 100%;
         text-align: center;
     }
-}
+} */
 
 @media (max-width: 800px){
     .carousel {
@@ -72,9 +74,9 @@
         justify-content: baseline;
 
     }
-    .carousel .bodyContent img{
+    /* .carousel .bodyContent img{
         display: block;
-    }
+    } */
     .carousel h2{
         text-align: right;
     }
