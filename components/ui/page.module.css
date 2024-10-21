@@ -23,6 +23,12 @@
   width: 100%;
   outline: none;
   border: none;
+  color: #000; /* Text color */
+}
+
+/* Placeholder color */
+.inp input::placeholder {
+  color: #00000082; 
 }
 
 .select {

@@ -36,13 +36,10 @@
 
 }
 
-.offer .accordionItemHeader {
-  border-radius: 28px;
-
-}
-
+.offer .accordionItemHeader,
 .offer .accordionItem {
   border-radius: 28px;
+
 }
 
 .offer .accordionContent {
@@ -139,7 +136,7 @@
     height: 250px;
   }
 }
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .accordionParent {
     grid-template-columns: repeat(1, 70%);
     gap: 40px;
@@ -152,21 +149,63 @@
     align-items: center;
     text-align: center;
   }
-}
-@media (max-width: 620px) {
+} */
+
+
+@media (max-width: 1000px) {
+  .offer .topContent h2,
+  .experience .topContent h2, 
+  .experience .topContent p {
+    width: 100%;
+    text-align: right;
+  } 
   .accordionItem {
     width: 100%;
   }
-
-  .experience .topContent p {
-    width: 100%;
+  .accordionParent {
+    grid-template-columns: repeat(2, 50%);
+    gap: 40px;
   }
-
- 
-
+  .accordionContent{
+    height: 300px;
+  }
+  .accordionItemHeader{
+    padding: 5px 10px;
+    height: 70px;
+}
+  .accordionItemHeader>div:first-child {
+    gap: 5px;
+  }
+  .accordionItemHeader>div img{
+    width: 40px;
+    height: 40px;
+  }
+  .accordionItemHeader>div span{
+    font-size: 16px;
+  }
+}
+@media (max-width:768px) {
+  .accordionParent{
+    gap: 10px;
+  }
+  .accordionContent{
+    height: 350px;
+  }
+  
+}
+@media (max-width: 505px) {
+  .accordionItemHeader>div span{
+    font-size: 10px;
+  }
+}
+@media (max-width: 375px) {
   .accordionParent {
     grid-template-columns: repeat(1, 100%);
   }
-
- 
+  .accordionItemHeader>div span{
+    font-size: 16px;
+  }
+  .accordionContent{
+    height: auto;
+  }
 }

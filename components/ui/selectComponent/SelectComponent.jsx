@@ -10,7 +10,9 @@ const SelectComponent = ({display='hidden', options, label,selectedOption, setSe
     <div className={styles.container}>
       {label && <label style={{display}}  className={styles.label}>{label}</label>}
       <div className={styles.heading} onClick={() => setOpen(!open)} style={style} >
-        <h3  >{selectedOption || head}</h3>
+      <h3 style={{ color: selectedOption ? '#000' : '#00000082' }}>
+  {selectedOption || head}
+</h3>
         <Image src={imgPath} width={w} height={h} alt='drop icon' />
       </div>
       {
