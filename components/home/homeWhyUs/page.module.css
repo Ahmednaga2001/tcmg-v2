@@ -14,9 +14,7 @@
     text-align: center;
 }
 .swiperContainer{
-    padding-top: 80px;
-    width: 85%;
-    margin: auto;
+    padding-top: 50px;
 }
 
 .ourTeam {
@@ -45,9 +43,8 @@
     flex-wrap: wrap;
 }
 .SwiperSlide{
-    width: 28.5rem !important;
-    height: 30rem;
-    position: relative;
+    width: 100%;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,23 +72,17 @@
     text-align: center;
 }
 
+@media (max-width: 800px){
+    .whyUs {
+        padding: 32px 16px !important;
+    }
+}
 
-@media (max-width: 1191px) {
-    .swiperContainer{
-      width: 100%;
+@media (max-width: 400px){
+    .heading h2 {
+        font-size: 24px;
     }
-    .SwiperSlide{
-      width: 28rem !important;
-  
+    .heading p {
+        font-size: 14px;
     }
-    
-  }
-  
-  @media (max-width: 767px) {
-  
-    .SwiperSlide{
-      width: 100% !important;
-      
-    }
-  }
-  
+}

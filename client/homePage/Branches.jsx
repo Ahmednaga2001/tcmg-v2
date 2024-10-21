@@ -2,7 +2,7 @@
 
 import Flickity from "react-flickity-component";
 import "flickity/dist/flickity.min.css";
-import styles from "@/app/page.module.css";
+import styles from "./page.module.css";
 import Image from "next/image";
 
 const branches = [
@@ -59,7 +59,6 @@ function Branches() {
             <span>{branch.name}</span>
             <div className={`link ${styles.link}`}>
               <p> تعرف علي فروعنا</p>
-
               <Image
                 src="assets/icons/arrow-left.svg"
                 alt="Arrow Left Small"

@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -12,6 +12,7 @@ const lawyers = [
     id: 1,
     name: "النزاهة والسرعة في تقديم الخدمات",
     img: "/assets/images/homePage/Frame 48010.svg",
+    alt: "حلول قانونية سريعة",
     w: 164,
     h: 182,
   },
@@ -19,6 +20,7 @@ const lawyers = [
     id: 2,
     name: "فعالية الحلول القانونية",
     img: "/assets/images/homePage/Frame 48003.svg",
+    alt: "حلول قانونية فعالة",
     w: 182,
     h: 182,
   },
@@ -26,6 +28,7 @@ const lawyers = [
     id: 3,
     name: "حفظ أسرار العملاء",
     img: "/assets/images/homePage/Frame 48005.svg",
+    alt: "مكتب محاماة موثوق",
     w: 182,
     h: 164,
   },
@@ -33,6 +36,7 @@ const lawyers = [
     id: 4,
     name: "جمع الخبرات المختلفة",
     img: "/assets/images/homePage/Vector.svg",
+    alt: "حلول قانونية شاملة",
     w: 221,
     h: 150,
   },
@@ -40,6 +44,7 @@ const lawyers = [
     id: 5, // Changed duplicate id to unique id
     name: "إتمام المعاملات القانونية",
     img: "/assets/images/homePage/Frame 48008.svg",
+    alt: "حل المشاكل القانونية",
     w: 182,
     h: 182,
   },
@@ -47,6 +52,7 @@ const lawyers = [
     id: 6,
     name: "بناء علاقات استراتيجية دائمة",
     img: "/assets/images/homePage/Vectorx.svg",
+    alt: "علاقات استراتيجية دائمة",
     w: 182,
     h: 166,
   },
@@ -54,6 +60,7 @@ const lawyers = [
     id: 7,
     name: "التخصص في كافة فروع القانون",
     img: "/assets/images/homePage/Frame 48011.svg",
+    alt: "خبراء في كل مجالات القانون",
     w: 182,
     h: 165,
   },
@@ -73,33 +80,49 @@ const HomeWhyUs = () => {
           التعامل معنا:
         </p>
       </div>
-      <div className={styles.swiperContainer}>
+      <div className={`${styles.swiperContainer}`} id='swiperSlide'>
         <Swiper
           effect="coverflow"
-          spaceBetween={100}
-          centeredSlides={true} // Center the active slide
-          slidesPerView={'auto'}
-          grabCursor={true}
-          coverflowEffect={
-            {
-              rotate: 0,
-              stretch: 0,
-              depth: 100,
-              modifier: 2.5,
-              slideShadows: false,
-          }
-        }
+          spaceBetween={10}
+          centeredSlides={true}
+          slidesPerView={1}
+          breakpoints={{
+            480: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 1.7,
+              spaceBetween: 20,
+            },
+            1000: {
+              slidesPerView: 2.5,
+              spaceBetween: 20,
+            },
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          }}
           loop={true}
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
           }}
-          modules={[Navigation, Autoplay, Pagination , EffectCoverflow]} // Added modules back
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          style={{
+            '--swiper-navigation-color': '#fff',
+            '--swiper-pagination-color': '#fff',
+          }}
+          modules={[Navigation, Autoplay, Pagination]} // Added modules back
         >
           {lawyers.map((lawyer) => (
             <SwiperSlide key={lawyer.id} className={styles.SwiperSlide}>
               <div className={styles.card}>
-                <Image src={lawyer.img} alt={lawyer.name} width={lawyer.w} height={lawyer.h} />
+                <Image src={lawyer.img} alt={lawyer.alt} width={lawyer.w} height={lawyer.h} />
                 <p>{lawyer.name}</p>
               </div>
             </SwiperSlide>

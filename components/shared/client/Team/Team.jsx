@@ -9,8 +9,8 @@ import Image from "next/image";
 
 
 
-const Team = ({lawyers}) => {
-  
+const Team = ({ lawyers }) => {
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleSlideChange = (swiper) => {
@@ -19,10 +19,10 @@ const Team = ({lawyers}) => {
 
   return (
     // <section className={styles.team}>
-      <div className={styles.swiperContainerWrapper} id="featureSlide">
-       <div className={styles.swiperContainer}>
-       <Swiper
-        effect={"coverflow"}
+    <div className={styles.swiperContainerWrapper} id="featureSlide">
+      <div className={styles.swiperContainer}>
+        <Swiper
+          effect={"coverflow"}
           spaceBetween={100}
           centeredSlides={true} // Center the active slide
           slidesPerView={'auto'}
@@ -34,14 +34,14 @@ const Team = ({lawyers}) => {
               depth: 100,
               modifier: 2.5,
               slideShadows: false,
+            }
           }
-        }
           loop={true}
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
           }}
-          modules={[Navigation, Autoplay,EffectCoverflow]}
+          modules={[Navigation, Autoplay, EffectCoverflow]}
           onSlideChange={handleSlideChange}
         >
           {lawyers?.map((lawyer, index) => (
@@ -59,7 +59,7 @@ const Team = ({lawyers}) => {
               <div className={styles.card}>
                 <Image
                   src={lawyer.img}
-                  alt={lawyer.name}
+                  alt={lawyer.alt}
                   width={279}
                   height={300}
                 />
@@ -69,8 +69,8 @@ const Team = ({lawyers}) => {
             </SwiperSlide>
           ))}
         </Swiper>
-       </div>
       </div>
+    </div>
     // </section>
   );
 };
