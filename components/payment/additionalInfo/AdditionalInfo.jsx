@@ -51,7 +51,7 @@ export default function AdditionalInfo({ onNextStep }) {
                             border: "1px solid #fff",
                         }}
                         color="#fff" 
-                        display = "block"
+                        
 
                     />
                     <SelectComponent 

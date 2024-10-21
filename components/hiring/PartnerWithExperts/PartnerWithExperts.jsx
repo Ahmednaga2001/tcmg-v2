@@ -7,30 +7,35 @@ const lawyers = [
     name: "محمد أبو ضيف",
     category: "الرئيس التنفيذي",
     img: "/assets/images/homePage/lawyers/محمد ابوضيف.png",
+    alt : "رئيس تنفيذي لمكتب محاماة دولى فى مصر"
   },
   {
     id: 2,
     name: "هشام محمود",
     category: "محامي جنائي",
     img: "/assets/images/homePage/lawyers/هشام محمود.png",
+    alt : "محامي جنائي في مصر"
   },
   {
     id: 3,
     name: "خلف حسين",
     category: "محامي مدني",
     img: "/assets/images/homePage/lawyers/خلف حسين.png",
+    alt : "محامي مدني في مصر"
   },
   {
     id: 4,
     name: "سهى خيري",
     category: "محامية بنوك",
     img: "/assets/images/homePage/lawyers/سهي خيري.png",
+    alt : "محامي بنوك في مصر"
   },
   {
     id: 5,
     name: "كرم موريس",
     category: "محامي شركات",
     img: "/assets/images/homePage/lawyers/كرم موريس.png",
+    alt : "محامي شركات في مصر"
   },
 ];
 const PartnerWithExperts = () => {

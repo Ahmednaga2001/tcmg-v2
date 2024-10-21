@@ -11,40 +11,10 @@ import Team from "@/components/shared/client/Team/Team";
 import Links from "@/components/shared/linksPagination/Links";
 import styles from "./page.module.css";
 export const metadata={
-  title : "Hiring"
+  title : "Hiring",
+  description : "انضم إلى فريق TCMG للمحاماة واكتشف وظائف محامين مميزة تٌمَكنك من العمل في بيئة تدعم التطور المهني. ابنِ مسيرتك المهنية الواعدة وحقق طموحاتك في عالم المحاماة."
 }
-const lawyers = [
-  {
-    id: 1,
-    name: "محمد أبو ضيف",
-    category: "الرئيس التنفيذي",
-    img: "/assets/images/homePage/lawyers/محمد ابوضيف.png",
-  },
-  {
-    id: 2,
-    name: "هشام محمود",
-    category: "محامي جنائي",
-    img: "/assets/images/homePage/lawyers/هشام محمود.png",
-  },
-  {
-    id: 3,
-    name: "خلف حسين",
-    category: "محامي مدني",
-    img: "/assets/images/homePage/lawyers/خلف حسين.png",
-  },
-  {
-    id: 4,
-    name: "سهى خيري",
-    category: "محامية بنوك",
-    img: "/assets/images/homePage/lawyers/سهي خيري.png",
-  },
-  {
-    id: 5,
-    name: "كرم موريس",
-    category: "محامي شركات",
-    img: "/assets/images/homePage/lawyers/كرم موريس.png",
-  },
-];
+
 function Hiring() {
   return (
     <div className={styles.hiringPage}>
@@ -57,7 +27,6 @@ function Hiring() {
       <HiringCareerProgressSteps />
       <HiringWhyChooseUs />
       <PartnerWithExperts />
-      {/* <Team lawyers={lawyers} /> */}
       <HiringTcmgJob />
       <HiringGraduationForm />
       <Accordion />

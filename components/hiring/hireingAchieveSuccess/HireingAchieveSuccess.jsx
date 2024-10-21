@@ -9,7 +9,8 @@ const HireingAchieveSuccess = () => {
           className={styles.img}
           width={407}
           height={533}
-          alt="/assets/images/hiring/imageone.png"
+          alt="وظائف محامين في مصر"
+          style={{color:"#fff"}}
         />
       </div>
       <div className={styles.content}>

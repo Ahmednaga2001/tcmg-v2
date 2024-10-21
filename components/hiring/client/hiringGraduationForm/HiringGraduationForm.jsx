@@ -66,19 +66,19 @@ const HiringGraduationForm = () => {
   return (
     <section className={styles.graduationForm}>
       <div className={styles.formPage}>
-        <h2>استمارة لطلب توكيل محامي متخصص</h2>
+        <h2>إستمارة التوظيف</h2>
         <form action="">
           <div className={styles.names}>
             <Input
               label="الاسم الاول"
-              imgPath="/assets/icons/form/user.png"
+              imgPath="/assets/icons/form/solar_user-bold.svg"
               placeholder="الاسم الاول"
               alt={"person icon"}
             />
 
             <Input
               label="اسم العائلة"
-              imgPath="/assets/icons/form/user.png"
+              imgPath="/assets/icons/form/solar_user-bold.svg"
               placeholder="اسم العائلة"
               alt={"person icon"}
             />
@@ -86,14 +86,14 @@ const HiringGraduationForm = () => {
 
           <Input
             label="البريد الالكتروني"
-            imgPath="/assets/icons/form/email.png"
+            imgPath="/assets/icons/form/ic_round-email.svg"
             placeholder="البريد الالكتروني"
             alt={"email icon"}
           />
 
           <Input
             label="رقم الهاتف"
-            imgPath="/assets/icons/form/phone.png"
+            imgPath="/assets/icons/form/ic_round-phone.svg"
             placeholder="رقم الهاتف"
             alt={"phone icon"}
           />
@@ -103,19 +103,26 @@ const HiringGraduationForm = () => {
             options={officeOptions}
             selectedOption={selectedOffice}
             setSelectedOption={setSelectedOffice}
+            imgPath="/assets/icons/form/mdi_arrow-down-drop.svg"
+            w={24}
+            h={24}
           />
           <SelectComponent
             head={"اختر الوظيفة"}
             options={jobOptions}
             selectedOption={selectedJob}
             setSelectedOption={setSelectedJob}
+            imgPath="/assets/icons/form/mdi_arrow-down-drop.svg"
+            w={24}
+            h={24}
           />
 
           <Input
             label="منطقة السكن الحالى / المحافظة"
-            imgPath="/assets/icons/form/location.png"
+            imgPath="/assets/icons/form/mdi_location.svg"
             placeholder={"منطقة السكن الحالى / المحافظة"}
             alt={"location icon"}
+          
           />
 
           <div className={styles.inp}>

@@ -15,20 +15,24 @@
   font-size: 14px;
 }
 .heading{
-    background-color: #fff;
+    /* background-color: #fff; */
+    background: linear-gradient(rgba(255, 255, 255,.03) 0%, rgba(216, 216, 216, .03));
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 12px;
    
     width: 100%;
-    color: #00000082;
+    /* color: #00000082; */
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid #fff;
 
   }
   .heading h3{
     font-size: 14px;
     font-weight: lighter;
+    color: #fff;
   }
   .options{
     background-color: #ffffff;

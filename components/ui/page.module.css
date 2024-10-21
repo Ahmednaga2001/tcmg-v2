@@ -9,26 +9,32 @@
   font-size: 14px;
 }
 .inp {
-  background-color: #fff;
+  /* background-color: #fff; */
+  background: linear-gradient(rgba(255, 255, 255,.03) 0%, rgba(216, 216, 216, .03));
   display: flex;
   align-items: center;
   padding: 10px;
   gap: 10px;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
+  border: 1px solid #fff;
+
+
 
 }
+
 .inp input {
   background-color: transparent;
   width: 100%;
   outline: none;
   border: none;
-  color: #000; /* Text color */
+  color: #fff; /* Text color */
+  font-size: 18px;
 }
 
 /* Placeholder color */
 .inp input::placeholder {
-  color: #00000082; 
+  color: #9D9D9D; 
 }
 
 .select {
@@ -48,6 +54,7 @@
   width: 100%;
   outline: none;
   border: none;
+
 }
 .hiddenLabel {
   /* display: none;  */
