@@ -5,21 +5,21 @@ const data = [
   {
     title: "تحقيق الأهداف القانونية",
     desc: "يمكننا ضمان لك بعد انتهائك من إجراءات توكيل محامي, تحقيق جميع أهدافك القانونية باحترافية عالية وفي أسرع وقت ممكن.",
-    path: "/assets/icons/hireattorny/icon1.png",
+    path: "/assets/icons/hireattorny/icon1.svg",
     w : 48,
     h : 35
   },
   {
     title: "الترافع أمام المحاكم",
     desc: "ينوب عنك المحامي الذي وكّلته في قضاياك القانونية بالمثول أمام المحاكم بقوة؛ دفاعًا عن حقوقك, واستشهادًا بنصرة قضيتك.",
-    path: "/assets/icons/hireattorny/icon2.png",
+    path: "/assets/icons/hireattorny/icon2.svg",
     w : 48,
     h : 42
   },
   {
     title: "بناء علاقات استراتيجية",
     desc: "يسعى محامونا في المجموعة التجارية والبحرية لبناء علاقات استراتيجة مع عملائنا تقويةً للعلاقات الناشئة بين المحامي والموكِّل.",
-    path: "/assets/icons/hireattorny/icon3.png",
+    path: "/assets/icons/hireattorny/icon3.svg",
     w : 48,
     h : 29
   },

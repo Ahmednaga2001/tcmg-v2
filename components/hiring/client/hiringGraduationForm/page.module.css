@@ -5,8 +5,7 @@
   border-radius: 32px;
   width: 80%;
   margin: auto;
-  /* backdrop-filter: blur(5px);
-  background-color: #dddddd27; */
+
   padding: 80px;
   border: 1px solid #ffffff28;
 }
@@ -15,7 +14,6 @@
   gap: 20px;
 }
 .graduationForm .inp {
-  /* background-color: #fff; */
   background: linear-gradient(rgba(255, 255, 255,.03) 0%, rgba(216, 216, 216, .03));
 
   display: flex;
