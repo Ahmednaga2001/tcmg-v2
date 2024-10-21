@@ -4,7 +4,7 @@ const ConsultSupportCard = ({title , path , w , h}) => {
   return (
     <div className={styles.card}>
     <div className={styles.topCard}>
-        <Image src = {path} width={w} height={h} alt={path}/>
+        <Image src = {path} width={w} height={h} alt={title}/>
     </div>
     <span>{title}</span>
 

@@ -23,6 +23,7 @@
     gap: 20px;
     flex-basis: 300px;
     flex-grow: 1;
+   
 }
 
 .customer:nth-of-type(odd) {
@@ -39,6 +40,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+   
 }
 
 .customer .top .left {
@@ -64,6 +66,10 @@
     padding: 30px;
     height: 350px;
     border-top-left-radius: 50px;
+    font-weight: bold;
+    color: #111111;
+    line-height: 1.4;
+    
 }
 
 .customer .bottom img {

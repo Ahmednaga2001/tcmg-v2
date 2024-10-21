@@ -20,6 +20,9 @@
     font-family: janna bol;
     font-size: 26px;
   }
+  .card span{
+    font-weight: bold;
+  }
   .whyUs .cards {
     display: flex;
     justify-content: space-between;

@@ -12,11 +12,11 @@ const data = [
     desc: "اختار استشارتك المطلوبة التي تناسب احتياجاتك، سواء استشارة قانونية فورية عبر الاتصال أو تحديد موعد لزيارتنا بمكتبنا بالقاهرة أو من خلال حجز استشارة قانونية أون لاين عبر تحديد موعد اجتماع مع مستشار قانوني متخصص.",
     images: [
       {
-        path: "/assets/images/legalconsultations/whatsup.png",
-        label: "استشارة واتس آب",
+        path: "/assets/icons/legalconsultations/whatsup.svg",
+        label: "اجتماع اونلاين",
       },
       {
-        path: "/assets/images/legalconsultations/استشارة مكتبية.png",
+        path: "/assets/icons/legalconsultations/استشارة مكتبية.svg",
         label: "استشارة مكتبية",
       },
     ],
