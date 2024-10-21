@@ -25,3 +25,35 @@
       }
     
   }
+  @media (max-width:800px){
+    .tcmgPartnership{
+      padding: 60px 20px !important;
+    }
+    .tcmgPartnership h2{
+      text-align: start;
+      padding-bottom: 20px;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+    }
+    .tcmgPartnership p{
+      text-align: start;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16.8px;
+    }
+    .tcmgPartnership a{
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16.8px;
+      text-decoration-line: underline;
+    }
+    .tcmgPartnership div {
+      align-items: start;
+      gap: 10px;
+    }
+    
+  }

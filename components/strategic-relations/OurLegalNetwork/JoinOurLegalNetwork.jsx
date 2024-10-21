@@ -9,7 +9,8 @@ const JoinOurLegalNetwork = () => {
           className={styles.img}
           width={425}
           height={555}
-          alt="Mask group image"
+          alt="بروتوكول تعاون مع TCMG"
+          style={{color:"#fff"}}
         />
       </div>
       <div className={styles.content}>
