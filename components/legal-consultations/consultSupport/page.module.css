@@ -5,6 +5,9 @@
 .legalSupport p {
   text-align: center;
 }
+.legalSupport .heading p{
+  font-size: 16px;
+}
 /*-----------------------------------------------------------------*/
 .legalSupport p {
   padding-top: 20px;

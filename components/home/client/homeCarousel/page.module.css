@@ -90,6 +90,9 @@
     .carousel .bodyContent img{
         display: none;
     }
+    .carousel .caroChild div p {
+        width: 100%;
+    }
 }
 
 @media (max-width: 600px){

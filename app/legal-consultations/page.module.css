@@ -9,6 +9,9 @@
   }
   
   @media (max-width: 768px) {
+    .consultPage h1 , .consultPage h2{
+      font-size: 24px;
+    }
     .consultPage p {
       font-size: 16px;
     }

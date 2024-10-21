@@ -8,6 +8,9 @@
   gap: 10px;
   text-align: center;
 }
+.legalAdvice .heading p{
+  font-size: 16px;
+}
 .legalAdvice .card {
   /* background-color: #1b2340; */
   background:linear-gradient(#1B2340 0% , #0E152C 100%);
@@ -135,9 +138,7 @@
   .legalAdvice .heading h2 {
     font-size: 28px;
   }
-  .legalAdvice .heading p {
-    font-size: 20px;
-  }
+
   .legalAdvice .card {
     display: flex;
     flex-direction: column;
