@@ -8,7 +8,8 @@ import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
 export const ServiceOrCaseItemSlider = ({services}) => {
   return (
-    <Swiper
+    <div className={styles.Slides}>
+      <Swiper
       spaceBetween={30}
       effect="fade"
       pagination={{
@@ -16,18 +17,22 @@ export const ServiceOrCaseItemSlider = ({services}) => {
         horizontalClass: "--swiper-pagination-horizontal",
         type: "bullets",
       }}
+      navigation={true}
       loop={true}
       autoplay={{
         delay: 5000,
         disableOnInteraction: false,
       }}
-      modules={[EffectFade, Pagination, Autoplay]}
+      modules={[EffectFade, Pagination, Autoplay, Navigation]}
       style={{
         "--swiper-navigation-color": "#fff",
         "--swiper-pagination-color": "#fff",
         "--swiper-pagination-bullet-width": "12px",
         "--swiper-pagination-bullet-height": "12px",
-      }}>
+        "--swiper-navigation-top-offset": "25%",
+        "--swiper-navigation-sides-offset": "0px",
+      }}
+      >
         {
             services.map((service, index) => (
                 <SwiperSlide key={index} className={styles.SwiperSlide}>
@@ -42,7 +47,7 @@ export const ServiceOrCaseItemSlider = ({services}) => {
                           <h3>{service.header}</h3>
                           {service.date && <span className={styles.date}>{service.date}</span>}
                           <p>{service.body}</p>
-                         <span className="link" >
+                         <span className={`link ${styles.goPage}`} >
                             الذهاب إلي الصفحة
                             <Image
                               src="assets/icons/arrow-left.svg"
@@ -55,7 +60,9 @@ export const ServiceOrCaseItemSlider = ({services}) => {
                 </SwiperSlide>
             ))
         }
-        </Swiper>
+      </Swiper>
+    </div>
+   
         
   )
 }

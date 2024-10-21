@@ -12,7 +12,6 @@ const lawyers = [
     id: 1,
     name: "النزاهة والسرعة في تقديم الخدمات",
     img: "/assets/images/homePage/Frame 48010.svg",
-    alt: "حلول قانونية سريعة",
     w: 164,
     h: 182,
   },
@@ -20,7 +19,6 @@ const lawyers = [
     id: 2,
     name: "فعالية الحلول القانونية",
     img: "/assets/images/homePage/Frame 48003.svg",
-    alt: "حلول قانونية فعالة",
     w: 182,
     h: 182,
   },
@@ -28,7 +26,6 @@ const lawyers = [
     id: 3,
     name: "حفظ أسرار العملاء",
     img: "/assets/images/homePage/Frame 48005.svg",
-    alt: "مكتب محاماة موثوق",
     w: 182,
     h: 164,
   },
@@ -36,7 +33,6 @@ const lawyers = [
     id: 4,
     name: "جمع الخبرات المختلفة",
     img: "/assets/images/homePage/Vector.svg",
-    alt: "حلول قانونية شاملة",
     w: 221,
     h: 150,
   },
@@ -44,7 +40,6 @@ const lawyers = [
     id: 5, // Changed duplicate id to unique id
     name: "إتمام المعاملات القانونية",
     img: "/assets/images/homePage/Frame 48008.svg",
-    alt: "حل المشاكل القانونية",
     w: 182,
     h: 182,
   },
@@ -52,7 +47,6 @@ const lawyers = [
     id: 6,
     name: "بناء علاقات استراتيجية دائمة",
     img: "/assets/images/homePage/Vectorx.svg",
-    alt: "علاقات استراتيجية دائمة",
     w: 182,
     h: 166,
   },
@@ -60,7 +54,6 @@ const lawyers = [
     id: 7,
     name: "التخصص في كافة فروع القانون",
     img: "/assets/images/homePage/Frame 48011.svg",
-    alt: "خبراء في كل مجالات القانون",
     w: 182,
     h: 165,
   },
@@ -122,7 +115,7 @@ const HomeWhyUs = () => {
           {lawyers.map((lawyer) => (
             <SwiperSlide key={lawyer.id} className={styles.SwiperSlide}>
               <div className={styles.card}>
-                <Image src={lawyer.img} alt={lawyer.alt} width={lawyer.w} height={lawyer.h} />
+                <Image src={lawyer.img} alt={lawyer.name} width={lawyer.w} height={lawyer.h} />
                 <p>{lawyer.name}</p>
               </div>
             </SwiperSlide>
