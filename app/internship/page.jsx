@@ -12,6 +12,8 @@ import Discover from "@/components/internship/discover/Discover";
 import Links from "@/components/shared/linksPagination/Links";
 export const metadata={
   title : "Internship",
+  description : "هل تبحث عن فرص تدريب محامين حديثي التخرج من كلية الحقوق؟ قدم طلب الآن لمكاتب TCMG للمحاماة وتدرب مع نخبة من أكفأ المحامين الممارسين في مصر",
+  keywords : "تدريب محامين حديثي التخرج"
 }
 function Internship() {
   return (

@@ -39,7 +39,7 @@ const InternGraduationForm = () => {
   return (
     <section className={styles.graduationForm}>
       <div className={styles.formPage}>
-        <h2>استمارة لطلب توكيل محامي متخصص</h2>
+      <h2>استمارة حديث التخرج </h2>
         <form action="">
           <div className={styles.names}>
 

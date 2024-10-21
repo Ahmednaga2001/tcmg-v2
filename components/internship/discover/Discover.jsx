@@ -9,7 +9,8 @@ const Discover = () => {
           className={styles.img}
           width={407}
           height={533}
-          alt="/assets/images/internship/imageone"
+          alt="التدريب في مكتب محاماة موثوق"
+          style={{color:"#fff"}}
         />
       </div>
       <div className={styles.content}>

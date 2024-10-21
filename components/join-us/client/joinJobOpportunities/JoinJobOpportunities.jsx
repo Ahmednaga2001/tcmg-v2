@@ -16,23 +16,23 @@ import Link from "next/link";
 const data = [
   {
     path: "/assets/images/joinus/cairo.png",
-    alt: "Cairo",
     title: "مصر - القاهرة",
+    alt : "وظائف محاماة في مصر"
   },
   {
     path: "/assets/images/joinus/saudia.png",
-    alt: "Saudia",
     title: "السعودية - الرياض",
+    alt:"وظيفة محامي في السعودية",
   },
   {
     path: "/assets/images/joinus/dubai.png",
-    alt: "Dubai",
     title: "الامارات - دبي",
+    alt : "وظائف قانونية في الامارات",
   },
   {
     path: "/assets/images/joinus/china.png",
-    alt: "China",
     title: "الصين - تشنغدو",
+    alt : "وظائف محامين في الصين"
   },
 ];
 const JoinJobOpportunities = () => {
@@ -105,7 +105,7 @@ const JoinJobOpportunities = () => {
               className={styles.swiperSlide}
             >
               <div className={styles.content}>
-                <Image src={el.path} width={364} height={295} alt={el.alt} />
+                <Image src={el.path} width={364} height={295} alt={el.alt} quality={100} />
                 <p className={styles.jobTitle}>{el.title}</p>
               </div>
             </SwiperSlide>

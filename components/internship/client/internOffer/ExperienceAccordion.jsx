@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import { useState } from "react";
 
-const ExperienceAccordion = ({ title, path, desc }) => {
+const ExperienceAccordion = ({ title, path, desc,alt }) => {
   const [isOpenOne, setIsOpenOne] = useState(false);
 
   const handleIsOpenOne = () => {
@@ -19,7 +19,7 @@ const ExperienceAccordion = ({ title, path, desc }) => {
               src={path}
               width={60}
               height={60}
-              alt={title}
+              alt={alt}
               className={styles.accordionItemIcon}
             />
             <span>{title}</span>
