@@ -9,7 +9,10 @@ import AboutMetrics from "@/components/about/KeyMetrics/AboutMetrics";
 import AboutSlider from "@/components/about/client/aboutSlider/AboutSlider";
 export const metadata = {
   title: "About",
+  description: "تعرف علينا الآن، المجموعة التجارية والبحرية للمحاماة أحد أكبر مكاتب المحاماة بمصر والوطن العربي، تعرف على بدايتنا وتطور حلولنا القانونية منذ عام 1986 ",
+  keywords: "المجموعة التجارية والبحرية للمحاماة،مكاتب TCMG للمحاماة"
 };
+
 function AboutUs() {
   return (
     <div className={styles.aboutPage}>

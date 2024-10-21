@@ -9,7 +9,7 @@ const AboutOwner = () => {
           className={styles.img}
           width={450}
           height={450}
-          alt="mohamed abu daif"
+          alt="الرئيس التنفيذي للمجموعة التجارية والبحرية"
         />
       </div>
       <div className={styles.ownerInfo}>

@@ -1,9 +1,9 @@
 import styles from "@/components/about/AboutVision/page.module.css";
 import Image from 'next/image'
-const VisionImg = ({imgStyle , path}) => {  
+const VisionImg = ({imgStyle , path,alt}) => {  
     
   return (
-    <Image src={path} width={280} height={280} className={styles[imgStyle]} alt='the image for vision section'/>
+    <Image src={path} width={280} height={280} className={styles[imgStyle]} alt={alt}/>
 
   )
 }
