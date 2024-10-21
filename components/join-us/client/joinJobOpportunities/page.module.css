@@ -75,6 +75,14 @@
   .jobOpportunities {
     padding: 20px;
   }
+  .jobOpportunities h2 {
+    width: 100%;
+    text-align: right;
+    padding-bottom: 13px;
+  }
+  .jobOpportunities p {
+    padding-top: 13px;
+  }
   .jobOpportunities img {
     width: 100%;
   }
