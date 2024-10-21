@@ -11,7 +11,9 @@ const EstablishHero = () => {
           <br />
           أصبح حلم ريادة الأعمال وتأسيس شركة راسخة واقعاً.
         </p>
-        <Link href="#">
+        <Link href="#"  
+            className={styles.assets}
+        >
           تعرف على المزيد
           <Image
             src="/assets/icons/establish/arrowleft.png"

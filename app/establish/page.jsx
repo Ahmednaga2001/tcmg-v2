@@ -8,6 +8,7 @@ import EstablishAchievement from "@/components/establish/establishAchievement/Es
 import EstablishCompanyTypes from "@/components/establish/client/establishCompanyTypes/EstablishCompanyTypes";
 import Slider from "@/components/shared/client/slider/Slider";
 import EstablishForm from "@/components/establish/client/establishForm/EstablishForm";
+import CompanyEst from "@/components/establish/companyEst/CompanyEst"
 export const metadata={
   title : "Establish"
 }
@@ -37,7 +38,8 @@ function Establish() {
     <EstablishLegalServices/>
     <EstablishAchievement/>
     <EstablishCompanyTypes/>
-      <Slider data = {sliderInfo} name='est'/>
+      {/* <Slider data = {sliderInfo} name='est'/> */}
+     <CompanyEst/>
       <EstablishForm/>
       <Accordion />
     </div>

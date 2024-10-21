@@ -23,23 +23,48 @@ const EstablishForm = () => {
         <h2>استمارة تأسيس الشركات</h2>
         <form action="">
           <div className={styles.names}>
-            <Input label="الاسم الاول" imgPath="/assets/icons/form/user.png" placeholder="الاسم الاول" alt="person icon" />
+         
+          <Input
+              label="الاسم الاول"
+              imgPath="/assets/icons/form/solar_user-bold.svg"
+              placeholder="الاسم الاول"
+              alt={"person icon"}
+            />
 
-            <Input label="اسم العائلة" imgPath="/assets/icons/form/user.png" placeholder="اسم العائلة" alt="person icon" />
+            <Input
+              label="اسم العائلة"
+              imgPath="/assets/icons/form/solar_user-bold.svg"
+              placeholder="اسم العائلة"
+              alt={"person icon"}
+            />
           </div>
 
-          <Input label="البريد الالكتروني" imgPath="/assets/icons/form/email.png" placeholder="البريد الالكتروني" alt="email icon" />
+          <Input
+            label="البريد الالكتروني"
+            imgPath="/assets/icons/form/ic_round-email.svg"
+            placeholder="البريد الالكتروني"
+            alt={"email icon"}
+          />
 
-          <Input label="رقم الهاتف" imgPath="/assets/icons/form/phone.png" placeholder="رقم الهاتف" alt="phone icon" />
+          <Input
+            label="رقم الهاتف"
+            imgPath="/assets/icons/form/ic_round-phone.svg"
+            placeholder="رقم الهاتف"
+            alt={"phone icon"}
+          />
 
-          <Input label="عدد الشركاء" imgPath="/assets/icons/form/user.png" placeholder="عدد الشركاء" alt="person icon" />
+          <Input label="عدد الشركاء" imgPath="/assets/icons/form/solar_user-bold.svg" placeholder="عدد الشركاء" alt="person icon" />
 
 
-          <SelectComponent options={options} head={'فئة العميل'} selectedOption={selectedOption} setSelectedOption={setSelectedOption} />
+          <SelectComponent options={options}
+            imgPath="/assets/icons/form/mdi_arrow-down-drop.svg"
+            w={24}
+            h={24}
+           head={'نوع الشركة'} selectedOption={selectedOption} setSelectedOption={setSelectedOption} />
 
           <Input label="رأس المال" placeholder="رأس المال" alt="money icon" />
 
-          <Input label="المقر" imgPath="/assets/icons/form/location.png" placeholder="المقر" alt="location icon" />
+          <Input label="المقر" imgPath="/assets/icons/form/mdi_location.svg" placeholder="المقر" alt="location icon" />
 
           <TextArea label="اكتب رسالتك هنا" placeholder="اكتب رسالتك هنا" />
 
