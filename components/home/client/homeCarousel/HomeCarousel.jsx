@@ -60,7 +60,6 @@ const HomeCarousel = () => {
               <p>{el.body}</p>
               <Image src={el.img} alt={el.img} width={130} height={100} />
             </div>
-
             <div>
             <span className="link">
               {el.span}
