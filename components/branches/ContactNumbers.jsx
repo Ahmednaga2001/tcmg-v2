@@ -31,7 +31,7 @@ const ContactNumbers = () => {
               w={335.33}
               h={475}
               path="/assets/images/branches/cairo.png"
-              alt="Cairo Egypt Locations"
+              alt=" طرق التواصل مع مجموعة مكاتب TCMG"
             />
           </div>
         </div>

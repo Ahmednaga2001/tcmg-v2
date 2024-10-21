@@ -27,10 +27,11 @@
     justify-content: space-between;
     align-items: center;
     border: 1px solid #fff;
+    
 
   }
   .heading h3{
-    font-size: 14px;
+    font-size: 18px;
     font-weight: lighter;
     color: #fff;
   }

@@ -76,6 +76,9 @@
 .locationInfo:not(:last-child) {
   border-bottom: 3px dashed rgba(128, 128, 128, 0.6);
 }
+.br{
+  display: none;
+}
 
 /*---------------------------------------------------------------------------------*/
 
@@ -122,36 +125,53 @@
 
 }
 
-@media (max-width: 768px) {
-  .contactNumbers img {
+@media (max-width: 800px) {
+  .contactNumbers {
+   display: none;
+  }
+  .contactNumbers {
+    position: relative;
+    background-image: url("/assets/images/branches/cairo.png");
+    background-size: cover;
     width: 100%;
+    height: 90vh;
+    overflow: hidden;
+  }
+  
+  .contactNumbers::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(27, 35, 64, 0.30) 36.8%, rgba(14, 21, 44, 0.55) 130%);
+    backdrop-filter: blur(10px); /* Example value, adjust as needed */
+    z-index: 1; /* Ensure it's above the background image */
+  }
+  
+  
+  .contactInformation {
+    background-image: none;
+    background-color: #1b2340;
+  }
+  .contactInformation h2{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44.8px;
+  }
+  .contactInformation p{
+    text-align: start;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.6px;
+    padding: 16px 0;
+  }
+  .br{
+    display: block;
   }
 
-  .contactForm {
-    font-size: 16px;
-  }
 
-  .contactInformation p {
-    font-size: 16px;
-    padding-top: 20px;
-  }
-
-  .contactNumbers .parentLocations {
-    width: 100%;
-  }
-
-
-
-  .contactNumbers .cardImg {
-    width: 100%;
-  }
-
-  .contactNumbers img {
-    width: 100%;
-  }
-
-  .contactForm .formPage {
-    width: 100%;
-    padding: 20px;
-  }
 }

@@ -13,7 +13,9 @@
   gap: 40px;
   font-size: 24px;
 }
-
+.br{
+  display: none;
+}
 @media (max-width: 1191px) {
   .hero .content {
     align-items: center;
@@ -25,8 +27,29 @@
   }
 
 }
-@media (max-width: 768px) {
-  .hero .content {
-    align-items: center;
+@media (max-width: 800px) {
+  .hero{
+    background-image: none;
+  }
+  .hero h2 {
+    text-align: start !important;
+    font-size: 32px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44.8px
+  }
+  .hero p {
+    text-align: start;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.6px;
+  }
+  .br{
+    display: block;
+  }
+  .hero .content{
+    width: 100%;
+    padding: 20px 0 20px 0;
   }
 }

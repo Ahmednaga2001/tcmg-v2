@@ -1,38 +1,63 @@
+"use client";
 import Image from "next/image";
 import CardImg from "../CardImg";
 import styles from "./page.module.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Autoplay, EffectFade,Pagination } from "swiper/modules";
+
+
 const BranchLocations = () => {
   return (
-    <section className={styles.locations}>
+    <section className={styles.locationsmob}>
       <div className={styles.egyLocations}>
         <h2>جمهورية مصر العربية</h2>
         <div className={styles.parent}>
           <div className={styles.parentLocations}>
-            <div className={styles.locationOne}>
-              <h3>العباسية (الفرع الرئيسي)</h3>
-              <p>
-                5 أبراج الملتقى - ميدان العباسية - بجانب محكمة شمال القاهرة
-                الابتدائية
-              </p>
-              <span>11517</span>
-              <span>القاهرة - مصر</span>
-              <a href="#" className={styles.locationLink}>
-                <Image src="/assets/icons/form/Map pin.png" width={16} height={16} alt="location icon" />
-                الفرع علي الخريطة
-                <Image src="/assets/icons/form/arrow-left-white.png" width={16} height={16} alt="location icon" />
-              </a>
-            </div>
-            <div className={styles.locationTwo}>
-              <h3>رمسيس</h3>
-              <p>83 برج مصر للتأمين - شارع رمسيس - أمام سنترال رمسيس</p>
-              <span>11522</span>
-              <span>القاهرة - مصر</span>
-              <a href="#" className={styles.locationLink}>
-                <Image src="/assets/icons/form/Map pin.png" width={16} height={16} alt="location icon" />
-                الفرع علي الخريطة
-                <Image src="/assets/icons/form/arrow-left-white.png" width={16} height={16} alt="location icon" />
-              </a>
-            </div>
+          <Swiper
+          spaceBetween={30}
+          effect="fade"
+          pagination={{ clickable: true }}
+          loop={true}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          modules={[EffectFade, Pagination, Autoplay]}
+          style={{
+            "--swiper-navigation-color": "#fff",
+            "--swiper-pagination-color": "#fff",
+            "--swiper-pagination-bullet-width": "12px",
+            "--swiper-pagination-bullet-height": "12px"
+          }}
+          
+          className={`swiper-branches ${styles.swiper}`}
+        >
+          
+          <SwiperSlide className={`swiper-branches ${styles.swiperSlide}`}>
+              <div className={styles.locationOne}>
+                <h3>العباسية (الفرع الرئيسي)</h3>
+                <p>
+                  5 أبراج الملتقى - ميدان العباسية - بجانب محكمة شمال القاهرة
+                  الابتدائية
+                </p>
+                <span>11517</span>
+                <span>القاهرة - مصر</span>
+              </div>
+          </SwiperSlide>
+          <SwiperSlide className={`swiper-branches ${styles.swiperSlide}`}>
+
+              <div className={styles.locationTwo}>
+                <h3>رمسيس</h3>
+                <p>83 برج مصر للتأمين - شارع رمسيس - أمام سنترال رمسيس</p>
+                <span>11522</span>
+                <span>القاهرة - مصر</span>
+              </div>
+          </SwiperSlide>
+        </Swiper>
           </div>
           <div className={styles.cardImg}>
             <CardImg
@@ -49,7 +74,44 @@ const BranchLocations = () => {
       <div className={styles.dubaiLocation}>
         <h2>الإمارات العربية المتحدة</h2>
         <div className={styles.parent}>
-          <div className={styles.cardImg}>
+          <div className={styles.parentLocations}>
+          <Swiper
+           slidesPerView={1}
+           style={{
+             "--swiper-pagination-color": "#fff",
+             "--swiper-pagination-bullet-inactive-color": "transparent",
+             "--swiper-pagination-bullet-inactive-opacity": "1",
+             "--swiper-pagination-bullet-size": "10px",
+             "--swiper-pagination-bullet-horizontal-gap": "6px"
+           }}
+           modules={[Autoplay, EffectFade, Pagination]}
+           autoplay={{ delay: 3000 }}
+           effect="fade"
+           pagination={{ clickable: true }}
+           className={styles.swiper}
+        >
+          
+          <SwiperSlide className={styles.swiperSlide}>
+          <div className={styles.locationOne}>
+              <h3>دبى</h3>
+              <p>(بالتعاون مع زايد الشحي للمحاماة)</p>
+              <span>مبنى المسعود - شارع آل مكتوم - بورسعيد</span>
+              <span>3669</span>
+              <span>دبي – الإمارات العربية المتحدة</span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className={styles.swiperSlide}>
+
+          <div className={styles.locationTwo}>
+              <h3> دبي</h3>
+              <p>(بالتعاون مع ذا ويلث تيلر لخدمات رجال الأعمال ذ.م.م)</p>
+              <span>48 مبنى بروج محور الشيخ زايد</span>
+              <span>دبى - الامارات العربية المتحدة</span>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+        </div>
+        <div className={styles.cardImg}>
             <CardImg
               classStyle="egyImg"
               w={551}
@@ -57,21 +119,6 @@ const BranchLocations = () => {
               path="/assets/images/branches/dubai.png"
               alt="فروع المجموعة التجارية والبحرية في الإمارات"
             />
-          </div>
-          <div className={styles.parentLocations}>
-            <div className={styles.locationOne}>
-              <h3>دبى</h3>
-              <p>(بالتعاون مع زايد الشحي للمحاماة)</p>
-              <span>مبنى المسعود - شارع آل مكتوم - بورسعيد</span>
-              <span>3669</span>
-              <span>دبي – الإمارات العربية المتحدة</span>
-            </div>
-            <div className={styles.locationTwo}>
-              <h3> دبي</h3>
-              <p>(بالتعاون مع ذا ويلث تيلر لخدمات رجال الأعمال ذ.م.م)</p>
-              <span>48 مبنى بروج محور الشيخ زايد</span>
-              <span>دبى - الامارات العربية المتحدة</span>
-            </div>
           </div>
         </div>
       </div>
@@ -145,7 +192,7 @@ const BranchLocations = () => {
               w={536.32}
               h={305}
               path="/assets/images/branches/jordan.png"
-              alt="فروع مكتب محاماة TCMG في الأردن"
+              alt=" فروع مكتب محاماة TCMG في الأردن"
             />
           </div>
         </div>
@@ -166,7 +213,7 @@ const BranchLocations = () => {
 
           <div className={styles.parentLocations}>
             <div className={styles.location}>
-              <h4>جنين</h4>
+              <h4>فلسطين</h4>
               <p>(بالتعاون مع فريحات للمحاماة)</p>
               <span>برج فريحات ط١ - شارع حيفا - بجانب بنك القاهرة عمان </span>
               <span>جنين - فلسطين</span>
