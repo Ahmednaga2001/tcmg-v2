@@ -12,6 +12,7 @@
         min-height: 100vh;
         position: relative;
         background-color: #1b2340;
+        
     }
     .contactForm::before {
         content: '';

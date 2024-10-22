@@ -175,6 +175,10 @@ margin: auto;
   display: flex;
   flex-direction: column;
 }
+.locationsmob .parentLocations .locationOne , .locationsmob .parentLocations .locationTwo{
+  padding-bottom: 20px;
+
+}
   .locationsmob .cardImg img{
       width: 100%;
   }
@@ -202,6 +206,7 @@ margin: auto;
     border-radius: 15px;
     opacity: 0.8;
     background: var(--primary-color, #0D152C);
+    padding-bottom: 10px;
   }
   .locationsmob .cardImg {
     border-radius: 25px;
@@ -212,6 +217,7 @@ margin: auto;
   .swiper-pagination-bullet {
     /* Optional: style the bullets */
     background: transparent !important; /* Change bullet color */ /* Adjust opacity */
+ 
   }
   .swiper-pagination-bullet-active {
     background: #fff !important; /* Change active bullet color */
@@ -247,5 +253,6 @@ margin: auto;
 }
 .locationsmob .parent .parentLocations{
   bottom: 5%;
+
 }
 }
