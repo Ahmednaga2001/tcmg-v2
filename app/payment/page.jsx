@@ -1,7 +1,6 @@
-
 "use client";  
-import React, { Suspense, useState } from 'react';  
-import { useSearchParams } from 'next/navigation';  
+import React, { Suspense, useState, useEffect } from 'react';  
+import { useSearchParams, useRouter } from 'next/navigation';  
 import styles from "./page.module.css";  
 import { Register } from '@/components/payment/register/Register';  
 import { Category } from '@/components/payment/category/Category';  
@@ -11,13 +10,13 @@ import FollowPayment from '@/components/payment/followPayment/FollowPayment';
 
 const heshamMahmod = {
     name: "هشام محمود",
-    desc: "هشام محمود محامي جنايات متمرس ومرخص من وزارة العدل لديه خبرة في القانون الجنائي وقضايا الأموال العامة وقانون الأحوال الشخصية في مصر والترافع أمام المحاكم المصرية بخبرة تتجاوز ال ١٢ سنة، كما عُرف بكونه محامي جنائي محنك تمكن من حل العديد من القضايا المعقدة.",
+    desc: "محامي جنايات متمرس ومرخص من وزارة العدل.",
     imgPath: "/assets/images/payment/hesham.png"
 };
 
 const ahmedSaid = {
     name: "أحمد السعيد",
-    desc: "محامٍ بارز في القانون التجاري يتمتع بـ 19 عامًا من الخبرة في قانون الشركات، والتحكيم التجاري الدولي، والرعاية الصحية، وقانون التكنولوجيا والاتصالات. يجيد صياغة العقود الدولية المعقدة والتفاوض على الصفقات الكبيرة. ويمتلك القدرة على التعامل مع العملاء من مختلف القطاعات، وحماية مصالحهم بكفاءة ومهنية عالية.",
+    desc: "محامٍ بارز في القانون التجاري.",
     imgPath: "/assets/images/payment/ahmedSaid.png"
 };
 
@@ -25,28 +24,42 @@ function Page() {
     const searchParams = useSearchParams();
     const fromBusinessPackage = searchParams.get('fromBusinessPackage') === 'true'; 
     const [currentStep, setCurrentStep] = useState(1); 
+    const router = useRouter();
 
     const handleNextStep = () => {         
-        setCurrentStep(currentStep + 1);    
+        setCurrentStep(prevStep => prevStep + 1);
+        window.history.pushState({ step: currentStep + 1 }, '', `?step=${currentStep + 1}`);
     }; 
 
     const handleStepClick = (step) => {
         if (step < currentStep) {
             setCurrentStep(step);
+            window.history.pushState({ step }, '', `?step=${step}`);
         }
     };
 
     const stepContent = (step) => {         
         if (step < currentStep) {             
-            return (                 
-                <img                     
-                    src={`/assets/icons/payment/correct.svg`}                     
-                    alt={`Step ${step}`}                  
-                />             
-            );         
+            return <img src={`/assets/icons/payment/correct.svg`} alt={`Step ${step}`} />;         
         }         
         return step;     
     }; 
+
+    useEffect(() => {
+        const handlePopState = (event) => {
+            if (event.state && event.state.step) {
+                setCurrentStep(event.state.step);
+            } else {
+                router.back(); // Navigate back if there's no state
+            }
+        };
+
+        window.addEventListener('popstate', handlePopState);
+
+        return () => {
+            window.removeEventListener('popstate', handlePopState);
+        };
+    }, [router]);
 
     return (         
         <div className={styles.paymentPage}>             
@@ -60,13 +73,11 @@ function Page() {
                     {currentStep === 5 && "متابعة الدفع"}             
                 </h2>                 
                 <ul className={styles.steps}>                     
-                    {Array.from({ length:5 }, (_, index) => index + 1)
+                    {Array.from({ length: 5 }, (_, index) => index + 1)
                         .map((step) => { 
-                            if (step === 2 && fromBusinessPackage) {
-                                return null; // تخطي الخطوة 2 في حالة باقة الأعمال
-                            } 
+                            if (step === 2 && fromBusinessPackage) return null; 
 
-                            const adjustedStep = step > 2 && fromBusinessPackage ? step - 1 : step; // ضبط الرقم للتوافق مع الخطوات
+                            const adjustedStep = step > 2 && fromBusinessPackage ? step - 1 : step; 
 
                             return (
                                 <li                              
@@ -89,7 +100,6 @@ function Page() {
             {currentStep === 2 && !fromBusinessPackage && <Category onNextStep={handleNextStep} />}
             {currentStep === 2 && fromBusinessPackage && <ChooseLawyer info={ahmedSaid} onNextStep={handleNextStep} />}
             {currentStep === 3 && !fromBusinessPackage && <ChooseLawyer info={heshamMahmod} onNextStep={handleNextStep} />} 
-            
             {currentStep === 3 && fromBusinessPackage && <AdditionalInfo onNextStep={handleNextStep} />}
             {currentStep === 4 && !fromBusinessPackage && <AdditionalInfo onNextStep={handleNextStep} />}
             {currentStep === 4 && fromBusinessPackage && <FollowPayment onNextStep={handleNextStep} />}
@@ -97,7 +107,6 @@ function Page() {
         </div>     
     ); 
 }  
-
 
 export default function Wrapper() {
     return (
