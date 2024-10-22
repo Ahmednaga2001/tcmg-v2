@@ -21,14 +21,15 @@ export default function ChooseLawyer({onNextStep}) {
                     <Image
                         src={"/assets/images/payment/أحمد السعيج 1.png"}
                         alt="title"
-                        width={163}
+                        width={183}
                         height={203}
+                        quality={100}
                     />
                 </div>
             </div>
             <button className={styles.btn} onClick={handleSubmit}>
                 المتابعة
-                <Image src="/assets/icons/form/arrow-left-black.png" width={24} height={24} alt="arrow-left icon" />
+                <Image  src="/assets/icons/form/arrow-left-black.png" width={24} height={24} alt="arrow-left icon" />
 
             </button>
         </div>

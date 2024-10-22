@@ -17,10 +17,10 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #fff;
-    color: #000;
+    /* background-color: #fff; */
     position: relative;
     padding: 10px;
+    font-weight: bold;
 }
 
 .steps li:not(:last-child)::after {
@@ -36,11 +36,20 @@
 }
 
 .paymentPage .steps li.active {
-    background-color: #845F38;
-    color: #fff;
+   /* border: 1px solid gray;
+   color: gray; */
+   background-color: #fff;
+   color: #000;
+
 }
-
-
+.completed{
+    background-color: #845F38;
+    /* background-image: url(/assets/icons/payment/correct.svg); */
+}
+.inactive{
+    color: gray;
+    border: 1px solid gray;
+}
 
 @media (max-width: 768px) {
     .paymentPage section {

@@ -5,6 +5,7 @@
     padding: 30px;
     width: 30%;
     font-size: 14px;
+    position: sticky;
 }
 .heading , .price{
     font-size: 18px;
