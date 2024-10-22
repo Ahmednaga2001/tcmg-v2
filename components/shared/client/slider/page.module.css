@@ -45,13 +45,34 @@
     transform: scale(1.2);
 }
 .branches .branche .content span:first-child{
-    font-size: 40px;
+    font-size: 45px;
     font-family: janna bol;
 }
+.branches .branche .content span:last-child{
+    font-size: 30px;
+}
 @media (max-width: 768px) {
+   
     .branches .branche .content span:first-child{
-        font-size: 30px;
+        font-size: 35px;
         font-family: janna bol;
+    }
+    .branche img{
+        background-color: red;
+        height: 600px;
+    }
+    .branches .branche .content span:last-child{
+        font-size: 20px;
+    }
+  
+}
+@media (max-width : 500px) {
+    .branches .branche .content span:first-child{
+        font-size: 25px;
+        font-family: janna bol;
+    }
+    .branches .branche .content span:last-child{
+        font-size: 18px;
     }
 }
 

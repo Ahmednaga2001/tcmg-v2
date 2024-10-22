@@ -14,16 +14,8 @@ const ExperienceAccordion = ({ title, path, desc }) => {
     <div>
       <div className={styles.accordionItem}>
         <div className={styles.accordionItemHeader} onClick={handleIsOpenOne}>
-          <div>
-            <Image
-              src={path}
-              width={80}
-              height={97}
-              alt={title}
-              className={styles.accordionItemIcon}
-            />
+          
             <span>{title}</span>
-          </div>
         </div>
         <div
           className={`${styles.accordionContent} ${

@@ -7,6 +7,7 @@ import BusinessExperience from '@/components/business/client/internOffer/Busines
 import BusinessAbout from '@/components/business/businessAbout/BusinessAbout'
 import Team from '@/components/shared/client/Team/Team'
 import Slider from '@/components/shared/client/slider/Slider'
+import TcmgPartnership from '@/components/business/tcmgPartnership/TcmgPartnership'
 const data = [
   {
     imgPath : "/assets/images/business/slideimg1.png",
@@ -15,8 +16,8 @@ const data = [
   },
   {
     imgPath : "/assets/images/business/slideimg2.png",
-    title : "إزدهار شركتك ونجاحها .. مسؤوليتنا,",
-    desc : "المجموعة التجارية والبحرية للمحاماة شريكك الأول لتحقيق أهدافك وتطوير أعمالك على أسس متينة."
+    title : "حلول قانونية مبتكرة تدعم نمو الأعمال في مصر والشرق الأوسط",
+    desc : "تقدم مكاتب TCMG حلولاً قانونية مبتكرة لدعم نجاح وتوسع أعمال الشركات، من التأسيس إلى الريادة بكل احترافية."
   },
   {
     imgPath : "/assets/images/business/slideimg3.png",
@@ -24,40 +25,11 @@ const data = [
     desc : "المجموعة التجارية والبحرية للمحاماة شريكك الأول لتحقيق أهدافك وتطوير أعمالك على أسس متينة."
   }
 ]
-const lawyers = [
-  {
-    id: 1,
-    name: "محمد أبو ضيف",
-    category: "الرئيس التنفيذي",
-    img: "/assets/images/homePage/lawyers/محمد ابوضيف.png",
-  },
-  {
-    id : 2,
-    name : "آية محمد",
-    category : "النقل والشحن",
-    img : "/assets/images/homePage/lawyers/آية محمد.png"
-  },
-  {
-    id : 3,
-    name : "دعاء قنديل",
-    category : "صياغة العقود وقانون الشركات",
-    img : "/assets/images/homePage/lawyers/دعاء قنديل.png"
-  },{
-    id : 4,
-    name : "أحمد سعيد",
-    category : "التحكيم التجاري وقانون الشركات",
-    img : "/assets/images/homePage/lawyers/أحمد سعيد.png"
-  },
-  {
-    id : 5,
-    name : "سهى خيري",
-    category : "التمويل والبنوك",
-    img : "/assets/images/homePage/lawyers/سهي خيري.png"
-  }
 
-];
 export const metadata={
-  title : "Business Partnerships",
+  title : "Corporate",
+  description : "خدمات الشركات ورجال الأعمال من مكاتب TCMG، قدم طلب لخدمات أعمال الشركات وتمتع بدعم قانوني قوي في مصر والشرق الأوسط في الدمج والاستحواذ والضرائب وأكثر.",
+  keywords : "خدمات رجال الأعمال، أعمال الشركات"
 }
 const page = () => {
   return (
@@ -67,8 +39,9 @@ const page = () => {
       <BusinessRoadToExcellence/>
       <BusinessExperience/>
       <BusinessAbout/>
-      <Team lawyers={lawyers}/>
+      
       <Slider data = {data}/>
+      <TcmgPartnership/>
     </div>
   )
 }

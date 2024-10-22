@@ -6,10 +6,11 @@ const BusinessAchieveSuccess = () => {
       <div className={styles.Img}>
         <Image
           src="/assets/images/business/imageone.png"
+          style={{color : "#fff"}}
           className={styles.img}
           width={407}
           height={533}
-          alt="/assets/images/hiring/imageone.png"
+          alt="صورة تعبر عن نجاح الأعمال"
         />
       </div>
       <div className={styles.content}>

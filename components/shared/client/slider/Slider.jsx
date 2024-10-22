@@ -36,7 +36,7 @@ function Slider({ data , name }) {
               src={item.imgPath}
               alt={item.title}
               width={1440}
-              height={460}
+              height={480}
             />
             <div className={styles.content}>
               <span>{item.title}</span>
