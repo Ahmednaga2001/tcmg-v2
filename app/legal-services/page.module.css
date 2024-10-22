@@ -18,4 +18,10 @@
    
   }
   
+  @media (max-width: 400px) {
+    .legalServicesPage h1,
+    .legalServicesPage h2 {
+      font-size: 24px;
+    }
+  }
   

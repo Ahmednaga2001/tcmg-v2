@@ -8,7 +8,8 @@ const data = [
       w1 : 64,
       h1: 64,
       w2 : 48,
-      h2 : 48
+      h2 : 48,
+      alt : "احترافية في تقديم خدمات قانونية"
       
     },
     {
@@ -20,7 +21,8 @@ const data = [
       w2 : 48,
       h2 : 48,
       w2 : 48,
-      h2 : 48
+      h2 : 48,
+      alt : "الحفاظ على الدقة والسرعة"
     },
     {
       title : "سنوات الخبرة",
@@ -29,7 +31,8 @@ const data = [
       w1 : 64,
       h1: 64,
       w2 : 48,
-      h2 : 48
+      h2 : 48,
+      alt : "سنوات من الخبرة في تقديم خدمات قانونية"
     },
     {
       title : "فعالية النتائج",
@@ -38,7 +41,8 @@ const data = [
       w1:61,
       h1 : 75,
       w2 : 48,
-      h2 : 48
+      h2 : 48,
+      alt : "نتائج فعالة"
     },
   ]
 const LegalServicesSuccessFactor = () => {
@@ -48,7 +52,7 @@ const LegalServicesSuccessFactor = () => {
     <div className={styles.parent}>
      {
       data.map((el,index)=>{
-        return <SuceessFactorCard title={el.title} w1={el.w1} h1={el.h1} w2={el.w2} h2={el.h2} desc={el.desc} path={el.path} key={index}/>
+        return <SuceessFactorCard title={el.title} w1={el.w1} h1={el.h1} w2={el.w2} h2={el.h2} alt={el.alt} desc={el.desc} path={el.path} key={index}/>
       })
      }
 

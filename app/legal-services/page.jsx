@@ -8,6 +8,8 @@ import LegalServicesSectors from "@/components/legal-services/legalServicesSecto
 import LegalServicesPractices from "@/components/legal-services/legalServicesSectorAndPractices/LegalServicesPractices";
 export const metadata = {
   title: 'Legal-Services',
+  description : "إذا واجهتك أي مشكلة قانونية وترغب في الحفاظ على حقوقك فما عليك إلا التوجه إلى مكاتب TCMG؛ للحصول على خدمات قانونية بمعايير عالمية المستوى من أفضل خبراء القانون.",
+  keywords : "خدمات قانونية، خدمات قانونية إلكترونية، خدمات مكتب المحاماة، باقة الخدمات القانونية"
 }
 function LegalServices() {
   return (
