@@ -5,19 +5,22 @@ const data = [
         title : "بناء علاقات استراتيجية قوية مع العملاء",
         path : "/assets/icons/legalconsultations/supportone.png",
         w : 132,
-        h : 93
+        h : 93,
+        alt : "بناء علاقات استراتيجية قوية"
     },
     {
         title : "متابعة مخصصة لما بعد الاستشارة",
         path : "/assets/icons/legalconsultations/supporttwo.png",
         w : 115,
-        h : 107
+        h : 107,
+        alt : "خدمة ما بعد أي استشاره قانونيه"
     },
     {
         title : "الدعم التام من أقوى المستشارين ",
         path : "/assets/icons/legalconsultations/supportthree.png",
         w : 87,
-        h : 107
+        h : 107,
+        alt : "مستشارين قانونيين داعمين"
     },
   
 ]
@@ -31,7 +34,7 @@ const ConsultSupport = () => {
         <div className={styles.parent}>
           {
             data.map((el,index)=>{
-                return <ConsultSupportCard  title = {el.title} path={el.path} w={el.w} h={el.h} key={index}/>
+                return <ConsultSupportCard  title = {el.alt} path={el.path} w={el.w} h={el.h} key={index}/>
             })
           }
 

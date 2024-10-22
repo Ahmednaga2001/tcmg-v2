@@ -14,7 +14,7 @@ const consultationsData = [
       src: "/assets/icons/legalconsultations/استشارة هاتفية.svg",
       width: 127,
       height: 129,
-      alt: "Phone Consultation Image",
+      alt: "الاستشارة القانونية الهاتفية",
     },
   },
   {
@@ -30,7 +30,7 @@ const consultationsData = [
       src: "/assets/icons/legalconsultations/whatsup.svg",
       width: 134,
       height: 135,
-      alt: "WhatsApp Consultation Image",
+      alt: "اجتماع اونلاين",
     },
   },
   {
@@ -47,7 +47,7 @@ const consultationsData = [
       src: "/assets/icons/legalconsultations/استشارة مكتبية.svg",
       width: 142,
       height: 139,
-      alt: "Office Consultation Image",
+      alt: "الاستشارة القانونية الهاتفيةاستشارة قانونية مكتبية",
     },
   },
     {
@@ -62,7 +62,7 @@ const consultationsData = [
         src: "/assets/icons/legalconsultations/استشارة شركات  .svg",
         width: 142,
         height: 137,
-        alt: "Company Consultation Image",
+        alt: "استشارة محامي شركات",
       },
     },
    

@@ -27,16 +27,17 @@ padding-top: 50px;
     }
     .lawyers .content h2{
         font-size: 28px;
+        color: red;
     }
-    .lawyers .content p{
+    /* .lawyers .content p{
         font-size: 20px;
-    }
+    } */
 }
 @media (max-width: 400px) {
     .lawyers .content h2{
         font-size: 24px;
     }
-    .lawyers .content p{
+    /* .lawyers .content p{
         font-size: 15px;
-    }
+    } */
 }

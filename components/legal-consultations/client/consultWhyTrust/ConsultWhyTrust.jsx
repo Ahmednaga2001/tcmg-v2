@@ -8,16 +8,19 @@ const data = [
     path: "/assets/images/legalconsultations/clients.png",
     title: "عدد العملاء السعداء",
     targetNumber: 3224,
+    alt : "عدد العملاء السعداء"
   },
   {
     path: "/assets/images/legalconsultations/users.png",
     title: "عدد مستشارين المكتب",
     targetNumber: 3224,
+    alt : "عدد مستشارين مكتب TCMG"
   },
   {
     path: "/assets/images/legalconsultations/experiences.png",
     title: "سنوات الخبرة",
     targetNumber: 3224,
+    alt : "سنوات خبرة فريقنا القانوني"
   },
 ];
 
@@ -76,7 +79,7 @@ const ConsultWhyTrust = () => {
               src={item.path}
               width={169}
               height={170}
-              alt={item.title} // Use title for alt attribute
+              alt={item.alt} // Use title for alt attribute
             />
             <Counter targetNumber={item.targetNumber} />
             <span>{item.title}</span>

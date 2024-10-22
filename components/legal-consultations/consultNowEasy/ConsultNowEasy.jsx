@@ -14,6 +14,7 @@ const data = [
       {
         path: "/assets/icons/legalconsultations/whatsup.svg",
         label: "اجتماع اونلاين",
+
       },
       {
         path: "/assets/icons/legalconsultations/استشارة مكتبية.svg",
@@ -27,13 +28,14 @@ const data = [
     title: "2- احجز موعدك",
     desc: "حدد موعد استشارتك بكل مرونة باختيار اليوم المطلوب لعقد الاستشارة والتوقيت المناسب خلال ساعات عملنا بما يناسب وقتك الثمين وسيكون المستشار القانوني مستعد للتواصل معك في الوقت المُحدد.",
     path: "/assets/images/legalconsultations/Calender.svg",
+    alt : "اختر موعد استشارتك القانونية",
     w: 300,
     h: 302,
   },
   {
     title: "3- املئ استمارة الاستشارة",
     desc: "املئ استمارة الاستشارة ببياناتك الصحيحة كالأسم ورقم الموبايل والبريد الإلكتروني واكتب نبذة عن قضيتك المراد عقد الاستشارة من أجله، وأخيراً تحديد تخصص المستشار القانوني المطلوب.",
-    path: "/assets/images/legalconsultations/استمارة الاستشارة.png",
+    // path: "/assets/images/legalconsultations/استمارة الاستشارة.png",
     w: 468,
     h: 64,
     data: [
@@ -50,6 +52,7 @@ const data = [
         path: "/assets/icons/legalconsultations/dropdownbutton.png",
         w: 14,
         h: 8,
+        alt : "Drop Down Icon"
       },
       {
         title: " اسم العميل",
@@ -57,6 +60,7 @@ const data = [
         path: "/assets/icons/legalconsultations/user.png",
         w: 27,
         h: 27,
+        alt : "User Icon"
       },
     ],
   },
@@ -66,6 +70,7 @@ const data = [
 
     path: "/assets/images/legalconsultations/card.png",
     path2: "/assets/images/legalconsultations/card2.png",
+    alt : 'دفع ثمن الاستشارة اونلاين',
     w: 248,
     h: 178,
     w2: 209,
@@ -75,6 +80,7 @@ const data = [
     title: "5- احصل على الدعم القانوني",
     desc: "بعد إتمام كل الخطوات أنت الآن مستعد لعقد استشارتك مع مستشارك القانوني المتخصص والمستعد لدعمك في قضيتك وهدفك القانوني المنشود. فلن تنتهي الاستشارة حتى تصل لحلول فعالة قادرة على تحقيق مرادك.",
     path: "/assets/images/legalconsultations/user.png",
+    alt : "الحصول على استشارة محامي",
     w: 197,
     h: 197,
   },
@@ -117,7 +123,7 @@ const ConsultNowEasy = () => {
               src={data[1].path}
               width={data[1].w}
               height={data[1].h}
-              alt={data[1].path}
+              alt={data[1].alt}
             />
           </div>
           <div className={styles.line}>
@@ -161,13 +167,13 @@ const ConsultNowEasy = () => {
                 src={data[3].path}
                 width={data[3].w}
                 height={data[3].h}
-                alt={data[3].path}
+                alt={data[3].alt}
               />
               <Image
                 src={data[3].path2}
                 width={data[3].w2}
                 height={data[3].h2}
-                alt={data[3].path2}
+                alt={data[3].alt}
                 className={styles.img2}
               />
             </div>
@@ -206,7 +212,7 @@ const ConsultNowEasy = () => {
               src={data[4].path}
               width={data[4].w}
               height={data[4].h}
-              alt={data[4].path}
+              alt={data[4].alt}
             />
           </div>
         </div>

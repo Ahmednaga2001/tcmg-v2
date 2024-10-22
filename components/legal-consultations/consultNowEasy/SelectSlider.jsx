@@ -22,7 +22,7 @@ const SelectSlider = ({ data}) => {
                   src={data[currentImage].path}
                   width={data[currentImage].w}
                   height={data[currentImage].h}
-                  alt="Dropdown Icon"
+                  alt={data[currentImage].alt}
                 />
               </div>
             </div>
