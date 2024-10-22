@@ -51,10 +51,11 @@ padding: 80px;
     display: block;
     text-align: center;
     font-weight: bold;
-    font-size: 25px;
-    background-color: gray;
+    font-size: 50px;
+    background-color: #DEDEDD;
     width: 100%;
     padding: 80px 50px;
+    color: var(--main);
 }
 .summary .parent {
   width: 100%; 
@@ -73,7 +74,7 @@ padding: 80px;
     
 }
 .summary table thead th{
-    background-color: #000;
+    background-color: var(--main);
     padding: 10px  !important;
 
 }
@@ -83,11 +84,13 @@ padding: 80px;
 
 }
 .summary table tbody tr:not(:last-child){
-    border-bottom: 1px solid #9d9d9d70;
+    border-bottom: 1px solid #9d9d9d49;
 
 }
 .summary table tbody td{
 padding: 10px;
+font-size: 22px;
+
 }
 .tax{
     display: flex;
@@ -95,7 +98,9 @@ padding: 10px;
     gap: 5px;
 
 }
-
+.total,.tax span:first-child{
+    font-weight: bold;
+}
 .tableContainer{
     overflow-x: auto;
 }
@@ -106,6 +111,9 @@ padding: 10px;
    
   }
 @media (max-width: 768px) {
+    .order{
+        font-size: 35px;
+    }
     .requestSummary section{
         padding: 20px;
     }

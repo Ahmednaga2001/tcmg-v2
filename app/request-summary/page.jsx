@@ -49,7 +49,7 @@ export default function RequestSummary() {
                 <td>EGP 299.00</td>
                 <td>EGP 299.00</td>
               </tr>
-              <tr>
+              <tr className={styles.total}>
                 <td>الإجمالي الفرعي</td>
                 <td></td>
                 <td>EGP 299.00</td>
