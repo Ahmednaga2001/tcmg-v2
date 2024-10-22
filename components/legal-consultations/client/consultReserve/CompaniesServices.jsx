@@ -38,6 +38,7 @@ const CompaniesServices = () => {
     <div className={styles.companiesServices}>
       <div className={styles.container}>
         {servicesData.map((service, index) => (
+       
           <div className={styles.card} key={index}>
             <div className={styles.topData}>
               <h3>{service.title}</h3>
@@ -71,7 +72,10 @@ const CompaniesServices = () => {
                 </span>
               ))}
             </div>
-            <Link href="/payment">
+            <Link href={{
+    pathname: service.title === "تأسيس شركات" ? "/business-registration" : "/payment",
+    query: { fromBusinessPackage: service.title === "أعمال شركات" }
+  }}>
               تحديد
               <Image
                 src="/assets/icons/legalconsultations/arrow-left.png"
