@@ -1,3 +1,4 @@
+
 "use client";  
 import React, { Suspense, useState, useEffect } from 'react';  
 import { useSearchParams, useRouter } from 'next/navigation';  
@@ -16,7 +17,7 @@ const heshamMahmod = {
 
 const ahmedSaid = {
     name: "أحمد السعيد",
-    desc: "محامٍ بارز في القانون التجاري يتمتع بـ 19 عامًا من الخبرة في قانون الشركات، والتحكيم التجاري الدولي، والرعاية الصحية، وقانون التكنولوجيا والاتصالات. يجيد صياغة العقود الدولية المعقدة والتفاوض على الصفقات الكبيرة. و يمتلك القدرة على التعامل مع العملاء من مختلف القطاعات، وحماية مصالحهم بكفاءة ومهنية عالية.",
+    desc: "محامٍ بارز في القانون التجاري يتمتع بـ 19 عامًا من الخبرة في قانون الشركات، والتحكيم التجاري الدولي، والرعاية الصحية، وقانون التكنولوجيا والاتصالات. يجيد صياغة العقود الدولية المعقدة والتفاوض على الصفقات الكبيرة. ويمتلك القدرة على التعامل مع العملاء من مختلف القطاعات، وحماية مصالحهم بكفاءة ومهنية عالية.",
     imgPath: "/assets/images/payment/ahmedSaid.png"
 };
 
@@ -26,15 +27,21 @@ function Page() {
     const [currentStep, setCurrentStep] = useState(1); 
     const router = useRouter();
 
+    useEffect(() => {
+        const step = parseInt(searchParams.get('step')) || 1; // Get step from URL
+        setCurrentStep(step);
+    }, [searchParams]);
+
     const handleNextStep = () => {         
-        setCurrentStep(prevStep => prevStep + 1);
-        window.history.pushState({ step: currentStep + 1 }, '', `?step=${currentStep + 1}`);
+        const nextStep = currentStep + 1;
+        setCurrentStep(nextStep);
+        router.push(`?step=${nextStep}&fromBusinessPackage=${fromBusinessPackage}`);
     }; 
 
     const handleStepClick = (step) => {
         if (step < currentStep) {
             setCurrentStep(step);
-            window.history.pushState({ step }, '', `?step=${step}`);
+            router.push(`?step=${step}&fromBusinessPackage=${fromBusinessPackage}`);
         }
     };
 
@@ -44,22 +51,6 @@ function Page() {
         }         
         return step;     
     }; 
-
-    useEffect(() => {
-        const handlePopState = (event) => {
-            if (event.state && event.state.step) {
-                setCurrentStep(event.state.step);
-            } else {
-                router.back(); // Navigate back if there's no state
-            }
-        };
-
-        window.addEventListener('popstate', handlePopState);
-
-        return () => {
-            window.removeEventListener('popstate', handlePopState);
-        };
-    }, [router]);
 
     return (         
         <div className={styles.paymentPage}>             
@@ -73,26 +64,25 @@ function Page() {
                     {currentStep === 5 && "متابعة الدفع"}             
                 </h2>                 
                 <ul className={styles.steps}>                     
-                    {Array.from({ length: 5 }, (_, index) => index + 1)
-                        .map((step) => { 
-                            if (step === 2 && fromBusinessPackage) return null; 
+                    {Array.from({ length: 5 }, (_, index) => index + 1).map((step) => { 
+                        if (step === 2 && fromBusinessPackage) return null; 
 
-                            const adjustedStep = step > 2 && fromBusinessPackage ? step - 1 : step; 
+                        const adjustedStep = (step > 2 && fromBusinessPackage) ? step - 1 : step; 
 
-                            return (
-                                <li                              
-                                    key={adjustedStep}                             
-                                    className={                                  
-                                        adjustedStep < currentStep ? styles.completed :                                  
-                                        adjustedStep === currentStep ? styles.active :                                  
-                                        styles.inactive                             
-                                    } 
-                                    onClick={() => handleStepClick(adjustedStep)} 
-                                >                             
-                                    {stepContent(adjustedStep)}                            
-                                </li>                     
-                            );
-                        })}                  
+                        return (
+                            <li                              
+                                key={adjustedStep}                             
+                                className={                                  
+                                    adjustedStep < currentStep ? styles.completed :                                  
+                                    adjustedStep === currentStep ? styles.active :                                  
+                                    styles.inactive                             
+                                } 
+                                onClick={() => handleStepClick(adjustedStep)} 
+                            >                             
+                                {stepContent(adjustedStep)}                            
+                            </li>                     
+                        );
+                    })}                  
                 </ul>           
             </section>              
 
@@ -115,3 +105,4 @@ export default function Wrapper() {
         </Suspense>
     );
 }
+
