@@ -58,6 +58,7 @@ const Team = ({ lawyers }) => {
             >
               <div className={styles.card}>
                 <Image
+                quality={100}
                   src={lawyer.img}
                   alt={lawyer.alt}
                   width={279}

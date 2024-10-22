@@ -14,6 +14,7 @@ const lawyers = [
     img: "/assets/images/homePage/Frame 48010.svg",
     w: 164,
     h: 182,
+    alt : "حلول قانونية سريعة"
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ const lawyers = [
     img: "/assets/images/homePage/Frame 48003.svg",
     w: 182,
     h: 182,
+    alt : "حلول قانونية فعالة"
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ const lawyers = [
     img: "/assets/images/homePage/Frame 48005.svg",
     w: 182,
     h: 164,
+    alt : "مكتب محاماة موثوق"
   },
   {
     id: 4,
@@ -35,6 +38,7 @@ const lawyers = [
     img: "/assets/images/homePage/Vector.svg",
     w: 221,
     h: 150,
+    alt : "حلول قانونية شاملة"
   },
   {
     id: 5, // Changed duplicate id to unique id
@@ -42,6 +46,7 @@ const lawyers = [
     img: "/assets/images/homePage/Frame 48008.svg",
     w: 182,
     h: 182,
+    alt : "حل المشاكل القانونية"
   },
   {
     id: 6,
@@ -49,6 +54,7 @@ const lawyers = [
     img: "/assets/images/homePage/Vectorx.svg",
     w: 182,
     h: 166,
+    alt : "علاقات استراتيجية دائمة"
   },
   {
     id: 7,
@@ -56,6 +62,7 @@ const lawyers = [
     img: "/assets/images/homePage/Frame 48011.svg",
     w: 182,
     h: 165,
+    alt : "خبراء في كل مجالات القانون"
   },
 ];
 
@@ -91,10 +98,13 @@ const HomeWhyUs = () => {
             1000: {
               slidesPerView: 2.5,
               spaceBetween: 20,
+          
             },
             1200: {
               slidesPerView: 3,
               spaceBetween: 40,
+          
+
             },
           }}
           loop={true}
@@ -102,10 +112,11 @@ const HomeWhyUs = () => {
             delay: 5000,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
+          // pagination={{
+          //   clickable: true,
+            
+          // }}
+          // navigation={true}
           style={{
             '--swiper-navigation-color': '#fff',
             '--swiper-pagination-color': '#fff',
@@ -115,7 +126,7 @@ const HomeWhyUs = () => {
           {lawyers.map((lawyer) => (
             <SwiperSlide key={lawyer.id} className={styles.SwiperSlide}>
               <div className={styles.card}>
-                <Image src={lawyer.img} alt={lawyer.name} width={lawyer.w} height={lawyer.h} />
+                <Image src={lawyer.img} alt={lawyer.alt} width={lawyer.w} height={lawyer.h} />
                 <p>{lawyer.name}</p>
               </div>
             </SwiperSlide>

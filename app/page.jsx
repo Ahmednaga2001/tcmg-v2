@@ -87,43 +87,7 @@ const cases = [
   },
 ];
 
-const lawyers = [
-  {
-    id: 1,
-    name: "محمد أبو ضيف",
-    category: "الرئيس التنفيذي",
-    alt: "رئيس تنفيذي لمكاتب TCMG للمحاماة ",
-    img: "/assets/images/homePage/lawyers/محمد ابوضيف.png",
-  },
-  {
-    id: 2,
-    name: "هشام محمود",
-    category: "محامي جنائي",
-    alt: "محامي جنائي في مصر",
-    img: "/assets/images/homePage/lawyers/هشام محمود.png",
-  },
-  {
-    id: 3,
-    name: "خلف حسين",
-    category: "محامي مدني",
-    alt: "محامي مدني في مصر",
-    img: "/assets/images/homePage/lawyers/خلف حسين.png",
-  },
-  {
-    id: 4,
-    name: "سهى خيري",
-    category: "محامية بنوك",
-    alt: "محامي بنوك في مصر",
-    img: "/assets/images/homePage/lawyers/سهي خيري.png",
-  },
-  {
-    id: 5,
-    name: "كرم موريس",
-    category: "محامي شركات",
-    alt: "محامي شركات في مصر",
-    img: "/assets/images/homePage/lawyers/كرم موريس.png",
-  },
-];
+
 
 
 const customers = [
@@ -190,7 +154,11 @@ const articles = [
 
 
 
-
+export const metadata = {
+  title: "Home",
+  description : "هل تبحث عن شركة محاماة دولية في مصر؟ اتصل الآن بمكتب محاماة TCMG، واحصل على دعم قانوني متميز لجميع الاحتياجات القانونية، في كلا الصعيدين المحلي والدولي.",
+  keywords : "مكتب محاماة دولي في مصر، شركة محاماة في مصر، مكتب محاماة واستشارات قانونية"
+};
 function Home() {
   return (
     <div className={styles.page}>

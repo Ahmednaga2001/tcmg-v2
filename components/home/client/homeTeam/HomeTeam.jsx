@@ -7,30 +7,36 @@ const lawyers = [
     id: 1,
     name: "محمد أبو ضيف",
     category: "الرئيس التنفيذي",
+    alt: "رئيس تنفيذي لمكاتب TCMG للمحاماة ",
     img: "/assets/images/homePage/lawyers/محمد ابوضيف.png",
   },
   {
     id: 2,
     name: "هشام محمود",
     category: "محامي جنائي",
+    alt: "محامي جنائي في مصر",
     img: "/assets/images/homePage/lawyers/هشام محمود.png",
   },
   {
     id: 3,
     name: "خلف حسين",
     category: "محامي مدني",
+    alt: "محامي مدني في مصر",
     img: "/assets/images/homePage/lawyers/خلف حسين.png",
+
   },
   {
     id: 4,
     name: "سهى خيري",
     category: "محامية بنوك",
+    alt: "محامي بنوك في مصر",
     img: "/assets/images/homePage/lawyers/سهي خيري.png",
   },
   {
     id: 5,
     name: "كرم موريس",
     category: "محامي شركات",
+    alt: "محامي شركات في مصر",
     img: "/assets/images/homePage/lawyers/كرم موريس.png",
   },
 ];

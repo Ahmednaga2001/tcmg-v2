@@ -10,21 +10,25 @@ const branches = [
     id: 1,
     img: "/assets/images/homePage/cities/Cairo.png",
     name: "القاهرة",
+    alt : "مكتب محاماة دولى فى مصر"
   },
   {
     id: 2,
     img: "/assets/images/homePage/cities/Ryad.png",
     name: "الرياض",
+    alt : "مكتب محاماة واستشارات قانونية في الرياض"
   },
   {
     id: 3,
     img: "/assets/images/homePage/cities/Dubay.png",
     name: "دبي",
+    alt : "شركة للمحاماة والاستشارات القانونية في دبي"
   },
   {
     id: 4,
     img: "/assets/images/homePage/cities/Chegendo.png",
     name: "تشغندو",
+    alt : "شركة محاماة دولية في الصين"
   },
 ];
 
@@ -52,7 +56,7 @@ function Branches() {
           <div className={styles.branche} key={branch.id}>
             <Image
               src={branch.img}
-              alt={branch.name}
+              alt={branch.alt}
               width={1440}
               height={460}
             />
