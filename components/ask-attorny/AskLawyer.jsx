@@ -8,6 +8,7 @@ const data = [
     path: "/assets/images/askattorny/internet.png",
     w: 199,
     h: 228,
+    alt : "موقع TCMG للمحاماة والإستشارات."
   },
   {
     title: "2- ستجد فورم بعنوان اسأل محامي",
@@ -15,6 +16,7 @@ const data = [
     path: "/assets/images/askattorny/form.png",
     w: 300,
     h: 300,
+    alt : "اسأل محامي من مكتبنا"
   },
   {
     title: "3- تقديم كافة التفاصيل المتعلقة بالقضية",
@@ -22,6 +24,7 @@ const data = [
     path: "/assets/images/askattorny/Form-Data.png",
     w: 95,
     h: 126,
+    alt : "تقديم كافة التفاصيل المتعلقة بالقضية"
   },
   {
     title: "4- توضيح أهدافك وما تتوقعه من الاستشارة القانونية",
@@ -29,6 +32,7 @@ const data = [
     path: "/assets/images/askattorny/g10.png",
     w: 102,
     h: 126,
+    alt : "املئ فورم اسال محامي"
   },
   {
     title: '5- اضغط على زر "إرسال"',
@@ -36,6 +40,7 @@ const data = [
     path: "/assets/images/askattorny/Send.png",
     w: 126,
     h: 156,
+    alt : "راسل محامي مصري"
   },
 ];
 const AskLawyer = () => {
@@ -74,7 +79,7 @@ const AskLawyer = () => {
               />
             </div>
             <div className={styles.Img}>
-              <Image src={el.path} width={el.w} height={el.h} alt={el.path} />
+              <Image quality={100} src={el.path} width={el.w} height={el.h} alt={el.alt} />
             </div>
           </div>
         ))}

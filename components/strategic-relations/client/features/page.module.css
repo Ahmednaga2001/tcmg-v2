@@ -104,7 +104,7 @@ height: 280px;
 }
 @media (max-width : 800px) {
   .accordionContent{
-    height: 650px;
+    height: 320px;
   } 
   .features h2{
     text-align: start;
@@ -146,6 +146,9 @@ height: 280px;
     line-height: 162%;
     width: 100%;
   }
+  .accordionItem p{
+    font-size: 10.591px !important;
+  }
   .accordionItemHeader > div:first-child {
   
     gap: 10px;
@@ -164,7 +167,9 @@ height: 280px;
   .accordionParent {
     grid-template-columns: repeat(1, 100%);
   }
-  
+  .accordionItem span{
+    font-size: 16px;
+  }
   .accordionContent{
     height: auto;
   }

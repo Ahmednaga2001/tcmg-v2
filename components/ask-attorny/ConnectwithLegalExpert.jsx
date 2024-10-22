@@ -9,7 +9,7 @@ const ConnectwithLegalExpert = () => {
           className={styles.img}
           width={407}
           height={533}
-          alt="/assets/images/askattorny/manuel-jimenez-BiyR1kDQpoE-unsplash 1.png"
+          alt="اسأل محامي في مصر من مكتب TCMG"
         />
       </div>
       <div className={styles.content}>

@@ -36,11 +36,11 @@
     color: #fff;
   }
   .options{
-    background-color: #ffffff;
-    color: #000000c5;
-    background-color: #1A2137 !important;
+    /* color: #000000c5; */
+    background-color: #1A2137 ;
     padding: 20px 0;
    position: absolute;
+   color: #fff;
    width: 100%;
    /* top: 0;
    left: 0;

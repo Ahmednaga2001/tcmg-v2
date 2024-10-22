@@ -5,7 +5,11 @@ import ConnectwithLegalExpert from "@/components/ask-attorny/ConnectwithLegalExp
 import About from "@/components/ask-attorny/About";
 import AskLawyerForm from "@/components/ask-attorny/client/AskLawyerForm";
 import PopUp from "@/components/ask-attorny/client/PopUp";
-
+export const metadata = {
+  title: "Ask a Lawyer",
+  description : "اسأل محامي مصري الآن من خلال اكبر مكتب محاماة في مصر والشرق الأوسط, مع خبرة لأكثر من 30 عاماً بالتميز والتفوق في مجال المحاماة وتقديم الاستشارات القانونية",
+  keywords :"اسال محامي في مصر، اسال محامي مصري اون لاين"
+};
 function AskAttorny() {
   
 

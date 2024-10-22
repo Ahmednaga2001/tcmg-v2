@@ -2,11 +2,7 @@
   width: 100%;
   height: 100%;
 }
-.page h1,
-.page h2 {
-  font-size: 50px;
-  line-height: 1.4;
-}
+
 .page section {
   padding: 80px;
 }
@@ -132,7 +128,6 @@
 }
 /*-------------------------------------------------------------------------*/
 .about {
-  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,9 +137,7 @@
   display: flex;
   justify-content: space-between;
 }
-.about h2 {
-  text-align: center;
-}
+
 .about p {
   width: 70%;
 }
@@ -175,6 +168,9 @@
   display: flex;
   justify-content: center;
   gap: 40px;
+}
+.ask .parent h3{
+  font-size: 30px;
 }
 .ask .content p,
 .content h3 {
@@ -217,6 +213,9 @@
 @media (max-width: 1191px) {
   .askParent {
     margin-top: 0;
+  }
+  .about h2 {
+    text-align: center;
   }
   .parent {
     flex-direction: column;
@@ -267,12 +266,13 @@
   text-align: center;
 }
 .askLawyerForm .formPage {
-  border-radius: 10px;
+  border-radius: 32px;
   width: 80%;
   margin: auto;
   padding: 80px;
-  backdrop-filter: blur(5px);
-  background-color: #dddddd27;
+  background: linear-gradient(rgba(255, 255, 255,.03) 0%, rgba(216, 216, 216, .03));
+  border: 1px solid #ffffff28;
+
 }
 .askLawyerForm .names {
   display: flex;
@@ -287,30 +287,31 @@
   width: 100%;
   border-radius: 10px;
   margin-top: 30px;
-  color: #000;
-}
-.askLawyerForm select {
+  border: 1px solid #fff;
+  background: linear-gradient(rgba(255, 255, 255,.03) 0%, rgba(216, 216, 216, .03));
+
   width: 100%;
-  padding: 10px;
-  outline: none;
-  border-radius: 10px;
-  color: #000;
-  margin-top: 30px;
-  border: none;
-}
-.askLawyerForm .formPage input[type="text"] {
-  background-color: transparent;
-  width: 100%;
-  outline: none;
-  border: none;
-}
+  border: 1px solid #fff;
+  }
+
+
+
+.inp span{
+  font-size: 20px;
+  }
+
 .askLawyerForm .formPage textarea {
-  resize: none;
-  background-color: transparent;
   width: 100%;
+  resize:none;
+  background-color: transparent;
   outline: none;
   border: none;
+  color: #fff;
+  font-size: 18px;
   height: 100px;
+}
+.formPage .inp:nth-child(6) textarea{
+  height: 50px;
 }
 .checkBox {
   display: flex;
@@ -336,7 +337,7 @@
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
   cursor: pointer;
-  color: grey;
+  color: #fff;
 }
 .formPage button:hover,
 .popup button:hover {
@@ -348,5 +349,19 @@
   .askLawyerForm .formPage {
     width: 100%;
     padding: 20px;
+  }
+  .names{
+    flex-direction: column;
+    gap: 0;
+  }
+  .ask .parent h3{
+    font-size: 24px;
+  }
+
+}
+@media (max-width: 400px) {
+  
+  .page h1 ,.page h2{
+    font-size: 24px;
   }
 }

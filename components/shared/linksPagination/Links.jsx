@@ -21,8 +21,8 @@ const Links = () => {
         محامين
       </Link>
       <Link
-        href="/strategic-relations"
-        className={pathName === "/strategic-relations" ? styles.activeLink : ""}
+        href="/protocol"
+        className={pathName === "/protocol" ? styles.activeLink : ""}
       >
         علاقات عامة
       </Link>
