@@ -1,7 +1,9 @@
 import React from 'react'
 import styles from "./page.module.css"
 import Image from 'next/image'
-export default function ChooseLawyer({onNextStep}) {
+export default function ChooseLawyer({onNextStep,info}) {
+    console.log(info);
+    
     const handleSubmit = (e) => {
         e.preventDefault();
         onNextStep(); // Trigger next step on form submission
@@ -12,15 +14,15 @@ export default function ChooseLawyer({onNextStep}) {
                 <div className={styles.cardContent}>
                     <div className={styles.heading}>
                         <span className={styles.bullet}></span>
-                        <span className={styles.lawyerName}>هشام محمود</span>
+                        <span className={styles.lawyerName}>{info.name}</span>
 
                     </div>
-                    <p className={styles.desc}>هشام محمود محامي جنايات متمرس ومرخص من وزارة العدل لديه خبرة في القانون الجنائي وقضايا الأموال العامة وقانون الأحوال الشخصية في مصر والترافع أمام المحاكم المصرية بخبرة تتجاوز ال ١٢ سنة، كما عُرف بكونه محامي جنائي محنك تمكن من حل العديد من القضايا المعقدة.</p>
+                    <p className={styles.desc}>{info.desc}</p>
                 </div>
                 <div className={styles.cardImg}>
                     <Image
-                        src={"/assets/images/payment/أحمد السعيج 1.png"}
-                        alt="title"
+                        src={info.imgPath}
+                        alt={info.name}
                         width={183}
                         height={203}
                         quality={100}

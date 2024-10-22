@@ -1,7 +1,5 @@
-import Link from "next/link";
+import ArticleForm from "@/components/articlDispaly/client/articleForm/ArticleForm";
 import styles from "./page.module.css"
-import Image from "next/image";
-import ArticleForm from "@/components/articlDispaly/client/articleForm/articleForm";
 const ArticleDisplay = () => {
     return (
        
