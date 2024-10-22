@@ -1,7 +1,6 @@
 
-
 "use client";  
-import React, { useState } from 'react';  
+import React, { Suspense, useState } from 'react';  
 import { useSearchParams } from 'next/navigation';  
 import styles from "./page.module.css";  
 import { Register } from '@/components/payment/register/Register';  
@@ -28,7 +27,7 @@ function Page() {
     const [currentStep, setCurrentStep] = useState(1); 
 
     const handleNextStep = () => {         
-        setCurrentStep(currentStep + 1);     
+        setCurrentStep(currentStep + 1);    
     }; 
 
     const handleStepClick = (step) => {
@@ -99,5 +98,11 @@ function Page() {
     ); 
 }  
 
-export default Page; 
 
+export default function Wrapper() {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <Page />
+        </Suspense>
+    );
+}
