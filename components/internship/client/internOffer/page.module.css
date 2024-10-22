@@ -197,6 +197,12 @@
   .accordionItemHeader>div span{
     font-size: 10px;
   }
+  .accordionItem p{
+    font-size: 10px !important;
+  }
+  .accordionContent{
+    height: 250px;
+  }
 }
 @media (max-width: 375px) {
   .accordionParent {
@@ -205,6 +211,7 @@
   .accordionItemHeader>div span{
     font-size: 16px;
   }
+  
   .accordionContent{
     height: auto;
   }

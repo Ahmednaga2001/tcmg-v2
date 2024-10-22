@@ -121,7 +121,7 @@
   .whyChooseContent p{
     text-align: start;
     padding-top: 0;
-    font-size: 14px;
+    font-size: 14px ;
     font-style: normal;
     font-weight: 400;
     line-height: 19.6px
@@ -143,6 +143,10 @@
     padding: 20px 10px;
     font-size: 14px;
     border-radius: 20px;
+  }
+  .accordionItem p{
+    font-size: 10.838px !important;
+
   }
   .accordionItem span{
     font-size: 10.838px;

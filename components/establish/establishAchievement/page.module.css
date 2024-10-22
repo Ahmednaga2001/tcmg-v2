@@ -30,14 +30,14 @@
   border-radius: 25px;
 }
 .countries .visioncontent {
-  height: 200px;
+  height: 220px;
   background: linear-gradient(rgba(255, 255, 255, 0.13) 0%, rgba(216, 216, 216, 0.13) 100%);
   padding: 20px;
   border-radius: 0  25px 25px 0;
   width: calc(100% - 275px);
 }
 .countries .visioncontentleft {
-  height: 200px;
+  height: 220px;
   padding: 20px;
   background: linear-gradient(rgba(255, 255, 255, 0.13) 0%, rgba(216, 216, 216, 0.13) 100%);
   border-radius: 25px 0 0 25px;
@@ -45,9 +45,9 @@
   
 }
 .visioncontent p {
-  width: 80%;
+  width: 90%;
 }
-@media (max-width: 1191px) {
+@media (max-width: 1250px) {
   .countries .vision {
     margin: auto;
     display: flex;
@@ -119,7 +119,12 @@
   }
   
 }
-
+.visioncontent h3 , .visioncontentleft h3{
+  font-size: 26px;
+}
+ .visioncontent p , .visioncontentleft p{
+  font-size: 20px;
+}
 @media (max-width: 600px){
   .countries .vision {
     border-radius: 40px;

@@ -15,8 +15,8 @@ const Links = () => {
         متدربين
       </Link>
       <Link
-        href="/hiring"
-        className={pathName === "/hiring" ? styles.activeLink : ""}
+        href="/careers"
+        className={pathName === "/careers" ? styles.activeLink : ""}
       >
         محامين
       </Link>

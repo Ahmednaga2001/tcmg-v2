@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import styles from "./page.module.css";
-const LegalServiceCard = ({ title, path, desc }) => {
+const LegalServiceCard = ({ title, path, desc,alt }) => {
   const [isOpenOne, setIsOpenOne] = useState(false);
 
   const handleIsOpenOne = () => {
@@ -17,7 +17,8 @@ const LegalServiceCard = ({ title, path, desc }) => {
             src={path}
             width={70}
             height={70}
-            alt={path}
+            alt={alt}
+            quality={100}
             className={styles.accordionItemIcon}
           />
           <span>{title}</span>

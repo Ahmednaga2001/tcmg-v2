@@ -27,6 +27,7 @@
    transition-duration: 200ms;
    transition-timing-function: ease-in-out;
    cursor: pointer;
+   font-weight: bold;
  }
  .hero a:hover {
    gap: 20px;

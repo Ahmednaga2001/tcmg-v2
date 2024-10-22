@@ -10,7 +10,9 @@ import Slider from "@/components/shared/client/slider/Slider";
 import EstablishForm from "@/components/establish/client/establishForm/EstablishForm";
 import CompanyEst from "@/components/establish/companyEst/CompanyEst"
 export const metadata={
-  title : "Establish"
+  title : "Establish",
+  description : "هل تبحث عن أفضل مكتب تأسيس شركات قانوني يقدم خدمة تأسيس الشركات  بأعلى الإمتيازات في مصر؟ قدم طلب الآن بتأسيس شركة مصرية واحصل على أفضل دعم في مجال أعمال الشركات القانوني.",
+  keywords : "مكتب تأسيس شركات، تأسيس الشركات في مصر"
 }
 const sliderInfo = [
   {

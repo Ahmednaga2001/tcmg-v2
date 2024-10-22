@@ -39,24 +39,51 @@ const InternGraduationForm = () => {
   return (
     <section className={styles.graduationForm}>
       <div className={styles.formPage}>
-      <h2>استمارة حديث التخرج </h2>
+        <h2>استمارة حديث التخرج </h2>
         <form action="">
           <div className={styles.names}>
 
-            <Input label="الاسم الاول" imgPath="/assets/icons/form/user.png" placeholder="الاسم الاول" alt={"person icon"} />
+            <Input
+              label="الاسم الاول"
+              imgPath="/assets/icons/form/solar_user-bold.svg"
+              placeholder="الاسم الاول"
+              alt={"person icon"}
+            />
 
-            <Input label="اسم العائلة" imgPath="/assets/icons/form/user.png" placeholder="اسم العائلة" alt={"person icon"} />
+            <Input
+              label="اسم العائلة"
+              imgPath="/assets/icons/form/solar_user-bold.svg"
+              placeholder="اسم العائلة"
+              alt={"person icon"} />
           </div>
 
-          <Input label="البريد الالكتروني" imgPath="/assets/icons/form/email.png" placeholder="البريد الالكتروني" alt={"email icon"} />
+          <Input
+         label="البريد الالكتروني"
+         imgPath="/assets/icons/form/ic_round-email.svg"
+         placeholder="البريد الالكتروني"
+         alt={"email icon"}
+            />
 
-          <Input label="رقم الهاتف" imgPath="/assets/icons/form/phone.png" placeholder="رقم الهاتف" alt={"phone icon"} />
+<Input
+            label="رقم الهاتف"
+            imgPath="/assets/icons/form/ic_round-phone.svg"
+            placeholder="رقم الهاتف"
+            alt={"phone icon"}
+          />
+          <SelectComponent
+            imgPath="/assets/icons/form/mdi_arrow-down-drop.svg"
+            w={24}
+            h={24}
+           head={"اختر المكتب"} options={officeOptions} selectedOption={selectedOffice} setSelectedOption={setSelectedOffice} />
 
-          <SelectComponent head={"اختر المكتب"} options={officeOptions} selectedOption={selectedOffice} setSelectedOption={setSelectedOffice} />
 
-
-          <Input label="منطقة السكن الحالى / المحافظة" imgPath="/assets/icons/form/location.png" placeholder={"منطقة السكن الحالى / المحافظة"} alt={"location icon"} />
-
+<Input
+            label="منطقة السكن الحالى / المحافظة"
+            imgPath="/assets/icons/form/mdi_location.svg"
+            placeholder={"منطقة السكن الحالى / المحافظة"}
+            alt={"location icon"}
+          
+          />
           <div className={styles.inp}>
             <textarea name="" id="" placeholder="كيف سمعت عنا؟"></textarea>
             <span>؟</span>

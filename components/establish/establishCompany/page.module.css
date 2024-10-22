@@ -21,6 +21,9 @@
     width: 80%;
     margin: auto;
   }
+  .content h3{
+    font-size: 30px;
+  }
   .startcompany .content,
   .startcompany .Img {
     width: 40rem;
@@ -87,6 +90,9 @@
     }
     .startcompany .content p{
         text-align: center;
+    }
+    .content h3{
+      font-size: 24px;
     }
     
   }

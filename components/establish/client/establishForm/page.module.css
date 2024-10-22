@@ -59,5 +59,8 @@
         width: 100%;
         padding: 20px;
       }
-      
+      .RequestLawyer .names {
+        flex-direction: column;
+        gap: 0;
+      }
   }

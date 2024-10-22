@@ -37,6 +37,12 @@
 .companiesTypes .swiperSlide p {
   padding-top: 20px;
 }
+.swiperSlide .content h3 {
+  font-size: 24px;
+}
+.content p{
+  line-height: 1.4;
+}
 @media (max-width: 1191px) {
   .companiesTypes .swiperSlide{
       width: 80%;

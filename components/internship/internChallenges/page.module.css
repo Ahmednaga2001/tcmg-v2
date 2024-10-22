@@ -11,6 +11,12 @@
   position: relative;
   text-align: center;
 }
+.challenges p{
+  font-size: 32px;
+  width: 50%;
+  font-weight: bold;
+  line-height: 150%;
+}
 @media(max-width: 768px){
 .challenges{
   margin: 20px 0;

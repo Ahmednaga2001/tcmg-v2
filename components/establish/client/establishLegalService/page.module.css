@@ -29,7 +29,8 @@
   border-radius: 40px;
 }
 .accordionItem span{
-  font-weight: 600;
+  font-weight: bold;
+  font-size: 24px;
 }
 .accordionContent {
   max-height: 0;
@@ -71,6 +72,12 @@
   .accordionParent{
       grid-template-columns: repeat(1,100%);
       
+  }
+  .accordionContent{
+    height: auto;
+  }
+  .accordionItem span{
+    font-size: 20px;
   }
   .heading h2 {
     font-size: 28px;

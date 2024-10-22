@@ -18,4 +18,9 @@
    
   }
   
-  
+  @media (max-width: 768px) {
+    .hiringPage h1,
+    .hiringPage h2 {
+      font-size: 24px;
+    }
+  }
