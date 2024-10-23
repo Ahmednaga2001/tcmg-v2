@@ -17,6 +17,9 @@
     .content{
         width: 60%;
     }
+    .content h2{
+        font-size: 35px;
+    }
 }
 
 @media (max-width: 768px) {
