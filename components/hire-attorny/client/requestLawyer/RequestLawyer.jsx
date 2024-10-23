@@ -7,7 +7,22 @@ import { useState } from "react";
 import styles from "./page.module.css"
 const officeOptions = [
   {
-    value : 'a'
+    value: "القاهرة",
+  },  
+  {
+    value: "دبى",
+  },
+  {
+    value: "الرياض",
+  },
+  {
+    value : "تشنغدو"
+  },
+  {
+    value : "عمان"
+  },
+  {
+    value : "جنين"
   }
 ]
 const majorOptions = [
@@ -78,6 +93,7 @@ const RequestLawyer = () => {
                     label="التخصص" 
                     placeholder="التخصص"
                     imgPath={"/assets/icons/form/category.png"}
+                    alt = {"major icon"}
                     
                     />
           <div className={styles.inp}>

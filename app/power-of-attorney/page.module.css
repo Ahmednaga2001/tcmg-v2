@@ -15,3 +15,9 @@
           font-size: 16px;
       }
   }
+
+  @media (max-width: 400px) {
+    .hireAttornyPage h1 , .hireAttornyPage h2{
+      font-size: 24px;
+    }
+  }

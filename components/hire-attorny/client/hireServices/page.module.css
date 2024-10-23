@@ -11,8 +11,9 @@
   width: 300px;
   height: 500px;
   /* background: linear-gradient(#1b2340, #1b2340); */
-  background: linear-gradient(#2B3453 100%,#A9B4E4 30%);
-  border-radius: 12px;
+  background: linear-gradient(rgba(43, 52, 83, 0.33) 100%, rgba(169, 180, 228, 0.33) 30%);
+  border-radius: 32px;
+  border: 1px solid #353E5C;
 }
 
 .attorneyrepresentation .topCard {

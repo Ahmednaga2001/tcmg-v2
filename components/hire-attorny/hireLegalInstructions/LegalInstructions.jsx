@@ -7,9 +7,9 @@ const LegalInstructions = () => {
       <div className={styles.boxs}>
         <div className={styles.box}>
           <div className={styles.boxRight}>
-            <h4>
+            <p>
               حدد ما هي مشكلتك القانونية, وفي أي فرع تندرج تحته هذه المشكلة.
-            </h4>
+            </p>
           </div>
           <div className={styles.boxLeft}>
             <Image
@@ -48,17 +48,17 @@ const LegalInstructions = () => {
             />
           </div>
           <div className={styles.boxRight}>
-            <h4>
+            <p>
               اختر تخصص المحامي الملائم لمشكلتك من المحامين خلال هذه الصفحة.
-            </h4>
+            </p>
           </div>
         </div>
         <div className={styles.box}>
           <div className={styles.boxRight}>
-            <h4>
+            <p>
               اضغط على زر ملء الاستمارة آخر الصفحة؛ ليوجِّهك إلى فورم عمل توكيل
               محامي.
-            </h4>
+            </p>
           </div>
           <div className={styles.boxLeft}>
             <Image
@@ -81,10 +81,10 @@ const LegalInstructions = () => {
         </div>
         <div className={styles.boxM}>
           <div className={styles.boxRightM}>
-            <h4>
+            <p>
               املأ كافة بياناتك في استمارة التوكيل وحدد نوع مشكلتك, واحجز
               الموعد.
-            </h4>
+            </p>
           </div>
         </div>
       </div>

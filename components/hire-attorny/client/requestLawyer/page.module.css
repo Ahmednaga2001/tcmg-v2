@@ -46,5 +46,9 @@
         width: 100%;
         padding: 20px;
       }
+      .names{
+        flex-direction: column;
+        gap: 0 !important;
+      }
     
   }

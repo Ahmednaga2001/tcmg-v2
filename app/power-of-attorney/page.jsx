@@ -7,7 +7,9 @@ import CorporateService from "@/components/hire-attorny/client/hireServices/Corp
 import LegalInstructions from "@/components/hire-attorny/hireLegalInstructions/LegalInstructions";
 import styles from "./page.module.css"
 export const metadata = {
-  title : "Hire-Attorny"
+  title : "Power Of Attorney",
+  description : "هل ترغب في توكيل محامي متخصص يتولى قضاياك ويحقق أهدافك القانونية ويمثلك أمام المحاكم؟ قم الان بعمل توكيل قضايا عام أو خاص لمحامي متخصص وأتمم الإجراءات بنجاح.",
+  keywords : "توكيل محامي"
 }
 function HireAttorny() {
   return (

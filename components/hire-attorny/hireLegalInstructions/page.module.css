@@ -75,6 +75,10 @@
   bottom: -10px;
   left: -15px;
 }
+.legalinstructions .boxRight p, .legalinstructions .boxRightM p{
+  font-size: 20px;
+  font-weight: bold;
+ }
 
 @media (max-width: 800px) {
     .legalinstructions .boxs {
@@ -97,7 +101,7 @@
       width: 70%;
       padding: 15px;
     }
-    .legalinstructions .boxRight h4, .legalinstructions .boxRightM h4{
+    .legalinstructions .boxRight p, .legalinstructions .boxRightM p{
      font-size: 16px;
     }
 }
@@ -122,7 +126,7 @@
     width: 100%;
     padding: 15px;
   }
-  .legalinstructions .boxRight h4, .legalinstructions .boxRightM h4{
+  .legalinstructions .boxRight p, .legalinstructions .boxRightM p{
     font-size: 14px;
    }
 }
