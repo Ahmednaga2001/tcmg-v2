@@ -28,7 +28,7 @@ function Page() {
     const router = useRouter();
 
     useEffect(() => {
-        const step = parseInt(searchParams.get('step')) || 1; // Get step from URL
+        const step = parseInt(searchParams.get('step')) || 1; 
         setCurrentStep(step);
     }, [searchParams]);
 

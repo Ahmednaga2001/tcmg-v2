@@ -17,13 +17,13 @@ export default function AdditionalInfo({ onNextStep }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setShowModal(true); // Show the modal
+        setShowModal(true); 
     };
 
-    // Trigger onNextStep after closing the modal
+ 
     const handleModalClose = () => {
         setShowModal(false);
-        onNextStep(); // Proceed to the next step when the modal closes
+        onNextStep(); 
     };
 
     return (
@@ -35,22 +35,15 @@ export default function AdditionalInfo({ onNextStep }) {
                         label="الاسم بالكامل"
                         placeholder="الاسم بالكامل"
                         imgPath="/assets/icons/form/solar_user-bold.png"
-                        style={{
-                            background: "linear-gradient(rgba(255, 255, 255,.03) 0%, rgba(216, 216, 216, .03))",
-                            border: "1px solid #fff",
-                        }}
-                        color="#fff"
+                      
                         display = "block"
                     />
                     <Input 
                         label="رقم الهاتف"
                         placeholder={"رقم الهاتف"}
                         imgPath={"/assets/icons/form/ic_round-phone.png"} 
-                        style={{
-                            background: "linear-gradient(rgba(255, 255, 255,.03) 0%, rgba(216, 216, 216, .03))",
-                            border: "1px solid #fff",
-                        }}
-                        color="#fff" 
+                        display = "block"
+                    
                         
 
                     />
@@ -63,11 +56,7 @@ export default function AdditionalInfo({ onNextStep }) {
                         imgPath={'/assets/icons/form/mdi_arrow-down-drop.png'}
                         w={24}
                         h={24}
-                        style={{
-                            background: "linear-gradient(rgba(255, 255, 255,.03) 0%, rgba(216, 216, 216, .03))",
-                            border: "1px solid #fff",
-                            color: "#fff"
-                        }}
+                    
                         display = "block"
 
                     />
@@ -75,11 +64,7 @@ export default function AdditionalInfo({ onNextStep }) {
                     label="التخصص" 
                     placeholder="التخصص"
                     imgPath={"/assets/icons/form/category.png"}
-                    style={{
-                        background: "linear-gradient(rgba(255, 255, 255,.03) 0%, rgba(216, 216, 216, .03))",
-                        border: "1px solid #fff",
-                    }}
-                    color="#fff" 
+                   
                     display = "block"
                     />
                     <div className={styles.message}>
