@@ -2,13 +2,14 @@ import React from 'react';
 import styles from './page.module.css';
 import Image from 'next/image';
 
-const Input = ({ display='none',label, style, imgPath, placeholder, alt, color, type = "text", showPassword, setShowPassword }) => {
+const Input = ({ name, value, change, blur, display = 'none', label, style, imgPath, placeholder, alt, color, type = "text", showPassword, setShowPassword }) => {
 
   const togglePasswordVisibility = () => {
     if (type === 'password') {
       setShowPassword(prev => !prev);
     }
   };
+
 
   return (
     <div className={styles.inpContainer}>
@@ -19,6 +20,10 @@ const Input = ({ display='none',label, style, imgPath, placeholder, alt, color, 
           style={{ color }}
           id={label}
           placeholder={placeholder}
+          value={value}
+          onChange={change}
+          name={name}
+          onBlur={blur}
         />
         {
           type === 'password' && imgPath ? (
